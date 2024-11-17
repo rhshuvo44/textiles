@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.menu li > :not(ul, .menu-title, details, .btn):active,
+.menu li > :not(ul, .menu-title, details, .btn).active,
+.menu li > details > summary:active {
+  --tw-bg-opacity: 1;
+  background-color: #00a9e9;
+  color: #fff;
+}
+
+:where(
+    .menu li:not(.menu-title, .disabled) > :not(ul, details, .menu-title)
+  ):not(summary, .active, .btn).focus,
+:where(
+    .menu li:not(.menu-title, .disabled) > :not(ul, details, .menu-title)
+  ):not(summary, .active, .btn):focus,
+:where(
+    .menu li:not(.menu-title, .disabled) > :not(ul, details, .menu-title)
+  ):is(summary):not(.active, .btn):focus-visible,
+:where(
+    .menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)
+  ):not(summary, .active, .btn).focus,
+:where(
+    .menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)
+  ):not(summary, .active, .btn):focus,
+:where(
+    .menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)
+  ):is(summary):not(.active, .btn):focus-visible {
+  cursor: pointer;
+  background-color: #00a9e9;
+  color: #fff;
+  outline: 2px solid #00a9e9;
+  outline-offset: 2px;
+}
+
+@media (hover: hover) {
+  @supports (color: oklch(0% 0 0)) {
+    :where(
+        .menu li:not(.menu-title, .disabled) > :not(ul, details, .menu-title)
+      ):not(.active, .btn):hover,
+    :where(
+        .menu
+          li:not(.menu-title, .disabled)
+          > details
+          > summary:not(.menu-title)
+      ):not(.active, .btn):hover {
+      background-color: #00a9e9;
+      color: #fff;
+    }
+  }
+}
