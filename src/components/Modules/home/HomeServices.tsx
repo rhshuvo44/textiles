@@ -1,4 +1,4 @@
-import SercivesCard from "@/components/UI/SercivesCard";
+import ServicesCard from "@/components/UI/ServicesCard";
 import { FaDesktop } from "react-icons/fa";
 
 const HomeServices = () => {
@@ -26,7 +26,7 @@ const HomeServices = () => {
   return (
     <div className="flex flex-col md:flex-row gap-3 p-5 md:p-10">
       {homeServices.map((service) => (
-        <SercivesCard key={service.id} service={service} />
+        <ServicesCard key={service.id} service={service} />
       ))}
     </div>
   );
