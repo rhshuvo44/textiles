@@ -1,28 +1,20 @@
-import Link from "next/link";
+"use client";
+
 import logo from "@/assets/image/logo.png";
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 const Navbar = () => {
-  const navItems = (
-    <>
-      <li>
-        <Link href="/" className="text-[#00A9E9]">
-          Home
-        </Link>
-      </li>
-      <li>
-        <Link href="/about">About Us</Link>
-      </li>
-      <li>
-        <Link href="/services">Services</Link>
-      </li>
-      <li>
-        <Link href="/shop">Shop</Link>
-      </li>
-      <li>
-        <Link href="/contact">Contact</Link>
-      </li>
-    </>
-  );
+  const pathname = usePathname();
+
+  const navLinks = [
+    { path: "/", label: "Home" },
+    { path: "/about", label: "About Us" },
+    { path: "/services", label: "Services" },
+    { path: "/shop", label: "Shop" },
+    { path: "/contact", label: "Contact" },
+  ];
+
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -47,7 +39,16 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
-            {navItems}
+            {navLinks.map((link) => (
+              <li key={link.path} className="px-1">
+                <Link
+                  href={link.path}
+                  className={`${pathname === link.path ? "active" : ""}`}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
         <Link href="/">
@@ -55,10 +56,21 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{navItems}</ul>
+        <ul className="menu menu-horizontal px-1">
+          {navLinks.map((link) => (
+            <li key={link.path} className="px-1">
+              <Link
+                href={link.path}
+                className={`${pathname === link.path ? "active" : ""}`}
+              >
+                {link.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
       <div className="navbar-end">
-        <Link href="/" className="btn btn-primary">
+        <Link href="/" className="btn btn-info text-white">
           Login
         </Link>
       </div>
