@@ -1,8 +1,6 @@
-
-export * from './customInputTypes';
-export * from './global';
-export * from './LoginFormType';
-export * from './sidebar.type';
-export * from './tableType';
-export * from './tableColum';
-
+export type TServices = {
+    id: number,
+    icon: React.ReactNode,
+    title: string,
+    description: string,
+}
