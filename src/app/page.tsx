@@ -2,6 +2,7 @@ import Banner from "@/components/Modules/home/Banner";
 import Capabilities from "@/components/Modules/home/Capabilities";
 import HomeServices from "@/components/Modules/home/HomeServices";
 import ProductCategory from "@/components/Modules/home/ProductCategory";
+import Stats from "@/components/Modules/home/Stats";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <HomeServices />
       <Capabilities />
       <ProductCategory />
+      <Stats />
     </>
   );
 }

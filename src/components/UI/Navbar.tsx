@@ -69,7 +69,10 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <Link href="/" className="btn btn-info text-white">
+        <Link
+          href="https://sta.sarkargroupofcompanies.com/"
+          className="btn btn-info text-white"
+        >
           Login
         </Link>
       </div>
