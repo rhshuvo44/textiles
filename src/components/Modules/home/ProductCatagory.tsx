@@ -41,7 +41,7 @@ const ProductCatagory = () => {
     },
   ];
   return (
-    <div className="p-10">
+    <div className="p-5 md:p-10">
       <h2 className="text-4xl font-bold text-center mb-5">Products Category</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
         {gategory.map((item) => (

@@ -11,8 +11,8 @@ const Banner = () => {
       }}
     >
       <div className="hero-overlay bg-opacity-60"></div>
-      <div className="hero-content text-neutral-content text-center">
-        <div className="max-w-lg">
+      <div className="hero-content text-neutral-content text-center px-10">
+        <div className="max-w-lg ">
           <h1 className="mb-5 text-2xl md:text-5xl font-bold">
             The Largest Exporter of Textile Products
           </h1>

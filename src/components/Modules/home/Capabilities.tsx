@@ -4,7 +4,7 @@ import Link from "next/link";
 import { FaLongArrowAltRight } from "react-icons/fa";
 const Capabilities = () => {
   return (
-    <div className="p-10">
+    <div className="p-5 md:p-10">
       <div className="card lg:card-side bg-base-100 shadow-xl">
         <figure className="w-full md:w-1/2">
           <Image src={image} alt="Album" height={500} width={500} />
