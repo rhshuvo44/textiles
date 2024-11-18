@@ -22,7 +22,7 @@ const NewsLatest = () => {
 
             <button
               type="submit"
-              className="sm:w-1/4 h-12 text-white bg-purple-600 rounded-lg shadow transition-all duration-300 ease-in-out hover:bg-purple-700"
+              className="sm:w-1/4 h-12 btn text-white btn-info rounded-lg shadow transition-all duration-300 ease-in-out hover:btn-info hover:text-white"
             >
               Subscribe
             </button>

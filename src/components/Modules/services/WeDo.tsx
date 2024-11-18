@@ -1,4 +1,4 @@
-import image from "@/assets/image/Subscription_Monthly_M.jpg";
+import image from "@/assets/image/weDoIt.jpg";
 import Image from "next/image";
 
 const WeDo = () => {
