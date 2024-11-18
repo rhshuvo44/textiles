@@ -37,9 +37,11 @@ const ContactForm = () => {
           {...register("phone")}
         />
       </div>
-      <textarea
+      <textarea 
+      rows={4}
         className="textarea textarea-bordered"
         placeholder="How can we help?"
+        {...register("message")}
       ></textarea>
       <div className="form-control mt-6">
         <button className="btn btn-info text-white">Submit</button>

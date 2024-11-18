@@ -10,7 +10,6 @@ const CallUs = () => {
           <h2 className="text-5xl font-bold text-[#00A9E9]">
             Call Us or Fill the Form
           </h2>
-
           <div className="card-actions justify-start mt-10">
             <div className="p-4 border rounded-lg shadow-lg bg-white w-full max-w-md flex items-center">
               <div className="p-2 bg-blue-100 rounded-full">
