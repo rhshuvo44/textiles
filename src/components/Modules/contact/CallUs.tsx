@@ -1,5 +1,6 @@
 import { CiLocationOn } from "react-icons/ci";
 import { IoCallOutline } from "react-icons/io5";
+import ContactForm from "./ContactForm";
 
 const CallUs = () => {
   return (
@@ -32,7 +33,9 @@ const CallUs = () => {
             </div>
           </div>
         </div>
-        <div className="w-full md:w-1/2">{/* <ContactForm /> */}</div>
+        <div className="w-full md:w-1/2">
+          <ContactForm />
+        </div>
       </div>
     </div>
   );
