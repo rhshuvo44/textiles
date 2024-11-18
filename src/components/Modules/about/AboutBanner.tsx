@@ -1,4 +1,3 @@
-import GetInTouch from "./GetInTouch";
 import banner from "@/assets/image/investor-relations.jpg";
 const AboutBanner = () => {
   return (
@@ -19,7 +18,7 @@ const AboutBanner = () => {
           </p>
         </div>
         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-          <GetInTouch />
+          {/* <GetInTouch /> */}
         </div>
       </div>
     </div>
