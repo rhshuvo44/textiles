@@ -2,7 +2,6 @@ import Footer from "@/components/UI/Footer";
 import Navbar from "@/components/UI/Navbar";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { ToastContainer } from "react-toastify";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -32,7 +31,6 @@ export default function RootLayout({
         cz-shortcut-listen="true"
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ToastContainer />
         <Navbar />
         <main>{children}</main>
         <Footer />
