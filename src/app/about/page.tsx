@@ -1,5 +1,11 @@
+import AboutBanner from "@/components/Modules/about/AboutBanner";
+
 const AboutPage = () => {
-  return <div></div>;
+  return (
+    <>
+      <AboutBanner />
+    </>
+  );
 };
 
 export default AboutPage;
