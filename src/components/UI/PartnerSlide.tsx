@@ -57,7 +57,7 @@ const PartnerSlide = () => {
       >
         {sliders.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <div className="border shadow-sm rounded-md cursor-pointer hover:-translate-y-1 duration-300 py-2 px-5">
+            <div className=" cursor-pointer hover:scale-110 duration-300 py-2 px-5">
               <div className="rounded">
                 <Image src={slide.image} alt="" width={500} height={500} />
               </div>
