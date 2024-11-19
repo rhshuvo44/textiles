@@ -1,3 +1,4 @@
+import AdvantagesSection from "@/components/AdvantagesSection";
 import HomeServices from "@/components/Modules/home/HomeServices";
 import Stats from "@/components/Modules/home/Stats";
 import ServiceCapabilities from "@/components/Modules/services/ServiceCapabilities";
@@ -15,6 +16,7 @@ const ServicePage = () => {
       <WeDo />
       <PartnerSlide />
       <Stats />
+      <AdvantagesSection/>
       <NewsLatest />
     </>
   );
