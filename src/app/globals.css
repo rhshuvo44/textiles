@@ -72,7 +72,6 @@ body {
   width: 100%;
   height: 100%;
 }
-
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -83,10 +82,23 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.innerCard:hover .innerCardBody {
+  background-color: red;
+  transition: all 0.5s ease-in-out;
+}
+.innerCard:hover .bodyDis {
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+.innerCardBody {
+}
+.bodyDis {
+  display: none;
 }
