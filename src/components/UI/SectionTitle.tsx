@@ -4,7 +4,7 @@ import Link from "next/link";
 const SectionTitle = ({ text }: { text: string }) => {
   return (
     <div
-      className="hero h-72 mt-24"
+      className="hero h-72 mt-16"
       style={{
         backgroundImage: `url(${banner.src})`,
       }}

@@ -23,10 +23,29 @@ body {
 .menu li > :not(ul, .menu-title, details, .btn).active,
 .menu li > details > summary:active {
   --tw-bg-opacity: 1;
-  background-color: #00a9e9;
-  color: #fff;
+  background-color: transparent;
+  color: #00a9e9;
 }
-
+:where(
+    .menu li:not(.menu-title, .disabled) > :not(ul, details, .menu-title)
+  ):not(summary, .active, .btn).focus,
+:where(
+    .menu li:not(.menu-title, .disabled) > :not(ul, details, .menu-title)
+  ):not(summary, .active, .btn):focus,
+:where(
+    .menu li:not(.menu-title, .disabled) > :not(ul, details, .menu-title)
+  ):is(summary):not(.active, .btn):focus-visible,
+:where(
+    .menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)
+  ):not(summary, .active, .btn).focus,
+:where(
+    .menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)
+  ):not(summary, .active, .btn):focus,
+:where(
+    .menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)
+  ):is(summary):not(.active, .btn):focus-visible {
+  background-color: transparent;
+}
 /* :where(
     .menu li:not(.menu-title, .disabled) > :not(ul, details, .menu-title)
   ):not(summary, .active, .btn).focus,
@@ -63,8 +82,8 @@ body {
           > details
           > summary:not(.menu-title)
       ):not(.active, .btn):hover {
-      background-color: #00a9e9;
-      color: #fff;
+      background-color: transparent;
+      color: #00a9e9;
     }
   }
 }
@@ -97,8 +116,8 @@ body {
   display: block;
   transition: all 0.5s ease-in-out;
 }
-.innerCardBody {
-}
+/* .innerCardBody {
+} */
 .bodyDis {
   display: none;
 }
