@@ -1,8 +1,8 @@
 const NewsLatest = () => {
   return (
-    <div className="w-full p-5 md:p-10">
-      <div className="container flex flex-col xl:flex-row mx-auto px-5 py-8 xl:py-14 text-gray-500 bg-gray-200 rounded-2xl">
-        <div className="w-full mb-6 xl:mb-0 sm:text-center">
+    <div className="w-full py-5 md:py-10">
+      <div className="container flex flex-col xl:flex-row mx-auto p-5 md:p-8 xl:py-14 text-gray-500 bg-gray-200 ">
+        <div className="w-full mb-6 xl:mb-0">
           <div className="mb-4 text-gray-900 text-3xl font-extrabold">
             Join 2,000+ subscribers
           </div>
@@ -13,7 +13,7 @@ const NewsLatest = () => {
         </div>
 
         <div className="w-full">
-          <div className="flex flex-col justify-center sm:flex-row gap-3 w-full">
+          <div className="flex flex-col justify-end sm:flex-row gap-3 w-full">
             <input
               type="text"
               placeholder="Enter your email"
