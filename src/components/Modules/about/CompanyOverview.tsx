@@ -4,7 +4,7 @@ const CompanyOverview = () => {
   return (
     <div className="flex flex-col lg:flex-row items-center bg-white p-5 md:p-10 shadow-lg rounded-md">
       {/* Left Image Section */}
-      <div className="w-full lg:w-1/2  mb-6 lg:mb-0">
+      <div className="w-full lg:w-1/2  mb-6 lg:mb-0" data-aos="fade-right">
         <Image
           src={image}
           alt="Company Industry"
@@ -16,10 +16,10 @@ const CompanyOverview = () => {
 
       {/* Right Content Section */}
       <div className="w-full lg:w-1/2">
-        <h2 className="text-4xl font-bold text-gray-800 mb-4">
+        <h2 className="text-4xl font-bold text-gray-800 mb-4" data-aos="fade-left">
           Company Overview
         </h2>
-        <p className="text-gray-600 mb-6 leading-relaxed">
+        <p className="text-gray-600 mb-6 leading-relaxed" data-aos="fade-left">
           <span className="text-lg font-bold text-[#00AAE9]">
             Sarkar Textile & Apparel
           </span>{" "}
@@ -29,7 +29,7 @@ const CompanyOverview = () => {
         </p>
         <ul className="mb-5">
           <li>
-            <p className="mb-2">
+            <p className="mb-2" data-aos="fade-left">
               <b>Manufacturing and Production:</b> Focused on state-of-the-art
               textile manufacturing, including weaving, dyeing, printing, and
               finishing processes to deliver premium-quality fabrics and
@@ -37,7 +37,7 @@ const CompanyOverview = () => {
             </p>
           </li>
           <li>
-            <p className="mb-2">
+            <p className="mb-2" data-aos="fade-left">
               <b>Supply Chain and Distribution:</b> Ensures efficient logistics
               and timely delivery of products to domestic and international
               markets, maintaining strong partnerships with suppliers and
@@ -45,7 +45,7 @@ const CompanyOverview = () => {
             </p>
           </li>
           <li>
-            <p>
+            <p data-aos="fade-left">
               <b>Innovation and Sustainability:</b> Committed to adopting
               eco-friendly practices, reducing waste, and utilizing sustainable
               raw materials to create textiles that meet modern environmental
@@ -54,7 +54,7 @@ const CompanyOverview = () => {
           </li>
         </ul>
 
-        <div className="border-l-4 border-pink-500 pl-4">
+        <div className="border-l-4 border-pink-500 pl-4" data-aos="fade-up">
           <h3 className="text-lg font-semibold text-gray-800 mb-1">
             Company Net Value
           </h3>
