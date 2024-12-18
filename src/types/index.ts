@@ -16,3 +16,38 @@ export type TContactForm = {
     phone: string
     message: string
 }
+export type TProduct = {
+    id: number;
+    title: string;
+    description: string;
+    price: number;
+    discountPercentage: number;
+    rating: number;
+    stock: number;
+    availabilityStatus: string;
+    minimumOrderQuantity: number;
+    shippingInformation: string;
+    returnPolicy: string;
+    warrantyInformation: string;
+    brand: string;
+    category: string;
+    tags: string[];
+    dimensions: {
+        width: number;
+        height: number;
+        depth: number;
+    };
+    weight: number;
+    sku: string;
+    meta: {
+        createdAt: string;
+        updatedAt: string;
+        barcode: string;
+        qrCode: string;
+    };
+    thumbnail: string;
+    images: string[];
+    reviews: {
+        [key: string]: any; 
+    }[];
+};
