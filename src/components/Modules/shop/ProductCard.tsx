@@ -1,17 +1,24 @@
-import denim from "@/assets/image/denim.jpg";
 import { TProduct } from "@/types";
 import Image from "next/image";
 import StarRatingsComponent from "./StarRatingsComponent";
 
 const ProductCard = ({ product }: { product: TProduct }) => {
-  const { title, description, price, brand, rating } = product;
+  const {
+    title,
+    description,
+    price,
+    brand,
+    rating,
+    thumbnail,
+    discountPercentage,
+  } = product;
 
   return (
     <div className="card shadow-lg p-5">
       <div className=" product-card">
         <div className="product-img">
           <Image
-            src={denim}
+            src={thumbnail}
             alt="Product Image"
             className="image-full"
             width={500}
@@ -26,6 +33,7 @@ const ProductCard = ({ product }: { product: TProduct }) => {
             className="disc"
             dangerouslySetInnerHTML={{ __html: description }}
           ></p>
+          <p className="price" >$<del>{discountPercentage}</del></p>
           <p className="price text-red-500">${price}</p>
         </div>
       </div>

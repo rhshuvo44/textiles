@@ -1,6 +1,5 @@
 import { TProduct } from "@/types";
 import { useEffect, useState } from "react";
-
 const applySorting = (products: TProduct[], sort: string) => {
   const sortCriteria: { [key: string]: (a: TProduct, b: TProduct) => number } =
     {
@@ -16,6 +15,8 @@ const applySorting = (products: TProduct[], sort: string) => {
       "created-descending": (a, b) =>
         new Date(b.meta.createdAt).getTime() -
         new Date(a.meta.createdAt).getTime(),
+      "best-selling": (a, b) => b.rating - a.rating, // Assuming 'sales' field exists in your product
+      featured: (b) => b.discountPercentage, // Assuming 'featured' is a boolean field
     };
 
   const compare = sortCriteria[sort];
@@ -32,7 +33,7 @@ const useProducts = () => {
   const [sort, setSort] = useState<string>("best-selling");
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(9);
-
+  console.log(products);
   useEffect(() => {
     const fetchProducts = async () => {
       try {
