@@ -6,10 +6,10 @@ const ServiceCapabilities = () => {
     <div className="px-5 md:px-10">
       <div className="card lg:card-side bg-base-100 rounded-none shadow-xl">
         <div className="card-body w-full md:w-1/2  md:px-20">
-          <h2 className="text-5xl font-bold text-[#00A9E9]">
+          <h2 className="text-5xl font-bold text-[#00A9E9]" data-aos="fade-right">
             Our Capabilities
           </h2>
-          <p className="text-gray-600 mb-2 leading-relaxed">
+          <p className="text-gray-600 mb-2 leading-relaxed" data-aos="fade-right">
             At{" "}
             <span className="text-lg font-bold text-[#00AAE9]">
               Sarkar Textile & Apparel
@@ -20,7 +20,7 @@ const ServiceCapabilities = () => {
             standards of quality, efficiency, and sustainability.
           </p>
 
-          <p>
+          <p data-aos="fade-right">
             We utilize cutting-edge machinery and technology to produce a wide
             variety of fabrics, including woven, knitted, and non-woven
             textiles. Our state-of-the-art production lines ensure precision and
@@ -28,7 +28,7 @@ const ServiceCapabilities = () => {
             textile solutions.
           </p>
 
-          <p>
+          <p data-aos="fade-up">
             Sustainability is central to our operations. We prioritize
             eco-friendly dyes, reduce water consumption with advanced treatment
             systems, and use sustainable raw materials in production. Our
@@ -36,7 +36,7 @@ const ServiceCapabilities = () => {
             impact and supports a circular approach to textile production.
           </p>
         </div>
-        <figure className="w-full md:w-1/2">
+        <figure className="w-full md:w-1/2" data-aos="fade-left">
           <Image src={image} alt="Album" height={500} width={500} />
         </figure>
       </div>

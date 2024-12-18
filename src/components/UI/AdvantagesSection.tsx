@@ -29,8 +29,8 @@ const AdvantagesSection = () => {
           data-aos="fade-right"
         >
           <div className=" p-5 rounded-lg duration-500 innerCardBody">
-            <h3 className="font-bold text-5xl mb-5">01</h3>
-            <h1 className=" text-5xl">World-class Technology</h1>
+            <h3 className="font-bold text-5xl mb-5" data-aos="fade-right">01</h3>
+            <h1 className=" text-5xl" data-aos="fade-up">World-class Technology</h1>
             <div className="bodyDis">
               <p className="my-5">
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa
@@ -49,8 +49,8 @@ const AdvantagesSection = () => {
           data-aos="fade-up"
         >
           <div className=" p-5 rounded-lg duration-500 innerCardBody">
-            <h3 className="font-bold text-5xl mb-5">02</h3>
-            <h1 className=" text-5xl">Quality Standards</h1>
+            <h3 className="font-bold text-5xl mb-5" data-aos="fade-right">02</h3>
+            <h1 className=" text-5xl" data-aos="fade-up">Quality Standards</h1>
             <div className="bodyDis">
               <p className="my-5">
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa
@@ -69,8 +69,8 @@ const AdvantagesSection = () => {
           data-aos="fade-left"
         >
           <div className=" p-5 rounded-lg duration-500 innerCardBody">
-            <h3 className="font-bold text-5xl mb-5">03</h3>
-            <h1 className=" text-5xl">Productive Capacity</h1>
+            <h3 className="font-bold text-5xl mb-5" data-aos="fade-right">03</h3>
+            <h1 className=" text-5xl" data-aos="fade-up">Productive Capacity</h1>
             <div className="bodyDis">
               <p className="my-5">
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa
