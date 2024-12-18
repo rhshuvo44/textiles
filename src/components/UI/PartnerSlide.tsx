@@ -37,6 +37,7 @@ const PartnerSlide = () => {
   return (
     <div className="p-5 md:p-10">
       <Swiper
+        data-aos="fade-up"
         slidesPerView={1}
         spaceBetween={10}
         className="mySwiper"

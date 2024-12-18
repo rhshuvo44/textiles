@@ -1,7 +1,7 @@
 const Stats = () => {
   return (
     <div className="p-5 md:p-10">
-      <div className=" stats stats-vertical lg:stats-horizontal w-full">
+      <div className=" stats stats-vertical lg:stats-horizontal w-full" data-aos="fade-up">
         {/* Stat 1 */}
         <div className="stat">
           <div className="stat-figure text-secondary">

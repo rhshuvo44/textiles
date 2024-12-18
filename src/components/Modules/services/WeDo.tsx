@@ -10,17 +10,29 @@ const WeDo = () => {
         </figure>
         <div className="card-body w-full md:w-1/2  md:px-20">
           <h2 className="text-5xl font-bold text-[#00A9E9]">How we do it</h2>
-          <p className="mt-10">
-            Textile engages and catalyzes the textile industry across the supply
-            chain through partnerships and collaborations, building knowledge
-            and capacity to inform and educate. We further leverage our
-            influence to create action, change and collective impact.
-            <br />
-            <br />
-            Textile inspires and equips people to accelerate sustainable
-            practices in the textile value chain. We focus on minimizing the
-            harmful impacts of the global textile industry and maximizing its
-            positive effects.
+          <p className="text-gray-600 mb-2 leading-relaxed">
+            At{" "}
+            <span className="text-lg font-bold text-[#00AAE9]">
+              Sarkar Textile & Apparel
+            </span>
+            we combine cutting-edge technology, sustainable practices, and
+            rigorous quality control to deliver exceptional textile products.
+          </p>
+          <p>
+            Advanced Manufacturing: We use state-of-the-art machinery to produce
+            a variety of fabrics, ensuring precision and efficiency. Our skilled
+            team oversees the entire process, from raw material sourcing to
+            finished fabric.
+          </p>
+          <p>
+            Sustainable Practices: We prioritize eco-friendly materials,
+            energy-efficient production, and waste reduction, minimizing our
+            environmental impact while maintaining high-quality standards.
+          </p>
+          <p>
+            Quality Control: Every stage of production undergoes strict quality
+            checks, from raw material inspection to final product testing,
+            ensuring durability, colorfastness, and overall performance.
           </p>
         </div>
       </div>

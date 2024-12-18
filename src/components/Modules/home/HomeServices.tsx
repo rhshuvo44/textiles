@@ -24,7 +24,10 @@ const HomeServices = () => {
     },
   ];
   return (
-    <div className="flex flex-col md:flex-row gap-3 p-5 md:p-10">
+    <div
+      className="flex flex-col md:flex-row gap-3 p-5 md:p-10"
+      data-aos="fade-up"
+    >
       {homeServices.map((service) => (
         <ServicesCard key={service.id} service={service} />
       ))}

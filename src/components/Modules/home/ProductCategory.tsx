@@ -42,20 +42,28 @@ const ProductCategory = () => {
   ];
   return (
     <div className="p-5 md:p-10">
-      <h2 className="text-4xl font-bold text-center mb-5">Products Category</h2>
+      <h2 className="text-4xl font-bold text-center mb-5" data-aos="fade-left">
+        Products Category
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
         {category.map((item) => (
           <div
             key={item.id}
             className="card bg-base-100 image-full shadow-xl cursor-pointer hover:-translate-y-4 duration-300"
+            data-aos="fade-up"
           >
             <figure>
               <Image src={item.image} alt="Shoes" width={400} height={250} />
             </figure>
             <div className="card-body mt-36">
-              <h2 className="card-title">{item.name}</h2>
+              <h2 className="card-title" data-aos="fade-left">
+                {item.name}
+              </h2>
               <div className="card-actions justify-start mt-5">
-                <button className="btn btn-outline text-white hover:bg-info hover:border-info duration-300">
+                <button
+                  className="btn btn-outline text-white hover:bg-info hover:border-info duration-300"
+                  data-aos="fade-right"
+                >
                   View <FaLongArrowAltRight />
                 </button>
               </div>

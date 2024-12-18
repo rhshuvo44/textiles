@@ -9,12 +9,31 @@ const ServiceCapabilities = () => {
           <h2 className="text-5xl font-bold text-[#00A9E9]">
             Our Capabilities
           </h2>
-          <p className="mt-10">
-            Stop by today; our talented staff will be happy to help you find
-            what you’re searching for!
-            <br />
-            <br />
-            CEO: Steven Rogers
+          <p className="text-gray-600 mb-2 leading-relaxed">
+            At{" "}
+            <span className="text-lg font-bold text-[#00AAE9]">
+              Sarkar Textile & Apparel
+            </span>
+            , we pride ourselves on our diverse and robust capabilities that
+            enable us to meet the evolving needs of the textile industry. Our
+            comprehensive services and advanced technologies ensure the highest
+            standards of quality, efficiency, and sustainability.
+          </p>
+
+          <p>
+            We utilize cutting-edge machinery and technology to produce a wide
+            variety of fabrics, including woven, knitted, and non-woven
+            textiles. Our state-of-the-art production lines ensure precision and
+            efficiency, allowing us to deliver both high-volume and custom-made
+            textile solutions.
+          </p>
+
+          <p>
+            Sustainability is central to our operations. We prioritize
+            eco-friendly dyes, reduce water consumption with advanced treatment
+            systems, and use sustainable raw materials in production. Our
+            commitment to green manufacturing helps minimize our environmental
+            impact and supports a circular approach to textile production.
           </p>
         </div>
         <figure className="w-full md:w-1/2">

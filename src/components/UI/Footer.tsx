@@ -1,21 +1,28 @@
-import React from "react";
-
 const Footer = () => {
   return (
     <footer className="footer bg-neutral text-neutral-content p-10">
       <nav>
-        <h6 className="footer-title">Services</h6>
-        <a className="link link-hover">Branding</a>
-        <a className="link link-hover">Design</a>
-        <a className="link link-hover">Marketing</a>
-        <a className="link link-hover">Advertisement</a>
+        <h6 className="footer-title">Company</h6>
+        <a className="link link-hover">Home</a>
+        <a className="link link-hover">Our factories</a>
+        <a className="link link-hover">Mission & strategy</a>
+        <a className="link link-hover">Charitable actions</a>
+        <a className="link link-hover">Environment</a>
       </nav>
       <nav>
-        <h6 className="footer-title">Company</h6>
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact</a>
-        <a className="link link-hover">Jobs</a>
-        <a className="link link-hover">Press kit</a>
+        <h6 className="footer-title">Production</h6>
+        <a className="link link-hover">products</a>
+        <a className="link link-hover">Quality</a>
+        <a className="link link-hover">Sales geography</a>
+        <a className="link link-hover">Our customers</a>
+      </nav>
+
+      <nav>
+        <h6 className="footer-title">Contact us</h6>
+        <a className="link link-hover">Addresses of factories</a>
+        <a className="link link-hover">Dealers</a>
+        <a className="link link-hover">Trading houses</a>
+        <a className="link link-hover">Brand shops</a>
       </nav>
       <nav>
         <h6 className="footer-title">Legal</h6>
