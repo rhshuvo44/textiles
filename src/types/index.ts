@@ -16,6 +16,13 @@ export type TContactForm = {
     phone: string
     message: string
 }
+export interface Review {
+    rating: number
+    comment: string
+    date: string
+    reviewerName: string
+    reviewerEmail: string
+}
 export type TProduct = {
     id: number;
     title: string;
@@ -47,7 +54,9 @@ export type TProduct = {
     };
     thumbnail: string;
     images: string[];
-    reviews: {
-        [key: string]: any; 
-    }[];
+    reviews: Review[];
 };
+
+
+
+
