@@ -70,8 +70,9 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         <Link
-        data-aos="fade-left"
-          href="https://sta.sarkargroupofcompanies.com/"
+          data-aos="fade-left"
+          // href="https://sta.sarkargroupofcompanies.com/"
+          href="/"
           className="btn btn-info text-white px-8"
         >
           Login

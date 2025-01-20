@@ -33,7 +33,7 @@ const useProducts = () => {
   const [sort, setSort] = useState<string>("best-selling");
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(9);
-  console.log(products);
+
   useEffect(() => {
     const fetchProducts = async () => {
       try {
