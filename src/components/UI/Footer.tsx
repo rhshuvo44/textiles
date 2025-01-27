@@ -1,6 +1,9 @@
+import FooterBottom from "./FooterBottom";
+
 const Footer = () => {
   return (
-    <footer className="footer bg-neutral text-neutral-content p-10">
+   <>
+     <footer className="footer bg-neutral text-neutral-content p-10">
       <nav>
         <h6 className="footer-title">Company</h6>
         <a className="link link-hover">Home</a>
@@ -31,6 +34,8 @@ const Footer = () => {
         <a className="link link-hover">Cookie policy</a>
       </nav>
     </footer>
+    <FooterBottom />
+   </>
   );
 };
 
