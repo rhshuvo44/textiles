@@ -16,10 +16,7 @@ const Capabilities = () => {
           >
             Our Capabilities
           </h2>
-          <p
-            className="text-gray-600 mb-2 leading-relaxed"
-            data-aos="fade-down"
-          >
+          <p className=" mb-2 leading-relaxed" data-aos="fade-down">
             At{" "}
             <span className="text-lg font-bold text-[#00AAE9]">
               Sarkar Textile & Apparel
@@ -45,7 +42,6 @@ const Capabilities = () => {
             commitment to green manufacturing helps minimize our environmental
             impact and supports a circular approach to textile production.
           </p>
-
           <div className="card-actions justify-start" data-aos="fade-left">
             <Link href="/about" className="btn btn-info text-white">
               About us <FaLongArrowAltRight />
