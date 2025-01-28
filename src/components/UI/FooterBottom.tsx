@@ -1,13 +1,10 @@
 const FooterBottom = () => {
   return (
-    <footer className="footer  items-center px-10 py-4">
-   
-        
-        <p>
-          Copyright © {new Date().getFullYear()} - Designed By Sarkar IT
-          Solution.
-        </p>
-    
+    <footer className="footer bg-neutral text-neutral-content border-t-2 border-t-slate-600 items-center px-10 py-4">
+      <p>
+        Copyright © {new Date().getFullYear()} - Designed By Sarkar IT Solution.
+      </p>
+
       <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
         <a href="https://www.twitter.com/" target="_blank" rel="noreferrer">
           <svg
