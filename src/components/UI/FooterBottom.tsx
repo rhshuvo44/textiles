@@ -1,6 +1,6 @@
 const FooterBottom = () => {
   return (
-    <footer className="footer  text-neutral-content items-center px-10 py-4">
+    <footer className="footer  items-center px-10 py-4">
    
         
         <p>
