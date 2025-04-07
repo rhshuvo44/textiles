@@ -29,7 +29,7 @@ const Banner = () => {
             In the list of importers – 45 countries: Germany, Spain, Italy,
             Poland, Portugal, Turkey, South Korea, Japan, etc.
           </p>
-          <div className="flex gap-3 flex-col md:flex-row">
+          <div className="flex gap-3 justify-center flex-col md:flex-row">
             <Link
               href="/"
               className="btn btn-info text-white"

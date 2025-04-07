@@ -4,7 +4,6 @@ const FooterBottom = () => {
       <p>
         Copyright © {new Date().getFullYear()} - Designed By Sarkar IT Solution.
       </p>
-
       <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
         <a href="https://www.twitter.com/" target="_blank" rel="noreferrer">
           <svg
