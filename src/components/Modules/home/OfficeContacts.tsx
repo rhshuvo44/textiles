@@ -4,9 +4,17 @@ import { IoCallOutline } from "react-icons/io5";
 const OfficeContacts = () => {
   return (
     <div className="p-5 md:p-10">
-      <div className="card lg:card-side bg-base-100 shadow-xl" data-aos="fade-up">
+      <div
+        className="card lg:card-side bg-base-100 shadow-xl"
+        data-aos="fade-up"
+      >
         <div className="card-body w-full md:w-1/2  md:px-20">
-          <h2 className="text-5xl font-bold text-[#00A9E9]" data-aos="fade-right">Office Contacts</h2>
+          <h2
+            className="text-5xl font-bold text-[#00A9E9]"
+            data-aos="fade-right"
+          >
+            Office Contacts
+          </h2>
           <p className="mt-10" data-aos="zoom-in">
             The textile, textile product, and apparel manufacturing industries
             include establishments that process fiber into fabric and fabric
@@ -16,24 +24,35 @@ const OfficeContacts = () => {
           </p>
 
           <div className="card-actions justify-start">
-            <div className="p-4 border rounded-lg shadow-lg bg-white w-full max-w-md flex items-center" data-aos="fade-up">
+            <div
+              className="p-4 border rounded-lg shadow-lg bg-white w-full max-w-md flex items-center"
+              data-aos="fade-up"
+            >
               <div className="p-2 bg-blue-100 rounded-full">
                 <CiLocationOn />
               </div>
               <div className="ml-4">
                 <h3 className="text-lg font-bold">Location</h3>
                 <p className="text-gray-700">
-                  123 Main Street, Springfield, USA
+                  13 No, New Haziganj, Narayanganj -1400, Bangladesh
                 </p>
               </div>
             </div>
-            <div className="p-4 border rounded-lg shadow-lg bg-white w-full max-w-md flex items-center" data-aos="fade-up">
+            <div
+              className="p-4 border rounded-lg shadow-lg bg-white w-full max-w-md flex items-center"
+              data-aos="fade-up"
+            >
               <div className="p-2 bg-blue-100 rounded-full">
                 <IoCallOutline />
               </div>
               <div className="ml-4">
                 <h3 className="text-lg font-bold">Phone</h3>
-                <p className="text-gray-700">12345678901</p>
+                <p className="text-gray-700">
+                  +88 01704172061 (Cell & WhatsApp) 
+                  <br />
+                  Sales: +88 01989624626 (Cell
+                  & WhatsApp)
+                </p>
               </div>
             </div>
           </div>
