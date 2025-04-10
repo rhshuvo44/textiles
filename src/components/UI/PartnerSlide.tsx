@@ -9,7 +9,8 @@ import partner4 from "@/assets/image/partners_item_4.png";
 import partner5 from "@/assets/image/partners_item_5.png";
 import Image from "next/image";
 import "swiper/css";
-import "swiper/css/pagination";
+import { Autoplay } from "swiper/modules";
+
 // import required modules
 const PartnerSlide = () => {
   const sliders = [
@@ -33,14 +34,24 @@ const PartnerSlide = () => {
       id: 5,
       image: partner5,
     },
+    {
+      id: 6,
+      image: partner4,
+    },
+    {
+      id: 7,
+      image: partner5,
+    },
   ];
   return (
     <div className="p-5 md:p-10">
       <Swiper
+        autoplay={true}
+        loop={true}
         data-aos="fade-up"
         slidesPerView={1}
         spaceBetween={10}
-        className="mySwiper"
+        modules={[Autoplay]}
         breakpoints={{
           640: {
             slidesPerView: 2,

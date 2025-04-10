@@ -27,7 +27,7 @@ const HomeServices = () => {
   ];
   return (
     <div
-      className="flex flex-col md:flex-row gap-3 p-5 md:p-10 md:-mt-36 cursor-pointer "
+      className="flex flex-col md:flex-row gap-3 p-5 md:p-10  cursor-pointer "
       data-aos="fade-up"
     >
       {homeServices.map((service) => (

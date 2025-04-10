@@ -1,51 +1,73 @@
-import Denim from "@/assets/image/denim.jpg";
-import Home from "@/assets/image/home.jpg";
-import Jeans from "@/assets/image/jeans.jpg";
-import Printed from "@/assets/image/printed.jpg";
-import Shirting from "@/assets/image/shirting.jpg";
-import Yarn from "@/assets/image/yarn.jpg";
+"use client";
+import { productCategories } from "@/db/data";
 import Image from "next/image";
-import { FaLongArrowAltRight } from "react-icons/fa";
 
+import { Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 const ProductCategory = () => {
-  const category = [
-    {
-      id: 1,
-      name: "Jeans",
-      image: Jeans,
-    },
-    {
-      id: 2,
-      name: "Denim Fabrics",
-      image: Denim,
-    },
-    {
-      id: 3,
-      name: "Home Textiles",
-      image: Home,
-    },
-    {
-      id: 4,
-      name: "Printed Fabrics",
-      image: Printed,
-    },
-    {
-      id: 5,
-      name: "Shirting Fabrics",
-      image: Shirting,
-    },
-    {
-      id: 6,
-      name: "Yarn",
-      image: Yarn,
-    },
-  ];
   return (
     <div className="p-5 md:p-10">
       <h2 className="text-4xl font-bold text-center mb-5" data-aos="fade-left">
         Products Category
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <Swiper
+        autoplay={true}
+        loop={true}
+        modules={[Autoplay]}
+        spaceBetween={10}
+        // loop={true}
+        data-aos="fade-up"
+        slidesPerView={1}
+        className="mySwiper"
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 10,
+          },
+        }}
+      >
+        {/* Add multiple SwiperSlide components */}
+        {productCategories.map(({ title, photo }, index) => (
+          <SwiperSlide key={index}>
+            <div key={index} className="card bg-base-100 shadow-sm">
+              <figure>
+                <Image
+                  width={400}
+                  height={400}
+                  src={photo}
+                  alt={title}
+                  className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">
+                  {title}
+                  <div className="badge badge-info text-white">NEW</div>
+                </h2>
+                {/* <p>
+                          A card component has a figure, a body part, and inside body
+                          there are title and actions parts
+                        </p> */}
+              </div>
+            </div>
+            {/* <ProductCategoriesCard
+              key={index}
+              title={title}
+              photo={photo}
+              subCategory={subCategory}
+            /> */}
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
         {category.map((item) => (
           <div
             key={item.id}
@@ -70,7 +92,7 @@ const ProductCategory = () => {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
