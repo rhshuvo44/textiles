@@ -39,8 +39,8 @@ const teamMembers: TeamMember[] = [
 
 const TeamSection = () => {
   return (
-    <section className="py-16 bg-base-100 text-base-content">
-      <div className="max-w-6xl mx-auto px-4">
+    <section className="p-5 md:p-10 bg-base-100 text-base-content">
+      <div className="">
         <h2 className="text-4xl font-bold text-center mb-12">
           Meet the Experts
         </h2>
@@ -49,6 +49,7 @@ const TeamSection = () => {
             <div
               key={index}
               className="relative group overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300"
+              data-aos="fade-up"
             >
               <Image
                 width={400}

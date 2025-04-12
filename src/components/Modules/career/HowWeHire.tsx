@@ -12,7 +12,9 @@ const HowWeHire = () => {
                    "Job Offer 💼",
                    "Onboarding 🏆",
                  ].map((step, idx) => (
-                   <div key={idx} className="card bg-base-100 shadow-md">
+                   <div key={idx} className="card bg-base-100 shadow-md"
+                   data-aos="fade-up"
+                   >
                      <div className="card-body">
                        <p>{step}</p>
                      </div>

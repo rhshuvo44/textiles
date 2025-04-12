@@ -23,7 +23,11 @@ const JobOpenings = () => {
       </div>
       <div className="grid gap-6">
         {[1, 2, 3].map((job) => (
-          <div key={job} className="card bg-base-100 shadow-md">
+          <div
+            key={job}
+            className="card bg-base-100 shadow-md"
+            data-aos="fade-up"
+          >
             <div className="card-body flex flex-col md:flex-row justify-between items-center gap-4">
               <div>
                 <h3 className="card-title">Textile Designer</h3>

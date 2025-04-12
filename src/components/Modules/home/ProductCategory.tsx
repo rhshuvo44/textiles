@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const ProductCategory = () => {
   return (
     <div className="p-5 md:p-10">
-      <h2 className="text-4xl font-bold text-center mb-5" data-aos="fade-left">
+      <h2 className="text-4xl font-bold text-center mb-5" data-aos="fade-up">
         Products Category
       </h2>
       <Swiper
@@ -39,7 +39,7 @@ const ProductCategory = () => {
           <SwiperSlide key={index}>
             <div className="card bg-base-100 image-full shadow-sm cursor-pointer hover:-translate-y-4 duration-300">
               <figure>
-                <Image width={400} height={400} src={photo} alt="Shoes" />
+                <Image width={400} height={400} src={photo} alt={title} />
               </figure>
               <div className="card-body justify-center items-center">
                 <h2 className="card-title">{title}</h2>

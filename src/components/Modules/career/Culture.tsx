@@ -1,14 +1,16 @@
+import img1 from "@/assets/image/1.jpg";
 import Image from "next/image";
-import img1 from '@/assets/image/1.jpg';
 const Culture = () => {
   return (
-    <section className="px-4 md:px-12">
+    <section className="p-5 md:p-10">
       <h2 className="text-3xl font-bold text-center mb-8">
         Our People & Culture
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {[1, 2, 3].map((item) => (
-          <div key={item} className="card bg-base-100 shadow-md">
+          <div key={item} className="card bg-base-100 shadow-md"
+          data-aos="fade-up"
+          >
             <div className="card-body">
               <Image
                 width={300}

@@ -45,8 +45,8 @@ const values = [
 
 const ValuesCommitment = () => {
   return (
-    <section className="py-16 bg-base-100 text-base-content">
-      <div className="max-w-6xl mx-auto px-4">
+    <section className="p-5 md:p-10 bg-base-100 text-base-content">
+      <div className="">
         <h2 className="text-4xl font-bold text-center mb-12">Our Values & Commitment</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {values.map((value, index) => (

@@ -37,14 +37,18 @@ const certifications: Certification[] = [
 
 const CertificationsSection = () => {
   return (
-    <section className="py-16 bg-base-200 text-base-content">
-      <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12">
+    <section className="p-5 md:p-10 bg-base-200 text-base-content">
+      <div className="">
+        <h2 className="text-4xl font-bold text-center mb-12"
+        data-aos="fade-up"
+        >
           Certifications & Achievements
         </h2>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 place-items-center">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 justify-between place-items-center">
           {certifications.map((cert, index) => (
-            <div key={index} className="w-60 md:w-72">
+            <div key={index} className="w-full"
+            data-aos="fade-up"
+            >
               <div className="flex flex-col items-center text-center p-4 bg-base-100 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
                 <Image
                   width={200}

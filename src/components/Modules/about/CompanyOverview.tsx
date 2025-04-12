@@ -1,65 +1,75 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 const milestones = [
-{ year: '2023', text: 'Founded with a vision to redefine knit garments manufacturing' },
-{ year: '2024', text: 'Expanded to global export markets across EU & Asia' },
-{ year: '2025', text: 'Launched AI-powered design and eco-friendly initiatives' },
+  {
+    year: "2023",
+    text: "Founded with a vision to redefine knit garments manufacturing",
+  },
+  { year: "2024", text: "Expanded to global export markets across EU & Asia" },
+  {
+    year: "2025",
+    text: "Launched AI-powered design and eco-friendly initiatives",
+  },
 ];
 
 import image from "@/assets/image/companyOverView.jpg";
-const galleryImages = [
-  image,
-  image,
-  image,
-];
+const galleryImages = [image, image, image];
 
 const CompanyOverview = () => {
   return (
     <>
+      <section className="md:p-10 p-5 bg-base-100 text-base-content">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-8"
+          data-aos="fade-up"
+          >Who We Are</h2>
 
+          <p className="text-lg text-center max-w-3xl mx-auto mb-12"
+          data-aos="fade-up"
+          >
+            We are a dedicated team of textile professionals passionate about
+            crafting premium-quality knit garments. Since our founding in 2023,
+            we’ve blended innovation with tradition to deliver products that
+            meet global standards.
+          </p>
 
-    <section className="py-16 px-4 bg-base-100 text-base-content">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-8">Who We Are</h2>
+          {/* 🗓 Milestones */}
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            {milestones.map((milestone, idx) => (
+              <div
+                key={idx}
+                className="bg-base-200 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300"
+                data-aos="fade-up"
+              >
+                <h4 className="text-xl font-semibold text-info mb-2">
+                  {milestone.year}
+                </h4>
+                <p>{milestone.text}</p>
+              </div>
+            ))}
+          </div>
 
-        <p className="text-lg text-center max-w-3xl mx-auto mb-12">
-          We are a dedicated team of textile professionals passionate about crafting premium-quality knit garments. 
-          Since our founding in 2023, we’ve blended innovation with tradition to deliver products that meet global standards.
-        </p>
-
-        {/* 🗓 Milestones */}
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
-          {milestones.map((milestone, idx) => (
-            <div
-              key={idx}
-              className="bg-base-200 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300"
-            >
-              <h4 className="text-xl font-semibold text-info mb-2">{milestone.year}</h4>
-              <p>{milestone.text}</p>
-            </div>
-          ))}
+          {/* 🖼 Image Gallery */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {galleryImages.map((src, idx) => (
+              <div key={idx} className="overflow-hidden rounded-xl shadow-md"
+              data-aos="fade-up"
+              >
+                <Image
+                  src={src}
+                  alt={`Gallery Image ${idx + 1}`}
+                  width={600}
+                  height={400}
+                  className="object-cover w-full h-64 hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            ))}
+          </div>
         </div>
-
-        {/* 🖼 Image Gallery */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {galleryImages.map((src, idx) => (
-            <div key={idx} className="overflow-hidden rounded-xl shadow-md">
-              <Image
-                src={src}
-                alt={`Gallery Image ${idx + 1}`}
-                width={600}
-                height={400}
-                className="object-cover w-full h-64 hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-
+      </section>
     </>
     // <div className="flex flex-col lg:flex-row items-center bg-white p-5 md:p-10 shadow-lg rounded-md">
     //   {/* Left Image Section */}

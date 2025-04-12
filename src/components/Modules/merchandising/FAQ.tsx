@@ -19,13 +19,17 @@ const FAQ = () => {
   };
   return (
     <>
-      <section className="py-16 px-4 max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-10">
+      <section className="md:p-10 p-5">
+        <h2 className="text-3xl font-bold text-center mb-10"
+        data-aos="fade-up"
+        >
           Frequently Asked Questions
         </h2>
         <div className="space-y-4">
           {faqData.map((faq: FAQItem, index) => (
-            <div key={index} className="collapse collapse-plus bg-base-200">
+            <div key={index} className="collapse collapse-plus bg-base-200"
+            
+            data-aos="fade-up">
               <input type="checkbox" />
               <div className="collapse-title text-xl font-medium">
                 {faq.question}
@@ -37,8 +41,10 @@ const FAQ = () => {
           ))}
         </div>
       </section>
-      <section className="faq-section py-16 px-4 max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-10">
+      <section className="faq-section md:p-10 p-5 max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-10"
+        
+        data-aos="fade-up">
           Frequently Asked Questions
         </h2>
         <div className="faq-list space-y-6">
@@ -46,6 +52,7 @@ const FAQ = () => {
             <div
               key={index}
               className="faq-item bg-white shadow-md rounded-lg p-6"
+              data-aos="fade-up"
             >
               <div
                 className="faq-question text-lg font-semibold cursor-pointer"

@@ -58,13 +58,14 @@ const HomeServices = () => {
         <ServicesCard key={service.id} service={service} />
       ))}
     </div> */}
-      <section className="py-16 px-4 text-center">
-        <h2 className="text-4xl font-bold mb-8">What We Offer</h2>
+      <section className="p-5 md:p-10 text-center">
+        <h2 className="text-4xl font-bold mb-8"  data-aos="fade-up">What We Offer</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, i) => (
             <div
               key={i}
               className="bg-base-100 shadow-lg rounded-xl p-6 hover:scale-105 transition-transform duration-300"
+              data-aos="fade-up"
             >
               <div className="flex justify-center mb-4">{service.icon}</div>
               <h3 className="text-xl font-semibold">{service.title}</h3>

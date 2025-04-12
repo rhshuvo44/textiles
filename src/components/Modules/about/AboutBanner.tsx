@@ -26,15 +26,21 @@ const AboutBanner = () => {
 
       {/* 🧾 Overlay Content */}
       <div className="relative z-10 text-center max-w-3xl px-4">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg"
+        data-aos="fade-up"
+        >
           Crafting Excellence in Kint Garments Industry Since{" "}
           <span className="text-info">2023</span>
         </h1>
-        <p className="text-lg md:text-xl mb-6">
+        <p className="text-lg md:text-xl mb-6"
+        data-aos="fade-up"
+        >
           From AI-Driven Design to Sustainable Manufacturing – We Bring Your
           Fashion Vision to Life
         </p>
-        <button className="btn btn-info text-white bg-gradient-to-r from-info to-secondary hover:from-secondary hover:to-info transition duration-300">
+        <button className="btn btn-info text-white bg-gradient-to-r from-info to-secondary hover:from-secondary hover:to-info transition duration-300"
+        data-aos="fade-up"
+        >
           Explore Our Services
         </button>
       </div>

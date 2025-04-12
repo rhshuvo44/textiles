@@ -74,7 +74,7 @@ const OfficeContacts = () => {
           </div>
         </div>
       </div> */}
-      <section className="p-5 md:p-10 bg-white" id="contact">
+      <section className="p-5 md:p-10 bg-white" >
         <div className="">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
             Office Contact
@@ -155,7 +155,7 @@ const OfficeContacts = () => {
             {/* Google Map */}
             <div
               className="w-full h-[350px] rounded-2xl overflow-hidden shadow-md"
-              data-aos="fade-left"
+              data-aos="fade-up"
             >
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14622.215073609572!2d90.48550351884809!3d23.62033136943204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b10a7aa25573%3A0x17b1d57306f167d4!2sKali%20Bazar%2C%20Narayanganj!5e0!3m2!1sen!2sbd!4v1731849922002!5m2!1sen!2sbd" // replace with actual map link

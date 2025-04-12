@@ -31,10 +31,13 @@ export default function WhyChooseUs() {
   return (
     <section className="p-5 md:p-10 bg-gray-50">
       <div className="text-center">
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">
+        <h2
+          className="text-3xl font-bold text-gray-800 mb-4"
+          data-aos="fade-up"
+        >
           Why Choose Us?
         </h2>
-        <p className="text-gray-600 mb-10 max-w-2xl mx-auto">
+        <p className="text-gray-600 mb-10 max-w-2xl mx-auto" data-aos="fade-up">
           Discover what sets us apart in the textile industry.
         </p>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -42,6 +45,7 @@ export default function WhyChooseUs() {
             <div
               key={index}
               className="bg-white shadow-md rounded-2xl p-6 flex flex-col items-center text-center transition hover:shadow-xl"
+              data-aos="fade-up"
             >
               <div className="mb-4">{item.icon}</div>
               <h3 className="text-lg font-semibold text-gray-800 mb-2">
