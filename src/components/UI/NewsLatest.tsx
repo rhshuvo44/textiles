@@ -1,7 +1,7 @@
 const NewsLatest = () => {
   return (
     <div className="w-full py-5 md:py-10">
-      <div className="container flex flex-col xl:flex-row mx-auto p-5 md:p-8 xl:py-14 text-gray-500 bg-gray-200 ">
+      <div className=" flex flex-col xl:flex-row  p-5 md:p-8 xl:py-14 text-gray-500 bg-gray-200 ">
         <div className="w-full mb-6 xl:mb-0" data-aos="fade-right">
           <div className="mb-4 text-gray-900 text-3xl font-extrabold">
             Join 2,000+ subscribers

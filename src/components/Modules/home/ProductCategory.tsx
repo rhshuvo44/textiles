@@ -37,7 +37,15 @@ const ProductCategory = () => {
         {/* Add multiple SwiperSlide components */}
         {productCategories.map(({ title, photo }, index) => (
           <SwiperSlide key={index}>
-            <div key={index} className="card bg-base-100 shadow-sm">
+            <div className="card bg-base-100 image-full shadow-sm cursor-pointer hover:-translate-y-4 duration-300">
+              <figure>
+                <Image width={400} height={400} src={photo} alt="Shoes" />
+              </figure>
+              <div className="card-body justify-center items-center">
+                <h2 className="card-title">{title}</h2>
+              </div>
+            </div>
+            {/* <div key={index} className="card bg-base-100 shadow-sm">
               <figure>
                 <Image
                   width={400}
@@ -52,12 +60,8 @@ const ProductCategory = () => {
                   {title}
                   <div className="badge badge-info text-white">NEW</div>
                 </h2>
-                {/* <p>
-                          A card component has a figure, a body part, and inside body
-                          there are title and actions parts
-                        </p> */}
               </div>
-            </div>
+            </div> */}
             {/* <ProductCategoriesCard
               key={index}
               title={title}
