@@ -5,7 +5,6 @@ import MissionVision from "@/components/Modules/about/MissionVision";
 import TeamSection from "@/components/Modules/about/TeamSection";
 import ValuesCommitment from "@/components/Modules/about/ValuesCommitment";
 import CTA from "@/components/Modules/customers/CTA";
-import NewsLatest from "@/components/UI/NewsLatest";
 import PartnerSlide from "@/components/UI/PartnerSlide";
 
 const AboutPage = () => {
@@ -14,10 +13,10 @@ const AboutPage = () => {
       <AboutBanner />
       <CompanyOverview />
       <MissionVision />
-      <ValuesCommitment/>
-      <TeamSection/>
-      <CertificationsSection/>
-      <PartnerSlide/>
+      <ValuesCommitment />
+      <TeamSection />
+      <CertificationsSection />
+      <PartnerSlide />
       <CTA />
     </>
   );
