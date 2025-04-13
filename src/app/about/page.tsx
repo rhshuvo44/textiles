@@ -6,7 +6,11 @@ import TeamSection from "@/components/Modules/about/TeamSection";
 import ValuesCommitment from "@/components/Modules/about/ValuesCommitment";
 import CTA from "@/components/Modules/customers/CTA";
 import PartnerSlide from "@/components/UI/PartnerSlide";
-
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "About - Sarkar Textiles & Apparel",
+  description: "Ready made Garment Manufacturer (factory)",
+};
 const AboutPage = () => {
   return (
     <>

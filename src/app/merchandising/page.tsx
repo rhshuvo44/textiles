@@ -4,7 +4,11 @@ import MerchandisingBanner from "@/components/Modules/merchandising/Merchandisin
 import MerchandisingProcess from "@/components/Modules/merchandising/MerchandisingProcess";
 import ProductCategory from "@/components/Modules/merchandising/ProductCategory";
 import RequestAQuote from "@/components/Modules/merchandising/RequestAQuote";
-
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Merchandising - Sarkar Textiles & Apparel",
+  description: "Ready made Garment Manufacturer (factory)",
+};
 const MerchandisingPage = () => {
   return (
     <>
