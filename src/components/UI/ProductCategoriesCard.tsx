@@ -10,7 +10,9 @@ const ProductCategoriesCard = ({
   subCategory?: { title: string; photo: string | StaticImageData }[];
 }) => {
   return (
-    <div className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+    <div className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+    data-aos="fade-up"
+    >
       <Image
         src={photo}
         alt={title}

@@ -47,12 +47,15 @@ const PartnerSlide = () => {
     <>
 
       <section className="p-5 md:p-10 bg-base-200">
-        <div className=" text-center">
-          <h2 className="text-3xl font-bold mb-8">Our Clients & Partners</h2>
+        <div className=" text-center"
+        
+          data-aos="fade-up">
+          <h2 className="text-3xl font-bold mb-8"
+          data-aos="fade-up"
+          >Our Clients & Partners</h2>
           <Swiper
             autoplay={true}
             loop={true}
-            data-aos="fade-up"
             slidesPerView={1}
             spaceBetween={10}
             modules={[Autoplay]}
@@ -75,6 +78,7 @@ const PartnerSlide = () => {
               <SwiperSlide
                 key={index}
                 className="flex items-center justify-center"
+                
               >
                 <div className=" cursor-pointer hover:scale-110 duration-300 py-2 px-5">
                   <div className="rounded">

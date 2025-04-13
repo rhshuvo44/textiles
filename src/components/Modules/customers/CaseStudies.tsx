@@ -20,12 +20,16 @@ const CaseStudies = () => {
     <>
       {caseStudies.length > 0 && (
         <div className="bg-gray-50 py-16 px-4">
-          <h2 className="text-3xl font-semibold mb-8 text-center">
+          <h2 className="text-3xl font-semibold mb-8 text-center"
+          data-aos="fade-up"
+          >
             Case Studies
           </h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {caseStudies.map((cs, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg p-6">
+              <div key={index} className="bg-white rounded-xl shadow-lg p-6"
+              data-aos="fade-up"
+              >
                 <Image
                 fill
                   src={cs.image}

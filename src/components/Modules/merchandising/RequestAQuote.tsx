@@ -74,6 +74,21 @@ const fabrics = [
   "Thermal",
   "Drop Needle",
 ];
+const yarns = [
+  "Card Sub",
+  "Combed",
+  "Combed Sub",
+  "PC",
+  "PVC",
+  "Grey Melange",
+  "Viscose",
+  "Spun",
+  "Rotor",
+  "Spender / Lyera",
+  "Polyester",
+  "Swing Thread",
+  "Rubber",
+];
 
 type QuoteFormData = {
   name: string;
@@ -104,11 +119,14 @@ const RequestAQuote = () => {
   };
 
   return (
-    <section className="py-16 px-4 bg-info text-white text-center">
-      <h2 className="text-3xl font-bold mb-6">Request a Quote</h2>
+    <section className="md:p-10 p-5 bg-info text-white text-center">
+      <h2 className="text-3xl font-bold mb-6" data-aos="fade-up">
+        Request a Quote
+      </h2>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="max-w-xl mx-auto space-y-4"
+        data-aos="fade-up"
       >
         <input
           {...register("name", { required: "Name is required" })}
@@ -202,7 +220,7 @@ const RequestAQuote = () => {
           className="select select-bordered w-full text-black"
         >
           <option value="">Select Yarn Type</option>
-          {fabrics.map((yarn, i) => (
+          {yarns.map((yarn, i) => (
             <option key={i} value={yarn}>
               {yarn}
             </option>
@@ -216,6 +234,15 @@ const RequestAQuote = () => {
         />
         {errors.ratio && (
           <p className="text-red-200 text-left">{errors.ratio.message}</p>
+        )}
+        <input
+          {...register("GSM", { required: "GSM is required" })}
+          type="number"
+          placeholder="GSM"
+          className="input input-bordered w-full text-black"
+        />
+        {errors.GSM && (
+          <p className="text-red-200 text-left">{errors.GSM.message}</p>
         )}
         <button
           type="submit"

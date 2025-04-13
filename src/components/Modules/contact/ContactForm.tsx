@@ -141,6 +141,7 @@ export default function ContactForm() {
       <form
         onSubmit={handleSubmit(onSubmit)}
         className=" p-4 space-y-4 bg-base-100 shadow-xl rounded-lg"
+        data-aos="fade-up"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <input

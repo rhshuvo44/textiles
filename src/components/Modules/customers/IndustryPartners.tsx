@@ -5,10 +5,8 @@ import PartnerSlide from "@/components/UI/PartnerSlide";
 // ];
 const IndustryPartners = () => {
   return (
-    <div className="max-w-6xl mx-auto py-16 px-4">
-      <h2 className="text-3xl font-semibold mb-8 text-center">
-        Industry Partners
-      </h2>
+    <div className="md:p-10 p-5">
+      
       <PartnerSlide />
       {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-6 place-items-center">
           {industryPartners.map((partner, index) => (

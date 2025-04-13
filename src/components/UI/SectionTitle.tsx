@@ -12,7 +12,9 @@ const SectionTitle = ({ text }: { text: string }) => {
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-neutral-content text-center px-10">
         <div className="max-w-lg">
-          <h1 className="mb-5 text-2xl md:text-5xl font-bold">{text}</h1>
+          <h1 className="mb-5 text-2xl md:text-5xl font-bold"
+          data-aos="fade-up"
+          >{text}</h1>
           <div className="breadcrumbs text-sm">
             <ul>
               <li>

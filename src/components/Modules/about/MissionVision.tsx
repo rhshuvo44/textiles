@@ -28,12 +28,11 @@ const MissionVision = () => {
           </div>
 
           {/* Vision */}
-          <div className="bg-base-100 p-8 rounded-xl shadow-md hover:shadow-lg transition"
-          
-          >
-            <div className="flex items-center gap-4 mb-4"
+          <div
+            className="bg-base-100 p-8 rounded-xl shadow-md hover:shadow-lg transition"
             data-aos="fade-up"
-            >
+          >
+            <div className="flex items-center gap-4 mb-4">
               <FaEye className="text-info text-3xl" />
               <h3 className="text-2xl font-semibold">Our Vision</h3>
             </div>

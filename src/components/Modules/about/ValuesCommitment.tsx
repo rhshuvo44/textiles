@@ -47,12 +47,15 @@ const ValuesCommitment = () => {
   return (
     <section className="p-5 md:p-10 bg-base-100 text-base-content">
       <div className="">
-        <h2 className="text-4xl font-bold text-center mb-12">Our Values & Commitment</h2>
+        <h2 className="text-4xl font-bold text-center mb-12"
+        data-aos="fade-up"
+        >Our Values & Commitment</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {values.map((value, index) => (
             <div
               key={index}
               className="bg-base-200 rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300"
+              data-aos="fade-up"
             >
               <div className="mb-4">{value.icon}</div>
               <h3 className="text-xl font-semibold mb-2">{value.title}</h3>
