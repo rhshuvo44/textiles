@@ -74,7 +74,7 @@ const OfficeContacts = () => {
           </div>
         </div>
       </div> */}
-      <section className="p-5 md:p-10 bg-white" >
+      <section className="p-5 md:p-10 bg-white">
         <div className="">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
             Office Contact
@@ -107,7 +107,9 @@ const OfficeContacts = () => {
                 <MdEmail className="text-info w-6 h-6 mt-1" />
                 <div>
                   <h4 className="font-semibold text-gray-700">Email</h4>
-                  <p className="text-gray-500">info@yourcompany.com</p>
+                  <p className="text-gray-500">
+                    sarkartextilesandapparel@gmail.com
+                  </p>
                 </div>
               </div>
 
@@ -165,6 +167,7 @@ const OfficeContacts = () => {
                 allowFullScreen
                 referrerPolicy="no-referrer-when-downgrade"
                 className="border-0 w-full h-full"
+                data-aos="fade-up"
               ></iframe>
             </div>
           </div>
