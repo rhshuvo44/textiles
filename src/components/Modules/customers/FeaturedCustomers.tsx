@@ -28,9 +28,11 @@ const featuredCustomers: Customer[] = [
 
 const FeaturedCustomers = () => {
   return (
-    <div className="max-w-6xl mx-auto py-16 px-4">
-      <h2 className="text-3xl font-semibold mb-8 text-center"
-        data-aos="fade-up">
+    <div className=" md:p-10 p-5">
+      <h2
+        className="text-3xl font-semibold mb-8 text-center"
+        data-aos="fade-up"
+      >
         Featured Customers
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
@@ -41,8 +43,8 @@ const FeaturedCustomers = () => {
             data-aos="fade-up"
           >
             <Image
-                width={200}
-                height={200}
+              width={200}
+              height={200}
               src={customer.logo}
               alt={customer.name}
               className="mx-auto h-16 mb-4"

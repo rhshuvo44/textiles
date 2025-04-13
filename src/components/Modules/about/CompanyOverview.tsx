@@ -22,7 +22,7 @@ const CompanyOverview = () => {
   return (
     <>
       <section className="md:p-10 p-5 bg-base-100 text-base-content">
-        <div className="max-w-7xl mx-auto">
+        <div className="">
           <h2 className="text-4xl font-bold text-center mb-8"
           data-aos="fade-up"
           >Who We Are</h2>
