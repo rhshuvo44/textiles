@@ -125,13 +125,13 @@ const OfficeContacts = () => {
                 <CgLock className="text-info w-6 h-6 mt-1" />
                 <div>
                   <h4 className="font-semibold text-gray-700">Working Hours</h4>
-                  <p className="text-gray-500">Sun - Thu: 9:00 AM - 6:00 PM</p>
+                  <p className="text-gray-500">Sat - Thu: 8:00 AM - 7:00 PM</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-4 pt-4">
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/sarkartextilesandapparel"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
