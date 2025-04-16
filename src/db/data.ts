@@ -1,12 +1,19 @@
 import img1 from "@/assets/image/1.jpg";
+import conteofFlorence from '@/assets/image/client/ConteofFlorence.jpeg';
+import cove from '@/assets/image/client/Cove.jpeg';
+import fleek from '@/assets/image/client/Fleek.jpeg';
+import idealClima from '@/assets/image/client/IdealClima.jpeg';
+import besico from '@/assets/image/client/besico.jpeg';
+import design911 from '@/assets/image/client/design911.jpeg';
+import haroki from '@/assets/image/client/haroki.webp';
+import lidi from '@/assets/image/client/lidi.jpeg';
+import youth from '@/assets/image/client/youth.jpeg';
 import image from "@/assets/image/companyOverView.jpg";
 import image1 from "@/assets/image/companyOverView1.jpg";
 import image2 from "@/assets/image/companyOverView2.jpg";
-import partner1 from "@/assets/image/partners_item_1.png";
-import partner2 from "@/assets/image/partners_item_2.png";
 import partner3 from "@/assets/image/partners_item_3.png";
 import partner4 from "@/assets/image/partners_item_4.png";
-import partner5 from "@/assets/image/partners_item_5.png";
+import review2 from "@/assets/image/review2.jpg";
 import product01 from '@/assets/image/textile/product01.webp';
 import product02 from '@/assets/image/textile/product02.webp';
 import product03 from '@/assets/image/textile/product03.webp';
@@ -19,8 +26,6 @@ import product11 from '@/assets/image/textile/product11.webp';
 import product12 from '@/assets/image/textile/product12.jpg';
 import product13 from '@/assets/image/textile/product13.webp';
 import product09 from '@/assets/image/textile/product9.webp';
-import review2 from "@/assets/image/review2.jpg";
-
 import { Customer, TeamMember, Testimonial } from '@/types';
 export const galleryImages = [image, image1, image2];
 
@@ -373,44 +378,84 @@ export const howWeHire = [
 
 export const featuredCustomers: Customer[] = [
     {
-        name: "Brand A",
-        logo: partner1,
+        name: "Fleek",
+        logo: fleek,
         description: "Leading fashion house",
     },
     {
-        name: "Brand B",
-        logo: partner2,
+        name: "Haroki",
+        logo: haroki,
+        description: "Leading fashion house",
+    },
+    {
+        name: "Youth",
+        logo: youth,
         description: "Global textile distributor",
     },
     {
-        name: "Brand C",
+        name: "Keedlee",
         logo: partner3,
         description: "Eco-friendly apparel maker",
     },
     {
-        name: "Brand D",
+        name: "Besico",
+        logo: besico,
+        description: "Global textile distributor",
+    },
+    {
+        name: "Friendly",
         logo: partner4,
         description: "Global textile distributor",
     },
     {
-        name: "Brand E",
-        logo: partner5,
+        name: "Fiber",
+        logo: partner4,
+        description: "Global textile distributor",
+    },
+    {
+        name: "Cove",
+        logo: cove,
+        description: "Global textile distributor",
+    },
+    {
+        name: "LIDL",
+        logo: lidi,
+        description: "Global textile distributor",
+    },
+    {
+        name: "Top Ten",
+        logo: partner4,
+        description: "Global textile distributor",
+    },
+    {
+        name: "Ideal Clima",
+        logo: idealClima,
+        description: "Global textile distributor",
+    },
+    {
+        name: "Design 911",
+        logo: design911,
+        description: "Global textile distributor",
+    },
+    {
+        name: "Conte of Florence",
+        logo: conteofFlorence,
         description: "Eco-friendly apparel maker",
     },
 ];
 export const testimonials: Testimonial[] = [
     {
-      name: "Jane Smith",
-      title: "Procurement Head",
-      company: "FashionWorks",
-      photo: review2,
-      text: "Working with your team was a game-changer. The fabric quality and delivery speed were unmatched.",
+        name: "Jane Smith",
+        title: "Procurement Head",
+        company: "FashionWorks",
+        photo: review2,
+        text: "Working with your team was a game-changer. The fabric quality and delivery speed were unmatched.",
     },
     {
-      name: "John Doe",
-      title: "CEO",
-      company: "EcoWear",
-      photo: review2,
-      text: "We’ve seen a 30% efficiency increase since we started our partnership.",
+        name: "John Doe",
+        title: "CEO",
+        company: "EcoWear",
+        photo: review2,
+        text: "We’ve seen a 30% efficiency increase since we started our partnership.",
     },
-  ];
+];

@@ -8,7 +8,6 @@ import Image from "next/image";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
 
-// import required modules
 const PartnerSlide = () => {
   return (
     <>

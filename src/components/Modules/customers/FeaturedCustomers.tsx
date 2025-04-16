@@ -24,6 +24,7 @@ const FeaturedCustomers = () => {
               alt={customer.name}
               className="mx-auto h-16 mb-4"
             />
+            <p className="text-sm text-info">{customer.name}</p>
             <p className="text-sm text-gray-600">{customer.description}</p>
           </div>
         ))}
