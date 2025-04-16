@@ -68,7 +68,7 @@ const Footer = () => {
             <p>Phone: +88 01704172061</p>
             <p>WhatsApp: +88 01989624626</p>
             <p>Address: Dhaka, Bangladesh</p>
-            <p>Working Hours: 9am - 6pm (Mon - Sat)</p>
+            <p>Working Hours: 8am - 7pm (Sat - Thu)</p>
           </div>
 
           {/* Social Links */}

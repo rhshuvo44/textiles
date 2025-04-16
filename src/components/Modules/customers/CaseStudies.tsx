@@ -1,11 +1,10 @@
 import Image from "next/image";
-import React from "react";
 interface CaseStudy {
-    title: string;
-    description: string;
-    image: string;
-    stats: string;
-  }
+  title: string;
+  description: string;
+  image: string;
+  stats: string;
+}
 const caseStudies: CaseStudy[] = [
   {
     title: "Boosting Production for EcoWear",
@@ -20,18 +19,21 @@ const CaseStudies = () => {
     <>
       {caseStudies.length > 0 && (
         <div className="bg-gray-50 md:p-10 p-5">
-          <h2 className="text-3xl font-semibold mb-8 text-center"
-          data-aos="fade-up"
+          <h2
+            className="text-3xl font-semibold mb-8 text-center"
+            data-aos="fade-up"
           >
             Case Studies
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2  gap-8 ">
             {caseStudies.map((cs, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg p-6"
-              data-aos="fade-up"
+              <div
+                key={index}
+                className="bg-white rounded-xl shadow-lg p-6"
+                data-aos="fade-up"
               >
                 <Image
-                fill
+                  fill
                   src={cs.image}
                   alt={cs.title}
                   className="w-full h-48 object-cover rounded mb-4"
