@@ -16,7 +16,7 @@ const CareerHero = () => {
         <p className="mb-6">
           Be a part of an innovative and growing textile company.
         </p>
-        <button className="btn btn-info text-white">View Open Positions</button>
+        <a href="#job-openings" className="btn btn-info text-white">View Open Positions</a>
       </div>
     </section>
   );

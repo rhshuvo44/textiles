@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" >
       <body
         data-new-gr-c-s-check-loaded="14.1231.0"
         data-gr-ext-installed=""

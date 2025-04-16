@@ -38,11 +38,11 @@ const AboutBanner = () => {
           From AI-Driven Design to Sustainable Manufacturing – We Bring Your
           Fashion Vision to Life
         </p>
-        <button className="btn btn-info text-white bg-gradient-to-r from-info to-secondary hover:from-secondary hover:to-info transition duration-300"
+        <a href="#valuesCommitment" className="btn btn-info text-white bg-gradient-to-r from-info to-secondary hover:from-secondary hover:to-info transition duration-300"
         data-aos="fade-up"
         >
           Explore Our Services
-        </button>
+        </a>
       </div>
     </section>
 

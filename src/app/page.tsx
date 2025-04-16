@@ -5,7 +5,6 @@ import OfficeContacts from "@/components/Modules/home/OfficeContacts";
 import ProductCategory from "@/components/Modules/home/ProductCategory";
 import WhyChooseUs from "@/components/Modules/home/WhyChouseUs";
 import AOSComponent from "@/components/UI/AOSComponent";
-import NewsLatest from "@/components/UI/NewsLatest";
 import PartnerSlide from "@/components/UI/PartnerSlide";
 import { Metadata } from "next";
 export const metadata: Metadata = {
@@ -25,7 +24,7 @@ export default function Home() {
       <AdvantagesSection /> */}
       <PartnerSlide />
       <OfficeContacts />
-      <NewsLatest />
+      {/* <NewsLatest /> */}
     </>
   );
 }

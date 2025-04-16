@@ -12,9 +12,9 @@ const MerchandisingBanner = () => {
         <p className="text-lg md:text-2xl mb-6" data-aos="fade-up">
           Expert textile merchandising tailored for your business
         </p>
-        <button className="btn btn-info text-white" data-aos="fade-up">
+        <a href="#quote" className="btn btn-info text-white" data-aos="fade-up">
           Get a Quote
-        </button>
+        </a>
       </div>
     </section>
   );

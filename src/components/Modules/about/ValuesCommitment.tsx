@@ -45,7 +45,7 @@ const values = [
 
 const ValuesCommitment = () => {
   return (
-    <section className="p-5 md:p-10 bg-base-100 text-base-content">
+    <section className="p-5 md:p-10 bg-base-100 text-base-content" id='valuesCommitment'>
       <div className="">
         <h2 className="text-4xl font-bold text-center mb-12"
         data-aos="fade-up"

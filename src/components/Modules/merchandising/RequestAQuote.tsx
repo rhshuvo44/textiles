@@ -119,7 +119,7 @@ const RequestAQuote = () => {
   };
 
   return (
-    <section className="md:p-10 p-5 bg-info text-white text-center">
+    <section className="md:p-10 p-5 bg-info text-white text-center" id="quote">
       <h2 className="text-3xl font-bold mb-6" data-aos="fade-up">
         Request a Quote
       </h2>

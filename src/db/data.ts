@@ -6,16 +6,24 @@ import product05 from '@/assets/image/textile/product05.webp';
 import product06 from '@/assets/image/textile/product06.webp';
 import product07 from '@/assets/image/textile/product07.webp';
 import product08 from '@/assets/image/textile/product08.webp';
+import product09 from '@/assets/image/textile/product9.webp';
+import product10 from '@/assets/image/textile/product10.webp';
+import product11 from '@/assets/image/textile/product11.webp';
+import product12 from '@/assets/image/textile/product12.jpg';
+import product13 from '@/assets/image/textile/product13.webp';
+import product14 from '@/assets/image/textile/product14.webp';
+import product15 from '@/assets/image/textile/product15.webp';
+import product16 from '@/assets/image/textile/product16.webp';
 export const productCategories = [
     {
         title: "T-Shirt",
         subCategory: [
-            { title: "T-Shirt (Boys)", photo: product08 },
+            { title: "T-Shirt (Boys)", photo: product03 },
             { title: "T-Shirt (Mens)", photo: product08 },
             { title: "T-Shirt (Girls)", photo: product08 },
             { title: "T-Shirt (Ladies)", photo: product08 },
         ],
-        photo: product03,
+        photo: product04,
     },
     {
         title: "Polo Shirt",
@@ -35,7 +43,7 @@ export const productCategories = [
             { title: "Long Pant (Girls)", photo: product08 },
             { title: "Long Pant (Ladies)", photo: product08 },
         ],
-        photo: product02,
+        photo: product10,
     },
 
     {
@@ -44,7 +52,7 @@ export const productCategories = [
             { title: "Leggings (Girls)", photo: product06 },
             { title: "Leggings (Ladies)", photo: product08 },
         ],
-        photo: product04,
+        photo: product15,
     },
 
     {
@@ -57,7 +65,7 @@ export const productCategories = [
             { title: "Shorts (Mens)", photo: product08 },
             { title: "Sexy Shorts", photo: product08 },
         ],
-        photo: product05,
+        photo: product07,
     },
 
     {
@@ -90,7 +98,7 @@ export const productCategories = [
             { title: "Tank Top (Girls)", photo: product08 },
             { title: "Tank Top (Ladies)", photo: product08 },
         ],
-        photo: product07
+        photo: product11
     },
 
 
@@ -106,7 +114,7 @@ export const productCategories = [
             { title: "Joggers (Girls)", photo: product07 },
             { title: "Joggers (Ladies)", photo: product07 },
         ],
-        photo: product01
+        photo: product14
     },
 
     {
@@ -122,7 +130,7 @@ export const productCategories = [
                 photo: product07,
             },
         ],
-        photo: product07
+        photo: product02
     },
 
     {
@@ -143,7 +151,7 @@ export const productCategories = [
                 photo: product07,
             },
         ],
-        photo: product07
+        photo: product09
     },
 
     {
@@ -167,7 +175,7 @@ export const productCategories = [
                 photo: product07,
             },
         ],
-        photo: product07
+        photo: product13
     },
     {
         title: "Girls Set",
@@ -190,7 +198,7 @@ export const productCategories = [
                 photo: product07,
             },
         ],
-        photo: product07
+        photo: product12
     },
 
     { title: "Baby Set", photo: product07 },
@@ -221,7 +229,7 @@ export const productCategories = [
                 photo: product07,
             },
         ],
-        photo: product08
+        photo: product16
     },
 ];
 

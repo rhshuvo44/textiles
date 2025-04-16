@@ -37,7 +37,7 @@ const ProductCategory = () => {
         {/* Add multiple SwiperSlide components */}
         {productCategories.map(({ title, photo }, index) => (
           <SwiperSlide key={index}>
-            <div className="card bg-base-100 image-full shadow-sm cursor-pointer hover:-translate-y-4 duration-300">
+            <div className="card bg-base-100 image-full h-72 shadow-sm cursor-pointer hover:-translate-y-4 duration-300">
               <figure>
                 <Image width={400} height={400} src={photo} alt={title} />
               </figure>
