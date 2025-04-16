@@ -7,7 +7,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import FooterBottom from "./FooterBottom";
-import { navLinks } from "./Navbar";
+import { navLinks } from "@/db/data";
 
 const Footer = () => {
   return (
@@ -53,7 +53,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {navLinks?.map((link) => (
                 <li key={link.path}>
-                  <Link href="/" className="link link-hover">
+                  <Link href={link.path} className="link link-hover">
                     {link.label}
                   </Link>
                 </li>
@@ -64,8 +64,17 @@ const Footer = () => {
           {/* Contact Info */}
           <div>
             <h3 className="font-bold text-lg mb-4">Contact</h3>
-            <p>Email: sarkartextilesapperal@gmail.com</p>
-            <p>Phone: +88 01704172061 , +88 01688679780</p>
+            <p>
+              Email:{" "}
+              <a href="mailto:sarkartextilesapperal@gmail.com">
+                sarkartextilesapperal@gmail.com
+              </a>
+            </p>
+            <p>
+              Phone:
+              <a href="tel:+8801704172061"> +88 01704172061</a>,
+              <a href="tel:+8801688679780"> +88 01688679780</a>
+            </p>
             <p>WhatsApp: +88 01989624626</p>
             <p>Address: 13 No, New Haziganj, Narayanganj -1400, Bangladesh</p>
             <p>Working Hours: 8am - 7pm (Sat - Thu)</p>

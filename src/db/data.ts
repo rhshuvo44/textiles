@@ -1,3 +1,12 @@
+import img1 from "@/assets/image/1.jpg";
+import image from "@/assets/image/companyOverView.jpg";
+import image1 from "@/assets/image/companyOverView1.jpg";
+import image2 from "@/assets/image/companyOverView2.jpg";
+import partner1 from "@/assets/image/partners_item_1.png";
+import partner2 from "@/assets/image/partners_item_2.png";
+import partner3 from "@/assets/image/partners_item_3.png";
+import partner4 from "@/assets/image/partners_item_4.png";
+import partner5 from "@/assets/image/partners_item_5.png";
 import product01 from '@/assets/image/textile/product01.webp';
 import product02 from '@/assets/image/textile/product02.webp';
 import product03 from '@/assets/image/textile/product03.webp';
@@ -10,6 +19,20 @@ import product11 from '@/assets/image/textile/product11.webp';
 import product12 from '@/assets/image/textile/product12.jpg';
 import product13 from '@/assets/image/textile/product13.webp';
 import product09 from '@/assets/image/textile/product9.webp';
+import review2 from "@/assets/image/review2.jpg";
+
+import { Customer, TeamMember, Testimonial } from '@/types';
+export const galleryImages = [image, image1, image2];
+
+export const navLinks = [
+    { path: "/", label: "Home" },
+    { path: "/about", label: "About Us" },
+    { path: "/merchandising", label: "Merchandising" },
+    { path: "/customers", label: "Our Customers" },
+    { path: "/career", label: "Career" },
+    { path: "/contact", label: "Contact" },
+];
+
 export const productCategories = [
     {
         title: "T-Shirt",
@@ -250,3 +273,144 @@ export const faqData = [
     },
 
 ];
+
+export const milestones = [
+    {
+        year: "2023",
+        text: "Founded with a vision to redefine knit garments manufacturing",
+    },
+    { year: "2024", text: "Expanded to global export markets across EU & Asia" },
+    {
+        year: "2025",
+        text: "Launched AI-powered design and eco-friendly initiatives",
+    },
+];
+
+export const teamMembers: TeamMember[] = [
+    {
+        name: "Aminul Haque",
+        role: "CEO & Founder",
+        image: product05,
+        bio: "Aminul brings over 15 years of expertise in knit garment production and strategic leadership.",
+    },
+    {
+        name: "Farzana Yasmin",
+        role: "Head of Design",
+        image: product08,
+        bio: "Leading design innovation, Farzana ensures each product blends aesthetics with market trends.",
+    },
+    // {
+    //   name: "Tariqul Islam",
+    //   role: "Production Manager",
+    //   image: product09,
+    //   bio: "Tariqul oversees all aspects of manufacturing to deliver top-notch quality on time.",
+    // },
+    // {
+    //   name: "Nasrin Sultana",
+    //   role: "Marketing Director",
+    //   image: product15,
+    //   bio: "Nasrin drives global growth and builds long-lasting partnerships worldwide.",
+    // },
+];
+
+export const culture = [
+    {
+        image: img1,
+        quote: "Working here has helped me grow professionally and personally.",
+        name: "Fatima",
+        title: "Production Supervisor",
+    },
+    {
+        image: img1,
+        quote: "The team culture here is truly supportive and empowering.",
+        name: "Rahul",
+        title: "Quality Analyst",
+    },
+    {
+        image: img1,
+        quote: "I've never felt more valued as a team member.",
+        name: "Anika",
+        title: "Design Lead",
+    },
+];
+export const jobs = [
+    {
+        title: "Senior Designer",
+        department: "Design Department",
+        location: "Factory",
+        deadline: "May 15, 2025",
+    },
+    {
+        title: "Junior Designer",
+        department: "Design Department",
+        location: "Head Office",
+        deadline: "May 20, 2025",
+    },
+    {
+        title: "3D Designer",
+        department: "Design Department",
+        location: "Factory",
+        deadline: "May 25, 2025",
+    },
+];
+
+
+export const whyWorkUs = [
+    { icon: "🌍", title: "Work Environment" },
+    { icon: "📈", title: "Career Growth" },
+    { icon: "📚", title: "Learning & Development" },
+    { icon: "🎁", title: "Employee Benefits" },
+    { icon: "🌱", title: "Sustainability Efforts" },
+]
+
+export const howWeHire = [
+    "Submit Application 📩",
+    "HR Review 📋",
+    "Interview Rounds 🎤",
+    "Job Offer 💼",
+    "Onboarding 🏆",
+]
+
+export const featuredCustomers: Customer[] = [
+    {
+        name: "Brand A",
+        logo: partner1,
+        description: "Leading fashion house",
+    },
+    {
+        name: "Brand B",
+        logo: partner2,
+        description: "Global textile distributor",
+    },
+    {
+        name: "Brand C",
+        logo: partner3,
+        description: "Eco-friendly apparel maker",
+    },
+    {
+        name: "Brand D",
+        logo: partner4,
+        description: "Global textile distributor",
+    },
+    {
+        name: "Brand E",
+        logo: partner5,
+        description: "Eco-friendly apparel maker",
+    },
+];
+export const testimonials: Testimonial[] = [
+    {
+      name: "Jane Smith",
+      title: "Procurement Head",
+      company: "FashionWorks",
+      photo: review2,
+      text: "Working with your team was a game-changer. The fabric quality and delivery speed were unmatched.",
+    },
+    {
+      name: "John Doe",
+      title: "CEO",
+      company: "EcoWear",
+      photo: review2,
+      text: "We’ve seen a 30% efficiency increase since we started our partnership.",
+    },
+  ];

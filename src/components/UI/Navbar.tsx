@@ -1,17 +1,11 @@
 "use client";
 
 import logo from "@/assets/image/logo.png";
+import { navLinks } from "@/db/data";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-export const navLinks = [
-  { path: "/", label: "Home" },
-  { path: "/about", label: "About Us" },
-  { path: "/merchandising", label: "Merchandising" },
-  { path: "/customers", label: "Our Customers" },
-  { path: "/career", label: "Career" },
-  { path: "/contact", label: "Contact" },
-];
+
 const Navbar = () => {
   const pathname = usePathname();
 

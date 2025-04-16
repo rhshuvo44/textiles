@@ -1,3 +1,5 @@
+import { jobs } from "@/db/data";
+
 const JobOpenings = () => {
   return (
     <section className="px-4 md:px-12" id="job-openings">
@@ -22,7 +24,29 @@ const JobOpenings = () => {
         />
       </div> */}
       <div className="grid gap-6">
-        {[1, 2, 3].map((job) => (
+        {jobs.map((job, idx) => (
+          <div
+            key={idx}
+            className="card bg-base-100 shadow-md"
+            data-aos="fade-up"
+            data-aos-delay={`${idx * 100}`}
+          >
+            <div className="card-body flex flex-col md:flex-row justify-between items-center gap-4">
+              <div>
+                <h3 className="card-title">{job.title}</h3>
+                <p>
+                  {job.department} • {job.location}
+                </p>
+                <p className="text-sm text-gray-500">
+                  Deadline: {job.deadline}
+                </p>
+              </div>
+              <button className="btn btn-info text-white">Apply Now</button>
+            </div>
+          </div>
+        ))}
+
+        {/* {[1, 2, 3].map((job) => (
           <div
             key={job}
             className="card bg-base-100 shadow-md"
@@ -37,7 +61,7 @@ const JobOpenings = () => {
               <button className="btn btn-info text-white">Apply Now</button>
             </div>
           </div>
-        ))}
+        ))} */}
       </div>
     </section>
   );

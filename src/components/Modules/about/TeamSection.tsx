@@ -1,42 +1,7 @@
 "use client";
 
-import product05 from "@/assets/image/textile/product05.webp";
-import product08 from "@/assets/image/textile/product08.webp";
-import Image, { StaticImageData } from "next/image";
-
-type TeamMember = {
-  name: string;
-  role: string;
-  image: string | StaticImageData;
-  bio: string;
-};
-
-const teamMembers: TeamMember[] = [
-  {
-    name: "Aminul Haque",
-    role: "CEO & Founder",
-    image: product05,
-    bio: "Aminul brings over 15 years of expertise in knit garment production and strategic leadership.",
-  },
-  {
-    name: "Farzana Yasmin",
-    role: "Head of Design",
-    image: product08,
-    bio: "Leading design innovation, Farzana ensures each product blends aesthetics with market trends.",
-  },
-  // {
-  //   name: "Tariqul Islam",
-  //   role: "Production Manager",
-  //   image: product09,
-  //   bio: "Tariqul oversees all aspects of manufacturing to deliver top-notch quality on time.",
-  // },
-  // {
-  //   name: "Nasrin Sultana",
-  //   role: "Marketing Director",
-  //   image: product15,
-  //   bio: "Nasrin drives global growth and builds long-lasting partnerships worldwide.",
-  // },
-];
+import { teamMembers } from "@/db/data";
+import Image from "next/image";
 
 const TeamSection = () => {
   return (
@@ -58,9 +23,7 @@ const TeamSection = () => {
             </figure>
             <div className="card-body items-center text-center">
               <h3 className="card-title">{member.name}</h3>
-              <p className="text-sm font-semibold text-primary">
-                {member.role}
-              </p>
+              <p className="text-sm font-semibold text-info">{member.role}</p>
               <p className="text-sm">{member.bio}</p>
             </div>
           </div>

@@ -99,8 +99,12 @@ const OfficeContacts = () => {
                 <BiPhone className="text-info w-6 h-6 mt-1" />
                 <div>
                   <h4 className="font-semibold text-gray-700">Phone</h4>
-                  <p className="text-gray-500">+88 01704172061</p>
-                  <p className="text-gray-500">+88 01688679780</p>
+                  <a href="tel:+8801704172061" className="text-gray-500 block">
+                    +88 01704172061
+                  </a>
+                  <a href="tel:+8801688679780" className="text-gray-500 block">
+                    +88 01688679780
+                  </a>
                 </div>
               </div>
 
@@ -108,9 +112,12 @@ const OfficeContacts = () => {
                 <MdEmail className="text-info w-6 h-6 mt-1" />
                 <div>
                   <h4 className="font-semibold text-gray-700">Email</h4>
-                  <p className="text-gray-500">
-                  sarkartextilesapperal@gmail.com
-                  </p>
+                  <a
+                    href="mailto:sarkartextilesapperal@gmail.com"
+                    className="text-gray-500"
+                  >
+                    sarkartextilesapperal@gmail.com
+                  </a>
                 </div>
               </div>
 

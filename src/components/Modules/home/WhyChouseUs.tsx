@@ -1,4 +1,3 @@
-import {} from "react-icons";
 import { BiGlobe, BiLeaf } from "react-icons/bi";
 import { FcFactory } from "react-icons/fc";
 import { LuPackageCheck } from "react-icons/lu";

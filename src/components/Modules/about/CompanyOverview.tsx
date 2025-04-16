@@ -3,20 +3,10 @@
 import React from "react";
 import Image from "next/image";
 
-const milestones = [
-  {
-    year: "2023",
-    text: "Founded with a vision to redefine knit garments manufacturing",
-  },
-  { year: "2024", text: "Expanded to global export markets across EU & Asia" },
-  {
-    year: "2025",
-    text: "Launched AI-powered design and eco-friendly initiatives",
-  },
-];
 
-import image from "@/assets/image/companyOverView.jpg";
-const galleryImages = [image, image, image];
+
+
+import { galleryImages, milestones } from "@/db/data";
 
 const CompanyOverview = () => {
   return (

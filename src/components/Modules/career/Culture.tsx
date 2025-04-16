@@ -1,4 +1,4 @@
-import img1 from "@/assets/image/1.jpg";
+import { culture } from "@/db/data";
 import Image from "next/image";
 const Culture = () => {
   return (
@@ -7,7 +7,31 @@ const Culture = () => {
         Our People & Culture
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {[1, 2, 3].map((item) => (
+        {culture.map((person, idx) => (
+          <div
+            key={idx}
+            className="card bg-base-100 shadow-md hover:shadow-lg transition-shadow duration-300"
+            data-aos="fade-up"
+          >
+            <div className="card-body">
+              <Image
+                width={300}
+                height={300}
+                src={person.image}
+                alt={person.name}
+                className="w-full h-48 object-cover rounded-xl mb-4"
+              />
+              <blockquote className="italic text-sm">
+                “{person.quote}”
+              </blockquote>
+              <p className="font-semibold mt-2">
+                — {person.name}, {person.title}
+              </p>
+            </div>
+          </div>
+        ))}
+
+        {/* {[1, 2, 3].map((item) => (
           <div key={item} className="card bg-base-100 shadow-md"
           data-aos="fade-up"
           >
@@ -27,7 +51,7 @@ const Culture = () => {
               </p>
             </div>
           </div>
-        ))}
+        ))} */}
       </div>
     </section>
   );
