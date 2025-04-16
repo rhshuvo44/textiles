@@ -2,6 +2,7 @@ import img1 from "@/assets/image/1.jpg";
 import conteofFlorence from '@/assets/image/client/ConteofFlorence.jpeg';
 import cove from '@/assets/image/client/Cove.jpeg';
 import fleek from '@/assets/image/client/Fleek.jpeg';
+import friendly from '@/assets/image/client/friendly.png';
 import idealClima from '@/assets/image/client/IdealClima.jpeg';
 import besico from '@/assets/image/client/besico.jpeg';
 import design911 from '@/assets/image/client/design911.jpeg';
@@ -404,7 +405,7 @@ export const featuredCustomers: Customer[] = [
     },
     {
         name: "Friendly",
-        logo: partner4,
+        logo: friendly,
         description: "Global textile distributor",
     },
     {
