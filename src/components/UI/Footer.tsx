@@ -64,10 +64,10 @@ const Footer = () => {
           {/* Contact Info */}
           <div>
             <h3 className="font-bold text-lg mb-4">Contact</h3>
-            <p>Email: sarkartextilesandapparel@gmail.com</p>
-            <p>Phone: +88 01704172061</p>
+            <p>Email: sarkartextilesapperal@gmail.com</p>
+            <p>Phone: +88 01704172061 , +88 01688679780</p>
             <p>WhatsApp: +88 01989624626</p>
-            <p>Address: Dhaka, Bangladesh</p>
+            <p>Address: 13 No, New Haziganj, Narayanganj -1400, Bangladesh</p>
             <p>Working Hours: 8am - 7pm (Sat - Thu)</p>
           </div>
 

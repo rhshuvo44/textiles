@@ -100,6 +100,7 @@ const OfficeContacts = () => {
                 <div>
                   <h4 className="font-semibold text-gray-700">Phone</h4>
                   <p className="text-gray-500">+88 01704172061</p>
+                  <p className="text-gray-500">+88 01688679780</p>
                 </div>
               </div>
 
@@ -108,7 +109,7 @@ const OfficeContacts = () => {
                 <div>
                   <h4 className="font-semibold text-gray-700">Email</h4>
                   <p className="text-gray-500">
-                    sarkartextilesandapparel@gmail.com
+                  sarkartextilesapperal@gmail.com
                   </p>
                 </div>
               </div>

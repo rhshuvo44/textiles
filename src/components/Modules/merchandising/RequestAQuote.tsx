@@ -98,7 +98,7 @@ type QuoteFormData = {
   whatsapp?: string;
   GSM: string;
   quantity: number;
-  style?: string;
+  category?: string;
   fabric?: string;
   yarn?: string;
   ratio?: number;
@@ -119,134 +119,165 @@ const RequestAQuote = () => {
   };
 
   return (
-    <section className="md:p-10 p-5 bg-info text-white text-center" id="quote">
+    <section className="md:p-10 p-5  text-center" id="quote">
       <h2 className="text-3xl font-bold mb-6" data-aos="fade-up">
         Request a Quote
       </h2>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="max-w-xl mx-auto space-y-4"
+        className="space-y-4"
         data-aos="fade-up"
       >
-        <input
-          {...register("name", { required: "Name is required" })}
-          type="text"
-          placeholder="Name"
-          className="input input-bordered w-full text-black"
-        />
-        {errors.name && (
-          <p className="text-red-200 text-left">{errors.name.message}</p>
-        )}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <input
+              {...register("name", { required: "Name is required" })}
+              type="text"
+              placeholder="Name"
+              className="input input-bordered w-full text-black"
+            />
+            {errors.name && (
+              <p className="text-red-500 text-left">{errors.name.message}</p>
+            )}
+          </div>
 
-        <input
-          {...register("company")}
-          type="text"
-          placeholder="Company"
-          className="input input-bordered w-full text-black"
-        />
-        {errors.company && (
-          <p className="text-red-200 text-left">{errors.company.message}</p>
-        )}
+          <div>
+            <input
+              {...register("company")}
+              type="text"
+              placeholder="Company"
+              className="input input-bordered w-full text-black"
+            />
+            {errors.company && (
+              <p className="text-red-500 text-left">{errors.company.message}</p>
+            )}
+          </div>
 
-        <input
-          {...register("email", {
-            required: "Email is required",
-            pattern: {
-              value: /^\S+@\S+$/i,
-              message: "Invalid email address",
-            },
-          })}
-          type="email"
-          placeholder="Email"
-          className="input input-bordered w-full text-black"
-        />
-        {errors.email && (
-          <p className="text-red-200 text-left">{errors.email.message}</p>
-        )}
+          <div>
+            <input
+              {...register("email", {
+                required: "Email is required",
+                pattern: {
+                  value: /^\S+@\S+$/i,
+                  message: "Invalid email address",
+                },
+              })}
+              type="email"
+              placeholder="Email"
+              className="input input-bordered w-full text-black"
+            />
+            {errors.email && (
+              <p className="text-red-500 text-left">{errors.email.message}</p>
+            )}
+          </div>
 
-        <input
-          {...register("phone", { required: "Phone is required" })}
-          type="tel"
-          placeholder="Phone"
-          className="input input-bordered w-full text-black"
-        />
-        {errors.phone && (
-          <p className="text-red-200 text-left">{errors.phone.message}</p>
-        )}
+          <div>
+            <input
+              {...register("phone", { required: "Phone is required" })}
+              type="tel"
+              placeholder="Phone"
+              className="input input-bordered w-full text-black"
+            />
+            {errors.phone && (
+              <p className="text-red-500 text-left">{errors.phone.message}</p>
+            )}
+          </div>
 
-        <input
-          {...register("whatsapp")}
-          type="tel"
-          placeholder="WhatsApp (Optional)"
-          className="input input-bordered w-full text-black"
-        />
+          <div>
+            <input
+              {...register("whatsapp")}
+              type="tel"
+              placeholder="WhatsApp (Optional)"
+              className="input input-bordered w-full text-black"
+            />
+            {errors.whatsapp && (
+              <p className="text-red-500 text-left">
+                {errors.whatsapp.message}
+              </p>
+            )}
+          </div>
 
-        {/* Style Dropdown */}
-        <select
-          {...register("style")}
-          className="select select-bordered w-full text-black"
-        >
-          <option value="">Select Product Category</option>
-          {styles.map((style, i) => (
-            <option key={i} value={style}>
-              {style}
-            </option>
-          ))}
-        </select>
-        <input
-          {...register("quantity", { required: "Quantity is required" })}
-          type="number"
-          placeholder="Quantity"
-          className="input input-bordered w-full text-black"
-        />
-        {errors.quantity && (
-          <p className="text-red-200 text-left">{errors.quantity.message}</p>
-        )}
-        {/* Fabric Dropdown */}
-        <select
-          {...register("fabric")}
-          className="select select-bordered w-full text-black"
-        >
-          <option value="">Select Fabric Type</option>
-          {fabrics.map((fabric, i) => (
-            <option key={i} value={fabric}>
-              {fabric}
-            </option>
-          ))}
-        </select>
-        {/* Yarn Dropdown */}
-        <select
-          {...register("yarn")}
-          className="select select-bordered w-full text-black"
-        >
-          <option value="">Select Yarn Type</option>
-          {yarns.map((yarn, i) => (
-            <option key={i} value={yarn}>
-              {yarn}
-            </option>
-          ))}
-        </select>
-        <input
-          {...register("ratio", { required: "Ratio is required" })}
-          type="number"
-          placeholder="Ratio"
-          className="input input-bordered w-full text-black"
-        />
-        {errors.ratio && (
-          <p className="text-red-200 text-left">{errors.ratio.message}</p>
-        )}
-        <input
-          {...register("GSM", { required: "GSM is required" })}
-          type="number"
-          placeholder="GSM"
-          className="input input-bordered w-full text-black"
-        />
-        {errors.GSM && (
-          <p className="text-red-200 text-left">{errors.GSM.message}</p>
-        )}
+          {/* Style Dropdown */}
+          <div>
+            <select
+              {...register("category")}
+              className="select select-bordered w-full text-black"
+            >
+              <option value="">Select Product Category</option>
+              {styles.map((style, i) => (
+                <option key={i} value={style}>
+                  {style}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div>
+            <input
+              {...register("quantity", { required: "Quantity is required" })}
+              type="number"
+              placeholder="Quantity"
+              className="input input-bordered w-full text-black"
+            />
+            {errors.quantity && (
+              <p className="text-red-500 text-left">
+                {errors.quantity.message}
+              </p>
+            )}
+          </div>
+          {/* Fabric Dropdown */}
+          <div>
+            <select
+              {...register("fabric")}
+              className="select select-bordered w-full text-black"
+            >
+              <option value="">Select Fabric Type</option>
+              {fabrics.map((fabric, i) => (
+                <option key={i} value={fabric}>
+                  {fabric}
+                </option>
+              ))}
+            </select>
+          </div>
+          {/* Yarn Dropdown */}
+          <div>
+            <select
+              {...register("yarn")}
+              className="select select-bordered w-full text-black"
+            >
+              <option value="">Select Yarn Type</option>
+              {yarns.map((yarn, i) => (
+                <option key={i} value={yarn}>
+                  {yarn}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div>
+            <input
+              {...register("ratio", { required: "Ratio is required" })}
+              type="number"
+              placeholder="Ratio"
+              className="input input-bordered w-full text-black"
+            />
+            {errors.ratio && (
+              <p className="text-red-500 text-left">{errors.ratio.message}</p>
+            )}
+          </div>
+          <div>
+            <input
+              {...register("GSM", { required: "GSM is required" })}
+              type="number"
+              placeholder="GSM"
+              className="input input-bordered w-full text-black"
+            />
+            {errors.GSM && (
+              <p className="text-red-500 text-left">{errors.GSM.message}</p>
+            )}
+          </div>
+        </div>
         <button
           type="submit"
-          className="btn btn-neutral w-full"
+          className="btn btn-info text-white w-full"
           disabled={isSubmitting}
         >
           {isSubmitting ? "Submitting..." : "Submit"}
