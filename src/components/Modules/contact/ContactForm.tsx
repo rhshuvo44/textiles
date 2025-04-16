@@ -144,64 +144,94 @@ export default function ContactForm() {
         data-aos="fade-up"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <input
-            {...register("fullName", { required: true })}
-            className="input input-bordered w-full"
-            placeholder="Full Name *"
-          />
-          {errors.fullName && (
-            <span className="text-red-500 text-sm">Full Name is required</span>
-          )}
+          <div>
+            <input
+              {...register("fullName", { required: true })}
+              className="input input-bordered w-full"
+              placeholder="Full Name *"
+            />
+            {errors.fullName && (
+              <span className="text-red-500 text-sm">
+                {/* {errors.fullName.message} */}
+                Full name is required
+              </span>
+            )}
+          </div>
 
-          <input
-            type="email"
-            {...register("email", { required: true })}
-            className="input input-bordered w-full"
-            placeholder="Email Address *"
-          />
-          {errors.email && (
-            <span className="text-red-500 text-sm">Email is required</span>
-          )}
+          <div>
+            <input
+              type="email"
+              {...register("email", { required: true })}
+              className="input input-bordered w-full"
+              placeholder="Email Address *"
+            />
+            {errors.email && (
+              <span className="text-red-500 text-sm">
+                {/* {errors.email.message} */}
+                Email address is required
+              </span>
+            )}
+          </div>
 
-          <input
-            {...register("phone", { required: true })}
-            className="input input-bordered w-full"
-            placeholder="Phone Number *"
-          />
-          {errors.phone && (
-            <span className="text-red-500 text-sm">
-              Phone number is required
-            </span>
-          )}
+          <div>
+            <input
+              {...register("phone", { required: true })}
+              className="input input-bordered w-full"
+              placeholder="Phone Number *"
+            />
+            {errors.phone && (
+              <span className="text-red-500 text-sm">
+                {/* {errors.phone.message} */}
+                Phone number is required
+              </span>
+            )}
+          </div>
 
-          <input
-            {...register("whatsapp")}
-            className="input input-bordered w-full"
-            placeholder="WhatsApp Number (Optional)"
-          />
+          <div>
+            <input
+              {...register("whatsapp")}
+              className="input input-bordered w-full"
+              placeholder="WhatsApp Number (Optional)"
+            />
+            {/* {errors.whatsapp && (
+              <span className="text-red-500 text-sm">
+                {errors.whatsapp.message}
+              </span>
+            )} */}
+          </div>
 
-          <input
-            {...register("linkedin")}
-            className="input input-bordered w-full md:col-span-2"
-            placeholder="LinkedIn (Optional)"
-          />
+          <div>
+            <input
+              {...register("linkedin")}
+              className="input input-bordered w-full md:col-span-2"
+              placeholder="LinkedIn (Optional)"
+            />
+            {/* {errors.linkedin && (
+              <span className="text-red-500 text-sm">
+                {errors.linkedin.message}
+              </span>
+            )} */}
+          </div>
 
-          <select
-            {...register("subject", { required: true })}
-            className="select select-bordered w-full md:col-span-2"
-          >
-            <option value="">-- Select Subject --</option>
-            <option>General Inquiry</option>
-            <option>Buyer Inquiry</option>
-            <option>Partnership</option>
-            <option>Support</option>
-            <option>Careers</option>
-          </select>
-          {errors.subject && (
-            <span className="text-red-500 text-sm">
-              Please select a subject
-            </span>
-          )}
+          <div>
+            <select
+              {...register("subject", { required: true })}
+              className="select select-bordered w-full md:col-span-2"
+            >
+              <option value="">-- Select Subject --</option>
+              <option>General Inquiry</option>
+              <option>Buyer Inquiry</option>
+              <option>Partnership</option>
+              <option>Support</option>
+              <option>Careers</option>
+            </select>
+            {errors.subject && (
+              <span className="text-red-500 text-sm">
+                {/* {errors.subject.message} */}
+                Subject is required
+              </span>
+            )}
+          </div>
         </div>
 
         <textarea
