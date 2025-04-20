@@ -50,7 +50,7 @@ const CertificationsSection = () => {
                   height={200}
                   src={cert.image}
                   alt={cert.name}
-                  className=" object-contain mb-4"
+                  className="h-24 object-contain mb-4"
                 />
                 <p className="text-lg font-medium">{cert.name}</p>
               </div>
