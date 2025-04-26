@@ -39,3 +39,7 @@ export interface Customer {
     logo: string | StaticImageData;
     description: string;
 }
+export type Certification = {
+    name: string;
+    image: string | StaticImageData;
+  };

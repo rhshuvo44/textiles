@@ -1,12 +1,12 @@
 import img1 from "@/assets/image/1.jpg";
+import besico from '@/assets/image/client/besico.jpeg';
 import conteofFlorence from '@/assets/image/client/ConteofFlorence.jpeg';
 import cove from '@/assets/image/client/Cove.jpeg';
+import design911 from '@/assets/image/client/design911.jpeg';
 import fleek from '@/assets/image/client/Fleek.jpeg';
 import friendly from '@/assets/image/client/friendly.png';
-import idealClima from '@/assets/image/client/IdealClima.jpeg';
-import besico from '@/assets/image/client/besico.jpeg';
-import design911 from '@/assets/image/client/design911.jpeg';
 import haroki from '@/assets/image/client/haroki.webp';
+import idealClima from '@/assets/image/client/IdealClima.jpeg';
 import lidi from '@/assets/image/client/lidi.jpeg';
 import youth from '@/assets/image/client/youth.jpeg';
 import image from "@/assets/image/companyOverView.jpg";
@@ -15,6 +15,10 @@ import image2 from "@/assets/image/companyOverView2.jpg";
 import partner3 from "@/assets/image/partners_item_3.png";
 import partner4 from "@/assets/image/partners_item_4.png";
 import review2 from "@/assets/image/review2.jpg";
+import department from '@/assets/image/ST&A Document/Department of textile.jpg';
+import ERC from '@/assets/image/ST&A Document/ERC.jpg';
+import Fire from '@/assets/image/ST&A Document/Fire License.jpg';
+import NCCI from '@/assets/image/ST&A Document/NCCI.jpg';
 import product01 from '@/assets/image/textile/product01.webp';
 import product02 from '@/assets/image/textile/product02.webp';
 import product03 from '@/assets/image/textile/product03.webp';
@@ -27,7 +31,7 @@ import product11 from '@/assets/image/textile/product11.webp';
 import product12 from '@/assets/image/textile/product12.jpg';
 import product13 from '@/assets/image/textile/product13.webp';
 import product09 from '@/assets/image/textile/product9.webp';
-import { Customer, TeamMember, Testimonial } from '@/types';
+import { Certification, Customer, TeamMember, Testimonial } from '@/types';
 export const galleryImages = [image, image1, image2];
 
 export const navLinks = [
@@ -258,8 +262,6 @@ export const productCategories = [
     // },
 ];
 
-
-
 export const faqData = [
     {
         question: "What is merchandising in the textile industry?",
@@ -459,4 +461,24 @@ export const testimonials: Testimonial[] = [
         photo: review2,
         text: "We’ve seen a 30% efficiency increase since we started our partnership.",
     },
+];
+
+export const certifications: Certification[] = [
+    {
+        name: "Department of textile",
+        image: department,
+    },
+    {
+        name: "ERC",
+        image: ERC,
+    },
+    {
+        name: "Fire License",
+        image: Fire,
+    },
+    {
+        name: "NCCI",
+        image: NCCI,
+    },
+
 ];
