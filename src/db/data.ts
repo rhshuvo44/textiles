@@ -3,17 +3,16 @@ import besico from '@/assets/image/client/besico.jpeg';
 import conteofFlorence from '@/assets/image/client/ConteofFlorence.jpeg';
 import cove from '@/assets/image/client/Cove.jpeg';
 import design911 from '@/assets/image/client/design911.jpeg';
-import fleek from '@/assets/image/client/Fleek.jpeg';
 import friendly from '@/assets/image/client/friendly.png';
 import haroki from '@/assets/image/client/haroki.webp';
 import idealClima from '@/assets/image/client/IdealClima.jpeg';
+import keedlee from '@/assets/image/client/Keedlee.png';
 import lidi from '@/assets/image/client/lidi.jpeg';
+import topTen from '@/assets/image/client/TopTen.png';
 import youth from '@/assets/image/client/youth.jpeg';
 import image from "@/assets/image/companyOverView.jpg";
 import image1 from "@/assets/image/companyOverView1.jpg";
 import image2 from "@/assets/image/companyOverView2.jpg";
-import partner3 from "@/assets/image/partners_item_3.png";
-import partner4 from "@/assets/image/partners_item_4.png";
 import review2 from "@/assets/image/review2.jpg";
 import department from '@/assets/image/ST&A Document/Department of textile.jpg';
 import ERC from '@/assets/image/ST&A Document/ERC.jpg';
@@ -380,11 +379,7 @@ export const howWeHire = [
 ]
 
 export const featuredCustomers: Customer[] = [
-    {
-        name: "Fleek",
-        logo: fleek,
-        description: "Leading fashion house",
-    },
+
     {
         name: "Haroki",
         logo: haroki,
@@ -397,7 +392,7 @@ export const featuredCustomers: Customer[] = [
     },
     {
         name: "Keedlee",
-        logo: partner3,
+        logo: keedlee,
         description: "Eco-friendly apparel maker",
     },
     {
@@ -408,11 +403,6 @@ export const featuredCustomers: Customer[] = [
     {
         name: "Friendly",
         logo: friendly,
-        description: "Global textile distributor",
-    },
-    {
-        name: "Fiber",
-        logo: partner4,
         description: "Global textile distributor",
     },
     {
@@ -427,7 +417,7 @@ export const featuredCustomers: Customer[] = [
     },
     {
         name: "Top Ten",
-        logo: partner4,
+        logo: topTen,
         description: "Global textile distributor",
     },
     {
