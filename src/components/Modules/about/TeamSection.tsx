@@ -1,7 +1,7 @@
 "use client";
 
 import { teamMembers } from "@/db/data";
-import Image from "next/image";
+import { BiUser } from "react-icons/bi";
 
 const TeamSection = () => {
   return (
@@ -17,13 +17,14 @@ const TeamSection = () => {
             data-aos="fade-up"
           >
             <figure>
-              <Image
+              {/* <Image
                 src={member.image}
                 alt={member.name}
                 width={400}
                 height={400}
                 className="w-full h-72 object-cover"
-              />
+              /> */}
+              <BiUser size={400} />
             </figure>
             <div className="card-body items-center text-center">
               <h3 className="card-title">{member.name}</h3>

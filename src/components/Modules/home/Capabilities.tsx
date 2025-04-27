@@ -10,16 +10,13 @@ const Capabilities = () => {
           <Image src={image} alt="Album" height={500} width={500} />
         </figure>
         <div className="card-body w-full md:w-1/2  md:px-20">
-          <h2
-            className="text-5xl font-bold text-[#00A9E9]"
-            data-aos="fade-up"
-          >
+          <h2 className="text-5xl font-bold text-[#00A9E9]" data-aos="fade-up">
             Our Capabilities
           </h2>
           <p className=" mb-2 leading-relaxed" data-aos="fade-down">
             At{" "}
-            <span className="text-lg font-bold text-[#83a8b5]">
-              Sarkar Textile & Apparel
+            <span className="text-lg font-bold text-[#00A9E9]">
+              Sarkar Textiles & Apparel
             </span>
             , we pride ourselves on our diverse and robust capabilities that
             enable us to meet the evolving needs of the textile industry. Our
@@ -42,8 +39,12 @@ const Capabilities = () => {
             commitment to green manufacturing helps minimize our environmental
             impact and supports a circular approach to textile production.
           </p>
-          <div className="card-actions justify-start" >
-            <Link href="/about" className="btn btn-info text-white" data-aos="fade-up">
+          <div className="card-actions justify-start">
+            <Link
+              href="/about"
+              className="btn btn-info text-white"
+              data-aos="fade-up"
+            >
               About us <FaLongArrowAltRight />
             </Link>
           </div>

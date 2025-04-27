@@ -31,7 +31,7 @@ export interface Testimonial {
     company: string;
     photo: string | StaticImageData;
     text: string;
-  }
+}
 
 
 export interface Customer {
@@ -42,4 +42,4 @@ export interface Customer {
 export type Certification = {
     name: string;
     image: string | StaticImageData;
-  };
+};

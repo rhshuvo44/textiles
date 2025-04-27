@@ -1,4 +1,4 @@
-import banner from "@/assets/image/textile_main_image.jpg";
+import banner from "@/assets/image/banner/carrer.jpg";
 
 const CareerHero = () => {
   return (

@@ -1,4 +1,7 @@
 import img1 from "@/assets/image/1.jpg";
+import banner from '@/assets/image/banner/banner.jpg';
+import banner1 from '@/assets/image/banner/banner1.jpg';
+import banner2 from '@/assets/image/banner/banner2.jpg';
 import besico from '@/assets/image/client/besico.jpeg';
 import conteofFlorence from '@/assets/image/client/ConteofFlorence.jpeg';
 import cove from '@/assets/image/client/Cove.jpeg';
@@ -13,7 +16,6 @@ import youth from '@/assets/image/client/youth.jpeg';
 import image from "@/assets/image/companyOverView.jpg";
 import image1 from "@/assets/image/companyOverView1.jpg";
 import image2 from "@/assets/image/companyOverView2.jpg";
-import review2 from "@/assets/image/review2.jpg";
 import department from '@/assets/image/ST&A Document/Department of textile.jpg';
 import ERC from '@/assets/image/ST&A Document/ERC.jpg';
 import Fire from '@/assets/image/ST&A Document/Fire License.jpg';
@@ -30,7 +32,7 @@ import product11 from '@/assets/image/textile/product11.webp';
 import product12 from '@/assets/image/textile/product12.jpg';
 import product13 from '@/assets/image/textile/product13.webp';
 import product09 from '@/assets/image/textile/product9.webp';
-import { Certification, Customer, TeamMember, Testimonial } from '@/types';
+import { Certification, Customer, TeamMember } from '@/types';
 export const galleryImages = [image, image1, image2];
 
 export const navLinks = [
@@ -295,29 +297,18 @@ export const milestones = [
 
 export const teamMembers: TeamMember[] = [
     {
-        name: "Aminul Haque",
+        name: "Person 1 ",
         role: "CEO & Founder",
         image: product05,
         bio: "Aminul brings over 15 years of expertise in knit garment production and strategic leadership.",
     },
     {
-        name: "Farzana Yasmin",
+        name: "Person 2",
         role: "Head of Design",
         image: product08,
         bio: "Leading design innovation, Farzana ensures each product blends aesthetics with market trends.",
     },
-    // {
-    //   name: "Tariqul Islam",
-    //   role: "Production Manager",
-    //   image: product09,
-    //   bio: "Tariqul oversees all aspects of manufacturing to deliver top-notch quality on time.",
-    // },
-    // {
-    //   name: "Nasrin Sultana",
-    //   role: "Marketing Director",
-    //   image: product15,
-    //   bio: "Nasrin drives global growth and builds long-lasting partnerships worldwide.",
-    // },
+
 ];
 
 export const culture = [
@@ -436,22 +427,22 @@ export const featuredCustomers: Customer[] = [
         description: "Eco-friendly apparel maker",
     },
 ];
-export const testimonials: Testimonial[] = [
-    {
-        name: "Jane Smith",
-        title: "Procurement Head",
-        company: "FashionWorks",
-        photo: review2,
-        text: "Working with your team was a game-changer. The fabric quality and delivery speed were unmatched.",
-    },
-    {
-        name: "John Doe",
-        title: "CEO",
-        company: "EcoWear",
-        photo: review2,
-        text: "We’ve seen a 30% efficiency increase since we started our partnership.",
-    },
-];
+// export const testimonials: Testimonial[] = [
+//     {
+//         name: "Jane Smith",
+//         title: "Procurement Head",
+//         company: "FashionWorks",
+//         photo: review2,
+//         text: "Working with your team was a game-changer. The fabric quality and delivery speed were unmatched.",
+//     },
+//     {
+//         name: "John Doe",
+//         title: "CEO",
+//         company: "EcoWear",
+//         photo: review2,
+//         text: "We’ve seen a 30% efficiency increase since we started our partnership.",
+//     },
+// ];
 
 export const certifications: Certification[] = [
     {
@@ -472,3 +463,24 @@ export const certifications: Certification[] = [
     },
 
 ];
+
+export const homeBanner = [
+    {
+        src: banner,
+        title: "Trusted Garment Exporters to the World",
+        description:
+            "Delivering excellence in every thread, from design to doorstep.",
+    },
+    {
+        src: banner1,
+        title: "Global Garment Excellence Starts Here",
+        description:
+            " Supplying premium textiles and apparel to leading worldwide.",
+    },
+    {
+        src: banner2,
+        title: "Where Quality Meets Global Fashion",
+        description:
+            "Empowering brands with world-class garments and textile innovation.",
+    },
+]

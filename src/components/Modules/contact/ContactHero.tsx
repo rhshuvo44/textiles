@@ -1,5 +1,5 @@
 "use client";
-import banner from "@/assets/image/textile_main_image.jpg";
+import banner from "@/assets/image/banner/contact.jpg";
 
 const ContactHero = () => {
   return (
