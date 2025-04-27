@@ -87,7 +87,7 @@ const OfficeContacts = () => {
                 <BiMapPin className="text-info w-6 h-6 mt-1" />
                 <div>
                   <h4 className="font-semibold text-gray-700">
-                    Office Address
+                    Factory Address
                   </h4>
                   <p className="text-gray-500">
                     13 No, New Haziganj, Narayanganj -1400, Bangladesh
@@ -102,8 +102,8 @@ const OfficeContacts = () => {
                   <a href="tel:+8801704172061" className="text-gray-500 block">
                     +88 01704172061
                   </a>
-                  <a href="tel:+8801688679780" className="text-gray-500 block">
-                    +88 01688679780
+                  <a href="tel:+8801788577329" className="text-gray-500 block">
+                    +88 01788577329
                   </a>
                 </div>
               </div>
@@ -113,10 +113,16 @@ const OfficeContacts = () => {
                 <div>
                   <h4 className="font-semibold text-gray-700">Email</h4>
                   <a
-                    href="mailto:sarkartextilesapperal@gmail.com"
-                    className="text-gray-500"
+                    href="mailto:info@sarkartextilesapparel.com"
+                    className="text-gray-500 block"
                   >
-                    sarkartextilesapperal@gmail.com
+                    info@sarkartextilesapparel.com
+                  </a>
+                  <a
+                    href="mailto:sarkartextilesapparel@gmail.com"
+                    className="text-gray-500 block"
+                  >
+                    sarkartextilesapparel@gmail.com
                   </a>
                 </div>
               </div>
@@ -125,7 +131,7 @@ const OfficeContacts = () => {
                 <FiMessageCircle className="text-info w-6 h-6 mt-1" />
                 <div>
                   <h4 className="font-semibold text-gray-700">WhatsApp</h4>
-                  <p className="text-gray-500">+88 01989624626</p>
+                  <p className="text-gray-500">+88 01788577329</p>
                 </div>
               </div>
 

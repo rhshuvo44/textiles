@@ -1,4 +1,5 @@
 "use client";
+import { navLinks } from "@/db/data";
 import Link from "next/link";
 import {
   FaFacebookF,
@@ -7,7 +8,6 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import FooterBottom from "./FooterBottom";
-import { navLinks } from "@/db/data";
 
 const Footer = () => {
   return (
@@ -46,7 +46,7 @@ const Footer = () => {
       <FooterBottom /> */}
 
       <footer className="  bg-neutral text-neutral-content p-10">
-        <div className=" grid md:grid-cols-3 gap-10">
+        <div className=" grid md:grid-cols-3 gap-5">
           {/* Quick Links */}
           <div>
             <h3 className="font-bold text-lg mb-4">Quick Links</h3>
@@ -66,18 +66,36 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-4">Contact</h3>
             <p>
               Email:{" "}
-              <a href="mailto:sarkartextilesapperal@gmail.com">
-                sarkartextilesapperal@gmail.com
+              <a className="block" href="mailto:info@sarkartextilesapparel.com">
+                info@sarkartextilesapparel.com
+              </a>
+              <a
+                className="block"
+                href="mailto:sarkartextilesapparel@gmail.com"
+              >
+                sarkartextilesapparel@gmail.com
               </a>
             </p>
             <p>
               Phone:
-              <a href="tel:+8801704172061"> +88 01704172061</a>,
-              <a href="tel:+8801688679780"> +88 01688679780</a>
+              <a className="block" href="tel:+8801704172061">
+                {" "}
+                +88 01704172061
+              </a>
+              <a className="block" href="tel:+8801788577329">
+                {" "}
+                +88 01788577329
+              </a>
             </p>
-            <p>WhatsApp: +88 01989624626</p>
-            <p>Address: 13 No, New Haziganj, Narayanganj -1400, Bangladesh</p>
-            <p>Working Hours: 8am - 7pm (Sat - Thu)</p>
+            <p>
+              WhatsApp: <p>+88 01788577329</p>
+            </p>
+            <p>
+              Address: <p>13 No, New Haziganj,Narayanganj -1400, Bangladesh</p>
+            </p>
+            <p>
+              Working Hours: <p>8am - 7pm (Sat - Thu)</p>
+            </p>
           </div>
 
           {/* Social Links */}
@@ -109,7 +127,7 @@ const Footer = () => {
                 <FaLinkedinIn />
               </a>
               <a
-                href="https://wa.me/8801XXXXXXXXX"
+                href="https://wa.me/8801788577329"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-info"
