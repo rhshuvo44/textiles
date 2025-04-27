@@ -6,12 +6,16 @@ import Image from "next/image";
 const TeamSection = () => {
   return (
     <div className="mdp-10 p-5 bg-base-100 text-base-content">
-      <h2 className="text-3xl font-bold text-center mb-8">
+      <h2 className="text-3xl font-bold text-center mb-8" data-aos="fade-up">
         Meet Our Management
       </h2>
       <div className="flex flex-col md:flex-row justify-center gap-6">
         {teamMembers.map((member, index) => (
-          <div key={index} className="card w-80 bg-base-200 shadow-xl">
+          <div
+            key={index}
+            className="card w-80 bg-base-200 shadow-xl"
+            data-aos="fade-up"
+          >
             <figure>
               <Image
                 src={member.image}
