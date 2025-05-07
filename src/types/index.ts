@@ -43,3 +43,19 @@ export type Certification = {
     name: string;
     image: string | StaticImageData;
 };
+
+
+export type QuoteFormData = {
+  name: string;
+  company?: string;
+  email: string;
+  phone: string;
+  whatsapp?: string;
+  GSM: string;
+  quantity: number;
+  category?: string;
+  fabric?: string;
+  yarn?: string;
+  ratio?: number;
+  upload?: FileList;
+};

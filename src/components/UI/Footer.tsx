@@ -88,13 +88,13 @@ const Footer = () => {
               </a>
             </p>
             <p>
-              WhatsApp: <p>+88 01788577329</p>
+              WhatsApp: <span className="block">+88 01788577329</span>
             </p>
             <p>
-              Address: <p>13 No, New Haziganj,Narayanganj -1400, Bangladesh</p>
+              Address: <span className="block">13 No, New Haziganj,Narayanganj -1400, Bangladesh</span>
             </p>
             <p>
-              Working Hours: <p>8am - 7pm (Sat - Thu)</p>
+              Working Hours: <span className="block">8am - 7pm (Sat - Thu)</span>
             </p>
           </div>
 

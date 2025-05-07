@@ -1,109 +1,8 @@
 "use client";
 
+import { fabrics, styles, yarns } from "@/db/data";
+import { QuoteFormData } from "@/types";
 import { useForm } from "react-hook-form";
-
-const styles = [
-  "T-Shirt (Boys)",
-  "T-Shirt (Men's)",
-  "T-Shirt (Girls)",
-  "T-Shirt (Ladies)",
-  "Polo Shirt (Boys)",
-  "Polo Shirt (Men's)",
-  "Polo Shirt (Girls)",
-  "Polo Shirt (Ladies)",
-  "LongPants (Boys)",
-  "LongPants (Men's)",
-  "LongPants (Girls)",
-  "LongPants (Ladies)",
-  "Leggings (Girls)",
-  "Leggings (Ladies)",
-  "Shorts (Boys)",
-  "Shorts (Men's)",
-  "Sexy Shorts",
-  "Hoodie (Boys)",
-  "Hoodie (Men's)",
-  "Hoodie (Girls)",
-  "Hoodie (Ladies)",
-  "Romper",
-  "Keeper",
-  "Tank Top (Boys)",
-  "Tank Top (Men's)",
-  "Tank Top (Girls)",
-  "Tank Top (Ladies)",
-  "Joggers (Boys)",
-  "Joggers (Men's)",
-  "Joggers (Girls)",
-  "Joggers (Ladies)",
-  "Cargo Pant (Men's)",
-  "Flarepants (Ladies)",
-  "Sweatshirt (Boys)",
-  "Sweatshirt (Men's)",
-  "Sweatshirt (Girls)",
-  "Sweatshirt (Ladies)",
-  "Boys Set (Long Pants & Long Sleeve T-Shirt)",
-  "Boys Set (Long Pants, Long Sleeve Polo Shirt)",
-  "Boys Set (Long Pants & Sweatshirt)",
-  "Boys Set (Short Pant & T-Shirt)",
-  "Girls Set (Long Pant & Sweat Shirt)",
-  "Girls Set (Long Pant & Long Sleeve Polo Shirt)",
-  "Girls Set (Long Pant & Long Sleeve T-Shirt)",
-  "Girls Set (Short Pant & T-Shirt)",
-  "Baby Set",
-  "Sports T-Shirt",
-  "Sports Polo-Shirt",
-  "Sports Trouser",
-  "Activewear (Men's)",
-  "Activewear (Ladies)",
-];
-
-const fabrics = [
-  "Single Jersey",
-  "Single jersey plain",
-  "Pique",
-  "Lacoste",
-  "Fleece",
-  "1x1 Rib Or Plain Rib",
-  "(2x2)Rib",
-  "(2x1)Rib",
-  "(5x5)Rib",
-  "(5x3)Rib",
-  "Waffle",
-  "Flat Back Rib",
-  "Plain Interlock",
-  "Mesh",
-  "Thermal",
-  "Drop Needle",
-];
-const yarns = [
-  "Card Sub",
-  "Combed",
-  "Combed Sub",
-  "PC",
-  "PVC",
-  "Grey Melange",
-  "Viscose",
-  "Spun",
-  "Rotor",
-  "Spender / Lyera",
-  "Polyester",
-  "Swing Thread",
-  "Rubber",
-];
-
-type QuoteFormData = {
-  name: string;
-  company?: string;
-  email: string;
-  phone: string;
-  whatsapp?: string;
-  GSM: string;
-  quantity: number;
-  category?: string;
-  fabric?: string;
-  yarn?: string;
-  ratio?: number;
-  upload?: FileList;
-};
 
 const RequestAQuote = () => {
   const {
@@ -115,7 +14,21 @@ const RequestAQuote = () => {
 
   const onSubmit = async (data: QuoteFormData) => {
     console.log("Form Data Submitted:", data);
-    reset();
+    try {
+      const res = await fetch("/api/quote", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (res.ok) {
+        console.log("Request sent successfully");
+        reset(); // Reset form
+      } else {
+        console.error("Failed to send request");
+      }
+    } catch (error) {
+      console.error("Error during submission:", error);
+    }
   };
 
   return (

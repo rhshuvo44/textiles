@@ -11,7 +11,9 @@
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
     "aos": "^2.3.4",
+    "dotenv": "^16.5.0",
     "next": "15.0.3",
+    "nodemailer": "^6.10.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.53.2",
@@ -23,6 +25,7 @@
   "devDependencies": {
     "@types/aos": "^3.0.7",
     "@types/node": "^20",
+    "@types/nodemailer": "^6.4.17",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/react-star-ratings": "^2.3.3",

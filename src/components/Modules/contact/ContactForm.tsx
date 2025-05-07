@@ -110,30 +110,26 @@ export default function ContactForm() {
   );
 
   const onSubmit = async (data: FormData) => {
-    setLoading(true);
-    setStatus({});
-    console.log(data);
-    reset();
-    // try {
-    //   const res = await fetch('/api/contact', {
-    //     method: 'POST',
-    //     headers: { 'Content-Type': 'application/json' },
-    //     body: JSON.stringify(data),
-    //   });
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
 
-    //   const result = await res.json();
+      const result = await res.json();
 
-    //   if (res.ok) {
-    //     setStatus({ success: result.message });
-    //     reset();
-    //   } else {
-    //     setStatus({ error: result.message || 'Failed to send.' });
-    //   }
-    // } catch (err) {
-    //   setStatus({ error: 'Something went wrong!' });
-    // } finally {
-    //   setLoading(false);
-    // }
+      if (res.ok) {
+        setStatus({ success: result.message });
+        reset();
+      } else {
+        setStatus({ error: result.message || "Failed to send." });
+      }
+    } catch {
+      setStatus({ error: "Something went wrong!" });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
