@@ -69,12 +69,7 @@ const Footer = () => {
               <a className="block" href="mailto:info@sarkartextilesapparel.com">
                 info@sarkartextilesapparel.com
               </a>
-              <a
-                className="block"
-                href="mailto:sarkartextilesapparel@gmail.com"
-              >
-                sarkartextilesapparel@gmail.com
-              </a>
+             
             </p>
             <p>
               Phone:

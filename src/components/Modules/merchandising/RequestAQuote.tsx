@@ -2,33 +2,56 @@
 
 import { fabrics, styles, yarns } from "@/db/data";
 import { QuoteFormData } from "@/types";
+import emailjs from "emailjs-com";
+import { useRef } from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 
 const RequestAQuote = () => {
   const {
     register,
     handleSubmit,
     reset,
-    formState: { errors, isSubmitting, isSubmitSuccessful },
+    formState: { errors, isSubmitting },
   } = useForm<QuoteFormData>();
+  const form = useRef<HTMLFormElement>(null);
 
-  const onSubmit = async (data: QuoteFormData) => {
-    console.log("Form Data Submitted:", data);
-    try {
-      const res = await fetch("/api/quote", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
-      if (res.ok) {
-        console.log("Request sent successfully");
-        reset(); // Reset form
-      } else {
-        console.error("Failed to send request");
-      }
-    } catch (error) {
-      console.error("Error during submission:", error);
-    }
+  const onSubmit = async () => {
+    emailjs
+      .sendForm(
+        "service_jqd85q9", // From EmailJS dashboard
+        "template_e3t90n8", // From EmailJS dashboard
+        form.current!, // Pass the form element directly
+        "SCRr6WqN7Mb9ynDv7" // From EmailJS dashboard
+      )
+      .then(
+        (result) => {
+          console.log(result);
+          reset(); // Reset the form after successful submission
+          toast.success("Message sent successfully!");
+          // setStatus({ success: "Message sent successfully!" });
+        },
+        (error) => {
+          console.error(error);
+          toast.error("Failed to send message.");
+          // setStatus({ error: "Failed to send message." });
+        }
+      );
+    // try {
+    //   const res = await fetch("/api/quote", {
+    //     method: "POST",
+    //     headers: { "Content-Type": "application/json" },
+    //     body: JSON.stringify(data),
+    //   });
+    //   if (res.ok) {
+    //     console.log("Request sent successfully");
+    //     reset(); // Reset form
+    //   } else {
+    //     console.error("Failed to send request");
+    //   }
+    // } catch (error) {
+    //   console.error("Error during submission:", error);
+    // }
   };
 
   return (
@@ -39,6 +62,7 @@ const RequestAQuote = () => {
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="space-y-4"
+        ref={form}
         data-aos="fade-up"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -115,6 +139,7 @@ const RequestAQuote = () => {
             <select
               {...register("category")}
               className="select select-bordered w-full text-black"
+              name="category"
             >
               <option value="">Select Product Category</option>
               {styles.map((style, i) => (
@@ -142,6 +167,7 @@ const RequestAQuote = () => {
             <select
               {...register("fabric")}
               className="select select-bordered w-full text-black"
+              name="fabric"
             >
               <option value="">Select Fabric Type</option>
               {fabrics.map((fabric, i) => (
@@ -156,6 +182,7 @@ const RequestAQuote = () => {
             <select
               {...register("yarn")}
               className="select select-bordered w-full text-black"
+              name="yarn"
             >
               <option value="">Select Yarn Type</option>
               {yarns.map((yarn, i) => (
@@ -195,12 +222,6 @@ const RequestAQuote = () => {
         >
           {isSubmitting ? "Submitting..." : "Submit"}
         </button>
-
-        {isSubmitSuccessful && (
-          <p className="text-green-200 mt-2">
-            Your request was sent successfully!
-          </p>
-        )}
       </form>
 
       {/* Floating WhatsApp Button */}

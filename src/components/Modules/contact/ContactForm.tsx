@@ -1,90 +1,11 @@
-// "use client";
 
-// import { TContactForm } from "@/types";
-// import { useForm } from "react-hook-form";
-
-// const ContactForm = () => {
-//   const {
-//     register,
-//     handleSubmit,
-//     formState: { errors },
-//   } = useForm<TContactForm>();
-//   const onSubmit = (data: TContactForm) => console.log(data);
-
-//   return (
-//     <form className="card-body" onSubmit={handleSubmit(onSubmit)}>
-//       <div className="flex flex-col md:flex-row  gap-3">
-//         <div>
-//           <input
-//             type="text"
-//             placeholder="Name"
-//             className="input input-bordered w-full"
-//             {...register("name", { required: true })}
-//           />
-//           {errors.name && (
-//             <span className="border-red-500">This field is required</span>
-//           )}
-//         </div>
-//         <div>
-//           <input
-//             type="text"
-//             placeholder="Company"
-//             className="input input-bordered w-full"
-//             {...register("company", { required: true })}
-//           />
-//           {errors.company && (
-//             <span className="border-red-500">This field is required</span>
-//           )}
-//         </div>
-//       </div>
-//       <div className="flex flex-col md:flex-row  gap-3">
-//         <div>
-//           <input
-//             type="email"
-//             placeholder="Email Address"
-//             className="input input-bordered w-full"
-//             {...register("email", { required: true })}
-//           />
-//           {errors.email && (
-//             <span className="border-red-500">This field is required</span>
-//           )}
-//         </div>
-
-//         <div>
-//           <input
-//             type="text"
-//             placeholder="Phone Number"
-//             className="input input-bordered w-full"
-//             {...register("phone", { required: true })}
-//           />
-//           {errors.phone && (
-//             <span className="border-red-500">This field is required</span>
-//           )}
-//         </div>
-//       </div>
-//       <textarea
-//         rows={4}
-//         className="textarea textarea-bordered"
-//         placeholder="How can we help?"
-//         {...register("message", { required: true })}
-//       ></textarea>
-//       {errors.message && (
-//         <span className="border-red-500">This field is required</span>
-//       )}
-
-//       <div className="form-control mt-6">
-//         <button className="btn btn-info text-white">Submit</button>
-//       </div>
-//     </form>
-//   );
-// };
-
-// export default ContactForm;
 "use client";
 
-import { useState } from "react";
+import emailjs from "emailjs-com";
+import { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import { toast } from "react-toastify";
 
 type FormData = {
   fullName: string;
@@ -105,36 +26,60 @@ export default function ContactForm() {
   } = useForm<FormData>();
 
   const [loading, setLoading] = useState(false);
-  const [status, setStatus] = useState<{ success?: string; error?: string }>(
-    {}
-  );
+  // const [status, setStatus] = useState<{ success?: string; error?: string }>(
+  //   {}
+  // );
+  const form = useRef<HTMLFormElement>(null);
+  const onSubmit = async () => {
+    // Get the form element
+    setLoading(true);
+    emailjs
+      .sendForm(
+        "service_jqd85q9", // From EmailJS dashboard
+        "template_k42cntw", // From EmailJS dashboard
+        form.current!, // Pass the form element here
+        "SCRr6WqN7Mb9ynDv7" // From EmailJS dashboard
+      )
+      .then(
+        () => {
+          reset(); // Reset the form after successful submission
+          toast.success("Message sent successfully!");
+          // setStatus({ success: "Message sent successfully!" });
+          setLoading(false);
+        },
+        (error) => {
+          console.error(error);
+          toast.error("Failed to send message.");
+          // setStatus({ error: "Failed to send message." });
+          setLoading(false);
+        }
+      );
+    // try {
+    //   const res = await fetch("/api/contact", {
+    //     method: "POST",
+    //     headers: { "Content-Type": "application/json" },
+    //     body: JSON.stringify(data),
+    //   });
 
-  const onSubmit = async (data: FormData) => {
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
+    //   const result = await res.json();
 
-      const result = await res.json();
-
-      if (res.ok) {
-        setStatus({ success: result.message });
-        reset();
-      } else {
-        setStatus({ error: result.message || "Failed to send." });
-      }
-    } catch {
-      setStatus({ error: "Something went wrong!" });
-    } finally {
-      setLoading(false);
-    }
+    //   if (res.ok) {
+    //     setStatus({ success: result.message });
+    //     reset();
+    //   } else {
+    //     setStatus({ error: result.message || "Failed to send." });
+    //   }
+    // } catch {
+    //   setStatus({ error: "Something went wrong!" });
+    // } finally {
+    //   setLoading(false);
+    // }
   };
 
   return (
     <div className="p-5 md:p-10">
       <form
+        ref={form}
         onSubmit={handleSubmit(onSubmit)}
         className=" p-4 space-y-4 bg-base-100 shadow-xl rounded-lg"
         data-aos="fade-up"
@@ -255,12 +200,12 @@ export default function ContactForm() {
           )}
         </button>
 
-        {status.success && (
+        {/* {status.success && (
           <p className="text-green-600 text-center">{status.success}</p>
         )}
         {status.error && (
           <p className="text-red-600 text-center">{status.error}</p>
-        )}
+        )} */}
       </form>
     </div>
   );

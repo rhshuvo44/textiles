@@ -11,7 +11,6 @@ import haroki from '@/assets/image/client/haroki.webp';
 import idealClima from '@/assets/image/client/IdealClima.jpeg';
 import keedlee from '@/assets/image/client/Keedlee.png';
 import lidi from '@/assets/image/client/lidi.jpeg';
-import topTen from '@/assets/image/client/TopTen.png';
 import youth from '@/assets/image/client/youth.jpeg';
 import image from "@/assets/image/companyOverView.jpg";
 import image1 from "@/assets/image/companyOverView1.jpg";
@@ -34,7 +33,64 @@ import product13 from '@/assets/image/textile/product13.webp';
 import product09 from '@/assets/image/textile/product9.webp';
 import { Certification, Customer, TeamMember } from '@/types';
 
+export const productGallery = [
+    {
+        title: "T-Shirt",
+        photo: product04,
+    },
+    {
+        title: "Polo Shirt",
 
+        photo: product05,
+    },
+    {
+        title: "Long Pant",
+
+        photo: product10,
+    },
+
+
+    {
+        title: "Hoodie",
+
+        photo: product01,
+    },
+
+
+
+    {
+        title: "Tank Top",
+
+        photo: product11
+    },
+
+
+
+    {
+        title: "Cargo Pant",
+
+        photo: product02
+    },
+
+    {
+        title: "Sweat Shirt",
+
+        photo: product09
+    },
+
+    {
+        title: "Boys Set",
+
+        photo: product13
+    },
+    {
+        title: "Girls Set",
+
+        photo: product12
+    },
+
+
+];
 export const galleryImages = [image, image1, image2];
 
 export const navLinks = [
@@ -43,6 +99,7 @@ export const navLinks = [
     { path: "/merchandising", label: "Merchandising" },
     { path: "/customers", label: "Our Customers" },
     { path: "/career", label: "Career" },
+    { path: "/gallery", label: "Gallery" },
     { path: "/contact", label: "Contact" },
 ];
 
@@ -408,11 +465,11 @@ export const featuredCustomers: Customer[] = [
         logo: lidi,
         description: "Global textile distributor",
     },
-    {
-        name: "Top Ten",
-        logo: topTen,
-        description: "Global textile distributor",
-    },
+    // {
+    //     name: "Top Ten",
+    //     logo: topTen,
+    //     description: "Global textile distributor",
+    // },
     {
         name: "Ideal Clima",
         logo: idealClima,

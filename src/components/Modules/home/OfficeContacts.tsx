@@ -118,12 +118,7 @@ const OfficeContacts = () => {
                   >
                     info@sarkartextilesapparel.com
                   </a>
-                  <a
-                    href="mailto:sarkartextilesapparel@gmail.com"
-                    className="text-gray-500 block"
-                  >
-                    sarkartextilesapparel@gmail.com
-                  </a>
+                 
                 </div>
               </div>
 
