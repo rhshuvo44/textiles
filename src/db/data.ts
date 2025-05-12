@@ -15,6 +15,56 @@ import youth from '@/assets/image/client/youth.jpeg';
 import image from "@/assets/image/companyOverView.jpg";
 import image1 from "@/assets/image/companyOverView1.jpg";
 import image2 from "@/assets/image/companyOverView2.jpg";
+import boySetProduct01 from '@/assets/image/product/boys_set/product038.jpg';
+import boySetProduct02 from '@/assets/image/product/boys_set/product039.jpg';
+import boySetProduct03 from '@/assets/image/product/boys_set/product040.jpg';
+import boySetProduct04 from '@/assets/image/product/boys_set/product043.jpg';
+import boySetProduct05 from '@/assets/image/product/boys_set/product382.jpg';
+import boySetProduct06 from '@/assets/image/product/boys_set/product384.jpg';
+import cargoProduct01 from '@/assets/image/product/cargo_pant/product394.jpg';
+import cargoProduct02 from '@/assets/image/product/cargo_pant/product395.jpg';
+import cargoProduct03 from '@/assets/image/product/cargo_pant/product397.jpg';
+import cargoProduct04 from '@/assets/image/product/cargo_pant/product398.jpg';
+import girlSetProduct01 from '@/assets/image/product/girls_set/product265.jpg';
+import sweatProduct01 from '@/assets/image/product/sweat_shirt/product212.jpg';
+import sweatProduct02 from '@/assets/image/product/sweat_shirt/product291.jpg';
+import sweatProduct03 from '@/assets/image/product/sweat_shirt/product298.jpg';
+import sweatProduct04 from '@/assets/image/product/sweat_shirt/product326.jpg';
+import girlSetProduct02 from '@/assets/image/product/girls_set/product267.jpg';
+import girlSetProduct04 from '@/assets/image/product/girls_set/product274.jpg';
+import girlSetProduct03 from '@/assets/image/product/girls_set/product276.jpg';
+import girlSetProduct05 from '@/assets/image/product/girls_set/product278.jpg';
+import girlSetProduct06 from '@/assets/image/product/girls_set/product284.jpg';
+import girlSetProduct07 from '@/assets/image/product/girls_set/product412.png';
+import hoodieProduct01 from '@/assets/image/product/hoodie/product023.jpg';
+import hoodieProduct02 from '@/assets/image/product/hoodie/product024.jpg';
+import hoodieProduct03 from '@/assets/image/product/hoodie/product025.jpg';
+import hoodieProduct04 from '@/assets/image/product/hoodie/product062.jpg';
+import longProduct01 from '@/assets/image/product/long_pant/product026.jpg';
+import longProduct02 from '@/assets/image/product/long_pant/product027.jpg';
+import longProduct03 from '@/assets/image/product/long_pant/product028.jpg';
+import longProduct04 from '@/assets/image/product/long_pant/product029.jpg';
+import poloProduct01 from '@/assets/image/product/polo/product031.jpg';
+import poloProduct02 from '@/assets/image/product/polo/product032.jpg';
+import poloProduct03 from '@/assets/image/product/polo/product042.jpg';
+import poloProduct04 from '@/assets/image/product/polo/product046.jpg';
+import poloProduct05 from '@/assets/image/product/polo/product225.jpg';
+import poloProduct06 from '@/assets/image/product/polo/product226.jpg';
+import poloProduct07 from '@/assets/image/product/polo/product227.jpg';
+import poloProduct08 from '@/assets/image/product/polo/product228.jpg';
+import tShartProduct01 from '@/assets/image/product/t_shart/product047.jpg';
+import tShartProduct02 from '@/assets/image/product/t_shart/product048.jpg';
+import tShartProduct03 from '@/assets/image/product/t_shart/product057.jpg';
+import tShartProduct04 from '@/assets/image/product/t_shart/product058.jpg';
+import tShartProduct05 from '@/assets/image/product/t_shart/product059.jpg';
+import tShartProduct06 from '@/assets/image/product/t_shart/product060.jpg';
+import tankTopProduct01 from '@/assets/image/product/tank_top/product050.jpg';
+import tankTopProduct02 from '@/assets/image/product/tank_top/product051.jpg';
+import tankTopProduct03 from '@/assets/image/product/tank_top/product052.jpg';
+import tankTopProduct04 from '@/assets/image/product/tank_top/product053.jpg';
+import tankTopProduct05 from '@/assets/image/product/tank_top/product054.jpg';
+import tankTopProduct06 from '@/assets/image/product/tank_top/product055.jpg';
+import tankTopProduct07 from '@/assets/image/product/tank_top/product056.jpg';
 import department from '@/assets/image/ST&A Document/Department of textile.jpg';
 import ERC from '@/assets/image/ST&A Document/ERC.jpg';
 import Fire from '@/assets/image/ST&A Document/Fire License.jpg';
@@ -38,29 +88,36 @@ export const productGallery = [
         title: "T-Shirt",
         subCategory: [
             { title: "T-Shirt (Boys)", photo: product03 },
-            { title: "T-Shirt (Mens)", photo: product08 },
-            { title: "T-Shirt (Girls)", photo: product08 },
-            { title: "T-Shirt (Ladies)", photo: product08 },
+            { title: "T-Shirt (Mens)", photo: tShartProduct01 },
+            { title: "T-Shirt (Mens)", photo: tShartProduct02 },
+            { title: "T-Shirt (Girls)", photo: tShartProduct03 },
+            { title: "T-Shirt (Girls)", photo: tShartProduct04 },
+            { title: "T-Shirt (Ladies)", photo: tShartProduct05 },
+            { title: "T-Shirt (Ladies)", photo: tShartProduct06 },
         ],
         photo: product04,
     },
     {
         title: "Polo Shirt",
         subCategory: [
-            { title: "Polo Shirt (Boys)", photo: product08 },
-            { title: "Polo Shirt (Mens)", photo: product08 },
-            { title: "Polo Shirt (Girls)", photo: product08 },
-            { title: "Polo Shirt (Ladies)", photo: product08 },
+            { title: "Polo Shirt (Boys)", photo: poloProduct01 },
+            { title: "Polo Shirt (Mens)", photo: poloProduct02 },
+            { title: "Polo Shirt (Girls)", photo: poloProduct03 },
+            { title: "Polo Shirt (Ladies)", photo: poloProduct04 },
+            { title: "Polo Shirt (Ladies)", photo: poloProduct05 },
+            { title: "Polo Shirt (Ladies)", photo: poloProduct06 },
+            { title: "Polo Shirt (Ladies)", photo: poloProduct07 },
+            { title: "Polo Shirt (Ladies)", photo: poloProduct08 },
         ],
         photo: product05,
     },
     {
         title: "Long Pant",
         subCategory: [
-            { title: "Long Pant (Boys)", photo: product08 },
-            { title: "Long Pant (Mens)", photo: product08 },
-            { title: "Long Pant (Girls)", photo: product08 },
-            { title: "Long Pant (Ladies)", photo: product08 },
+            { title: "Long Pant (Boys)", photo: longProduct01 },
+            { title: "Long Pant (Mens)", photo: longProduct02 },
+            { title: "Long Pant (Girls)", photo: longProduct03 },
+            { title: "Long Pant (Ladies)", photo: longProduct04 },
         ],
         photo: product10,
     },
@@ -94,9 +151,10 @@ export const productGallery = [
                 title: "Hoodie (Boys)",
                 photo: product01
             },
-            { title: "Hoodie (Mens)", photo: product08 },
-            { title: "Hoodie (Girls)", photo: product08 },
-            { title: "Hoodie (Ladies)", photo: product08 },
+            { title: "Hoodie (Mens)", photo: hoodieProduct01 },
+            { title: "Hoodie (Girls)", photo: hoodieProduct02 },
+            { title: "Hoodie (Ladies)", photo: hoodieProduct03 },
+            { title: "Hoodie (Ladies)", photo: hoodieProduct04 },
         ],
         photo: product01,
     },
@@ -111,11 +169,14 @@ export const productGallery = [
         subCategory: [
             {
                 title: "Tank Top (Boys)",
-                photo: product08
+                photo: tankTopProduct01
             },
-            { title: "Tank Top (Mens)", photo: product08 },
-            { title: "Tank Top (Girls)", photo: product08 },
-            { title: "Tank Top (Ladies)", photo: product08 },
+            { title: "Tank Top (Mens)", photo: tankTopProduct02 },
+            { title: "Tank Top (Mens)", photo: tankTopProduct03 },
+            { title: "Tank Top (Girls)", photo: tankTopProduct04 },
+            { title: "Tank Top (Girls)", photo: tankTopProduct05 },
+            { title: "Tank Top (Ladies)", photo: tankTopProduct06 },
+            { title: "Tank Top (Ladies)", photo: tankTopProduct07 },
         ],
         photo: product11
     },
@@ -142,11 +203,19 @@ export const productGallery = [
             {
                 title: "Cargo Pant (Mens)",
 
-                photo: product07,
+                photo: cargoProduct01,
             },
             {
                 title: "Flared pant (Ladies)",
-                photo: product07,
+                photo: cargoProduct02,
+            },
+            {
+                title: "Flared pant (Ladies)",
+                photo: cargoProduct03,
+            },
+            {
+                title: "Flared pant (Ladies)",
+                photo: cargoProduct04,
             },
         ],
         photo: product02
@@ -158,16 +227,16 @@ export const productGallery = [
             {
                 title: "Sweat Shirt (Boys)",
 
-                photo: product07,
+                photo: sweatProduct01,
             },
-            { title: "Sweat Shirt (Mens)", photo: product07 },
+            { title: "Sweat Shirt (Mens)", photo: sweatProduct02 },
             {
                 title: "Sweat Shirt (Girls)",
-                photo: product07,
+                photo: sweatProduct03,
             },
             {
                 title: "Sweat Shirt (Ladies)",
-                photo: product07,
+                photo: sweatProduct04,
             },
         ],
         photo: product09
@@ -179,19 +248,27 @@ export const productGallery = [
             {
                 title: "Long Pant & Long Sleeve T-Shirt",
 
-                photo: product07,
+                photo: boySetProduct01,
             },
             {
                 title: "Long Pant & Long Sleeve Polo Shirt",
-                photo: product07,
+                photo: boySetProduct02,
             },
             {
                 title: "Long Pant & Sweat Shirt",
-                photo: product07,
+                photo: boySetProduct03,
             },
             {
                 title: "Short Pant & T-Shirt",
-                photo: product07,
+                photo: boySetProduct04,
+            },
+            {
+                title: "Short Pant & T-Shirt",
+                photo: boySetProduct05,
+            },
+            {
+                title: "Short Pant & T-Shirt",
+                photo: boySetProduct06,
             },
         ],
         photo: product13
@@ -202,19 +279,31 @@ export const productGallery = [
             {
                 title: "Long Pant & Sweat Shirt",
 
-                photo: product07,
+                photo: girlSetProduct01,
             },
             {
                 title: "Long Pant & Long Sleeve Polo Shirt",
-                photo: product07,
+                photo: girlSetProduct02,
             },
             {
                 title: "Long Pant & Long Sleeve T-Shirt",
-                photo: product07,
+                photo: girlSetProduct03,
             },
             {
                 title: "Short Pant & T-Shirt",
-                photo: product07,
+                photo: girlSetProduct04,
+            },
+            {
+                title: "Short Pant & T-Shirt",
+                photo: girlSetProduct05,
+            },
+            {
+                title: "Short Pant & T-Shirt",
+                photo: girlSetProduct06,
+            },
+            {
+                title: "Short Pant & T-Shirt",
+                photo: girlSetProduct07,
             },
         ],
         photo: product12
@@ -409,19 +498,27 @@ export const productCategories = [
             {
                 title: "Long Pant & Long Sleeve T-Shirt",
 
-                photo: product07,
+                photo: boySetProduct01,
             },
             {
                 title: "Long Pant & Long Sleeve Polo Shirt",
-                photo: product07,
+                photo: boySetProduct02,
             },
             {
                 title: "Long Pant & Sweat Shirt",
-                photo: product07,
+                photo: boySetProduct03,
             },
             {
                 title: "Short Pant & T-Shirt",
-                photo: product07,
+                photo: boySetProduct04,
+            },
+            {
+                title: "Short Pant & T-Shirt",
+                photo: boySetProduct05,
+            },
+            {
+                title: "Short Pant & T-Shirt",
+                photo: boySetProduct06,
             },
         ],
         photo: product13

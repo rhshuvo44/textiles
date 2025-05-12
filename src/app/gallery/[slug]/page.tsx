@@ -1,4 +1,4 @@
-// app/gallery/[slug]/page.tsx
+
 
 import { productGallery } from "@/db/data";
 import Image from "next/image";
@@ -31,7 +31,7 @@ export default async function GalleryPage({
         {product.subCategory.map((sub, i) => (
           <div
             key={i}
-            className="bg-white rounded-lg shadow p-4 flex flex-col items-center"
+            className="bg-white rounded-lg shadow p-4 flex flex-col items-center cursor-pointer hover:shadow-lg transition duration-300"
           >
             <Image
               src={sub.photo}
