@@ -15,45 +15,40 @@ import youth from '@/assets/image/client/youth.jpeg';
 import image from "@/assets/image/companyOverView.jpg";
 import image1 from "@/assets/image/companyOverView1.jpg";
 import image2 from "@/assets/image/companyOverView2.jpg";
-import boySetProduct01 from '@/assets/image/product/boys_set/product038.jpg';
-import boySetProduct02 from '@/assets/image/product/boys_set/product039.jpg';
-import boySetProduct03 from '@/assets/image/product/boys_set/product040.jpg';
-import boySetProduct04 from '@/assets/image/product/boys_set/product043.jpg';
+import boySetProduct02 from '@/assets/image/product/boys_set/2.jpg';
+import boySetProduct03 from '@/assets/image/product/boys_set/3.jpg';
+import boySetProduct04 from '@/assets/image/product/boys_set/4.jpg';
+import boySetProduct01 from '@/assets/image/product/boys_set/product.jpg';
 import boySetProduct05 from '@/assets/image/product/boys_set/product382.jpg';
 import boySetProduct06 from '@/assets/image/product/boys_set/product384.jpg';
 import cargoProduct01 from '@/assets/image/product/cargo_pant/product394.jpg';
 import cargoProduct02 from '@/assets/image/product/cargo_pant/product395.jpg';
 import cargoProduct03 from '@/assets/image/product/cargo_pant/product397.jpg';
 import cargoProduct04 from '@/assets/image/product/cargo_pant/product398.jpg';
-import girlSetProduct01 from '@/assets/image/product/girls_set/product265.jpg';
-import sweatProduct01 from '@/assets/image/product/sweat_shirt/product212.jpg';
-import sweatProduct02 from '@/assets/image/product/sweat_shirt/product291.jpg';
-import sweatProduct03 from '@/assets/image/product/sweat_shirt/product298.jpg';
-import sweatProduct04 from '@/assets/image/product/sweat_shirt/product326.jpg';
-import girlSetProduct02 from '@/assets/image/product/girls_set/product267.jpg';
-import girlSetProduct04 from '@/assets/image/product/girls_set/product274.jpg';
-import girlSetProduct03 from '@/assets/image/product/girls_set/product276.jpg';
-import girlSetProduct05 from '@/assets/image/product/girls_set/product278.jpg';
-import girlSetProduct06 from '@/assets/image/product/girls_set/product284.jpg';
-import girlSetProduct07 from '@/assets/image/product/girls_set/product412.png';
+import girlSetProduct01 from '@/assets/image/product/girls_set/1.jpg';
+import girlSetProduct02 from '@/assets/image/product/girls_set/2.jpg';
+import girlSetProduct04 from '@/assets/image/product/girls_set/3.jpg';
+import girlSetProduct03 from '@/assets/image/product/girls_set/4.jpg';
+import girlSetProduct05 from '@/assets/image/product/girls_set/5.jpg';
 import hoodieProduct01 from '@/assets/image/product/hoodie/product023.jpg';
 import hoodieProduct02 from '@/assets/image/product/hoodie/product024.jpg';
 import hoodieProduct03 from '@/assets/image/product/hoodie/product025.jpg';
 import hoodieProduct04 from '@/assets/image/product/hoodie/product062.jpg';
-import longProduct01 from '@/assets/image/product/long_pant/product026.jpg';
-import longProduct02 from '@/assets/image/product/long_pant/product027.jpg';
-import longProduct03 from '@/assets/image/product/long_pant/product028.jpg';
-import longProduct04 from '@/assets/image/product/long_pant/product029.jpg';
-import poloProduct01 from '@/assets/image/product/polo/product031.jpg';
-import poloProduct02 from '@/assets/image/product/polo/product032.jpg';
-import poloProduct03 from '@/assets/image/product/polo/product042.jpg';
-import poloProduct04 from '@/assets/image/product/polo/product046.jpg';
-import poloProduct05 from '@/assets/image/product/polo/product225.jpg';
-import poloProduct06 from '@/assets/image/product/polo/product226.jpg';
-import poloProduct07 from '@/assets/image/product/polo/product227.jpg';
-import poloProduct08 from '@/assets/image/product/polo/product228.jpg';
-import tShartProduct01 from '@/assets/image/product/t_shart/product047.jpg';
-import tShartProduct02 from '@/assets/image/product/t_shart/product048.jpg';
+import longProduct01 from '@/assets/image/product/long_pant/1.jpg';
+import longProduct02 from '@/assets/image/product/long_pant/2.jpg';
+import longProduct03 from '@/assets/image/product/long_pant/3.jpg';
+import longProduct04 from '@/assets/image/product/long_pant/4.jpg';
+import poloProduct01 from '@/assets/image/product/polo/1.jpg';
+import poloProduct02 from '@/assets/image/product/polo/2.jpg';
+import poloProduct03 from '@/assets/image/product/polo/3.jpg';
+import poloProduct04 from '@/assets/image/product/polo/4.jpg';
+import poloProduct05 from '@/assets/image/product/polo/5.jpg';
+import sweatProduct01 from '@/assets/image/product/sweat_shirt/product212.jpg';
+import sweatProduct02 from '@/assets/image/product/sweat_shirt/product291.jpg';
+import sweatProduct03 from '@/assets/image/product/sweat_shirt/product298.jpg';
+import sweatProduct04 from '@/assets/image/product/sweat_shirt/product326.jpg';
+import tShartProduct01 from '@/assets/image/product/t_shart/1.jpg';
+import tShartProduct02 from '@/assets/image/product/t_shart/2.jpg';
 import tShartProduct03 from '@/assets/image/product/t_shart/product057.jpg';
 import tShartProduct04 from '@/assets/image/product/t_shart/product058.jpg';
 import tShartProduct05 from '@/assets/image/product/t_shart/product059.jpg';
@@ -95,7 +90,7 @@ export const productGallery = [
             { title: "T-Shirt (Ladies)", photo: tShartProduct05 },
             { title: "T-Shirt (Ladies)", photo: tShartProduct06 },
         ],
-        photo: product04,
+        photo: tShartProduct01,
     },
     {
         title: "Polo Shirt",
@@ -105,11 +100,8 @@ export const productGallery = [
             { title: "Polo Shirt (Girls)", photo: poloProduct03 },
             { title: "Polo Shirt (Ladies)", photo: poloProduct04 },
             { title: "Polo Shirt (Ladies)", photo: poloProduct05 },
-            { title: "Polo Shirt (Ladies)", photo: poloProduct06 },
-            { title: "Polo Shirt (Ladies)", photo: poloProduct07 },
-            { title: "Polo Shirt (Ladies)", photo: poloProduct08 },
         ],
-        photo: product05,
+        photo: poloProduct01,
     },
     {
         title: "Long Pant",
@@ -119,7 +111,7 @@ export const productGallery = [
             { title: "Long Pant (Girls)", photo: longProduct03 },
             { title: "Long Pant (Ladies)", photo: longProduct04 },
         ],
-        photo: product10,
+        photo: longProduct01,
     },
 
     // {
@@ -271,7 +263,7 @@ export const productGallery = [
                 photo: boySetProduct06,
             },
         ],
-        photo: product13
+        photo: boySetProduct01
     },
     {
         title: "Girls Set",
@@ -297,16 +289,9 @@ export const productGallery = [
                 title: "Short Pant & T-Shirt",
                 photo: girlSetProduct05,
             },
-            {
-                title: "Short Pant & T-Shirt",
-                photo: girlSetProduct06,
-            },
-            {
-                title: "Short Pant & T-Shirt",
-                photo: girlSetProduct07,
-            },
+
         ],
-        photo: product12
+        photo: girlSetProduct01
     },
 
     // { title: "Baby Set", photo: product07 },
