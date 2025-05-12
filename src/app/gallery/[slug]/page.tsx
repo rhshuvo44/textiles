@@ -1,11 +1,7 @@
+// app/gallery/[slug]/page.tsx
+
 import { productGallery } from "@/db/data";
 import Image from "next/image";
-
-type Props = {
-  params: {
-    slug: string;
-  };
-};
 
 export async function generateStaticParams() {
   return productGallery.map((item) => ({
@@ -13,9 +9,15 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function GalleryPage({ params }: Props) {
+export default async function GalleryPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+
   const product = productGallery.find(
-    (item) => item.title.toLowerCase().replace(/\s+/g, "-") === params.slug
+    (item) => item.title.toLowerCase().replace(/\s+/g, "-") === slug
   );
 
   if (!product) {
