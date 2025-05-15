@@ -82,7 +82,7 @@ export const productGallery = [
     {
         title: "T-Shirt",
         subCategory: [
-            { title: "T-Shirt (Boys)", photo: product03 },
+            { title: "T-Shirt_Boys", photo: product03 },
             { title: "T-Shirt (Mens)", photo: tShartProduct01 },
             { title: "T-Shirt (Mens)", photo: tShartProduct02 },
             { title: "T-Shirt (Girls)", photo: tShartProduct03 },
