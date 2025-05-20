@@ -80,31 +80,31 @@ export const productGallery = [
         title: "T-Shirt",
         subCategory: [
             {
-                title: "Halcyon Drop-sholder T-Shirt", photo: product03,
+                title: "Halcyon Drop-sholder T-Shirt", photo: [product03],
                 description: "Experience effortless style and comfort with this oversized navy blue t-shirt.Perfect for both casual and urban looks, this t-shirt is a wardrobe essential for any season"
             },
             {
-                title: "Halcyon Drop-sholder T-Shirt", photo: tShartProduct01,
+                title: "Halcyon Drop-sholder T-Shirt", photo: [tShartProduct01],
                 description: "Experience effortless style and comfort with this oversized navy blue t-shirt.Perfect for both casual and urban looks, this t-shirt is a wardrobe essential for any season"
             },
             {
-                title: "Royal Roses Drop Shoulder T-shirt", photo: tShartProduct02,
+                title: "Royal Roses Drop Shoulder T-shirt", photo: [tShartProduct02],
                 description: "A stylish and comfortable t-shirt"
             },
             {
-                title: "Royal Roses Drop Shoulder T-shirt", photo: tShartProduct03,
+                title: "Royal Roses Drop Shoulder T-shirt", photo: [tShartProduct03],
                 description: "A stylish and comfortable t-shirt"
             },
             {
-                title: "Royal Roses Drop Shoulder T-shirt", photo: tShartProduct04,
+                title: "Royal Roses Drop Shoulder T-shirt", photo: [tShartProduct04],
                 description: "A stylish and comfortable t-shirt"
             },
             {
-                title: "Royal Roses Drop Shoulder T-shirt", photo: tShartProduct05,
+                title: "Royal Roses Drop Shoulder T-shirt", photo: [tShartProduct05],
                 description: "A stylish and comfortable t-shirt"
             },
             {
-                title: "Royal Roses Drop Shoulder T-shirt", photo: tShartProduct06,
+                title: "Royal Roses Drop Shoulder T-shirt", photo: [tShartProduct06],
                 description: "A stylish and comfortable t-shirt"
             },
         ],
@@ -114,23 +114,23 @@ export const productGallery = [
         title: "Polo Shirt",
         subCategory: [
             {
-                title: "Halcyon Polo Shirt ", photo: poloProduct01,
+                title: "Halcyon Polo Shirt ", photo: [poloProduct01],
                 description: "Contrast white-tipped collar and sleeve cuffs for a refined look.Minimalistic branding on the chest for subtle elegance.Classic buttoned placket for a versatile style."
             },
             {
-                title: "Polo Shirt (Mens)", photo: poloProduct02,
+                title: "Polo Shirt (Mens)", photo: [poloProduct02],
                 description: "Contrast white-tipped collar and sleeve cuffs for a refined look.Minimalistic branding on the chest for subtle elegance.Classic buttoned placket for a versatile style."
             },
             {
-                title: "Halcyon Polo Shirt", photo: poloProduct03,
+                title: "Halcyon Polo Shirt", photo: [poloProduct03],
                 description: "Contrast white-tipped collar and sleeve cuffs for a refined look.Minimalistic branding on the chest for subtle elegance.Classic buttoned placket for a versatile style."
             },
             {
-                title: "Halcyon Polo Shirt", photo: poloProduct04,
+                title: "Halcyon Polo Shirt", photo: [poloProduct04],
                 description: "Contrast white-tipped collar and sleeve cuffs for a refined look.Minimalistic branding on the chest for subtle elegance.Classic buttoned placket for a versatile style."
             },
             {
-                title: "Halcyon Polo Shirt ", photo: poloProduct05,
+                title: "Halcyon Polo Shirt ", photo: [poloProduct05],
                 description: "Contrast white-tipped collar and sleeve cuffs for a refined look.Minimalistic branding on the chest for subtle elegance.Classic buttoned placket for a versatile style."
             },
         ],
@@ -140,19 +140,19 @@ export const productGallery = [
         title: "Long Pant",
         subCategory: [
             {
-                title: "Long Pant (Boys)", photo: longProduct01,
+                title: "Long Pant (Boys)", photo: [longProduct01],
                 description: "A stylish and comfortable long pant"
             },
             {
-                title: "Long Pant (Mens)", photo: longProduct02,
+                title: "Long Pant (Mens)", photo: [longProduct02],
                 description: "A stylish and comfortable long pant"
             },
             {
-                title: "Long Pant (Girls)", photo: longProduct03,
+                title: "Long Pant (Girls)", photo: [longProduct03],
                 description: "A stylish and comfortable long pant"
             },
             {
-                title: "Long Pant (Ladies)", photo: longProduct04,
+                title: "Long Pant (Ladies)", photo: [longProduct04],
                 description: "A stylish and comfortable long pant"
             },
         ],
@@ -186,22 +186,22 @@ export const productGallery = [
         subCategory: [
             {
                 title: "Hoodie (Boys)",
-                photo: product01
+                photo: [product01]
             },
             {
-                title: "Hoodie (Mens)", photo: hoodieProduct01,
+                title: "Hoodie (Mens)", photo: [hoodieProduct01],
                 description: "A stylish and comfortable hoodie"
             },
             {
-                title: "Hoodie (Girls)", photo: hoodieProduct02,
+                title: "Hoodie (Girls)", photo: [hoodieProduct02],
                 description: "A stylish and comfortable hoodie"
             },
             {
-                title: "Hoodie (Ladies)", photo: hoodieProduct03,
+                title: "Hoodie (Ladies)", photo: [hoodieProduct03],
                 description: "A stylish and comfortable hoodie"
             },
             {
-                title: "Hoodie (Ladies)", photo: hoodieProduct04,
+                title: "Hoodie (Ladies)", photo: [hoodieProduct04],
                 description: "A stylish and comfortable hoodie"
             },
         ],
@@ -218,20 +218,21 @@ export const productGallery = [
         subCategory: [
 
             {
-                title: "Royal Roses Tank Top Set", photo: tankTopProduct03,
+                title: "Royal Roses Tank Top Set", photo: [tankTopProduct03],
+                description: "Stay stylish and comfortable in this sleek activewear set, perfect for workouts or casual lounging."
+                
+            },
+            {
+                title: "Royal Roses Tank Top Set", photo: [tankTopProduct04],
                 description: "Stay stylish and comfortable in this sleek activewear set, perfect for workouts or casual lounging."
             },
             {
-                title: "Royal Roses Tank Top Set", photo: tankTopProduct04,
-                description: "Stay stylish and comfortable in this sleek activewear set, perfect for workouts or casual lounging."
-            },
-            {
-                title: "Royal Roses Tank Top Set", photo: tankTopProduct05,
+                title: "Royal Roses Tank Top Set", photo: [tankTopProduct05],
                 description: "Stay stylish and comfortable in this sleek activewear set, perfect for workouts or casual lounging."
             },
 
             {
-                title: "Royal Roses Tank Top Set", photo: tankTopProduct07,
+                title: "Royal Roses Tank Top Set", photo: [tankTopProduct07],
                 description: "Stay stylish and comfortable in this sleek activewear set, perfect for workouts or casual lounging."
             },
         ],
@@ -260,22 +261,22 @@ export const productGallery = [
             {
                 title: "Cargo Pant (Mens)",
 
-                photo: cargoProduct01,
+                photo: [cargoProduct01],
                 description: "A stylish and comfortable cargo pant"
             },
             {
                 title: "Flared pant (Ladies)",
-                photo: cargoProduct02,
+                photo: [cargoProduct02],
                 description: "A stylish and comfortable cargo pant"
             },
             {
                 title: "Flared pant (Ladies)",
-                photo: cargoProduct03,
+                photo: [cargoProduct03],
                 description: "A stylish and comfortable cargo pant"
             },
             {
                 title: "Flared pant (Ladies)",
-                photo: cargoProduct04,
+                photo: [cargoProduct04],
                 description: "A stylish and comfortable cargo pant"
             },
         ],
@@ -288,21 +289,21 @@ export const productGallery = [
             {
                 title: "Halcyon Crew Neck Sweatshirt",
 
-                photo: sweatProduct01,
+                photo: [sweatProduct01],
                 description: "Introducing classic Sweatshirt our loungewear game with this stylish grey sweatshirt.Crafted from a soft, breathable fabric, this ensemble offers the perfect blend of comfort and casual chic.The minimalist design makes it versatile enough for both relaxing at home or running errands around town."
             },
             {
-                title: "Halcyon Crew Neck Sweatshirt", photo: sweatProduct02,
-                description: "Introducing classic Sweatshirt our loungewear game with this stylish grey sweatshirt.Crafted from a soft, breathable fabric, this ensemble offers the perfect blend of comfort and casual chic.The minimalist design makes it versatile enough for both relaxing at home or running errands around town."
-            },
-            {
-                title: "Halcyon Crew Neck Sweatshirt",
-                photo: sweatProduct03,
+                title: "Halcyon Crew Neck Sweatshirt", photo: [sweatProduct02],
                 description: "Introducing classic Sweatshirt our loungewear game with this stylish grey sweatshirt.Crafted from a soft, breathable fabric, this ensemble offers the perfect blend of comfort and casual chic.The minimalist design makes it versatile enough for both relaxing at home or running errands around town."
             },
             {
                 title: "Halcyon Crew Neck Sweatshirt",
-                photo: sweatProduct04,
+                photo: [sweatProduct03],
+                description: "Introducing classic Sweatshirt our loungewear game with this stylish grey sweatshirt.Crafted from a soft, breathable fabric, this ensemble offers the perfect blend of comfort and casual chic.The minimalist design makes it versatile enough for both relaxing at home or running errands around town."
+            },
+            {
+                title: "Halcyon Crew Neck Sweatshirt",
+                photo: [sweatProduct04],
                 description: "Introducing classic Sweatshirt our loungewear game with this stylish grey sweatshirt.Crafted from a soft, breathable fabric, this ensemble offers the perfect blend of comfort and casual chic.The minimalist design makes it versatile enough for both relaxing at home or running errands around town."
             },
         ],
@@ -315,32 +316,32 @@ export const productGallery = [
             {
                 title: "Long Pant & Long Sleeve T-Shirt",
 
-                photo: boySetProduct01,
+                photo: [boySetProduct01],
                 description: "A stylish"
             },
             {
                 title: "Long Pant & Long Sleeve Polo Shirt",
-                photo: boySetProduct02,
+                photo: [boySetProduct02],
                 description: "A stylish"
             },
             {
                 title: "Long Pant & Sweat Shirt",
-                photo: boySetProduct03,
+                photo: [boySetProduct03],
                 description: "A stylish"
             },
             {
                 title: "Short Pant & T-Shirt",
-                photo: boySetProduct04,
+                photo: [boySetProduct04],
                 description: "A stylish"
             },
             {
                 title: "Short Pant & T-Shirt",
-                photo: boySetProduct05,
+                photo: [boySetProduct05],
                 description: "A stylish"
             },
             {
                 title: "Short Pant & T-Shirt",
-                photo: boySetProduct06,
+                photo: [boySetProduct06],
                 description: "A stylish"
             },
         ],
@@ -352,29 +353,17 @@ export const productGallery = [
             {
                 title: "Long Pant & Sweat Shirt",
 
-                photo: girlSetProduct01,
+                photo: [girlSetProduct01,girlSetProduct02,girlSetProduct05],
                 description: "A stylish"
             },
-            {
-                title: "Long Pant & Long Sleeve Polo Shirt",
-                photo: girlSetProduct02,
-                description: "A stylish"
-            },
+            
             {
                 title: "Long Pant & Long Sleeve T-Shirt",
-                photo: girlSetProduct03,
+                photo: [girlSetProduct03,girlSetProduct04],
                 description: "A stylish"
             },
-            {
-                title: "Short Pant & T-Shirt",
-                photo: girlSetProduct04,
-                description: "A stylish"
-            },
-            {
-                title: "Short Pant & T-Shirt",
-                photo: girlSetProduct05,
-                description: "A stylish"
-            },
+           
+         
 
         ],
         photo: girlSetProduct01
