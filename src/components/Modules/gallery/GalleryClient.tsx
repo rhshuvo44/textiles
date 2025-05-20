@@ -112,7 +112,10 @@ export default function GalleryClient({
           <div
             key={i}
             className="bg-white rounded-lg shadow p-4 flex flex-col items-center cursor-pointer hover:shadow-lg transition duration-300"
-            onClick={() => setSelectedSub(sub)}
+            onClick={() => {
+              setActiveIndex(0);
+              setSelectedSub(sub);
+            }}
           >
             <Image
               src={sub.photos[0]}
