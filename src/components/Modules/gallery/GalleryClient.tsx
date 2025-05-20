@@ -168,7 +168,7 @@ export default function GalleryClient({
           <div className="bg-base-100 border rounded-lg overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Left: Images */}
-              <div className="flex gap-5 items-center justify-center p-4">
+              <div className="flex gap-5 flex-row items-center justify-center p-4">
                 {/* Main image */}
                 <Image
                   src={selectedSub.photos[activeIndex]}
@@ -184,7 +184,7 @@ export default function GalleryClient({
                   spaceBetween={10}
                   slidesPerView={4}
                   navigation
-                  className="w-full "
+                  className=""
                   onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
                 >
                   {selectedSub.photos.map((photo: string, idx: number) => (
