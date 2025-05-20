@@ -92,19 +92,7 @@ export const productGallery = [
                 description: "A stylish and comfortable t-shirt"
             },
             {
-                title: "Royal Roses Drop Shoulder T-shirt", photo: [tShartProduct03],
-                description: "A stylish and comfortable t-shirt"
-            },
-            {
-                title: "Royal Roses Drop Shoulder T-shirt", photo: [tShartProduct04],
-                description: "A stylish and comfortable t-shirt"
-            },
-            {
-                title: "Royal Roses Drop Shoulder T-shirt", photo: [tShartProduct05],
-                description: "A stylish and comfortable t-shirt"
-            },
-            {
-                title: "Royal Roses Drop Shoulder T-shirt", photo: [tShartProduct06],
+                title: "Royal Roses Drop Shoulder T-shirt", photo: [tShartProduct03, tShartProduct04, tShartProduct05, tShartProduct06],
                 description: "A stylish and comfortable t-shirt"
             },
         ],
@@ -218,23 +206,11 @@ export const productGallery = [
         subCategory: [
 
             {
-                title: "Royal Roses Tank Top Set", photo: [tankTopProduct03],
+                title: "Royal Roses Tank Top Set", photo: [tankTopProduct03, tankTopProduct04, tankTopProduct05, tankTopProduct07],
                 description: "Stay stylish and comfortable in this sleek activewear set, perfect for workouts or casual lounging."
-                
-            },
-            {
-                title: "Royal Roses Tank Top Set", photo: [tankTopProduct04],
-                description: "Stay stylish and comfortable in this sleek activewear set, perfect for workouts or casual lounging."
-            },
-            {
-                title: "Royal Roses Tank Top Set", photo: [tankTopProduct05],
-                description: "Stay stylish and comfortable in this sleek activewear set, perfect for workouts or casual lounging."
+
             },
 
-            {
-                title: "Royal Roses Tank Top Set", photo: [tankTopProduct07],
-                description: "Stay stylish and comfortable in this sleek activewear set, perfect for workouts or casual lounging."
-            },
         ],
         photo: product11
     },
@@ -353,17 +329,17 @@ export const productGallery = [
             {
                 title: "Long Pant & Sweat Shirt",
 
-                photo: [girlSetProduct01,girlSetProduct02,girlSetProduct05],
+                photo: [girlSetProduct01, girlSetProduct02, girlSetProduct05],
                 description: "A stylish"
             },
-            
+
             {
                 title: "Long Pant & Long Sleeve T-Shirt",
-                photo: [girlSetProduct03,girlSetProduct04],
+                photo: [girlSetProduct03, girlSetProduct04],
                 description: "A stylish"
             },
-           
-         
+
+
 
         ],
         photo: girlSetProduct01
