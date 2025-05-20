@@ -82,34 +82,73 @@ export const productGallery = [
     {
         title: "T-Shirt",
         subCategory: [
-            { title: "T-Shirt_Boys", photo: product03 },
-            { title: "T-Shirt (Mens)", photo: tShartProduct01 },
-            { title: "T-Shirt (Mens)", photo: tShartProduct02 },
-            { title: "T-Shirt (Girls)", photo: tShartProduct03 },
-            { title: "T-Shirt (Girls)", photo: tShartProduct04 },
-            { title: "T-Shirt (Ladies)", photo: tShartProduct05 },
-            { title: "T-Shirt (Ladies)", photo: tShartProduct06 },
+            {
+                title: "T-Shirt_Boys", photo: product03,
+                description: "A stylish and comfortable t-shirt"
+            },
+            {
+                title: "T-Shirt (Mens)", photo: tShartProduct01,
+                description: "A stylish and comfortable t-shirt"
+            },
+            {
+                title: "T-Shirt (Mens)", photo: tShartProduct02,
+                description: "A stylish and comfortable t-shirt"
+            },
+            {
+                title: "T-Shirt (Girls)", photo: tShartProduct03,
+                description: "A stylish and comfortable t-shirt"
+            },
+            {
+                title: "T-Shirt (Girls)", photo: tShartProduct04,
+                description: "A stylish and comfortable t-shirt"
+            },
+            {
+                title: "T-Shirt (Ladies)", photo: tShartProduct05,
+                description: "A stylish and comfortable t-shirt"
+            },
+            {
+                title: "T-Shirt (Ladies)", photo: tShartProduct06,
+                description: "A stylish and comfortable t-shirt"
+            },
         ],
         photo: tShartProduct01,
     },
     {
         title: "Polo Shirt",
         subCategory: [
-            { title: "Polo Shirt (Boys)", photo: poloProduct01 },
-            { title: "Polo Shirt (Mens)", photo: poloProduct02 },
-            { title: "Polo Shirt (Girls)", photo: poloProduct03 },
-            { title: "Polo Shirt (Ladies)", photo: poloProduct04 },
-            { title: "Polo Shirt (Ladies)", photo: poloProduct05 },
+            { title: "Polo Shirt (Boys)", photo: poloProduct01,
+                description: "A stylish and comfortable polo shirt"
+             },
+            { title: "Polo Shirt (Mens)", photo: poloProduct02 ,
+                description: "A stylish and comfortable polo shirt"
+            },
+            { title: "Polo Shirt (Girls)", photo: poloProduct03,
+                description: "A stylish and comfortable polo shirt"
+             },
+            { title: "Polo Shirt (Ladies)", photo: poloProduct04,
+                description: "A stylish and comfortable polo shirt"
+             },
+            { title: "Polo Shirt (Ladies)", photo: poloProduct05,
+                description: "A stylish and comfortable polo shirt"
+             },
         ],
         photo: poloProduct01,
     },
     {
         title: "Long Pant",
         subCategory: [
-            { title: "Long Pant (Boys)", photo: longProduct01 },
-            { title: "Long Pant (Mens)", photo: longProduct02 },
-            { title: "Long Pant (Girls)", photo: longProduct03 },
-            { title: "Long Pant (Ladies)", photo: longProduct04 },
+            { title: "Long Pant (Boys)", photo: longProduct01 ,
+                description: "A stylish and comfortable long pant"
+            },
+            { title: "Long Pant (Mens)", photo: longProduct02 ,
+                description: "A stylish and comfortable long pant"
+            },
+            { title: "Long Pant (Girls)", photo: longProduct03 ,
+                description: "A stylish and comfortable long pant"
+            },
+            { title: "Long Pant (Ladies)", photo: longProduct04,
+                description: "A stylish and comfortable long pant"
+             },
         ],
         photo: longProduct01,
     },
@@ -143,10 +182,18 @@ export const productGallery = [
                 title: "Hoodie (Boys)",
                 photo: product01
             },
-            { title: "Hoodie (Mens)", photo: hoodieProduct01 },
-            { title: "Hoodie (Girls)", photo: hoodieProduct02 },
-            { title: "Hoodie (Ladies)", photo: hoodieProduct03 },
-            { title: "Hoodie (Ladies)", photo: hoodieProduct04 },
+            { title: "Hoodie (Mens)", photo: hoodieProduct01,
+                description: "A stylish and comfortable hoodie"
+             },
+            { title: "Hoodie (Girls)", photo: hoodieProduct02 ,
+                description: "A stylish and comfortable hoodie"
+            },
+            { title: "Hoodie (Ladies)", photo: hoodieProduct03,
+                description: "A stylish and comfortable hoodie"
+             },
+            { title: "Hoodie (Ladies)", photo: hoodieProduct04,
+                description: "A stylish and comfortable hoodie"
+             },
         ],
         photo: product01,
     },
@@ -163,12 +210,24 @@ export const productGallery = [
                 title: "Tank Top (Boys)",
                 photo: tankTopProduct01
             },
-            { title: "Tank Top (Mens)", photo: tankTopProduct02 },
-            { title: "Tank Top (Mens)", photo: tankTopProduct03 },
-            { title: "Tank Top (Girls)", photo: tankTopProduct04 },
-            { title: "Tank Top (Girls)", photo: tankTopProduct05 },
-            { title: "Tank Top (Ladies)", photo: tankTopProduct06 },
-            { title: "Tank Top (Ladies)", photo: tankTopProduct07 },
+            { title: "Tank Top (Mens)", photo: tankTopProduct02,
+                description: "A stylish and comfortable tank top"
+             },
+            { title: "Tank Top (Mens)", photo: tankTopProduct03,
+                description: "A stylish and comfortable tank top"
+             },
+            { title: "Tank Top (Girls)", photo: tankTopProduct04,
+                description: "A stylish and comfortable tank top"
+             },
+            { title: "Tank Top (Girls)", photo: tankTopProduct05,
+                description: "A stylish and comfortable tank top"
+             },
+            { title: "Tank Top (Ladies)", photo: tankTopProduct06,
+                description: "A stylish and comfortable tank top"
+             },
+            { title: "Tank Top (Ladies)", photo: tankTopProduct07,
+                description: "A stylish and comfortable tank top"
+             },
         ],
         photo: product11
     },
@@ -196,18 +255,22 @@ export const productGallery = [
                 title: "Cargo Pant (Mens)",
 
                 photo: cargoProduct01,
+                description: "A stylish and comfortable cargo pant"
             },
             {
                 title: "Flared pant (Ladies)",
                 photo: cargoProduct02,
+                description: "A stylish and comfortable cargo pant"
             },
             {
                 title: "Flared pant (Ladies)",
                 photo: cargoProduct03,
+                description: "A stylish and comfortable cargo pant"
             },
             {
                 title: "Flared pant (Ladies)",
                 photo: cargoProduct04,
+                description: "A stylish and comfortable cargo pant"
             },
         ],
         photo: product02
@@ -220,15 +283,20 @@ export const productGallery = [
                 title: "Sweat Shirt (Boys)",
 
                 photo: sweatProduct01,
+                description: "A stylish and comfortable sweat shirt"
             },
-            { title: "Sweat Shirt (Mens)", photo: sweatProduct02 },
+            { title: "Sweat Shirt (Mens)", photo: sweatProduct02 ,
+                description: "A stylish and comfortable sweat shirt"
+            },
             {
                 title: "Sweat Shirt (Girls)",
                 photo: sweatProduct03,
+                description: "A stylish and comfortable sweat shirt"
             },
             {
                 title: "Sweat Shirt (Ladies)",
                 photo: sweatProduct04,
+                description: "A stylish and comfortable sweat shirt"
             },
         ],
         photo: product09
@@ -241,26 +309,32 @@ export const productGallery = [
                 title: "Long Pant & Long Sleeve T-Shirt",
 
                 photo: boySetProduct01,
+                description: "A stylish"
             },
             {
                 title: "Long Pant & Long Sleeve Polo Shirt",
                 photo: boySetProduct02,
+                description: "A stylish"
             },
             {
                 title: "Long Pant & Sweat Shirt",
                 photo: boySetProduct03,
+                description: "A stylish"
             },
             {
                 title: "Short Pant & T-Shirt",
                 photo: boySetProduct04,
+                description: "A stylish"
             },
             {
                 title: "Short Pant & T-Shirt",
                 photo: boySetProduct05,
+                description: "A stylish"
             },
             {
                 title: "Short Pant & T-Shirt",
                 photo: boySetProduct06,
+                description: "A stylish"
             },
         ],
         photo: boySetProduct01
@@ -272,22 +346,27 @@ export const productGallery = [
                 title: "Long Pant & Sweat Shirt",
 
                 photo: girlSetProduct01,
+                description: "A stylish"
             },
             {
                 title: "Long Pant & Long Sleeve Polo Shirt",
                 photo: girlSetProduct02,
+                description: "A stylish"
             },
             {
                 title: "Long Pant & Long Sleeve T-Shirt",
                 photo: girlSetProduct03,
+                description: "A stylish"
             },
             {
                 title: "Short Pant & T-Shirt",
                 photo: girlSetProduct04,
+                description: "A stylish"
             },
             {
                 title: "Short Pant & T-Shirt",
                 photo: girlSetProduct05,
+                description: "A stylish"
             },
 
         ],
