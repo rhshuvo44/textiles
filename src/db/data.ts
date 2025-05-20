@@ -83,31 +83,31 @@ export const productGallery = [
         title: "T-Shirt",
         subCategory: [
             {
-                title: "T-Shirt_Boys", photo: product03,
+                title: "Halcyon Drop-sholder T-Shirt", photo: product03,
+                description: "Experience effortless style and comfort with this oversized navy blue t-shirt.Perfect for both casual and urban looks, this t-shirt is a wardrobe essential for any season"
+            },
+            {
+                title: "Halcyon Drop-sholder T-Shirt", photo: tShartProduct01,
+                description: "Experience effortless style and comfort with this oversized navy blue t-shirt.Perfect for both casual and urban looks, this t-shirt is a wardrobe essential for any season"
+            },
+            {
+                title: "Royal Roses Drop Shoulder T-shirt", photo: tShartProduct02,
                 description: "A stylish and comfortable t-shirt"
             },
             {
-                title: "T-Shirt (Mens)", photo: tShartProduct01,
+                title: "Royal Roses Drop Shoulder T-shirt", photo: tShartProduct03,
                 description: "A stylish and comfortable t-shirt"
             },
             {
-                title: "T-Shirt (Mens)", photo: tShartProduct02,
+                title: "Royal Roses Drop Shoulder T-shirt", photo: tShartProduct04,
                 description: "A stylish and comfortable t-shirt"
             },
             {
-                title: "T-Shirt (Girls)", photo: tShartProduct03,
+                title: "Royal Roses Drop Shoulder T-shirt", photo: tShartProduct05,
                 description: "A stylish and comfortable t-shirt"
             },
             {
-                title: "T-Shirt (Girls)", photo: tShartProduct04,
-                description: "A stylish and comfortable t-shirt"
-            },
-            {
-                title: "T-Shirt (Ladies)", photo: tShartProduct05,
-                description: "A stylish and comfortable t-shirt"
-            },
-            {
-                title: "T-Shirt (Ladies)", photo: tShartProduct06,
+                title: "Royal Roses Drop Shoulder T-shirt", photo: tShartProduct06,
                 description: "A stylish and comfortable t-shirt"
             },
         ],
@@ -116,39 +116,48 @@ export const productGallery = [
     {
         title: "Polo Shirt",
         subCategory: [
-            { title: "Polo Shirt (Boys)", photo: poloProduct01,
-                description: "A stylish and comfortable polo shirt"
-             },
-            { title: "Polo Shirt (Mens)", photo: poloProduct02 ,
-                description: "A stylish and comfortable polo shirt"
+            {
+                title: "Halcyon Polo Shirt ", photo: poloProduct01,
+                description: "Contrast white-tipped collar and sleeve cuffs for a refined look.Minimalistic branding on the chest for subtle elegance.Classic buttoned placket for a versatile style."
             },
-            { title: "Polo Shirt (Girls)", photo: poloProduct03,
-                description: "A stylish and comfortable polo shirt"
-             },
-            { title: "Polo Shirt (Ladies)", photo: poloProduct04,
-                description: "A stylish and comfortable polo shirt"
-             },
-            { title: "Polo Shirt (Ladies)", photo: poloProduct05,
-                description: "A stylish and comfortable polo shirt"
-             },
+            {
+                title: "Polo Shirt (Mens)", photo: poloProduct02,
+                description: "Contrast white-tipped collar and sleeve cuffs for a refined look.Minimalistic branding on the chest for subtle elegance.Classic buttoned placket for a versatile style."
+            },
+            {
+                title: "Halcyon Polo Shirt", photo: poloProduct03,
+                description: "Contrast white-tipped collar and sleeve cuffs for a refined look.Minimalistic branding on the chest for subtle elegance.Classic buttoned placket for a versatile style."
+            },
+            {
+                title: "Halcyon Polo Shirt", photo: poloProduct04,
+                description: "Contrast white-tipped collar and sleeve cuffs for a refined look.Minimalistic branding on the chest for subtle elegance.Classic buttoned placket for a versatile style."
+            },
+            {
+                title: "Halcyon Polo Shirt ", photo: poloProduct05,
+                description: "Contrast white-tipped collar and sleeve cuffs for a refined look.Minimalistic branding on the chest for subtle elegance.Classic buttoned placket for a versatile style."
+            },
         ],
         photo: poloProduct01,
     },
     {
         title: "Long Pant",
         subCategory: [
-            { title: "Long Pant (Boys)", photo: longProduct01 ,
+            {
+                title: "Long Pant (Boys)", photo: longProduct01,
                 description: "A stylish and comfortable long pant"
             },
-            { title: "Long Pant (Mens)", photo: longProduct02 ,
+            {
+                title: "Long Pant (Mens)", photo: longProduct02,
                 description: "A stylish and comfortable long pant"
             },
-            { title: "Long Pant (Girls)", photo: longProduct03 ,
+            {
+                title: "Long Pant (Girls)", photo: longProduct03,
                 description: "A stylish and comfortable long pant"
             },
-            { title: "Long Pant (Ladies)", photo: longProduct04,
+            {
+                title: "Long Pant (Ladies)", photo: longProduct04,
                 description: "A stylish and comfortable long pant"
-             },
+            },
         ],
         photo: longProduct01,
     },
@@ -182,18 +191,22 @@ export const productGallery = [
                 title: "Hoodie (Boys)",
                 photo: product01
             },
-            { title: "Hoodie (Mens)", photo: hoodieProduct01,
-                description: "A stylish and comfortable hoodie"
-             },
-            { title: "Hoodie (Girls)", photo: hoodieProduct02 ,
+            {
+                title: "Hoodie (Mens)", photo: hoodieProduct01,
                 description: "A stylish and comfortable hoodie"
             },
-            { title: "Hoodie (Ladies)", photo: hoodieProduct03,
+            {
+                title: "Hoodie (Girls)", photo: hoodieProduct02,
                 description: "A stylish and comfortable hoodie"
-             },
-            { title: "Hoodie (Ladies)", photo: hoodieProduct04,
+            },
+            {
+                title: "Hoodie (Ladies)", photo: hoodieProduct03,
                 description: "A stylish and comfortable hoodie"
-             },
+            },
+            {
+                title: "Hoodie (Ladies)", photo: hoodieProduct04,
+                description: "A stylish and comfortable hoodie"
+            },
         ],
         photo: product01,
     },
@@ -210,24 +223,30 @@ export const productGallery = [
                 title: "Tank Top (Boys)",
                 photo: tankTopProduct01
             },
-            { title: "Tank Top (Mens)", photo: tankTopProduct02,
+            {
+                title: "Tank Top (Mens)", photo: tankTopProduct02,
                 description: "A stylish and comfortable tank top"
-             },
-            { title: "Tank Top (Mens)", photo: tankTopProduct03,
+            },
+            {
+                title: "Tank Top (Mens)", photo: tankTopProduct03,
                 description: "A stylish and comfortable tank top"
-             },
-            { title: "Tank Top (Girls)", photo: tankTopProduct04,
+            },
+            {
+                title: "Tank Top (Girls)", photo: tankTopProduct04,
                 description: "A stylish and comfortable tank top"
-             },
-            { title: "Tank Top (Girls)", photo: tankTopProduct05,
+            },
+            {
+                title: "Tank Top (Girls)", photo: tankTopProduct05,
                 description: "A stylish and comfortable tank top"
-             },
-            { title: "Tank Top (Ladies)", photo: tankTopProduct06,
+            },
+            {
+                title: "Tank Top (Ladies)", photo: tankTopProduct06,
                 description: "A stylish and comfortable tank top"
-             },
-            { title: "Tank Top (Ladies)", photo: tankTopProduct07,
+            },
+            {
+                title: "Tank Top (Ladies)", photo: tankTopProduct07,
                 description: "A stylish and comfortable tank top"
-             },
+            },
         ],
         photo: product11
     },
@@ -285,7 +304,8 @@ export const productGallery = [
                 photo: sweatProduct01,
                 description: "A stylish and comfortable sweat shirt"
             },
-            { title: "Sweat Shirt (Mens)", photo: sweatProduct02 ,
+            {
+                title: "Sweat Shirt (Mens)", photo: sweatProduct02,
                 description: "A stylish and comfortable sweat shirt"
             },
             {
