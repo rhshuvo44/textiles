@@ -53,12 +53,9 @@ import tShartProduct03 from '@/assets/image/product/t_shart/product057.jpg';
 import tShartProduct04 from '@/assets/image/product/t_shart/product058.jpg';
 import tShartProduct05 from '@/assets/image/product/t_shart/product059.jpg';
 import tShartProduct06 from '@/assets/image/product/t_shart/product060.jpg';
-import tankTopProduct01 from '@/assets/image/product/tank_top/product050.jpg';
-import tankTopProduct02 from '@/assets/image/product/tank_top/product051.jpg';
 import tankTopProduct03 from '@/assets/image/product/tank_top/product052.jpg';
 import tankTopProduct04 from '@/assets/image/product/tank_top/product053.jpg';
 import tankTopProduct05 from '@/assets/image/product/tank_top/product054.jpg';
-import tankTopProduct06 from '@/assets/image/product/tank_top/product055.jpg';
 import tankTopProduct07 from '@/assets/image/product/tank_top/product056.jpg';
 import department from '@/assets/image/ST&A Document/Department of textile.jpg';
 import ERC from '@/assets/image/ST&A Document/ERC.jpg';
@@ -219,33 +216,23 @@ export const productGallery = [
     {
         title: "Tank Top",
         subCategory: [
+
             {
-                title: "Tank Top (Boys)",
-                photo: tankTopProduct01
+                title: "Royal Roses Tank Top Set", photo: tankTopProduct03,
+                description: "Stay stylish and comfortable in this sleek activewear set, perfect for workouts or casual lounging."
             },
             {
-                title: "Tank Top (Mens)", photo: tankTopProduct02,
-                description: "A stylish and comfortable tank top"
+                title: "Royal Roses Tank Top Set", photo: tankTopProduct04,
+                description: "Stay stylish and comfortable in this sleek activewear set, perfect for workouts or casual lounging."
             },
             {
-                title: "Tank Top (Mens)", photo: tankTopProduct03,
-                description: "A stylish and comfortable tank top"
+                title: "Royal Roses Tank Top Set", photo: tankTopProduct05,
+                description: "Stay stylish and comfortable in this sleek activewear set, perfect for workouts or casual lounging."
             },
+
             {
-                title: "Tank Top (Girls)", photo: tankTopProduct04,
-                description: "A stylish and comfortable tank top"
-            },
-            {
-                title: "Tank Top (Girls)", photo: tankTopProduct05,
-                description: "A stylish and comfortable tank top"
-            },
-            {
-                title: "Tank Top (Ladies)", photo: tankTopProduct06,
-                description: "A stylish and comfortable tank top"
-            },
-            {
-                title: "Tank Top (Ladies)", photo: tankTopProduct07,
-                description: "A stylish and comfortable tank top"
+                title: "Royal Roses Tank Top Set", photo: tankTopProduct07,
+                description: "Stay stylish and comfortable in this sleek activewear set, perfect for workouts or casual lounging."
             },
         ],
         photo: product11
@@ -299,24 +286,24 @@ export const productGallery = [
         title: "Sweat Shirt",
         subCategory: [
             {
-                title: "Sweat Shirt (Boys)",
+                title: "Halcyon Crew Neck Sweatshirt",
 
                 photo: sweatProduct01,
-                description: "A stylish and comfortable sweat shirt"
+                description: "Introducing classic Sweatshirt our loungewear game with this stylish grey sweatshirt.Crafted from a soft, breathable fabric, this ensemble offers the perfect blend of comfort and casual chic.The minimalist design makes it versatile enough for both relaxing at home or running errands around town."
             },
             {
-                title: "Sweat Shirt (Mens)", photo: sweatProduct02,
-                description: "A stylish and comfortable sweat shirt"
+                title: "Halcyon Crew Neck Sweatshirt", photo: sweatProduct02,
+                description: "Introducing classic Sweatshirt our loungewear game with this stylish grey sweatshirt.Crafted from a soft, breathable fabric, this ensemble offers the perfect blend of comfort and casual chic.The minimalist design makes it versatile enough for both relaxing at home or running errands around town."
             },
             {
-                title: "Sweat Shirt (Girls)",
+                title: "Halcyon Crew Neck Sweatshirt",
                 photo: sweatProduct03,
-                description: "A stylish and comfortable sweat shirt"
+                description: "Introducing classic Sweatshirt our loungewear game with this stylish grey sweatshirt.Crafted from a soft, breathable fabric, this ensemble offers the perfect blend of comfort and casual chic.The minimalist design makes it versatile enough for both relaxing at home or running errands around town."
             },
             {
-                title: "Sweat Shirt (Ladies)",
+                title: "Halcyon Crew Neck Sweatshirt",
                 photo: sweatProduct04,
-                description: "A stylish and comfortable sweat shirt"
+                description: "Introducing classic Sweatshirt our loungewear game with this stylish grey sweatshirt.Crafted from a soft, breathable fabric, this ensemble offers the perfect blend of comfort and casual chic.The minimalist design makes it versatile enough for both relaxing at home or running errands around town."
             },
         ],
         photo: product09
