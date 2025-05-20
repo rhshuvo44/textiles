@@ -134,7 +134,7 @@ export default function GalleryClient({
                   alt={selectedSub.title}
                   width={600}
                   height={600}
-                  className="rounded-xl w-full h-auto object-contain"
+                  className="rounded-xl w-full h-[69vh] object-contain"
                 />
               </div>
               <div className="flex flex-col justify-center p-4">
