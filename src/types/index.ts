@@ -1,4 +1,5 @@
 import { StaticImageData } from "next/image"
+import { ReactNode } from "react"
 
 export type TServices = {
     id: number,
@@ -59,3 +60,14 @@ export type QuoteFormData = {
   ratio?: number;
   upload?: FileList;
 };
+export interface Job {
+  title: string;
+  department: string;
+  location: string;
+  deadline: string;
+}
+export interface ModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  children: ReactNode;
+}

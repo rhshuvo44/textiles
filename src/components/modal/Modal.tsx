@@ -1,12 +1,7 @@
 "use client";
 
-import { MouseEvent, ReactNode } from "react";
-
-interface ModalProps {
-  isOpen: boolean;
-  onClose: () => void;
-  children: ReactNode;
-}
+import { ModalProps } from "@/types";
+import { MouseEvent } from "react";
 
 export default function Modal({ isOpen, onClose, children }: ModalProps) {
   if (!isOpen) return null;
