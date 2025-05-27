@@ -32,8 +32,17 @@ import girlSetProduct03 from '@/assets/image/product/girls_set/4.jpg';
 import girlSetProduct05 from '@/assets/image/product/girls_set/5.jpg';
 import hoodieProduct01 from '@/assets/image/product/hoodie/product023.jpg';
 import hoodieProduct02 from '@/assets/image/product/hoodie/product024.jpg';
-import hoodieProduct03 from '@/assets/image/product/hoodie/product025.jpg';
 import hoodieProduct04 from '@/assets/image/product/hoodie/product062.jpg';
+import kidProduct01 from '@/assets/image/product/kid/kids13.jpg';
+import kidProduct03 from '@/assets/image/product/kid/kids14 (1).webp';
+import kidProduct02 from '@/assets/image/product/kid/kids14.webp';
+import kidProduct04 from '@/assets/image/product/kid/kids15.webp';
+import kidProduct07 from '@/assets/image/product/kid/kids16 (1).webp';
+import kidProduct06 from '@/assets/image/product/kid/kids16.webp';
+import kidProduct08 from '@/assets/image/product/kid/kids17.webp';
+import kidProduct09 from '@/assets/image/product/kid/kids18.webp';
+import kidProduct10 from '@/assets/image/product/kid/kids19.webp';
+import kidProduct011 from '@/assets/image/product/kid/kids21.webp';
 import longProduct01 from '@/assets/image/product/long_pant/1.jpg';
 import longProduct02 from '@/assets/image/product/long_pant/2.jpg';
 import longProduct03 from '@/assets/image/product/long_pant/3.jpg';
@@ -102,23 +111,11 @@ export const productGallery = [
         title: "Polo Shirt",
         subCategory: [
             {
-                title: "Halcyon Polo Shirt ", photo: [poloProduct01],
+                title: "Halcyon Polo Shirt ", photo: [poloProduct01, poloProduct02, poloProduct03],
                 description: "Contrast white-tipped collar and sleeve cuffs for a refined look.Minimalistic branding on the chest for subtle elegance.Classic buttoned placket for a versatile style."
             },
             {
-                title: "Polo Shirt (Mens)", photo: [poloProduct02],
-                description: "Contrast white-tipped collar and sleeve cuffs for a refined look.Minimalistic branding on the chest for subtle elegance.Classic buttoned placket for a versatile style."
-            },
-            {
-                title: "Halcyon Polo Shirt", photo: [poloProduct03],
-                description: "Contrast white-tipped collar and sleeve cuffs for a refined look.Minimalistic branding on the chest for subtle elegance.Classic buttoned placket for a versatile style."
-            },
-            {
-                title: "Halcyon Polo Shirt", photo: [poloProduct04],
-                description: "Contrast white-tipped collar and sleeve cuffs for a refined look.Minimalistic branding on the chest for subtle elegance.Classic buttoned placket for a versatile style."
-            },
-            {
-                title: "Halcyon Polo Shirt ", photo: [poloProduct05],
+                title: "Halcyon Polo Shirt ", photo: [poloProduct05, poloProduct04],
                 description: "Contrast white-tipped collar and sleeve cuffs for a refined look.Minimalistic branding on the chest for subtle elegance.Classic buttoned placket for a versatile style."
             },
         ],
@@ -173,24 +170,15 @@ export const productGallery = [
         title: "Hoodie",
         subCategory: [
             {
-                title: "Hoodie (Boys)",
-                photo: [product01]
+                title: "Royal Roses Oversized Hoodie",
+                photo: [product01, hoodieProduct01, hoodieProduct02],
+                description: "Olive Green Oversized Hoodie Stay cozy and stylish with this olive green oversized hoodie. Perfect for chilly days, it combines comfort with effortless streetwear vibes."
             },
+
+
             {
-                title: "Hoodie (Mens)", photo: [hoodieProduct01],
-                description: "A stylish and comfortable hoodie"
-            },
-            {
-                title: "Hoodie (Girls)", photo: [hoodieProduct02],
-                description: "A stylish and comfortable hoodie"
-            },
-            {
-                title: "Hoodie (Ladies)", photo: [hoodieProduct03],
-                description: "A stylish and comfortable hoodie"
-            },
-            {
-                title: "Hoodie (Ladies)", photo: [hoodieProduct04],
-                description: "A stylish and comfortable hoodie"
+                title: "Royal Roses Oversized Hoodie", photo: [hoodieProduct04],
+                description: "cropped Purple Activewear Set Elevate your workout wardrobe with this sleek and stylish cropped activewear set, designed for both comfort and performance."
             },
         ],
         photo: product01,
@@ -235,26 +223,18 @@ export const productGallery = [
         title: "Cargo Pant",
         subCategory: [
             {
-                title: "Cargo Pant (Mens)",
+                title: "Halcyon Narrow Long Pant",
 
-                photo: [cargoProduct01],
-                description: "A stylish and comfortable cargo pant"
+                photo: [cargoProduct01, cargoProduct02],
+                description: "Stay comfortable and stylish with these versatile navy blue Long Pant, designed for an effortlessly modern look.Perfect for casual outings, workouts, or lounging at home, these Long Pantare a wardrobe essential for every man."
             },
+
             {
-                title: "Flared pant (Ladies)",
-                photo: [cargoProduct02],
-                description: "A stylish and comfortable cargo pant"
+                title: "Halcyon Narrow Long Pant",
+                photo: [cargoProduct03, cargoProduct04],
+                description: "Stay comfortable and stylish with these versatile navy blue Long Pant, designed for an effortlessly modern look.Perfect for casual outings, workouts, or lounging at home, these Long Pantare a wardrobe essential for every man."
             },
-            {
-                title: "Flared pant (Ladies)",
-                photo: [cargoProduct03],
-                description: "A stylish and comfortable cargo pant"
-            },
-            {
-                title: "Flared pant (Ladies)",
-                photo: [cargoProduct04],
-                description: "A stylish and comfortable cargo pant"
-            },
+
         ],
         photo: product02
     },
@@ -292,33 +272,19 @@ export const productGallery = [
             {
                 title: "Long Pant & Long Sleeve T-Shirt",
 
-                photo: [boySetProduct01],
-                description: "A stylish"
+                photo: [boySetProduct01, boySetProduct02, boySetProduct03, boySetProduct04],
+                description: "Stay comfortable and stylish with these versatile navy blue Long Pant, designed for an effortlessly modern look.Perfect for casual outings, workouts, or lounging at home, these Long Pantare a wardrobe essential for every man."
+            },
+
+            {
+                title: "Long Pant & Sweat Shirt",
+                photo: [boySetProduct05],
+                description: "Stay comfortable and stylish with these versatile navy blue Long Pant, designed for an effortlessly modern look.Perfect for casual outings, workouts, or lounging at home, these Long Pantare a wardrobe essential for every man."
             },
             {
                 title: "Long Pant & Long Sleeve Polo Shirt",
-                photo: [boySetProduct02],
-                description: "A stylish"
-            },
-            {
-                title: "Long Pant & Sweat Shirt",
-                photo: [boySetProduct03],
-                description: "A stylish"
-            },
-            {
-                title: "Short Pant & T-Shirt",
-                photo: [boySetProduct04],
-                description: "A stylish"
-            },
-            {
-                title: "Short Pant & T-Shirt",
-                photo: [boySetProduct05],
-                description: "A stylish"
-            },
-            {
-                title: "Short Pant & T-Shirt",
                 photo: [boySetProduct06],
-                description: "A stylish"
+                description: "Stay comfortable and stylish with these versatile navy blue Long Pant, designed for an effortlessly modern look.Perfect for casual outings, workouts, or lounging at home, these Long Pantare a wardrobe essential for every man."
             },
         ],
         photo: boySetProduct01
@@ -343,6 +309,74 @@ export const productGallery = [
 
         ],
         photo: girlSetProduct01
+    },
+    {
+        title: "Kids Heaven",
+        subCategory: [
+            {
+                title: "Kid’s Heaven – Premium Floral Print T-Shirt",
+
+                photo: [kidProduct01],
+                description: "Brighten up your child’s day with the Kid’s Heaven Premium Floral Print T-Shirt. Featuring a beautiful floral design on a dark base, this shirt is the perfect balance of comfort and style. Made from soft, breathable fabric, it’s perfect for both casual days and fun outings."
+            },
+            {
+                title: "Kid’s Heaven – Premium Floral Print T-Shirt",
+
+                photo: [kidProduct02],
+                description: "Brighten up your child’s day with the Kid’s Heaven Premium Floral Print T-Shirt. Featuring a beautiful floral design on a dark base, this shirt is the perfect balance of comfort and style. Made from soft, breathable fabric, it’s perfect for both casual days and fun outings."
+            },
+            {
+                title: "Kid’s Heaven – Premium Floral Print T-Shirt",
+
+                photo: [kidProduct03],
+                description: "Brighten up your child’s day with the Kid’s Heaven Premium Floral Print T-Shirt. Featuring a beautiful floral design on a dark base, this shirt is the perfect balance of comfort and style. Made from soft, breathable fabric, it’s perfect for both casual days and fun outings."
+            },
+            {
+                title: "Kid’s Heaven – Premium Floral Print T-Shirt",
+
+                photo: [kidProduct04],
+                description: "Brighten up your child’s day with the Kid’s Heaven Premium Floral Print T-Shirt. Featuring a beautiful floral design on a dark base, this shirt is the perfect balance of comfort and style. Made from soft, breathable fabric, it’s perfect for both casual days and fun outings."
+            },
+            {
+                title: "Kid’s Heaven – Premium Floral Print T-Shirt",
+
+                photo: [kidProduct06],
+                description: "Brighten up your child’s day with the Kid’s Heaven Premium Floral Print T-Shirt. Featuring a beautiful floral design on a dark base, this shirt is the perfect balance of comfort and style. Made from soft, breathable fabric, it’s perfect for both casual days and fun outings."
+            },
+            {
+                title: "Kid’s Heaven – Premium Floral Print T-Shirt",
+
+                photo: [kidProduct07],
+                description: "Brighten up your child’s day with the Kid’s Heaven Premium Floral Print T-Shirt. Featuring a beautiful floral design on a dark base, this shirt is the perfect balance of comfort and style. Made from soft, breathable fabric, it’s perfect for both casual days and fun outings."
+            },
+            {
+                title: "Kid’s Heaven – Premium Floral Print T-Shirt",
+
+                photo: [kidProduct08],
+                description: "Brighten up your child’s day with the Kid’s Heaven Premium Floral Print T-Shirt. Featuring a beautiful floral design on a dark base, this shirt is the perfect balance of comfort and style. Made from soft, breathable fabric, it’s perfect for both casual days and fun outings."
+            },
+            {
+                title: "Kid’s Heaven – Premium Floral Print T-Shirt",
+
+                photo: [kidProduct09],
+                description: "Brighten up your child’s day with the Kid’s Heaven Premium Floral Print T-Shirt. Featuring a beautiful floral design on a dark base, this shirt is the perfect balance of comfort and style. Made from soft, breathable fabric, it’s perfect for both casual days and fun outings."
+            },
+
+            {
+                title: "Kid’s Heaven – Premium Floral Print T-Shirt",
+                photo: [kidProduct10],
+                description: "Brighten up your child’s day with the Kid’s Heaven Premium Floral Print T-Shirt. Featuring a beautiful floral design on a dark base, this shirt is the perfect balance of comfort and style. Made from soft, breathable fabric, it’s perfect for both casual days and fun outings."
+            },
+            {
+                title: "Kid’s Heaven – Premium Floral Print T-Shirt",
+                photo: [kidProduct011],
+                description: "Brighten up your child’s day with the Kid’s Heaven Premium Floral Print T-Shirt. Featuring a beautiful floral design on a dark base, this shirt is the perfect balance of comfort and style. Made from soft, breathable fabric, it’s perfect for both casual days and fun outings."
+            },
+
+
+
+        ],
+        photo: kidProduct01
     },
 
     // { title: "Baby Set", photo: product07 },
