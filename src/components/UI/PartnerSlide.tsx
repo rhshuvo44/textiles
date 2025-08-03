@@ -1,61 +1,59 @@
 "use client";
 
+import "swiper/css";
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
 
 import { featuredCustomers } from "@/db/data";
 import Image from "next/image";
-import "swiper/css";
-import { Autoplay } from "swiper/modules";
 
 const PartnerSlide = () => {
   return (
-    <>
-      <section className="p-5 md:p-10 bg-base-200">
-        <div className=" text-center" data-aos="fade-up">
-          <h2
-            className="text-4xl sm:text-5xl font-bold mb-8"
-            data-aos="fade-up"
-          >
-            Our Clients & Partners
-          </h2>
-          <Swiper
-            autoplay={true}
-            loop={true}
-            slidesPerView={1}
-            spaceBetween={10}
-            modules={[Autoplay]}
-            breakpoints={{
-              640: {
-                slidesPerView: 2,
-                spaceBetween: 10,
-              },
-              768: {
-                slidesPerView: 4,
-                spaceBetween: 10,
-              },
-              1024: {
-                slidesPerView: 5,
-                spaceBetween: 10,
-              },
-            }}
-          >
-            {featuredCustomers.map((slide, index) => (
-              <SwiperSlide
-                key={index}
-                className="flex items-center justify-center"
-              >
-                <div className="cursor-pointer hover:scale-110 duration-300 py-2 px-5 h-52 flex items-center justify-center">
-                  <div className="rounded">
-                    <Image src={slide.logo} alt="" width={500} height={500} />
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-      </section>
-    </>
+    <section className="p-5 md:p-10 bg-base-200">
+      <div className="text-center" data-aos="fade-up">
+        <h2 className="text-4xl sm:text-5xl font-bold mb-8">
+          Our Clients & Partners
+        </h2>
+
+        <Swiper
+          autoplay={{ delay: 2000, disableOnInteraction: false }}
+          loop={true}
+          spaceBetween={20}
+          modules={[Autoplay]}
+          breakpoints={{
+            320: {
+              slidesPerView: 2,
+            },
+            640: {
+              slidesPerView: 3,
+            },
+            768: {
+              slidesPerView: 4,
+            },
+            1024: {
+              slidesPerView: 5,
+            },
+          }}
+        >
+          {featuredCustomers.map((slide, index) => (
+            <SwiperSlide
+              key={index}
+              className="flex items-center justify-center"
+            >
+              <div className="w-full h-32 sm:h-40 flex items-center justify-center bg-white rounded-lg shadow-md transition-transform hover:scale-105 duration-300 p-4">
+                <Image
+                  src={slide.logo}
+                  alt={`Partner ${index + 1}`}
+                  width={150}
+                  height={150}
+                  className="object-contain h-full w-full"
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </section>
   );
 };
 

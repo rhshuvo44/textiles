@@ -11,7 +11,9 @@ export default function GalleryClient({
     subCategory: { title: string; photos: string[]; description?: string }[];
   };
 }) {
-  const [selectedSub, setSelectedSub] = useState<null | (typeof product.subCategory)[0]>(null);
+  const [selectedSub, setSelectedSub] = useState<
+    null | (typeof product.subCategory)[0]
+  >(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
@@ -20,11 +22,20 @@ export default function GalleryClient({
         {product.subCategory.map((sub, i) => (
           <div
             key={i}
-            className="bg-white rounded-lg shadow p-4 flex flex-col items-center cursor-pointer hover:shadow-lg transition duration-300"
+            role="button"
+            tabIndex={0}
+            aria-label={`View images for ${sub.title}`}
             onClick={() => {
               setActiveIndex(0);
               setSelectedSub(sub);
             }}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                setActiveIndex(0);
+                setSelectedSub(sub);
+              }
+            }}
+            className="bg-white rounded-lg shadow p-4 flex flex-col items-center cursor-pointer hover:shadow-lg transition duration-300"
           >
             <Image
               src={sub.photos[0]}
@@ -32,6 +43,7 @@ export default function GalleryClient({
               width={200}
               height={200}
               className="rounded object-cover"
+              loading="lazy"
             />
             <p className="mt-2 text-center font-medium">{sub.title}</p>
           </div>
@@ -51,6 +63,7 @@ export default function GalleryClient({
                   width={600}
                   height={600}
                   className="rounded-xl w-full h-[50vh] object-contain"
+                  loading="lazy"
                 />
 
                 {/* Thumbnails */}
@@ -58,17 +71,28 @@ export default function GalleryClient({
                   {selectedSub.photos.map((photo, idx) => (
                     <div
                       key={idx}
-                      className={`border-2 rounded-lg cursor-pointer ${
-                        activeIndex === idx ? "border-blue-500" : "border-transparent"
-                      }`}
+                      role="button"
+                      tabIndex={0}
+                      aria-current={activeIndex === idx ? "true" : undefined}
                       onClick={() => setActiveIndex(idx)}
+                      onKeyDown={(e) => {
+                        if (e.key === "Enter" || e.key === " ") {
+                          setActiveIndex(idx);
+                        }
+                      }}
+                      className={`border-2 rounded-lg cursor-pointer ${
+                        activeIndex === idx
+                          ? "border-blue-500"
+                          : "border-transparent"
+                      }`}
                     >
                       <Image
                         src={photo}
-                        alt={`Thumbnail ${idx + 1}`}
+                        alt={`${selectedSub.title} thumbnail ${idx + 1}`}
                         width={100}
                         height={100}
                         className="object-cover w-16 h-16 rounded-md"
+                        loading="lazy"
                       />
                     </div>
                   ))}
@@ -81,8 +105,9 @@ export default function GalleryClient({
                   {selectedSub.title}
                 </h2>
                 <p className="text-base text-gray-700">
-                  A detailed look at our &quot;{selectedSub.title}&quot; product.
-                  It reflects both quality and comfort, ideal for modern lifestyles.
+                  A detailed look at our &quot;{selectedSub.title}&quot;
+                  product. It reflects both quality and comfort, ideal for
+                  modern lifestyles.
                 </p>
                 {selectedSub.description && (
                   <p className="mt-4 text-sm text-gray-600">

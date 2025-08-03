@@ -1,4 +1,3 @@
-
 "use client";
 
 import emailjs from "emailjs-com";
@@ -26,54 +25,25 @@ export default function ContactForm() {
   } = useForm<FormData>();
 
   const [loading, setLoading] = useState(false);
-  // const [status, setStatus] = useState<{ success?: string; error?: string }>(
-  //   {}
-  // );
   const form = useRef<HTMLFormElement>(null);
+
   const onSubmit = async () => {
-    // Get the form element
     setLoading(true);
-    emailjs
-      .sendForm(
-        "service_jqd85q9", // From EmailJS dashboard
-        "template_k42cntw", // From EmailJS dashboard
-        form.current!, // Pass the form element here
-        "SCRr6WqN7Mb9ynDv7" // From EmailJS dashboard
-      )
-      .then(
-        () => {
-          reset(); // Reset the form after successful submission
-          toast.success("Message sent successfully!");
-          // setStatus({ success: "Message sent successfully!" });
-          setLoading(false);
-        },
-        (error) => {
-          console.error(error);
-          toast.error("Failed to send message.");
-          // setStatus({ error: "Failed to send message." });
-          setLoading(false);
-        }
+    try {
+      await emailjs.sendForm(
+        "service_jqd85q9", // Your EmailJS service ID
+        "template_k42cntw", // Your EmailJS template ID
+        form.current!,
+        "SCRr6WqN7Mb9ynDv7" // Your EmailJS user/public key
       );
-    // try {
-    //   const res = await fetch("/api/contact", {
-    //     method: "POST",
-    //     headers: { "Content-Type": "application/json" },
-    //     body: JSON.stringify(data),
-    //   });
-
-    //   const result = await res.json();
-
-    //   if (res.ok) {
-    //     setStatus({ success: result.message });
-    //     reset();
-    //   } else {
-    //     setStatus({ error: result.message || "Failed to send." });
-    //   }
-    // } catch {
-    //   setStatus({ error: "Something went wrong!" });
-    // } finally {
-    //   setLoading(false);
-    // }
+      reset();
+      toast.success("Message sent successfully!");
+    } catch (error) {
+      console.error(error);
+      toast.error("Failed to send message.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -81,83 +51,102 @@ export default function ContactForm() {
       <form
         ref={form}
         onSubmit={handleSubmit(onSubmit)}
-        className=" p-4 space-y-4 bg-base-100 shadow-xl rounded-lg"
+        className="p-4 space-y-4 bg-base-100 shadow-xl rounded-lg"
         data-aos="fade-up"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
+            <label htmlFor="fullName" className="sr-only">
+              Full Name *
+            </label>
             <input
-              {...register("fullName", { required: true })}
+              id="fullName"
+              {...register("fullName", { required: "Full name is required" })}
               className="input input-bordered w-full"
               placeholder="Full Name *"
             />
             {errors.fullName && (
               <span className="text-red-500 text-sm">
-                {/* {errors.fullName.message} */}
-                Full name is required
+                {errors.fullName.message}
               </span>
             )}
           </div>
 
           <div>
+            <label htmlFor="email" className="sr-only">
+              Email Address *
+            </label>
             <input
+              id="email"
               type="email"
-              {...register("email", { required: true })}
+              {...register("email", {
+                required: "Email is required",
+                pattern: {
+                  value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                  message: "Please enter a valid email address",
+                },
+              })}
               className="input input-bordered w-full"
               placeholder="Email Address *"
             />
             {errors.email && (
-              <span className="text-red-500 text-sm">
-                {/* {errors.email.message} */}
-                Email address is required
-              </span>
+              <span className="text-red-500 text-sm">{errors.email.message}</span>
             )}
           </div>
 
           <div>
+            <label htmlFor="phone" className="sr-only">
+              Phone Number *
+            </label>
             <input
-              {...register("phone", { required: true })}
+              id="phone"
+              {...register("phone", {
+                required: "Phone number is required",
+                minLength: {
+                  value: 7,
+                  message: "Phone number seems too short",
+                },
+              })}
               className="input input-bordered w-full"
               placeholder="Phone Number *"
             />
             {errors.phone && (
-              <span className="text-red-500 text-sm">
-                {/* {errors.phone.message} */}
-                Phone number is required
-              </span>
+              <span className="text-red-500 text-sm">{errors.phone.message}</span>
             )}
           </div>
 
           <div>
+            <label htmlFor="whatsapp" className="sr-only">
+              WhatsApp Number (Optional)
+            </label>
             <input
+              id="whatsapp"
               {...register("whatsapp")}
               className="input input-bordered w-full"
               placeholder="WhatsApp Number (Optional)"
             />
-            {/* {errors.whatsapp && (
-              <span className="text-red-500 text-sm">
-                {errors.whatsapp.message}
-              </span>
-            )} */}
           </div>
 
-          <div>
+          <div className="md:col-span-2">
+            <label htmlFor="linkedin" className="sr-only">
+              LinkedIn (Optional)
+            </label>
             <input
+              id="linkedin"
               {...register("linkedin")}
-              className="input input-bordered w-full md:col-span-2"
+              className="input input-bordered w-full"
               placeholder="LinkedIn (Optional)"
             />
-            {/* {errors.linkedin && (
-              <span className="text-red-500 text-sm">
-                {errors.linkedin.message}
-              </span>
-            )} */}
           </div>
 
-          <div>
+          <div className="md:col-span-2">
+            <label htmlFor="subject" className="sr-only">
+              Subject *
+            </label>
             <select
-              {...register("subject", { required: true })}
-              className="select select-bordered w-full md:col-span-2"
+              id="subject"
+              {...register("subject", { required: "Subject is required" })}
+              className="select select-bordered w-full"
             >
               <option value="">-- Select Subject --</option>
               <option>General Inquiry</option>
@@ -167,22 +156,23 @@ export default function ContactForm() {
               <option>Careers</option>
             </select>
             {errors.subject && (
-              <span className="text-red-500 text-sm">
-                {/* {errors.subject.message} */}
-                Subject is required
-              </span>
+              <span className="text-red-500 text-sm">{errors.subject.message}</span>
             )}
           </div>
         </div>
 
+        <label htmlFor="message" className="sr-only">
+          Your Message *
+        </label>
         <textarea
-          {...register("message", { required: true })}
+          id="message"
+          {...register("message", { required: "Message is required" })}
           rows={5}
           placeholder="Your Message *"
           className="textarea textarea-bordered w-full"
         />
         {errors.message && (
-          <span className="text-red-500 text-sm">Message is required</span>
+          <span className="text-red-500 text-sm">{errors.message.message}</span>
         )}
 
         <button
@@ -199,13 +189,6 @@ export default function ContactForm() {
             "Send Message"
           )}
         </button>
-
-        {/* {status.success && (
-          <p className="text-green-600 text-center">{status.success}</p>
-        )}
-        {status.error && (
-          <p className="text-red-600 text-center">{status.error}</p>
-        )} */}
       </form>
     </div>
   );

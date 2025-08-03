@@ -1,7 +1,9 @@
 import banner from "@/assets/image/banner/banner.jpg";
+
 const GalleryHero = () => {
   return (
     <section
+      role="banner"
       className="relative w-full h-[80vh] bg-cover bg-center"
       style={{ backgroundImage: `url(${banner.src})` }}
     >

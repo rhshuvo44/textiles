@@ -3,72 +3,49 @@ import Link from "next/link";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-// const Swiper = dynamic(() => import("swiper/react").then((mod) => mod.Swiper), {
-//   ssr: false,
-// });
-// const SwiperSlide = dynamic(
-//   () => import("swiper/react").then((mod) => mod.SwiperSlide),
-//   { ssr: false }
-// );
-// import required modules
-// import { Autoplay } from "swiper/modules";
 
 import { homeBanner } from "@/db/data";
 import { Autoplay, Pagination } from "swiper/modules";
 const Banner = () => {
   return (
     <Swiper
-      autoplay={true}
+      autoplay={{
+        delay: 5000,
+        disableOnInteraction: false,
+      }}
       loop={true}
       pagination={{
         dynamicBullets: true,
-        enabled: true,
         clickable: true,
         renderBullet: (index, className) => {
           return `<span class="${className}">${index + 1}</span>`;
         },
       }}
+      speed={800}
       modules={[Pagination, Autoplay]}
     >
-      {/* Add multiple SwiperSlide components */}
       {homeBanner.map((banner, index) => (
         <SwiperSlide key={index}>
           <div
-            className="hero min-h-screen"
+            className="hero min-h-[60vh] md:min-h-screen bg-cover bg-center"
             style={{
               backgroundImage: `url(${banner.src.src})`,
             }}
           >
             <div className="hero-overlay bg-opacity-60"></div>
-            <div className="hero-content text-neutral-content text-center px-10">
-              <div className="max-w-lg ">
-                <h1
-                  className="mb-5 text-2xl md:text-5xl font-bold"
-                  data-aos="fade-left"
-                  data-aos-offset="300"
-                  data-aos-easing="ease-in-sine"
-                >
+            <div className="hero-content px-4 sm:px-6 md:px-10 py-10 text-center text-neutral-content">
+              <div className="max-w-lg mx-auto">
+                <h1 className="mb-3 text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold">
                   {banner.title}
                 </h1>
-                <p
-                  className="mb-5"
-                  data-aos="fade-right"
-                  data-aos-easing="ease-in-sine"
-                >
-                  {banner.description}
-                </p>
-                <div className="flex gap-3 justify-center flex-col md:flex-row">
-                  <Link
-                    href="/"
-                    className="btn btn-info text-white"
-                    data-aos="zoom-in"
-                  >
+                <p className="mb-5">{banner.description}</p>
+                <div className="flex flex-col md:flex-row items-center gap-4 justify-center">
+                  <Link href="/" className="btn btn-info text-white">
                     In Details <FaLongArrowAltRight />
                   </Link>
                   <Link
                     href="/contact"
                     className="btn btn-outline text-info hover:bg-info hover:border-info duration-300"
-                    data-aos="zoom-out"
                   >
                     Contact Us <FaLongArrowAltRight />
                   </Link>
@@ -78,146 +55,7 @@ const Banner = () => {
           </div>
         </SwiperSlide>
       ))}
-      {/* <SwiperSlide>
-        <div
-          className="hero min-h-screen"
-          style={{
-            backgroundImage: `url(${banner.src})`,
-          }}
-        >
-          <div className="hero-overlay bg-opacity-60"></div>
-          <div className="hero-content text-neutral-content text-center px-10">
-            <div className="max-w-lg ">
-              <h1
-                className="mb-5 text-2xl md:text-5xl font-bold"
-                data-aos="fade-left"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine"
-              >
-                Global Garment Excellence Starts Here
-              </h1>
-              <p
-                className="mb-5"
-                data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine"
-              >
-                Supplying premium textiles and apparel to leading markets
-                worldwide.
-              </p>
-              <div className="flex gap-3 justify-center flex-col md:flex-row">
-                <Link
-                  href="/"
-                  className="btn btn-info text-white"
-                  data-aos="zoom-in"
-                >
-                  In Details <FaLongArrowAltRight />
-                </Link>
-                <Link
-                  href="/contact"
-                  className="btn btn-outline text-info hover:bg-info hover:border-info duration-300"
-                  data-aos="zoom-out"
-                >
-                  Contact Us <FaLongArrowAltRight />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div
-          className="hero min-h-screen"
-          style={{
-            backgroundImage: `url(${banner.src})`,
-          }}
-        >
-          <div className="hero-overlay bg-opacity-60"></div>
-          <div className="hero-content text-neutral-content text-center px-10">
-            <div className="max-w-lg ">
-              <h1
-                className="mb-5 text-2xl md:text-5xl font-bold"
-                data-aos="fade-left"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine"
-              >
-                Where Quality Meets Global Fashion
-              </h1>
-              <p
-                className="mb-5"
-                data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine"
-              >
-                Empowering brands with world-class garments and textile
-                innovation.
-              </p>
-              <div className="flex gap-3 justify-center flex-col md:flex-row">
-                <Link
-                  href="/"
-                  className="btn btn-info text-white"
-                  data-aos="zoom-in"
-                >
-                  In Details <FaLongArrowAltRight />
-                </Link>
-                <Link
-                  href="/contact"
-                  className="btn btn-outline text-info hover:bg-info hover:border-info duration-300"
-                  data-aos="zoom-out"
-                >
-                  Contact Us <FaLongArrowAltRight />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </SwiperSlide> */}
     </Swiper>
-
-    // <div
-    //   className="hero min-h-screen"
-    //   style={{
-    //     backgroundImage: `url(${banner.src})`,
-    //   }}
-    // >
-    //   <div className="hero-overlay bg-opacity-60"></div>
-    //   <div className="hero-content text-neutral-content text-center px-10">
-    //     <div className="max-w-lg ">
-    //       <h1 className="mb-5 text-2xl md:text-5xl font-bold"
-    //       data-aos="fade-left"
-    //       data-aos-offset="300"
-    //       data-aos-easing="ease-in-sine"
-    //       >
-    //         The Largest Exporter of Textile Products
-    //       </h1>
-    //       <p
-    //         className="mb-5"
-    //         data-aos="fade-right"
-    //         data-aos-offset="300"
-    //         data-aos-easing="ease-in-sine"
-    //       >
-    //         In the list of importers – 45 countries: Germany, Spain, Italy,
-    //         Poland, Portugal, Turkey, South Korea, Japan, etc.
-    //       </p>
-    //       <div className="flex gap-3 justify-center flex-col md:flex-row">
-    //         <Link
-    //           href="/"
-    //           className="btn btn-info text-white"
-    //           data-aos="zoom-in"
-    //         >
-    //           In Details <FaLongArrowAltRight />
-    //         </Link>
-    //         <Link
-    //           href="/contact"
-    //           className="btn btn-outline text-info hover:bg-info hover:border-info duration-300"
-    //           data-aos="zoom-out"
-    //         >
-    //           Contact Us <FaLongArrowAltRight />
-    //         </Link>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
   );
 };
 

@@ -1,9 +1,11 @@
 import banner from "@/assets/image/banner/merchandising.jpg";
+
 const MerchandisingBanner = () => {
   return (
     <section
       className="relative w-full h-[80vh] bg-cover bg-center"
       style={{ backgroundImage: `url(${banner.src})` }}
+      aria-label="Merchandising Solutions Banner"
     >
       <div className="bg-black bg-opacity-50 w-full h-full flex flex-col items-center justify-center text-white text-center px-4">
         <h1 className="text-4xl md:text-6xl font-bold mb-4" data-aos="fade-up">

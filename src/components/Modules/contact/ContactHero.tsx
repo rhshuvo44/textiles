@@ -4,6 +4,8 @@ import banner from "@/assets/image/banner/contact.jpg";
 const ContactHero = () => {
   return (
     <section
+      role="banner"
+      aria-label="Contact hero section"
       className="relative w-full h-[60vh] flex items-center justify-center bg-cover bg-center"
       style={{
         backgroundImage: `url(${banner.src})`,

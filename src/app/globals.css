@@ -1,17 +1,40 @@
+/*
+ * ThemeForest Template CSS
+ * Author: Ripon Hossain Shuvo
+ * Email: rhshuvo121@gmail.com
+ * Portfolio: https://ripon.vercel.app/
+ * GitHub: https://github.com/rhshuvo44
+ * Created: August 2025
+ * Description: Core styles for a Tailwind CSS based ThemeForest template including menu styles, swiper slider, card interactions, and preloader animations.
+ * License: Licensed for use in ThemeForest templates and associated projects.
+ */
+
+/* ================================
+   Tailwind Base Import & Overrides
+================================= */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Prevent horizontal overflow */
 body {
   overflow-x: hidden;
 }
+
+/* ================================
+   Menu Styles & Interaction States
+================================= */
+
+/* Active and focus styles for menu items */
 .menu li > :not(ul, .menu-title, details, .btn):active,
 .menu li > :not(ul, .menu-title, details, .btn).active,
 .menu li > details > summary:active {
   --tw-bg-opacity: 1;
   background-color: transparent;
-  color: #00a9e9;
+  color: #00a9e9; /* Theme blue */
 }
+
+/* Focus styles for menu items (excluding certain elements) */
 :where(
     .menu li:not(.menu-title, .disabled) > :not(ul, details, .menu-title)
   ):not(summary, .active, .btn).focus,
@@ -33,6 +56,7 @@ body {
   background-color: transparent;
 }
 
+/* Hover styles for menu items (modern browsers supporting oklch) */
 @media (hover: hover) {
   @supports (color: oklch(0% 0 0)) {
     :where(
@@ -49,20 +73,27 @@ body {
     }
   }
 }
+
+/* ================================
+   Swiper Slider Styles
+================================= */
+
 .swiper {
   width: 100%;
   height: 100%;
 }
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
 
-  /* Center slide text vertically */
+  /* Center slide content */
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .swiper-slide img {
   display: block;
   width: 100%;
@@ -70,20 +101,30 @@ body {
   object-fit: cover;
 }
 
+/* ================================
+   Card Hover Interaction
+================================= */
+
+/* When hovering on .innerCard, change .innerCardBody bg color */
 .innerCard:hover .innerCardBody {
   background-color: red;
   transition: all 0.5s ease-in-out;
 }
+
+/* Show .bodyDis when hovering on .innerCard */
 .innerCard:hover .bodyDis {
   display: block;
   transition: all 0.5s ease-in-out;
 }
-/* .innerCardBody {
-} */
+
+/* Initially hide .bodyDis */
 .bodyDis {
   display: none;
 }
-/* /////////////////////////////////////////// */
+
+/* ================================
+   Reset & Global Styles
+================================= */
 
 * {
   margin: 0;
@@ -91,23 +132,28 @@ body {
   box-sizing: border-box;
 }
 
-/* preloader */
+/* ================================
+   Preloader Styles
+================================= */
 
 .se-pre-con {
   position: fixed;
   z-index: 9999;
   top: 0;
-  /* background: #fff; */
   width: 100%;
   height: 100%;
   text-align: center;
+  /* Optional: background color */
+  /* background: #fff; */
 }
+
 .preloader-wrapper {
   position: absolute;
   top: 50%;
   left: 40%;
   transform: translate(-50%, -50%);
 }
+
 .preloader {
   margin: auto;
   object-fit: contain;
@@ -116,9 +162,10 @@ body {
   height: 100px;
 }
 
+/* Spinning loader */
 .preloader2 {
   border: 5px solid #f3f3f3;
-  border-top: 5px solid #086ad8;
+  border-top: 5px solid #086ad8; /* Blue accent */
   border-radius: 50%;
   width: 100px;
   height: 100px;

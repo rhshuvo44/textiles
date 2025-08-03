@@ -1,19 +1,21 @@
 import Image from "next/image";
+
 interface CaseStudy {
   title: string;
   description: string;
   image: string;
   stats: string;
 }
+
 const caseStudies: CaseStudy[] = [
   {
     title: "Boosting Production for EcoWear",
-    description:
-      "Helped EcoWear scale production while maintaining sustainability.",
+    description: "Helped EcoWear scale production while maintaining sustainability.",
     image: "/case-studies/ecowear.png",
     stats: "Efficiency ↑ 30%",
   },
 ];
+
 const CaseStudies = () => {
   return (
     <>
@@ -25,19 +27,22 @@ const CaseStudies = () => {
           >
             Case Studies
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2  gap-8 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {caseStudies.map((cs, index) => (
               <div
                 key={index}
                 className="bg-white rounded-xl shadow-lg p-6"
                 data-aos="fade-up"
               >
-                <Image
-                  fill
-                  src={cs.image}
-                  alt={cs.title}
-                  className="w-full h-48 object-cover rounded mb-4"
-                />
+                {/* Image wrapper with relative and fixed height */}
+                <div className="relative w-full h-48 rounded overflow-hidden mb-4">
+                  <Image
+                    src={cs.image}
+                    alt={cs.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
                 <h3 className="text-xl font-semibold mb-2">{cs.title}</h3>
                 <p className="text-gray-600 mb-2">{cs.description}</p>
                 <span className="font-medium text-indigo-600">{cs.stats}</span>

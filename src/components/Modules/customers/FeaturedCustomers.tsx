@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const FeaturedCustomers = () => {
   return (
-    <div className=" md:p-10 p-5">
+    <div className="md:p-10 p-5">
       <h2
         className="text-4xl sm:text-5xl font-semibold mb-8 text-center"
         data-aos="fade-up"
@@ -18,11 +18,11 @@ const FeaturedCustomers = () => {
             data-aos="fade-up"
           >
             <Image
-              width={200}
-              height={200}
               src={customer.logo}
               alt={customer.name}
-              className="mx-auto h-16 mb-4"
+              width={64}
+              height={64}
+              className="mx-auto mb-4"
             />
             <p className="text-sm text-info">{customer.name}</p>
             <p className="text-sm text-gray-600">{customer.description}</p>

@@ -1,28 +1,5 @@
 const MerchandisingAbout = () => {
   return (
-    // <section className="py-16 px-4 max-w-6xl mx-auto text-center">
-    //   <h2 className="text-3xl font-bold mb-6">About Our Merchandising</h2>
-    //   <p className="mb-10 text-lg">
-    //     We provide end-to-end merchandising solutions, combining industry
-    //     expertise and efficient processes.
-    //   </p>
-    //   <div className="grid md:grid-cols-3 gap-8">
-    //     {[
-    //       { icon: "🧵", title: "Fabric Sourcing" },
-    //       { icon: "🎨", title: "Product Development" },
-    //       { icon: "💰", title: "Costing & Pricing" },
-    //       { icon: "✅", title: "Quality Control" },
-    //     ].map(({ icon, title }) => (
-    //       <div
-    //         key={title}
-    //         className="p-6 border rounded-lg shadow hover:shadow-md transition"
-    //       >
-    //         <div className="text-4xl mb-4">{icon}</div>
-    //         <h3 className="text-xl font-semibold">{title}</h3>
-    //       </div>
-    //     ))}
-    //   </div>
-    // </section>
     <section className="md:p-10 p-5 text-center">
       <h2 className="text-4xl sm:text-5xl font-bold mb-6" data-aos="fade-up">
         Our Merchandising Process
@@ -75,9 +52,16 @@ const MerchandisingAbout = () => {
             key={title}
             className="p-6 border rounded-2xl shadow hover:shadow-md transition"
             data-aos="fade-up"
+            role="region"
+            aria-labelledby={`${title.replace(/\s+/g, "-").toLowerCase()}-title`}
           >
-            <div className="text-4xl mb-4">{icon}</div>
-            <h3 className="text-xl font-semibold mb-2">{title}</h3>
+            <div className="text-4xl mb-4" aria-hidden="true">{icon}</div>
+            <h3
+              id={`${title.replace(/\s+/g, "-").toLowerCase()}-title`}
+              className="text-xl font-semibold mb-2"
+            >
+              {title}
+            </h3>
             <p className="text-gray-600">{description}</p>
           </div>
         ))}

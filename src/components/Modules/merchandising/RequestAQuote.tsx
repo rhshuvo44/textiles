@@ -17,48 +17,29 @@ const RequestAQuote = () => {
   const form = useRef<HTMLFormElement>(null);
 
   const onSubmit = async () => {
-    emailjs
-      .sendForm(
-        "service_jqd85q9", // From EmailJS dashboard
-        "template_e3t90n8", // From EmailJS dashboard
-        form.current!, // Pass the form element directly
-        "SCRr6WqN7Mb9ynDv7" // From EmailJS dashboard
-      )
-      .then(
-        (result) => {
-          console.log(result);
-          reset(); // Reset the form after successful submission
-          toast.success("Message sent successfully!");
-          // setStatus({ success: "Message sent successfully!" });
-        },
-        (error) => {
-          console.error(error);
-          toast.error("Failed to send message.");
-          // setStatus({ error: "Failed to send message." });
-        }
+    if (!form.current) return;
+
+    try {
+      await emailjs.sendForm(
+        "service_jqd85q9",       // Your EmailJS Service ID
+        "template_e3t90n8",      // Your EmailJS Template ID
+        form.current,
+        "SCRr6WqN7Mb9ynDv7"     // Your EmailJS User/Public Key
       );
-    // try {
-    //   const res = await fetch("/api/quote", {
-    //     method: "POST",
-    //     headers: { "Content-Type": "application/json" },
-    //     body: JSON.stringify(data),
-    //   });
-    //   if (res.ok) {
-    //     console.log("Request sent successfully");
-    //     reset(); // Reset form
-    //   } else {
-    //     console.error("Failed to send request");
-    //   }
-    // } catch (error) {
-    //   console.error("Error during submission:", error);
-    // }
+      reset();
+      toast.success("Message sent successfully!");
+    } catch (error) {
+      console.error(error);
+      toast.error("Failed to send message.");
+    }
   };
 
   return (
-    <section className="md:p-10 p-5  text-center" id="quote">
+    <section className="md:p-10 p-5 text-center" id="quote">
       <h2 className="text-4xl sm:text-5xl font-bold mb-6" data-aos="fade-up">
         Request a Quote
       </h2>
+
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="space-y-4"
@@ -66,155 +47,97 @@ const RequestAQuote = () => {
         data-aos="fade-up"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div>
-            <input
-              {...register("name", { required: "Name is required" })}
-              type="text"
-              placeholder="Name"
-              className="input input-bordered w-full text-black"
-            />
-            {errors.name && (
-              <p className="text-red-500 text-left">{errors.name.message}</p>
-            )}
-          </div>
+          <InputField
+            register={register}
+            name="name"
+            placeholder="Name"
+            error={errors.name}
+            validation={{ required: "Name is required" }}
+          />
 
-          <div>
-            <input
-              {...register("company")}
-              type="text"
-              placeholder="Company"
-              className="input input-bordered w-full text-black"
-            />
-            {errors.company && (
-              <p className="text-red-500 text-left">{errors.company.message}</p>
-            )}
-          </div>
+          <InputField
+            register={register}
+            name="company"
+            placeholder="Company"
+          />
 
-          <div>
-            <input
-              {...register("email", {
-                required: "Email is required",
-                pattern: {
-                  value: /^\S+@\S+$/i,
-                  message: "Invalid email address",
-                },
-              })}
-              type="email"
-              placeholder="Email"
-              className="input input-bordered w-full text-black"
-            />
-            {errors.email && (
-              <p className="text-red-500 text-left">{errors.email.message}</p>
-            )}
-          </div>
+          <InputField
+            register={register}
+            name="email"
+            type="email"
+            placeholder="Email"
+            error={errors.email}
+            validation={{
+              required: "Email is required",
+              pattern: { value: /^\S+@\S+$/i, message: "Invalid email address" },
+            }}
+          />
 
-          <div>
-            <input
-              {...register("phone", { required: "Phone is required" })}
-              type="tel"
-              placeholder="Phone"
-              className="input input-bordered w-full text-black"
-            />
-            {errors.phone && (
-              <p className="text-red-500 text-left">{errors.phone.message}</p>
-            )}
-          </div>
+          <InputField
+            register={register}
+            name="phone"
+            type="tel"
+            placeholder="Phone"
+            error={errors.phone}
+            validation={{ required: "Phone is required" }}
+          />
 
-          <div>
-            <input
-              {...register("whatsapp")}
-              type="tel"
-              placeholder="WhatsApp (Optional)"
-              className="input input-bordered w-full text-black"
-            />
-            {errors.whatsapp && (
-              <p className="text-red-500 text-left">
-                {errors.whatsapp.message}
-              </p>
-            )}
-          </div>
+          <InputField
+            register={register}
+            name="whatsapp"
+            type="tel"
+            placeholder="WhatsApp (Optional)"
+          />
 
-          {/* Style Dropdown */}
-          <div>
-            <select
-              {...register("category")}
-              className="select select-bordered w-full text-black"
-              name="category"
-            >
-              <option value="">Select Product Category</option>
-              {styles.map((style, i) => (
-                <option key={i} value={style}>
-                  {style}
-                </option>
-              ))}
-            </select>
-          </div>
-          <div>
-            <input
-              {...register("quantity", { required: "Quantity is required" })}
-              type="number"
-              placeholder="Quantity"
-              className="input input-bordered w-full text-black"
-            />
-            {errors.quantity && (
-              <p className="text-red-500 text-left">
-                {errors.quantity.message}
-              </p>
-            )}
-          </div>
-          {/* Fabric Dropdown */}
-          <div>
-            <select
-              {...register("fabric")}
-              className="select select-bordered w-full text-black"
-              name="fabric"
-            >
-              <option value="">Select Fabric Type</option>
-              {fabrics.map((fabric, i) => (
-                <option key={i} value={fabric}>
-                  {fabric}
-                </option>
-              ))}
-            </select>
-          </div>
-          {/* Yarn Dropdown */}
-          <div>
-            <select
-              {...register("yarn")}
-              className="select select-bordered w-full text-black"
-              name="yarn"
-            >
-              <option value="">Select Yarn Type</option>
-              {yarns.map((yarn, i) => (
-                <option key={i} value={yarn}>
-                  {yarn}
-                </option>
-              ))}
-            </select>
-          </div>
-          <div>
-            <input
-              {...register("ratio", { required: "Ratio is required" })}
-              type="number"
-              placeholder="Ratio"
-              className="input input-bordered w-full text-black"
-            />
-            {errors.ratio && (
-              <p className="text-red-500 text-left">{errors.ratio.message}</p>
-            )}
-          </div>
-          <div>
-            <input
-              {...register("GSM", { required: "GSM is required" })}
-              type="number"
-              placeholder="GSM"
-              className="input input-bordered w-full text-black"
-            />
-            {errors.GSM && (
-              <p className="text-red-500 text-left">{errors.GSM.message}</p>
-            )}
-          </div>
+          <SelectField
+            register={register}
+            name="category"
+            options={styles}
+            placeholder="Select Product Category"
+          />
+
+          <InputField
+            register={register}
+            name="quantity"
+            type="number"
+            placeholder="Quantity"
+            error={errors.quantity}
+            validation={{ required: "Quantity is required" }}
+          />
+
+          <SelectField
+            register={register}
+            name="fabric"
+            options={fabrics}
+            placeholder="Select Fabric Type"
+          />
+
+          <SelectField
+            register={register}
+            name="yarn"
+            options={yarns}
+            placeholder="Select Yarn Type"
+          />
+
+          <InputField
+            register={register}
+            name="ratio"
+            type="number"
+            placeholder="Ratio"
+            error={errors.ratio}
+            validation={{ required: "Ratio is required" }}
+          />
+
+          <InputField
+            register={register}
+            name="GSM"
+            type="number"
+            placeholder="GSM"
+            error={errors.GSM}
+            validation={{ required: "GSM is required" }}
+          />
         </div>
+
         <button
           type="submit"
           className="btn btn-info text-white w-full"
@@ -236,5 +159,61 @@ const RequestAQuote = () => {
     </section>
   );
 };
+
+const InputField = ({
+  register,
+  name,
+  placeholder,
+  type = "text",
+  error,
+  validation,
+}: {
+  register: any;
+  name: keyof QuoteFormData;
+  placeholder: string;
+  type?: string;
+  error?: any;
+  validation?: any;
+}) => (
+  <div>
+    <input
+      {...register(name, validation)}
+      type={type}
+      placeholder={placeholder}
+      className="input input-bordered w-full text-black"
+    />
+    {error && <p className="text-red-500 text-left">{error.message}</p>}
+  </div>
+);
+
+const SelectField = ({
+  register,
+  name,
+  options,
+  placeholder,
+}: {
+  register: any;
+  name: keyof QuoteFormData;
+  options: string[];
+  placeholder: string;
+}) => (
+  <div>
+    <select
+      {...register(name)}
+      className="select select-bordered w-full text-black"
+      defaultValue=""
+      name={name}
+    >
+      <option value="" disabled>
+        {placeholder}
+      </option>
+      {options.map((option, i) => (
+        <option key={i} value={option}>
+          {option}
+        </option>
+      ))}
+    </select>
+  </div>
+);
 
 export default RequestAQuote;

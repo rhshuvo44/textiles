@@ -5,29 +5,30 @@ import { BiUser } from "react-icons/bi";
 
 const TeamSection = () => {
   return (
-    <div className="mdp-10 p-5 bg-base-100 text-base-content">
+    <section className="p-5 md:p-10 bg-base-100 text-base-content">
       <h2
         className="text-4xl sm:text-5xl font-bold text-center mb-8"
         data-aos="fade-up"
       >
         Meet Our Management
       </h2>
-      <div className="flex flex-col md:flex-row justify-center gap-6">
+      <div className="flex flex-col md:flex-row justify-center flex-wrap gap-6">
         {teamMembers.map((member, index) => (
           <div
             key={index}
-            className="card w-80 bg-base-200 shadow-xl"
+            className="card w-72 md:w-80 bg-base-200 shadow-xl flex-shrink-0"
             data-aos="fade-up"
           >
-            <figure>
+            <figure className="bg-gray-100 flex items-center justify-center h-72 overflow-hidden rounded-t-lg">
+              {/* Uncomment and replace BiUser if images are available */}
               {/* <Image
                 src={member.image}
                 alt={member.name}
-                width={400}
-                height={400}
-                className="w-full h-72 object-cover"
+                width={320}
+                height={288}
+                className="w-full h-full object-cover"
               /> */}
-              <BiUser size={400} />
+              <BiUser size={160} className="text-gray-400" aria-hidden="true" />
             </figure>
             <div className="card-body items-center text-center">
               <h3 className="card-title">{member.name}</h3>
@@ -37,36 +38,7 @@ const TeamSection = () => {
           </div>
         ))}
       </div>
-    </div>
-    // <section className="p-5 md:p-10 bg-base-100 text-base-content">
-    //   <div className="">
-    //     <h2 className="text-4xl font-bold text-center mb-12">
-    //       Meet with our Management
-    //     </h2>
-    //     <div className="grid sm:grid-cols-2 grid-cols-1 gap-8">
-    //       {teamMembers.map((member, index) => (
-    //         <div
-    //           key={index}
-    //           className="relative group overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300"
-    //           data-aos="fade-up"
-    //         >
-    //           <Image
-    //             width={400}
-    //             height={400}
-    //             src={member.image}
-    //             alt={member.name}
-    //             className="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-300"
-    //           />
-    //           <div className="absolute inset-0 bg-black bg-opacity-70 text-white flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-    //             <h3 className="text-xl font-semibold">{member.name}</h3>
-    //             <p className="text-sm">{member.role}</p>
-    //             <p className="text-sm mt-2">{member.bio}</p>
-    //           </div>
-    //         </div>
-    //       ))}
-    //     </div>
-    //   </div>
-    // </section>
+    </section>
   );
 };
 
