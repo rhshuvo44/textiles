@@ -19,7 +19,7 @@ const Capabilities = () => {
           <p className=" mb-2 leading-relaxed" data-aos="fade-down">
             At{" "}
             <span className="text-lg font-bold text-[#00A9E9]">
-              Sarkar Textiles & Apparel
+               Textiles 
             </span>
             , we pride ourselves on our diverse and robust capabilities that
             enable us to meet the evolving needs of the textile industry. Our

@@ -66,27 +66,27 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-4">Contact</h3>
             <p>
               Email:{" "}
-              <a className="block" href="mailto:info@sarkartextilesapparel.com">
-                info@sarkartextilesapparel.com
+              <a className="block" href="mailto:rhshuvo121@gmail.com">
+                rhshuvo121@gmail.com
               </a>
              
             </p>
             <p>
               Phone:
-              <a className="block" href="tel:+8801704172061">
+              <a className="block" href="tel:+8801111111111">
                 {" "}
-                +88 01704172061
+                +88 01111111111
               </a>
-              <a className="block" href="tel:+8801788577329">
+              <a className="block" href="tel:+8801111111111">
                 {" "}
-                +88 01788577329
+                +88 0111111111
               </a>
             </p>
             <p>
-              WhatsApp: <span className="block">+88 01788577329</span>
+              WhatsApp: <span className="block">+88 0111111111</span>
             </p>
             <p>
-              Address: <span className="block">13 No, New Haziganj,Narayanganj -1400, Bangladesh</span>
+              Address: <span className="block">13 No, New market,Dhaka -1200, Bangladesh</span>
             </p>
             <p>
               Working Hours: <span className="block">8am - 7pm (Sat - Thu)</span>
@@ -98,7 +98,7 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-4">Follow Us</h3>
             <div className="flex space-x-4 text-2xl">
               <a
-                href="https://www.facebook.com/sarkartextilesandapparel"
+                href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-info"
@@ -122,7 +122,7 @@ const Footer = () => {
                 <FaLinkedinIn />
               </a>
               <a
-                href="https://wa.me/8801788577329"
+                href="https://wa.me/8801111111111"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-info"

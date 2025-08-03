@@ -90,7 +90,7 @@ const OfficeContacts = () => {
                     Factory Address
                   </h4>
                   <p className="text-gray-500">
-                    13 No, New Haziganj, Narayanganj -1400, Bangladesh
+                    13 No, New market, Dhaka -1200, Bangladesh
                   </p>
                 </div>
               </div>
@@ -99,11 +99,11 @@ const OfficeContacts = () => {
                 <BiPhone className="text-info w-6 h-6 mt-1" />
                 <div>
                   <h4 className="font-semibold text-gray-700">Phone</h4>
-                  <a href="tel:+8801704172061" className="text-gray-500 block">
-                    +88 01704172061
+                  <a href="tel:+88011111111" className="text-gray-500 block">
+                    +88 0111111111
                   </a>
-                  <a href="tel:+8801788577329" className="text-gray-500 block">
-                    +88 01788577329
+                  <a href="tel:+88011111111" className="text-gray-500 block">
+                    +88 0111111111
                   </a>
                 </div>
               </div>
@@ -113,10 +113,10 @@ const OfficeContacts = () => {
                 <div>
                   <h4 className="font-semibold text-gray-700">Email</h4>
                   <a
-                    href="mailto:info@sarkartextilesapparel.com"
+                    href="mailto:rhshuvo121@gmail.com"
                     className="text-gray-500 block"
                   >
-                    info@sarkartextilesapparel.com
+                    rhshuvo121@gmail.com
                   </a>
                 </div>
               </div>
@@ -125,7 +125,7 @@ const OfficeContacts = () => {
                 <FiMessageCircle className="text-info w-6 h-6 mt-1" />
                 <div>
                   <h4 className="font-semibold text-gray-700">WhatsApp</h4>
-                  <p className="text-gray-500">+88 01788577329</p>
+                  <p className="text-gray-500">+88 01111111111</p>
                 </div>
               </div>
 
@@ -139,7 +139,7 @@ const OfficeContacts = () => {
 
               <div className="flex items-center gap-4 pt-4">
                 <a
-                  href="https://www.facebook.com/sarkartextilesandapparel"
+                  href="https://www.facebook.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
