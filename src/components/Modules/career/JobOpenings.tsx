@@ -3,7 +3,10 @@ import { jobs } from "@/db/data";
 
 const JobOpenings = () => {
   return (
-    <section className="px-4 md:px-12 py-10 bg-base-100 text-base-content" id="job-openings">
+    <section
+      className="px-4 md:px-12 py-10 bg-base-100 text-base-content"
+      id="job-openings"
+    >
       <h2
         className="text-4xl sm:text-5xl font-bold text-center mb-12"
         data-aos="fade-up"

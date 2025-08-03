@@ -31,10 +31,10 @@ export default function ContactForm() {
     setLoading(true);
     try {
       await emailjs.sendForm(
-        "service_jqd85q9", // Your EmailJS service ID
-        "template_k42cntw", // Your EmailJS template ID
+        process.env.NEXT_PUBLIC_EMAILJS_CONTACT_FORM_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_CONTACT_FORM_TEMPLATE_ID!,
         form.current!,
-        "SCRr6WqN7Mb9ynDv7" // Your EmailJS user/public key
+        process.env.NEXT_PUBLIC_EMAILJS_CONTACT_FORM_PUBLIC_KEY!
       );
       reset();
       toast.success("Message sent successfully!");
@@ -90,7 +90,9 @@ export default function ContactForm() {
               placeholder="Email Address *"
             />
             {errors.email && (
-              <span className="text-red-500 text-sm">{errors.email.message}</span>
+              <span className="text-red-500 text-sm">
+                {errors.email.message}
+              </span>
             )}
           </div>
 
@@ -111,7 +113,9 @@ export default function ContactForm() {
               placeholder="Phone Number *"
             />
             {errors.phone && (
-              <span className="text-red-500 text-sm">{errors.phone.message}</span>
+              <span className="text-red-500 text-sm">
+                {errors.phone.message}
+              </span>
             )}
           </div>
 
@@ -156,7 +160,9 @@ export default function ContactForm() {
               <option>Careers</option>
             </select>
             {errors.subject && (
-              <span className="text-red-500 text-sm">{errors.subject.message}</span>
+              <span className="text-red-500 text-sm">
+                {errors.subject.message}
+              </span>
             )}
           </div>
         </div>

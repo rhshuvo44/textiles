@@ -1,50 +1,48 @@
-import { StaticImageData } from "next/image"
-import { ReactNode } from "react"
+import { StaticImageData } from "next/image";
+import { ReactNode } from "react";
 
 export type TServices = {
-    id: number,
-    icon: React.ReactNode,
-    title: string,
-    description: string,
-}
+  id: number;
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+};
 export type TGetTouch = {
-    name: string
-    email: string
-    phone: string
-}
+  name: string;
+  email: string;
+  phone: string;
+};
 export type TContactForm = {
-    name: string
-    company: string
-    email: string
-    phone: string
-    message: string
-}
+  name: string;
+  company: string;
+  email: string;
+  phone: string;
+  message: string;
+};
 export type TeamMember = {
-    name: string;
-    role: string;
-    image: string | StaticImageData;
-    bio: string;
+  name: string;
+  role: string;
+  image: string | StaticImageData;
+  bio: string;
 };
 
 export interface Testimonial {
-    name: string;
-    title: string;
-    company: string;
-    photo: string | StaticImageData;
-    text: string;
+  name: string;
+  title: string;
+  company: string;
+  photo: string | StaticImageData;
+  text: string;
 }
-
 
 export interface Customer {
-    name: string;
-    logo: string | StaticImageData;
-    description: string;
+  name: string;
+  logo: string | StaticImageData;
+  description: string;
 }
 export type Certification = {
-    name: string;
-    image: string | StaticImageData;
+  name: string;
+  image: string | StaticImageData;
 };
-
 
 export type QuoteFormData = {
   name: string;

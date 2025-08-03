@@ -10,7 +10,8 @@ interface CaseStudy {
 const caseStudies: CaseStudy[] = [
   {
     title: "Boosting Production for EcoWear",
-    description: "Helped EcoWear scale production while maintaining sustainability.",
+    description:
+      "Helped EcoWear scale production while maintaining sustainability.",
     image: "/case-studies/ecowear.png",
     stats: "Efficiency ↑ 30%",
   },

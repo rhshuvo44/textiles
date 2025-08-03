@@ -1,5 +1,3 @@
-const envConfig = {
-
-};
+const envConfig = {};
 
 export default envConfig;

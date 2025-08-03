@@ -50,10 +50,14 @@ const Footer = () => {
               WhatsApp: <span className="block">+88 0111111111</span>
             </p>
             <p>
-              Address: <span className="block">13 No, New market, Dhaka -1200, Bangladesh</span>
+              Address:{" "}
+              <span className="block">
+                13 No, New market, Dhaka -1200, Bangladesh
+              </span>
             </p>
             <p>
-              Working Hours: <span className="block">8am - 7pm (Sat - Thu)</span>
+              Working Hours:{" "}
+              <span className="block">8am - 7pm (Sat - Thu)</span>
             </p>
           </div>
 

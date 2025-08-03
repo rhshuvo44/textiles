@@ -55,7 +55,9 @@ const MerchandisingAbout = () => {
             role="region"
             aria-labelledby={`${title.replace(/\s+/g, "-").toLowerCase()}-title`}
           >
-            <div className="text-4xl mb-4" aria-hidden="true">{icon}</div>
+            <div className="text-4xl mb-4" aria-hidden="true">
+              {icon}
+            </div>
             <h3
               id={`${title.replace(/\s+/g, "-").toLowerCase()}-title`}
               className="text-xl font-semibold mb-2"

@@ -1,8 +1,6 @@
 "use client";
 
-import logo from "@/assets/image/logo.png";
 import { navLinks } from "@/db/data";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 

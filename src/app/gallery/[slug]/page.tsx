@@ -193,11 +193,15 @@ export function generateStaticParams() {
   }));
 }
 
-export default async function GalleryPage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function GalleryPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
 
   const product = productGallery.find(
-    (item) => item.title.toLowerCase().replace(/\s+/g, "-") === slug
+    (item) => item.title.toLowerCase().replace(/\s+/g, "-") === slug,
   );
 
   if (!product) {
@@ -223,7 +227,7 @@ export default async function GalleryPage({ params }: { params: Promise<{ slug: 
               typeof sub.photo === "string"
                 ? [sub.photo]
                 : Array.isArray(sub.photo)
-                  ? sub.photo.map((p) => typeof p === "string" ? p : p.src)
+                  ? sub.photo.map((p) => (typeof p === "string" ? p : p.src))
                   : [(sub.photo as { src: string }).src],
             description: sub.description,
           })),

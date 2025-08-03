@@ -8,7 +8,10 @@ import "swiper/css";
 const ProductCategory = () => {
   return (
     <div className="px-4 py-10 md:px-10">
-      <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8" data-aos="fade-up">
+      <h2
+        className="text-3xl sm:text-4xl font-bold text-center mb-8"
+        data-aos="fade-up"
+      >
         Product Categories
       </h2>
 
@@ -28,7 +31,7 @@ const ProductCategory = () => {
       >
         {productCategories.map(({ title, photo }, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-base-100 shadow-md rounded-xl overflow-hidden h-72 relative group hover:-translate-y-2 transition duration-300" >
+            <div className="bg-base-100 shadow-md rounded-xl overflow-hidden h-72 relative group hover:-translate-y-2 transition duration-300">
               <Image
                 src={photo}
                 alt={title}

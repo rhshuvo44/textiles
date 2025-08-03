@@ -1,11 +1,13 @@
 "use client";
 
-import { fabrics, styles, yarns } from "@/db/data";
-import { QuoteFormData } from "@/types";
-import emailjs from "emailjs-com";
 import { useRef } from "react";
+import emailjs from "emailjs-com";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
+import InputField from "@/components/form/InputField";
+import SelectField from "@/components/form/SelectField";
+import { fabrics, styles, yarns } from "@/db/data";
+import { QuoteFormData } from "@/types";
 
 const RequestAQuote = () => {
   const {
@@ -14,6 +16,7 @@ const RequestAQuote = () => {
     reset,
     formState: { errors, isSubmitting },
   } = useForm<QuoteFormData>();
+
   const form = useRef<HTMLFormElement>(null);
 
   const onSubmit = async () => {
@@ -21,11 +24,12 @@ const RequestAQuote = () => {
 
     try {
       await emailjs.sendForm(
-        "service_jqd85q9",       // Your EmailJS Service ID
-        "template_e3t90n8",      // Your EmailJS Template ID
+        process.env.NEXT_PUBLIC_EMAILJS_REQUEST_A_QUOTE_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_REQUEST_A_QUOTE_TEMPLATE_ID!,
         form.current,
-        "SCRr6WqN7Mb9ynDv7"     // Your EmailJS User/Public Key
+        process.env.NEXT_PUBLIC_EMAILJS_REQUEST_A_QUOTE_PUBLIC_KEY!
       );
+
       reset();
       toast.success("Message sent successfully!");
     } catch (error) {
@@ -54,13 +58,7 @@ const RequestAQuote = () => {
             error={errors.name}
             validation={{ required: "Name is required" }}
           />
-
-          <InputField
-            register={register}
-            name="company"
-            placeholder="Company"
-          />
-
+          <InputField register={register} name="company" placeholder="Company" />
           <InputField
             register={register}
             name="email"
@@ -69,10 +67,12 @@ const RequestAQuote = () => {
             error={errors.email}
             validation={{
               required: "Email is required",
-              pattern: { value: /^\S+@\S+$/i, message: "Invalid email address" },
+              pattern: {
+                value: /^\S+@\S+$/i,
+                message: "Invalid email address",
+              },
             }}
           />
-
           <InputField
             register={register}
             name="phone"
@@ -81,21 +81,18 @@ const RequestAQuote = () => {
             error={errors.phone}
             validation={{ required: "Phone is required" }}
           />
-
           <InputField
             register={register}
             name="whatsapp"
             type="tel"
             placeholder="WhatsApp (Optional)"
           />
-
           <SelectField
             register={register}
             name="category"
             options={styles}
             placeholder="Select Product Category"
           />
-
           <InputField
             register={register}
             name="quantity"
@@ -104,21 +101,18 @@ const RequestAQuote = () => {
             error={errors.quantity}
             validation={{ required: "Quantity is required" }}
           />
-
           <SelectField
             register={register}
             name="fabric"
             options={fabrics}
             placeholder="Select Fabric Type"
           />
-
           <SelectField
             register={register}
             name="yarn"
             options={yarns}
             placeholder="Select Yarn Type"
           />
-
           <InputField
             register={register}
             name="ratio"
@@ -127,7 +121,6 @@ const RequestAQuote = () => {
             error={errors.ratio}
             validation={{ required: "Ratio is required" }}
           />
-
           <InputField
             register={register}
             name="GSM"
@@ -147,7 +140,6 @@ const RequestAQuote = () => {
         </button>
       </form>
 
-      {/* Floating WhatsApp Button */}
       <a
         href="https://wa.me/8801788577329"
         className="fixed bottom-6 right-6 btn btn-success rounded-full shadow-lg"
@@ -159,61 +151,5 @@ const RequestAQuote = () => {
     </section>
   );
 };
-
-const InputField = ({
-  register,
-  name,
-  placeholder,
-  type = "text",
-  error,
-  validation,
-}: {
-  register: any;
-  name: keyof QuoteFormData;
-  placeholder: string;
-  type?: string;
-  error?: any;
-  validation?: any;
-}) => (
-  <div>
-    <input
-      {...register(name, validation)}
-      type={type}
-      placeholder={placeholder}
-      className="input input-bordered w-full text-black"
-    />
-    {error && <p className="text-red-500 text-left">{error.message}</p>}
-  </div>
-);
-
-const SelectField = ({
-  register,
-  name,
-  options,
-  placeholder,
-}: {
-  register: any;
-  name: keyof QuoteFormData;
-  options: string[];
-  placeholder: string;
-}) => (
-  <div>
-    <select
-      {...register(name)}
-      className="select select-bordered w-full text-black"
-      defaultValue=""
-      name={name}
-    >
-      <option value="" disabled>
-        {placeholder}
-      </option>
-      {options.map((option, i) => (
-        <option key={i} value={option}>
-          {option}
-        </option>
-      ))}
-    </select>
-  </div>
-);
 
 export default RequestAQuote;
