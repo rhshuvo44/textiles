@@ -3,7 +3,7 @@ import Image from "next/image";
 const Culture = () => {
   return (
     <section className="p-5 md:p-10">
-      <h2 className="text-3xl font-bold text-center mb-8">
+      <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-8">
         Our People & Culture
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

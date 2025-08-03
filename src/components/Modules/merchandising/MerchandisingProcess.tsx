@@ -28,7 +28,7 @@ const steps = [
 const MerchandisingProcess = () => {
   return (
     <section className="p-5 md:p-10">
-      <h2 className="text-3xl font-bold text-center mb-10" data-aos="fade-up">
+      <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-10" data-aos="fade-up">
         Our Process
       </h2>
       <div className="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0 md:space-x-8">

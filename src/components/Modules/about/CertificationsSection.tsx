@@ -19,7 +19,7 @@ const CertificationsSection = () => {
   return (
     <section className="p-5 md:p-10 bg-base-200 text-base-content">
       <div>
-        <h2 className="text-4xl font-bold text-center mb-12" data-aos="fade-up">
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-12" data-aos="fade-up">
           Membership & Certifications
         </h2>
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 justify-between place-items-center">

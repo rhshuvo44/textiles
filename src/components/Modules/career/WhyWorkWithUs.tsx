@@ -4,7 +4,7 @@ import React from "react";
 const WhyWorkWithUs = () => {
   return (
     <section className="px-4 md:px-12" data-aos="fade-up">
-      <h2 className="text-3xl font-bold text-center mb-8" data-aos="fade-up">
+      <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-8" data-aos="fade-up">
         Why Work With Us?
       </h2>
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">

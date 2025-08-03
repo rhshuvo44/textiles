@@ -10,7 +10,10 @@ const Capabilities = () => {
           <Image src={image} alt="Album" height={500} width={500} />
         </figure>
         <div className="card-body w-full md:w-1/2  md:px-20">
-          <h2 className="text-5xl font-bold text-[#00A9E9]" data-aos="fade-up">
+          <h2
+            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#00A9E9]"
+            data-aos="fade-up"
+          >
             Our Capabilities
           </h2>
           <p className=" mb-2 leading-relaxed" data-aos="fade-down">

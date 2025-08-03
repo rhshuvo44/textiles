@@ -13,7 +13,7 @@ const PartnerSlide = () => {
     <>
       <section className="p-5 md:p-10 bg-base-200">
         <div className=" text-center" data-aos="fade-up">
-          <h2 className="text-3xl font-bold mb-8" data-aos="fade-up">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8" data-aos="fade-up">
             Our Clients & Partners
           </h2>
           <Swiper

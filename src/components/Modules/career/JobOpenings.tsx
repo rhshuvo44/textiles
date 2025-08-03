@@ -9,7 +9,7 @@ const JobOpenings = () => {
   // const [selectedJob, setSelectedJob] = useState<Job | null>(null);
   return (
     <section className="px-4 md:px-12" id="job-openings">
-      <h2 className="text-3xl font-bold text-center mb-8">
+      <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-8">
         Current Opportunities
       </h2>
       {/* <div className="flex flex-col md:flex-row gap-4 mb-6">

@@ -76,7 +76,7 @@ const OfficeContacts = () => {
       </div> */}
       <section className="p-5 md:p-10 bg-white">
         <div className="">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center text-gray-800 mb-10">
             Office Contact
           </h2>
 

@@ -15,7 +15,7 @@ const GetInTouch = () => {
   };
   return (
     <form className="card-body" onSubmit={handleSubmit(onSubmit)}>
-      <h2 className="text-2xl font-bold text-center">Get in Touch</h2>
+      <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center">Get in Touch</h2>
 
       <div>
         <input

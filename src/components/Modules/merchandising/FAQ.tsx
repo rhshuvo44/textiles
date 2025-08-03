@@ -42,7 +42,7 @@ const FAQ = () => {
         </div>
       </section> */}
       <section className="faq-section md:p-10 p-5 ">
-        <h2 className="text-3xl font-bold text-center mb-10"
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-10"
         
         data-aos="fade-up">
           Frequently Asked Questions

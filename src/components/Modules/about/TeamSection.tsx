@@ -6,7 +6,7 @@ import { BiUser } from "react-icons/bi";
 const TeamSection = () => {
   return (
     <div className="mdp-10 p-5 bg-base-100 text-base-content">
-      <h2 className="text-3xl font-bold text-center mb-8" data-aos="fade-up">
+      <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-8" data-aos="fade-up">
         Meet Our Management
       </h2>
       <div className="flex flex-col md:flex-row justify-center gap-6">
