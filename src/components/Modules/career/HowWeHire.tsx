@@ -1,10 +1,11 @@
 import { howWeHire } from "@/db/data";
-import React from "react";
 
 const HowWeHire = () => {
   return (
     <section className="px-4 md:px-12">
-      <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-8">How We Hire</h2>
+      <h2 className="text-4xl sm:text-5xl font-bold text-center mb-8">
+        How We Hire
+      </h2>
       <div className="grid grid-cols-1 sm:grid-cols-5 gap-4 text-center">
         {howWeHire.map((step, idx) => (
           <div

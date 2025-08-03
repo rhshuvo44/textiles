@@ -31,7 +31,7 @@ export default function WhyChooseUs() {
     <section className="p-5 md:p-10 bg-gray-50">
       <div className="text-center">
         <h2
-          className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-800 mb-4"
+          className="text-4xl sm:text-5xl font-bold text-gray-800 mb-4"
           data-aos="fade-up"
         >
           Why Choose Us?

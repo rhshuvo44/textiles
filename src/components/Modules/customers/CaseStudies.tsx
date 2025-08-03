@@ -20,7 +20,7 @@ const CaseStudies = () => {
       {caseStudies.length > 0 && (
         <div className="bg-gray-50 md:p-10 p-5">
           <h2
-            className="text-4xl sm:text-5xl lg:text-6xl font-semibold mb-8 text-center"
+            className="text-4xl sm:text-5xl font-semibold mb-8 text-center"
             data-aos="fade-up"
           >
             Case Studies

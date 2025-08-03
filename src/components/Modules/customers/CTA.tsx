@@ -2,7 +2,7 @@ const CTA = () => {
   return (
     <div className="text-center py-16 px-4 bg-info text-white">
       <h2
-        className="text-4xl sm:text-5xl lg:text-6xl font-semibold mb-4"
+        className="text-4xl sm:text-5xl font-semibold mb-4"
         data-aos="fade-up"
       >
         Want to Join Our Network?

@@ -59,7 +59,9 @@ const HomeServices = () => {
       ))}
     </div> */}
       <section className="p-5 md:p-10 text-center">
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8"  data-aos="fade-up">What We Offer</h2>
+        <h2 className="text-4xl sm:text-5xl font-bold mb-8" data-aos="fade-up">
+          What We Offer
+        </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, i) => (
             <div

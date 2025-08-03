@@ -20,7 +20,10 @@ const MissionVision = () => {
   return (
     <section className="md:p-10 p-5 bg-base-200 text-base-content">
       <div className="">
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-12" data-aos="fade-up">
+        <h2
+          className="text-4xl sm:text-5xl font-bold text-center mb-12"
+          data-aos="fade-up"
+        >
           Our Mission & Vision
         </h2>
 

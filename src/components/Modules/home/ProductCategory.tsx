@@ -7,7 +7,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const ProductCategory = () => {
   return (
     <div className="p-5 md:p-10">
-      <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-5" data-aos="fade-up">
+      <h2
+        className="text-4xl sm:text-5xl font-bold text-center mb-5"
+        data-aos="fade-up"
+      >
         Products Category
       </h2>
       <Swiper

@@ -1,13 +1,12 @@
 "use client";
 
-import React from "react";
 import {
+  FaBalanceScale,
   FaCheckCircle,
+  FaFlask,
   FaLeaf,
   FaLightbulb,
-  FaFlask,
   FaSmile,
-  FaBalanceScale,
 } from "react-icons/fa";
 
 const values = [
@@ -56,7 +55,7 @@ const ValuesCommitment = () => {
     >
       <div className="">
         <h2
-          className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-12"
+          className="text-4xl sm:text-5xl font-bold text-center mb-12"
           data-aos="fade-up"
         >
           Our Values & Commitment

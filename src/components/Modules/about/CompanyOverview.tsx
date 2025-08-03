@@ -1,10 +1,6 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
-
-
-
 
 import { galleryImages, milestones } from "@/db/data";
 
@@ -13,12 +9,16 @@ const CompanyOverview = () => {
     <>
       <section className="md:p-10 p-5 bg-base-100 text-base-content">
         <div className="">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-8"
-          data-aos="fade-up"
-          >Who We Are</h2>
+          <h2
+            className="text-4xl sm:text-5xl font-bold text-center mb-8"
+            data-aos="fade-up"
+          >
+            Who We Are
+          </h2>
 
-          <p className="text-lg text-center max-w-3xl mx-auto mb-12"
-          data-aos="fade-up"
+          <p
+            className="text-lg text-center max-w-3xl mx-auto mb-12"
+            data-aos="fade-up"
           >
             We are a dedicated team of textile professionals passionate about
             crafting premium-quality knit garments. Since our founding in 2023,
@@ -45,8 +45,10 @@ const CompanyOverview = () => {
           {/* 🖼 Image Gallery */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {galleryImages.map((src, idx) => (
-              <div key={idx} className="overflow-hidden rounded-xl shadow-md"
-              data-aos="fade-up"
+              <div
+                key={idx}
+                className="overflow-hidden rounded-xl shadow-md"
+                data-aos="fade-up"
               >
                 <Image
                   src={src}

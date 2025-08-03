@@ -76,7 +76,7 @@ const OfficeContacts = () => {
       </div> */}
       <section className="p-5 md:p-10 bg-white">
         <div className="">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center text-gray-800 mb-10">
+          <h2 className="text-4xl sm:text-5xl font-bold text-center text-gray-800 mb-10">
             Office Contact
           </h2>
 
@@ -118,7 +118,6 @@ const OfficeContacts = () => {
                   >
                     info@sarkartextilesapparel.com
                   </a>
-                 
                 </div>
               </div>
 
@@ -162,14 +161,14 @@ const OfficeContacts = () => {
                 </a>
               </div>
             </div>
-           
+
             {/* Google Map */}
             <div
               className="w-full h-[350px] rounded-2xl overflow-hidden shadow-md"
               data-aos="fade-up"
             >
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d768.4017517762165!2d90.50920319820935!3d23.634607970678182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b10812a520a3%3A0xc83c87a5cee9a0a9!2sJGM5%2BVWX%2C%20Narayanganj!5e0!3m2!1sen!2sbd!4v1745758534409!5m2!1sen!2sbd" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d768.4017517762165!2d90.50920319820935!3d23.634607970678182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b10812a520a3%3A0xc83c87a5cee9a0a9!2sJGM5%2BVWX%2C%20Narayanganj!5e0!3m2!1sen!2sbd!4v1745758534409!5m2!1sen!2sbd"
                 width="100%"
                 height="100%"
                 loading="lazy"

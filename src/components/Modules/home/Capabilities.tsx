@@ -11,7 +11,7 @@ const Capabilities = () => {
         </figure>
         <div className="card-body w-full md:w-1/2  md:px-20">
           <h2
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#00A9E9]"
+            className="text-4xl sm:text-5xl font-bold text-[#00A9E9]"
             data-aos="fade-up"
           >
             Our Capabilities

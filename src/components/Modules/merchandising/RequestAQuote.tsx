@@ -56,7 +56,7 @@ const RequestAQuote = () => {
 
   return (
     <section className="md:p-10 p-5  text-center" id="quote">
-      <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6" data-aos="fade-up">
+      <h2 className="text-4xl sm:text-5xl font-bold mb-6" data-aos="fade-up">
         Request a Quote
       </h2>
       <form
