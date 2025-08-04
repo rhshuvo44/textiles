@@ -1,3 +1,4 @@
+import { getValidImage } from "@/utils/getValidImage";
 import Image, { StaticImageData } from "next/image";
 
 const ProductCategoriesCard = ({
@@ -19,7 +20,7 @@ const ProductCategoriesCard = ({
       data-aos="fade-up"
     >
       <Image
-        src={photo}
+        src={getValidImage(photo, 400, 400, title)}
         alt={title}
         width={400}
         height={400}

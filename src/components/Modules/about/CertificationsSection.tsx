@@ -1,5 +1,6 @@
 "use client";
 import { certifications } from "@/db/data";
+import { getValidImage } from "@/utils/getValidImage";
 import Image, { StaticImageData } from "next/image";
 import { useState, useCallback, useEffect } from "react";
 
@@ -53,7 +54,7 @@ const CertificationsSection = () => {
               <Image
                 width={400}
                 height={400}
-                src={cert.image}
+                src={getValidImage(cert.image, 400, 400, cert.name)}
                 alt={cert.name}
                 className="h-72 object-contain mb-4"
               />

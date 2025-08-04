@@ -1,7 +1,7 @@
 "use client";
 
 import { teamMembers } from "@/db/data";
-import { BiUser } from "react-icons/bi";
+import Image from "next/image";
 
 const TeamSection = () => {
   return (
@@ -12,23 +12,22 @@ const TeamSection = () => {
       >
         Meet Our Management
       </h2>
-      <div className="flex flex-col md:flex-row justify-center flex-wrap gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
         {teamMembers.map((member, index) => (
           <div
             key={index}
-            className="card w-72 md:w-80 bg-base-200 shadow-xl flex-shrink-0"
+            className="card bg-base-200 shadow-xl flex-shrink-0"
             data-aos="fade-up"
           >
             <figure className="bg-gray-100 flex items-center justify-center h-72 overflow-hidden rounded-t-lg">
               {/* Uncomment and replace BiUser if images are available */}
-              {/* <Image
+              <Image
                 src={member.image}
                 alt={member.name}
                 width={320}
                 height={288}
                 className="w-full h-full object-cover"
-              /> */}
-              <BiUser size={160} className="text-gray-400" aria-hidden="true" />
+              />
             </figure>
             <div className="card-body items-center text-center">
               <h3 className="card-title">{member.name}</h3>

@@ -15,57 +15,22 @@ import youth from "@/assets/image/client/youth.jpeg";
 import image from "@/assets/image/companyOverView.jpg";
 import image1 from "@/assets/image/companyOverView1.jpg";
 import image2 from "@/assets/image/companyOverView2.jpg";
-import boySetProduct02 from "@/assets/image/product/boys_set/2.jpg";
-import boySetProduct03 from "@/assets/image/product/boys_set/3.jpg";
-import boySetProduct04 from "@/assets/image/product/boys_set/4.jpg";
-import boySetProduct01 from "@/assets/image/product/boys_set/product.jpg";
-import boySetProduct05 from "@/assets/image/product/boys_set/product382.jpg";
-import boySetProduct06 from "@/assets/image/product/boys_set/product384.jpg";
 import cargoProduct01 from "@/assets/image/product/cargo_pant/product394.jpg";
 import cargoProduct02 from "@/assets/image/product/cargo_pant/product395.jpg";
 import cargoProduct03 from "@/assets/image/product/cargo_pant/product397.jpg";
-import cargoProduct04 from "@/assets/image/product/cargo_pant/product398.jpg";
-import girlSetProduct01 from "@/assets/image/product/girls_set/1.jpg";
-import girlSetProduct02 from "@/assets/image/product/girls_set/2.jpg";
-import girlSetProduct04 from "@/assets/image/product/girls_set/3.jpg";
-import girlSetProduct03 from "@/assets/image/product/girls_set/4.jpg";
-import girlSetProduct05 from "@/assets/image/product/girls_set/5.jpg";
-import hoodieProduct01 from "@/assets/image/product/hoodie/product023.jpg";
-import hoodieProduct02 from "@/assets/image/product/hoodie/product024.jpg";
-import hoodieProduct04 from "@/assets/image/product/hoodie/product062.jpg";
-import kidProduct01 from "@/assets/image/product/kid/kids13.jpg";
-import kidProduct03 from "@/assets/image/product/kid/kids14 (1).webp";
-import kidProduct02 from "@/assets/image/product/kid/kids14.webp";
-import kidProduct04 from "@/assets/image/product/kid/kids15.webp";
-import kidProduct07 from "@/assets/image/product/kid/kids16 (1).webp";
-import kidProduct06 from "@/assets/image/product/kid/kids16.webp";
-import kidProduct08 from "@/assets/image/product/kid/kids17.webp";
-import kidProduct09 from "@/assets/image/product/kid/kids18.webp";
-import kidProduct10 from "@/assets/image/product/kid/kids19.webp";
-import kidProduct011 from "@/assets/image/product/kid/kids21.webp";
-import longProduct01 from "@/assets/image/product/long_pant/1.jpg";
-import longProduct02 from "@/assets/image/product/long_pant/2.jpg";
-import longProduct03 from "@/assets/image/product/long_pant/3.jpg";
-import longProduct04 from "@/assets/image/product/long_pant/4.jpg";
 import poloProduct01 from "@/assets/image/product/polo/1.jpg";
-import poloProduct02 from "@/assets/image/product/polo/2.jpg";
-import poloProduct03 from "@/assets/image/product/polo/3.jpg";
-import poloProduct04 from "@/assets/image/product/polo/4.jpg";
-import poloProduct05 from "@/assets/image/product/polo/5.jpg";
 import sweatProduct01 from "@/assets/image/product/sweat_shirt/product212.jpg";
 import sweatProduct02 from "@/assets/image/product/sweat_shirt/product291.jpg";
 import sweatProduct03 from "@/assets/image/product/sweat_shirt/product298.jpg";
-import sweatProduct04 from "@/assets/image/product/sweat_shirt/product326.jpg";
 import tShartProduct01 from "@/assets/image/product/t_shart/1.jpg";
 import tShartProduct02 from "@/assets/image/product/t_shart/2.jpg";
-import tShartProduct03 from "@/assets/image/product/t_shart/product057.jpg";
-import tShartProduct04 from "@/assets/image/product/t_shart/product058.jpg";
-import tShartProduct05 from "@/assets/image/product/t_shart/product059.jpg";
-import tShartProduct06 from "@/assets/image/product/t_shart/product060.jpg";
-import tankTopProduct03 from "@/assets/image/product/tank_top/product052.jpg";
-import tankTopProduct04 from "@/assets/image/product/tank_top/product053.jpg";
-import tankTopProduct05 from "@/assets/image/product/tank_top/product054.jpg";
-import tankTopProduct07 from "@/assets/image/product/tank_top/product056.jpg";
+import tShartProduct03 from "@/assets/image/product/t_shart/3.jpg";
+import tankTopProduct04 from "@/assets/image/product/tank_top/product051.jpg";
+import tankTopProduct03 from "@/assets/image/product/tank_top/product050.jpg";
+import team1 from '@/assets/image/team/1.jpg';
+import team2 from '@/assets/image/team/2.jpg';
+import team3 from '@/assets/image/team/3.jpg';
+import team4 from '@/assets/image/team/4.jpg';
 import department from "@/assets/image/ST&A Document/Department of textile.jpg";
 import ERC from "@/assets/image/ST&A Document/ERC.jpg";
 import Fire from "@/assets/image/ST&A Document/Fire License.jpg";
@@ -97,9 +62,6 @@ export const productGallery = [
         title: "Royal Roses Drop Shoulder T-shirt",
         photo: [
           tShartProduct03,
-          tShartProduct04,
-          tShartProduct05,
-          tShartProduct06,
         ],
         description: "A stylish and comfortable t-shirt",
       },
@@ -111,63 +73,13 @@ export const productGallery = [
     subCategory: [
       {
         title: "Halcyon Polo Shirt ",
-        photo: [poloProduct01, poloProduct02, poloProduct03],
+        photo: [poloProduct01],
         description:
           "Contrast white-tipped collar and sleeve cuffs for a refined look.Minimalistic branding on the chest for subtle elegance.Classic buttoned placket for a versatile style.",
-      },
-      {
-        title: "Halcyon Polo Shirt ",
-        photo: [poloProduct05, poloProduct04],
-        description:
-          "Contrast white-tipped collar and sleeve cuffs for a refined look.Minimalistic branding on the chest for subtle elegance.Classic buttoned placket for a versatile style.",
-      },
-    ],
-    photo: poloProduct01,
-  },
-  {
-    title: "Long Pant",
-    subCategory: [
-      {
-        title: "Long Pant (Boys)",
-        photo: [longProduct01],
-        description: "A stylish and comfortable long pant",
-      },
-      {
-        title: "Long Pant (Mens)",
-        photo: [longProduct02],
-        description: "A stylish and comfortable long pant",
-      },
-      {
-        title: "Long Pant (Girls)",
-        photo: [longProduct03],
-        description: "A stylish and comfortable long pant",
-      },
-      {
-        title: "Long Pant (Ladies)",
-        photo: [longProduct04],
-        description: "A stylish and comfortable long pant",
-      },
-    ],
-    photo: longProduct01,
-  },
-  {
-    title: "Hoodie",
-    subCategory: [
-      {
-        title: "Royal Roses Oversized Hoodie",
-        photo: [hoodieProduct01, hoodieProduct02],
-        description:
-          "Olive Green Oversized Hoodie Stay cozy and stylish with this olive green oversized hoodie. Perfect for chilly days, it combines comfort with effortless streetwear vibes.",
       },
 
-      {
-        title: "Royal Roses Oversized Hoodie",
-        photo: [hoodieProduct04],
-        description:
-          "cropped Purple Activewear Set Elevate your workout wardrobe with this sleek and stylish cropped activewear set, designed for both comfort and performance.",
-      },
     ],
-    photo: hoodieProduct01,
+    photo: poloProduct01,
   },
 
   {
@@ -178,8 +90,6 @@ export const productGallery = [
         photo: [
           tankTopProduct03,
           tankTopProduct04,
-          tankTopProduct05,
-          tankTopProduct07,
         ],
         description:
           "Stay stylish and comfortable in this sleek activewear set, perfect for workouts or casual lounging.",
@@ -201,7 +111,7 @@ export const productGallery = [
 
       {
         title: "Halcyon Narrow Long Pant",
-        photo: [cargoProduct03, cargoProduct04],
+        photo: [cargoProduct03],
         description:
           "Stay comfortable and stylish with these versatile navy blue Long Pant, designed for an effortlessly modern look.Perfect for casual outings, workouts, or lounging at home, these Long Pantare a wardrobe essential for every man.",
       },
@@ -231,140 +141,12 @@ export const productGallery = [
         description:
           "Introducing classic Sweatshirt our loungewear game with this stylish grey sweatshirt.Crafted from a soft, breathable fabric, this ensemble offers the perfect blend of comfort and casual chic.The minimalist design makes it versatile enough for both relaxing at home or running errands around town.",
       },
-      {
-        title: "Halcyon Crew Neck Sweatshirt",
-        photo: [sweatProduct04],
-        description:
-          "Introducing classic Sweatshirt our loungewear game with this stylish grey sweatshirt.Crafted from a soft, breathable fabric, this ensemble offers the perfect blend of comfort and casual chic.The minimalist design makes it versatile enough for both relaxing at home or running errands around town.",
-      },
+
     ],
-    photo: sweatProduct04,
+    photo: sweatProduct01,
   },
 
-  {
-    title: "Boys Set",
-    subCategory: [
-      {
-        title: "Long Pant & Long Sleeve T-Shirt",
 
-        photo: [
-          boySetProduct01,
-          boySetProduct02,
-          boySetProduct03,
-          boySetProduct04,
-        ],
-        description:
-          "Stay comfortable and stylish with these versatile navy blue Long Pant, designed for an effortlessly modern look.Perfect for casual outings, workouts, or lounging at home, these Long Pantare a wardrobe essential for every man.",
-      },
-
-      {
-        title: "Long Pant & Sweat Shirt",
-        photo: [boySetProduct05],
-        description:
-          "Stay comfortable and stylish with these versatile navy blue Long Pant, designed for an effortlessly modern look.Perfect for casual outings, workouts, or lounging at home, these Long Pantare a wardrobe essential for every man.",
-      },
-      {
-        title: "Long Pant & Long Sleeve Polo Shirt",
-        photo: [boySetProduct06],
-        description:
-          "Stay comfortable and stylish with these versatile navy blue Long Pant, designed for an effortlessly modern look.Perfect for casual outings, workouts, or lounging at home, these Long Pantare a wardrobe essential for every man.",
-      },
-    ],
-    photo: boySetProduct01,
-  },
-  {
-    title: "Girls Set",
-    subCategory: [
-      {
-        title: "Long Pant & Sweat Shirt",
-
-        photo: [girlSetProduct01, girlSetProduct02, girlSetProduct05],
-        description: "A stylish",
-      },
-
-      {
-        title: "Long Pant & Long Sleeve T-Shirt",
-        photo: [girlSetProduct03, girlSetProduct04],
-        description: "A stylish",
-      },
-    ],
-    photo: girlSetProduct01,
-  },
-  {
-    title: "Kids Heaven",
-    subCategory: [
-      {
-        title: "Kid’s Heaven – Premium Floral Print T-Shirt",
-
-        photo: [kidProduct01],
-        description:
-          "Brighten up your child’s day with the Kid’s Heaven Premium Floral Print T-Shirt. Featuring a beautiful floral design on a dark base, this shirt is the perfect balance of comfort and style. Made from soft, breathable fabric, it’s perfect for both casual days and fun outings.",
-      },
-      {
-        title: "Kid’s Heaven – Premium Floral Print T-Shirt",
-
-        photo: [kidProduct02],
-        description:
-          "Brighten up your child’s day with the Kid’s Heaven Premium Floral Print T-Shirt. Featuring a beautiful floral design on a dark base, this shirt is the perfect balance of comfort and style. Made from soft, breathable fabric, it’s perfect for both casual days and fun outings.",
-      },
-      {
-        title: "Kid’s Heaven – Premium Floral Print T-Shirt",
-
-        photo: [kidProduct03],
-        description:
-          "Brighten up your child’s day with the Kid’s Heaven Premium Floral Print T-Shirt. Featuring a beautiful floral design on a dark base, this shirt is the perfect balance of comfort and style. Made from soft, breathable fabric, it’s perfect for both casual days and fun outings.",
-      },
-      {
-        title: "Kid’s Heaven – Premium Floral Print T-Shirt",
-
-        photo: [kidProduct04],
-        description:
-          "Brighten up your child’s day with the Kid’s Heaven Premium Floral Print T-Shirt. Featuring a beautiful floral design on a dark base, this shirt is the perfect balance of comfort and style. Made from soft, breathable fabric, it’s perfect for both casual days and fun outings.",
-      },
-      {
-        title: "Kid’s Heaven – Premium Floral Print T-Shirt",
-
-        photo: [kidProduct06],
-        description:
-          "Brighten up your child’s day with the Kid’s Heaven Premium Floral Print T-Shirt. Featuring a beautiful floral design on a dark base, this shirt is the perfect balance of comfort and style. Made from soft, breathable fabric, it’s perfect for both casual days and fun outings.",
-      },
-      {
-        title: "Kid’s Heaven – Premium Floral Print T-Shirt",
-
-        photo: [kidProduct07],
-        description:
-          "Brighten up your child’s day with the Kid’s Heaven Premium Floral Print T-Shirt. Featuring a beautiful floral design on a dark base, this shirt is the perfect balance of comfort and style. Made from soft, breathable fabric, it’s perfect for both casual days and fun outings.",
-      },
-      {
-        title: "Kid’s Heaven – Premium Floral Print T-Shirt",
-
-        photo: [kidProduct08],
-        description:
-          "Brighten up your child’s day with the Kid’s Heaven Premium Floral Print T-Shirt. Featuring a beautiful floral design on a dark base, this shirt is the perfect balance of comfort and style. Made from soft, breathable fabric, it’s perfect for both casual days and fun outings.",
-      },
-      {
-        title: "Kid’s Heaven – Premium Floral Print T-Shirt",
-
-        photo: [kidProduct09],
-        description:
-          "Brighten up your child’s day with the Kid’s Heaven Premium Floral Print T-Shirt. Featuring a beautiful floral design on a dark base, this shirt is the perfect balance of comfort and style. Made from soft, breathable fabric, it’s perfect for both casual days and fun outings.",
-      },
-
-      {
-        title: "Kid’s Heaven – Premium Floral Print T-Shirt",
-        photo: [kidProduct10],
-        description:
-          "Brighten up your child’s day with the Kid’s Heaven Premium Floral Print T-Shirt. Featuring a beautiful floral design on a dark base, this shirt is the perfect balance of comfort and style. Made from soft, breathable fabric, it’s perfect for both casual days and fun outings.",
-      },
-      {
-        title: "Kid’s Heaven – Premium Floral Print T-Shirt",
-        photo: [kidProduct011],
-        description:
-          "Brighten up your child’s day with the Kid’s Heaven Premium Floral Print T-Shirt. Featuring a beautiful floral design on a dark base, this shirt is the perfect balance of comfort and style. Made from soft, breathable fabric, it’s perfect for both casual days and fun outings.",
-      },
-    ],
-    photo: kidProduct01,
-  },
 ];
 export const galleryImages = [image, image1, image2];
 
@@ -415,15 +197,27 @@ export const milestones = [
 
 export const teamMembers: TeamMember[] = [
   {
-    name: "Person 1 ",
+    name: "Ripon",
     role: "CEO & Founder",
-    image: tShartProduct01,
+    image: team1,
     bio: "Aminul brings over 15 years of expertise in knit garment production and strategic leadership.",
   },
   {
-    name: "Person 2",
+    name: "Hossain",
     role: "Head of Design",
-    image: tShartProduct02,
+    image: team2,
+    bio: "Leading design innovation, Farzana ensures each product blends aesthetics with market trends.",
+  },
+  {
+    name: "Shuvo",
+    role: "CEO & Founder",
+    image: team3,
+    bio: "Aminul brings over 15 years of expertise in knit garment production and strategic leadership.",
+  },
+  {
+    name: "Farzana",
+    role: "Head of Design",
+    image: team4,
     bio: "Leading design innovation, Farzana ensures each product blends aesthetics with market trends.",
   },
 ];
@@ -542,22 +336,7 @@ export const featuredCustomers: Customer[] = [
     description: "Eco-friendly apparel maker",
   },
 ];
-// export const testimonials: Testimonial[] = [
-//     {
-//         name: "Jane Smith",
-//         title: "Procurement Head",
-//         company: "FashionWorks",
-//         photo: review2,
-//         text: "Working with your team was a game-changer. The fabric quality and delivery speed were unmatched.",
-//     },
-//     {
-//         name: "John Doe",
-//         title: "CEO",
-//         company: "EcoWear",
-//         photo: review2,
-//         text: "We’ve seen a 30% efficiency increase since we started our partnership.",
-//     },
-// ];
+
 
 export const certifications: Certification[] = [
   {
@@ -686,3 +465,4 @@ export const yarns = [
   "Swing Thread",
   "Rubber",
 ];
+
