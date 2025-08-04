@@ -39,7 +39,7 @@ const Banner = () => {
                   {banner.title}
                 </h1>
                 <p className="mb-5">{banner.description}</p>
-                <div className="flex flex-col items-center gap-4 justify-center">
+                <div className="flex flex-row items-center gap-4 justify-center">
                   <Link href="/" className="btn btn-info text-white">
                     In Details <FaLongArrowAltRight />
                   </Link>

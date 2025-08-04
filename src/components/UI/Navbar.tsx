@@ -73,7 +73,8 @@ const Navbar = () => {
 
       <div className="navbar-end">
         <Link
-          href="https://sta.sarkargroupofcompanies.com/"
+          // href="https://sta.sarkargroupofcompanies.com/"
+          href="#"
           className="btn btn-info text-white px-8"
         >
           Login
