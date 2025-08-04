@@ -1,8 +1,8 @@
-# 🧵 Textiles – Modern eCommerce Template (Next.js App Router + Tailwind CSS)
+# 🧵 Textiles – Modern Template (Next.js App Router + Tailwind CSS)
 
 ![Textiles Preview](public/screenshots/textiles-preview.jpg)
 
-A sleek, responsive, and fully customizable eCommerce frontend template focused on textiles and fashion products. Built with **Next.js App Router**, **Tailwind CSS**, and **TypeScript**, it offers a modern UI and smooth user experience for online stores.
+A sleek, responsive, and fully customizable modern frontend template focused on textiles and fashion products. Built with **Next.js App Router**, **Tailwind CSS**, and **TypeScript**, it offers a modern UI and smooth user experience for online stores.
 
 ---
 
@@ -39,9 +39,8 @@ textiles/
 ├── public/                   # Static assets (images, icons, screenshots)
 ├── styles/                   # Global styles & Tailwind config
 ├── data/                     # Placeholder data (products, banners)
-├── README.md
-├── package.json
-
+├── README.md                 # Project documentation
+├── package.json              # Project configuration & dependencies
 
 ---
 
