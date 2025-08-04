@@ -1,9 +1,9 @@
 "use client";
-import { productCategories } from "@/db/data";
+import { productGallery } from "@/db/data";
 import Image from "next/image";
+import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
 
 const ProductCategory = () => {
   return (
@@ -29,7 +29,7 @@ const ProductCategory = () => {
           1280: { slidesPerView: 5 },
         }}
       >
-        {productCategories.map(({ title, photo }, index) => (
+        {productGallery.map(({ title, photo }, index) => (
           <SwiperSlide key={index}>
             <div className="bg-base-100 shadow-md rounded-xl overflow-hidden h-72 relative group hover:-translate-y-2 transition duration-300">
               <Image

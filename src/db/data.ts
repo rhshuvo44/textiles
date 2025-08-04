@@ -70,18 +70,6 @@ import department from "@/assets/image/ST&A Document/Department of textile.jpg";
 import ERC from "@/assets/image/ST&A Document/ERC.jpg";
 import Fire from "@/assets/image/ST&A Document/Fire License.jpg";
 import NCCI from "@/assets/image/ST&A Document/NCCI.jpg";
-import product01 from "@/assets/image/textile/product01.webp";
-import product02 from "@/assets/image/textile/product02.webp";
-import product03 from "@/assets/image/textile/product03.webp";
-import product04 from "@/assets/image/textile/product04.webp";
-import product05 from "@/assets/image/textile/product05.webp";
-import product07 from "@/assets/image/textile/product07.webp";
-import product08 from "@/assets/image/textile/product08.webp";
-import product10 from "@/assets/image/textile/product10.webp";
-import product11 from "@/assets/image/textile/product11.webp";
-import product12 from "@/assets/image/textile/product12.jpg";
-import product13 from "@/assets/image/textile/product13.webp";
-import product09 from "@/assets/image/textile/product9.webp";
 import { Certification, Customer, TeamMember } from "@/types";
 
 export const productGallery = [
@@ -90,7 +78,7 @@ export const productGallery = [
     subCategory: [
       {
         title: "Halcyon Drop-sholder T-Shirt",
-        photo: [product03],
+        photo: [tShartProduct01],
         description:
           "Experience effortless style and comfort with this oversized navy blue t-shirt.Perfect for both casual and urban looks, this t-shirt is a wardrobe essential for any season",
       },
@@ -162,35 +150,12 @@ export const productGallery = [
     ],
     photo: longProduct01,
   },
-
-  // {
-  //     title: "Leggings",
-  //     subCategory: [
-  //         { title: "Leggings (Girls)", photo: product06 },
-  //         { title: "Leggings (Ladies)", photo: product08 },
-  //     ],
-  //     photo: product15,
-  // },
-
-  // {
-  //     title: "Shorts",
-  //     subCategory: [
-  //         {
-  //             title: "Shorts (Boys)",
-  //             photo: product08
-  //         },
-  //         { title: "Shorts (Mens)", photo: product08 },
-  //         { title: "Sexy Shorts", photo: product08 },
-  //     ],
-  //     photo: product07,
-  // },
-
   {
     title: "Hoodie",
     subCategory: [
       {
         title: "Royal Roses Oversized Hoodie",
-        photo: [product01, hoodieProduct01, hoodieProduct02],
+        photo: [hoodieProduct01, hoodieProduct02],
         description:
           "Olive Green Oversized Hoodie Stay cozy and stylish with this olive green oversized hoodie. Perfect for chilly days, it combines comfort with effortless streetwear vibes.",
       },
@@ -202,12 +167,8 @@ export const productGallery = [
           "cropped Purple Activewear Set Elevate your workout wardrobe with this sleek and stylish cropped activewear set, designed for both comfort and performance.",
       },
     ],
-    photo: product01,
+    photo: hoodieProduct01,
   },
-
-  // { title: "Romper", photo: product08 },
-
-  // { title: "Keeper", photo: product08 },
 
   {
     title: "Tank Top",
@@ -224,23 +185,8 @@ export const productGallery = [
           "Stay stylish and comfortable in this sleek activewear set, perfect for workouts or casual lounging.",
       },
     ],
-    photo: product11,
+    photo: tankTopProduct03,
   },
-
-  // {
-  //     title: "Joggers",
-  //     subCategory: [
-  //         {
-  //             title: "Joggers (Boys)",
-
-  //             photo: product07,
-  //         },
-  //         { title: "Joggers (Mens)", photo: product07 },
-  //         { title: "Joggers (Girls)", photo: product07 },
-  //         { title: "Joggers (Ladies)", photo: product07 },
-  //     ],
-  //     photo: product14
-  // },
 
   {
     title: "Cargo Pant",
@@ -260,7 +206,7 @@ export const productGallery = [
           "Stay comfortable and stylish with these versatile navy blue Long Pant, designed for an effortlessly modern look.Perfect for casual outings, workouts, or lounging at home, these Long Pantare a wardrobe essential for every man.",
       },
     ],
-    photo: product02,
+    photo: cargoProduct01,
   },
 
   {
@@ -292,7 +238,7 @@ export const productGallery = [
           "Introducing classic Sweatshirt our loungewear game with this stylish grey sweatshirt.Crafted from a soft, breathable fabric, this ensemble offers the perfect blend of comfort and casual chic.The minimalist design makes it versatile enough for both relaxing at home or running errands around town.",
       },
     ],
-    photo: product09,
+    photo: sweatProduct04,
   },
 
   {
@@ -419,37 +365,6 @@ export const productGallery = [
     ],
     photo: kidProduct01,
   },
-
-  // { title: "Baby Set", photo: product07 },
-
-  // {
-  //     title: "Sports",
-  //     subCategory: [
-  //         {
-  //             title: "Sports T-Shirt",
-  //             photo: product07,
-  //         },
-  //         { title: "Sports Polo-Shirt", photo: product07 },
-  //         { title: "Sports Trouser", photo: product07 },
-  //     ],
-  //     photo: product07
-  // },
-
-  // {
-  //     title: "Activewear",
-  //     subCategory: [
-  //         {
-  //             title: "Activewear (Mens)",
-
-  //             photo: product07,
-  //         },
-  //         {
-  //             title: "Activewear (Ladies)",
-  //             photo: product07,
-  //         },
-  //     ],
-  //     photo: product16
-  // },
 ];
 export const galleryImages = [image, image1, image2];
 
@@ -461,231 +376,6 @@ export const navLinks = [
   { path: "/career", label: "Career" },
   { path: "/gallery", label: "Gallery" },
   { path: "/contact", label: "Contact" },
-];
-
-export const productCategories = [
-  {
-    title: "T-Shirt",
-    subCategory: [
-      { title: "T-Shirt (Boys)", photo: product03 },
-      { title: "T-Shirt (Mens)", photo: product08 },
-      { title: "T-Shirt (Girls)", photo: product08 },
-      { title: "T-Shirt (Ladies)", photo: product08 },
-    ],
-    photo: product04,
-  },
-  {
-    title: "Polo Shirt",
-    subCategory: [
-      { title: "Polo Shirt (Boys)", photo: product08 },
-      { title: "Polo Shirt (Mens)", photo: product08 },
-      { title: "Polo Shirt (Girls)", photo: product08 },
-      { title: "Polo Shirt (Ladies)", photo: product08 },
-    ],
-    photo: product05,
-  },
-  {
-    title: "Long Pant",
-    subCategory: [
-      { title: "Long Pant (Boys)", photo: product08 },
-      { title: "Long Pant (Mens)", photo: product08 },
-      { title: "Long Pant (Girls)", photo: product08 },
-      { title: "Long Pant (Ladies)", photo: product08 },
-    ],
-    photo: product10,
-  },
-
-  // {
-  //     title: "Leggings",
-  //     subCategory: [
-  //         { title: "Leggings (Girls)", photo: product06 },
-  //         { title: "Leggings (Ladies)", photo: product08 },
-  //     ],
-  //     photo: product15,
-  // },
-
-  // {
-  //     title: "Shorts",
-  //     subCategory: [
-  //         {
-  //             title: "Shorts (Boys)",
-  //             photo: product08
-  //         },
-  //         { title: "Shorts (Mens)", photo: product08 },
-  //         { title: "Sexy Shorts", photo: product08 },
-  //     ],
-  //     photo: product07,
-  // },
-
-  {
-    title: "Hoodie",
-    subCategory: [
-      {
-        title: "Hoodie (Boys)",
-        photo: product01,
-      },
-      { title: "Hoodie (Mens)", photo: product08 },
-      { title: "Hoodie (Girls)", photo: product08 },
-      { title: "Hoodie (Ladies)", photo: product08 },
-    ],
-    photo: product01,
-  },
-
-  // { title: "Romper", photo: product08 },
-
-  // { title: "Keeper", photo: product08 },
-
-  {
-    title: "Tank Top",
-    subCategory: [
-      {
-        title: "Tank Top (Boys)",
-        photo: product08,
-      },
-      { title: "Tank Top (Mens)", photo: product08 },
-      { title: "Tank Top (Girls)", photo: product08 },
-      { title: "Tank Top (Ladies)", photo: product08 },
-    ],
-    photo: product11,
-  },
-
-  // {
-  //     title: "Joggers",
-  //     subCategory: [
-  //         {
-  //             title: "Joggers (Boys)",
-
-  //             photo: product07,
-  //         },
-  //         { title: "Joggers (Mens)", photo: product07 },
-  //         { title: "Joggers (Girls)", photo: product07 },
-  //         { title: "Joggers (Ladies)", photo: product07 },
-  //     ],
-  //     photo: product14
-  // },
-
-  {
-    title: "Cargo Pant",
-    subCategory: [
-      {
-        title: "Cargo Pant (Mens)",
-
-        photo: product07,
-      },
-      {
-        title: "Flared pant (Ladies)",
-        photo: product07,
-      },
-    ],
-    photo: product02,
-  },
-
-  {
-    title: "Sweat Shirt",
-    subCategory: [
-      {
-        title: "Sweat Shirt (Boys)",
-
-        photo: product07,
-      },
-      { title: "Sweat Shirt (Mens)", photo: product07 },
-      {
-        title: "Sweat Shirt (Girls)",
-        photo: product07,
-      },
-      {
-        title: "Sweat Shirt (Ladies)",
-        photo: product07,
-      },
-    ],
-    photo: product09,
-  },
-
-  {
-    title: "Boys Set",
-    subCategory: [
-      {
-        title: "Long Pant & Long Sleeve T-Shirt",
-
-        photo: boySetProduct01,
-      },
-      {
-        title: "Long Pant & Long Sleeve Polo Shirt",
-        photo: boySetProduct02,
-      },
-      {
-        title: "Long Pant & Sweat Shirt",
-        photo: boySetProduct03,
-      },
-      {
-        title: "Short Pant & T-Shirt",
-        photo: boySetProduct04,
-      },
-      {
-        title: "Short Pant & T-Shirt",
-        photo: boySetProduct05,
-      },
-      {
-        title: "Short Pant & T-Shirt",
-        photo: boySetProduct06,
-      },
-    ],
-    photo: product13,
-  },
-  {
-    title: "Girls Set",
-    subCategory: [
-      {
-        title: "Long Pant & Sweat Shirt",
-
-        photo: product07,
-      },
-      {
-        title: "Long Pant & Long Sleeve Polo Shirt",
-        photo: product07,
-      },
-      {
-        title: "Long Pant & Long Sleeve T-Shirt",
-        photo: product07,
-      },
-      {
-        title: "Short Pant & T-Shirt",
-        photo: product07,
-      },
-    ],
-    photo: product12,
-  },
-
-  // { title: "Baby Set", photo: product07 },
-
-  // {
-  //     title: "Sports",
-  //     subCategory: [
-  //         {
-  //             title: "Sports T-Shirt",
-  //             photo: product07,
-  //         },
-  //         { title: "Sports Polo-Shirt", photo: product07 },
-  //         { title: "Sports Trouser", photo: product07 },
-  //     ],
-  //     photo: product07
-  // },
-
-  // {
-  //     title: "Activewear",
-  //     subCategory: [
-  //         {
-  //             title: "Activewear (Mens)",
-
-  //             photo: product07,
-  //         },
-  //         {
-  //             title: "Activewear (Ladies)",
-  //             photo: product07,
-  //         },
-  //     ],
-  //     photo: product16
-  // },
 ];
 
 export const faqData = [
@@ -727,13 +417,13 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Person 1 ",
     role: "CEO & Founder",
-    image: product05,
+    image: tShartProduct01,
     bio: "Aminul brings over 15 years of expertise in knit garment production and strategic leadership.",
   },
   {
     name: "Person 2",
     role: "Head of Design",
-    image: product08,
+    image: tShartProduct02,
     bio: "Leading design innovation, Farzana ensures each product blends aesthetics with market trends.",
   },
 ];

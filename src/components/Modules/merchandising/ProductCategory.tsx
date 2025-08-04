@@ -1,5 +1,5 @@
 import ProductCategoriesCard from "@/components/UI/ProductCategoriesCard";
-import { productCategories } from "@/db/data";
+import { productGallery } from "@/db/data";
 
 const ProductCategory = () => {
   return (
@@ -11,7 +11,7 @@ const ProductCategory = () => {
         Product Categories
       </h2>
       <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {productCategories.map(({ title, subCategory, photo }, index) => (
+        {productGallery.map(({ title, subCategory, photo }, index) => (
           <ProductCategoriesCard
             key={index}
             title={title}

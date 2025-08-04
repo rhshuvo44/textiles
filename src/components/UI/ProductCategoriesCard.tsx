@@ -7,7 +7,11 @@ const ProductCategoriesCard = ({
 }: {
   title: string;
   photo: string | StaticImageData;
-  subCategory?: { title: string; photo: string | StaticImageData }[];
+  subCategory?: {
+    title: string;
+    photo: (string | StaticImageData)[];
+    description?: string;
+  }[];
 }) => {
   return (
     <div
