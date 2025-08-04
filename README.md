@@ -1,6 +1,3 @@
-Got it! Here’s a **README.md** tailored for your **Next.js App Router**-based project structure (using `app/` directory), without dark mode, and aligned with your Textiles template:
-
-```markdown
 # 🧵 Textiles – Modern eCommerce Template (Next.js App Router + Tailwind CSS)
 
 ![Textiles Preview](public/screenshots/textiles-preview.jpg)
@@ -31,8 +28,6 @@ A sleek, responsive, and fully customizable eCommerce frontend template focused 
 
 ## 📁 Project Structure (App Router)
 
-```
-
 textiles/
 ├── app/
 │   ├── layout.tsx            # Root layout
@@ -47,7 +42,6 @@ textiles/
 ├── README.md
 ├── package.json
 
-````
 
 ---
 
