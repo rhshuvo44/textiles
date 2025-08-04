@@ -1,130 +1,186 @@
-# 🧵 Textiles – Modern Next.js Business & Product Showcase Template
+Got it! Here’s a **README.md** tailored for your **Next.js App Router**-based project structure (using `app/` directory), without dark mode, and aligned with your Textiles template:
 
-Welcome to **Textiles**, a modern, responsive, and SEO-optimized **Next.js** template ideal for product displays, business portfolios, and minimalist eCommerce interfaces.
+```markdown
+# 🧵 Textiles – Modern eCommerce Template (Next.js App Router + Tailwind CSS)
 
-📌 **Live Demo**: [https://textiles.vercel.app](https://textiles.vercel.app)  
-📦 **Repository**: [GitHub Link](https://github.com/rhshuvo44/textiles)
+![Textiles Preview](public/screenshots/textiles-preview.jpg)
 
----
-
-## 📚 Tech Stack
-
-- [Next.js 14+ (App Router)](https://nextjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [AOS (Animate on Scroll)](https://michalsnik.github.io/aos/)
-- [Next/Image](https://nextjs.org/docs/pages/api-reference/components/image)
-- Responsive, Dark Mode Ready
-- SEO-Friendly Routing
+A sleek, responsive, and fully customizable eCommerce frontend template focused on textiles and fashion products. Built with **Next.js App Router**, **Tailwind CSS**, and **TypeScript**, it offers a modern UI and smooth user experience for online stores.
 
 ---
 
-## ⚙️ Installation
+## 🔗 Live Demo
+
+🌐 [https://textiles.vercel.app](https://textiles.vercel.app)
+
+---
+
+## 🚀 Features
+
+- Built with **Next.js 13+ App Router** for modern routing and layouts
+- Written in **TypeScript** for better type safety
+- Stylish, responsive UI designed with **Tailwind CSS** and **DaisyUI**
+- Smooth **Swiper.js** carousels for product highlights and hero banners
+- Clean, modular, and reusable React components inside `app/components/` and `app/(sections)/`
+- Fully **responsive** — optimized for all screen sizes
+- Custom 404 error page included (`app/not-found.tsx`)
+- SEO-friendly with `head.tsx` files for metadata management
+- Easy to extend with backend or CMS integrations
+
+---
+
+## 📁 Project Structure (App Router)
+
+```
+
+textiles/
+├── app/
+│   ├── layout.tsx            # Root layout
+│   ├── page.tsx              # Homepage
+│   ├── head.tsx              # Metadata for SEO
+│   ├── not-found.tsx         # Custom 404 page
+│   ├── (sections)/           # UI sections used in pages
+│   └── components/           # Shared reusable components
+├── public/                   # Static assets (images, icons, screenshots)
+├── styles/                   # Global styles & Tailwind config
+├── data/                     # Placeholder data (products, banners)
+├── README.md
+├── package.json
+
+````
+
+---
+
+## 💻 Getting Started
+
+### Prerequisites
+
+- Node.js (v16+ recommended)
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repo:
 
 ```bash
-# Clone the repo
 git clone https://github.com/rhshuvo44/textiles.git
 cd textiles
-
-# Install dependencies
-npm install
-
-# Run development server
-npm run dev
 ````
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view locally.
+
+---
+
+## 🛠 Build & Production
+
+To build and run the app in production mode:
+
+```bash
+npm run build
+npm run start
+```
 
 ---
 
 ## 🌐 Deployment
 
-Textiles can be deployed to **Vercel**, **Netlify**, or any Node.js-compatible hosting.
+Easily deploy on platforms supporting Next.js 13 App Router:
 
-### Vercel (Recommended)
+* **Vercel** (recommended)
+* **Netlify**
+* Custom Node.js hosts supporting SSR
 
-1. Push the project to a GitHub repository.
-2. Go to [vercel.com](https://vercel.com).
-3. Import the repository.
-4. Set the following environment variables (if needed).
-5. Hit deploy.
+### Deploy to Vercel
 
----
-
-## 📁 Environment Variables (Optional)
-
-If your project uses any runtime configs, add them in a `.env.local` file like:
-
-```env
-NEXT_PUBLIC_SITE_NAME=Textiles
-NEXT_PUBLIC_BASE_URL=https://textiles.vercel.app
-```
+* Connect your GitHub repo to [vercel.com](https://vercel.com/)
+* Build command: `npm run build`
+* Output directory: `.next`
+* Framework preset: **Next.js**
+* Deploy!
 
 ---
 
-## 🧪 Build & Export
+## 🎨 Customization
 
-```bash
-# Production build
-npm run build
-
-# Static export (optional)
-npm run export
-```
+* Modify UI sections in `app/(sections)/`
+* Update or add React components in `app/components/`
+* Change page layouts or metadata in `app/layout.tsx` and `app/head.tsx`
+* Replace static data in `/data/` or connect a backend API
 
 ---
 
-## 🖼️ Placeholder Images and Licensing
+## 📦 Dependencies & Libraries
 
-⚠️ **Important for ThemeForest Reviewers & Buyers:**
-
-* ✅ All images used in this template are **placeholder/demo only**.
-* ✅ No copyrighted images are included.
-* ✅ Used images are either from [https://via.placeholder.com](https://via.placeholder.com) or local `/public` folder with demo intent.
-* ✅ Please replace them with your own content before using in production.
-
----
-
-## 📂 Folder Structure
-
-```
-textiles/
-├── app/                # Next.js App Router Pages
-├── components/         # Reusable UI components
-├── db/data.ts          # Demo product/category data
-├── public/             # Placeholder images
-├── styles/             # Tailwind base styles
-├── utils/              # Utility functions
-├── README.md
-```
+| Package                                                   | Purpose                         |
+| --------------------------------------------------------- | ------------------------------- |
+| [Next.js](https://nextjs.org)                             | React framework with App Router |
+| [React](https://reactjs.org)                              | UI Library                      |
+| [TypeScript](https://www.typescriptlang.org)              | Type safety                     |
+| [Tailwind CSS](https://tailwindcss.com)                   | Utility-first CSS framework     |
+| [DaisyUI](https://daisyui.com)                            | Tailwind CSS component library  |
+| [Swiper.js](https://swiperjs.com)                         | Carousel/slider                 |
+| [React Icons](https://react-icons.github.io/react-icons/) | Icon library                    |
 
 ---
 
-## 📢 Notes
+## 📸 Screenshots
 
-* This project follows **best practices for modern front-end development**.
-* The layout is responsive and tested on mobile, tablet, and desktop screens.
-* Contact form or newsletter subscription is not included by default (can be integrated easily).
+### Homepage Hero Section
 
----
+![Hero Section](public/screenshots/hero-light.png)
 
-## 📜 License
+### Mobile Responsive View
 
-This template is provided for **ThemeForest sale**, **personal**, and **commercial** use under standard ThemeForest licensing terms.
+![Mobile View](public/screenshots/mobile-view.jpg)
 
 ---
 
-## 🙏 Credits
+## 📝 Placeholder Notice
 
-* [Next.js](https://nextjs.org/)
-* [Tailwind CSS](https://tailwindcss.com/)
-* [AOS Library](https://michalsnik.github.io/aos/)
-* [Placeholder.com](https://via.placeholder.com/)
+> Demo content (texts, images, products) are placeholders for demonstration only and should be replaced with your own content or connected to a CMS/backend.
 
 ---
 
-## 🚀 Author
+## 📄 Versioning & Changelog
 
-**Ripon Hossain Shuvo**
-📧 [Contact me on LinkedIn](https://www.linkedin.com/in/rhshuvo44/)
-🌐 [Portfolio](https://ripon.vercel.app/)
+### Version `v1.0.0` – 04 August 2025
 
-```
+* Initial release using Next.js 13 App Router
+* Responsive layout with Swiper carousel and modular components
+
+---
+
+## 📄 License & Usage
+
+* Intended for sale and distribution on ThemeForest.
+* Free to customize and use in your projects after purchase.
+* Redistribution or resale without permission is prohibited.
+* Keep author credits where applicable.
+
+---
+
+## 📞 Support & Contact
+
+* Email: [rhshuvo44@gmail.com](mailto:rhshuvo44@gmail.com)
+* Portfolio: [ripon.vercel.app](https://ripon.vercel.app)
+
+---
+
+> Thanks for choosing **Textiles**! We hope this template helps you create stunning online stores with ease.
+
