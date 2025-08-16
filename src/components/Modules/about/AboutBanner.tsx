@@ -1,6 +1,6 @@
 "use client";
 
-import banner from "@/assets/image/investor-relations.jpg";
+import banner from "@/assets/image/banner/investor-relations.jpg";
 import Image from "next/image";
 
 const AboutBanner = () => {

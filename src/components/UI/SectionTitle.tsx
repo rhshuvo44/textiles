@@ -1,10 +1,10 @@
-import banner from "@/assets/image/textile_main_image.jpg";
+import banner from "@/assets/image/banner/textile_main_image.jpg";
 import Link from "next/link";
 
 const SectionTitle = ({ text }: { text: string }) => {
   return (
     <div
-      className="hero h-72 mt-16"
+      className="hero w-full h-[90vh] sm:h-[80vh]"
       style={{
         backgroundImage: `url(${banner.src})`,
       }}

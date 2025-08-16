@@ -6,7 +6,7 @@ const ContactHero = () => {
     <section
       role="banner"
       aria-label="Contact hero section"
-      className="relative w-full h-[60vh] flex items-center justify-center bg-cover bg-center"
+      className="relative w-full h-[90vh] sm:h-[80vh] flex items-center justify-center bg-cover bg-center"
       style={{
         backgroundImage: `url(${banner.src})`,
       }}

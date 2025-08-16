@@ -1,4 +1,5 @@
 import img1 from "@/assets/image/1.jpg";
+import caseStudy from "@/assets/image/caseStudy.jpg";
 import banner from "@/assets/image/banner/banner.jpg";
 import banner1 from "@/assets/image/banner/banner1.jpg";
 import banner2 from "@/assets/image/banner/banner2.jpg";
@@ -25,17 +26,17 @@ import sweatProduct03 from "@/assets/image/product/sweat_shirt/product298.jpg";
 import tShartProduct01 from "@/assets/image/product/t_shart/1.jpg";
 import tShartProduct02 from "@/assets/image/product/t_shart/2.jpg";
 import tShartProduct03 from "@/assets/image/product/t_shart/3.jpg";
-import tankTopProduct04 from "@/assets/image/product/tank_top/product051.jpg";
 import tankTopProduct03 from "@/assets/image/product/tank_top/product050.jpg";
-import team1 from '@/assets/image/team/1.jpg';
-import team2 from '@/assets/image/team/2.jpg';
-import team3 from '@/assets/image/team/3.jpg';
-import team4 from '@/assets/image/team/4.jpg';
+import tankTopProduct04 from "@/assets/image/product/tank_top/product051.jpg";
 import department from "@/assets/image/ST&A Document/Department of textile.jpg";
 import ERC from "@/assets/image/ST&A Document/ERC.jpg";
 import Fire from "@/assets/image/ST&A Document/Fire License.jpg";
 import NCCI from "@/assets/image/ST&A Document/NCCI.jpg";
-import { Certification, Customer, TeamMember } from "@/types";
+import team1 from '@/assets/image/team/1.jpg';
+import team2 from '@/assets/image/team/2.jpg';
+import team3 from '@/assets/image/team/3.jpg';
+import team4 from '@/assets/image/team/4.jpg';
+import { CaseStudy, Certification, Customer, TeamMember } from "@/types";
 
 export const productGallery = [
   {
@@ -466,3 +467,19 @@ export const yarns = [
   "Rubber",
 ];
 
+export const caseStudies: CaseStudy[] = [
+  {
+    title: "Boosting Production for EcoWear",
+    description:
+      "Helped EcoWear scale production while maintaining sustainability.",
+    image: caseStudy,
+    stats: "Efficiency ↑ 30%",
+  },
+  {
+    title: "Boosting Production for EcoWear",
+    description:
+      "Helped EcoWear scale production while maintaining sustainability.",
+    image: caseStudy,
+    stats: "Efficiency ↑ 30%",
+  },
+];

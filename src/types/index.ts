@@ -69,3 +69,11 @@ export interface ModalProps {
   onClose: () => void;
   children: ReactNode;
 }
+
+
+export interface CaseStudy {
+  title: string;
+  description: string;
+  image: string | StaticImageData;
+  stats: string;
+}

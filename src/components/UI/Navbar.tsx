@@ -3,6 +3,7 @@
 import { navLinks } from "@/db/data";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -71,7 +72,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="navbar-end">
+      <div className="navbar-end gap-2">
         <Link
           // href="https://sta.sarkargroupofcompanies.com/"
           href="#"
@@ -79,6 +80,7 @@ const Navbar = () => {
         >
           Login
         </Link>
+        <ThemeToggle />
       </div>
     </div>
   );

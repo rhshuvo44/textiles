@@ -28,6 +28,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+          (function() {
+            const theme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', theme);
+          })();
+        `,
+          }}
+        />
+      </head>
       <body
         data-new-gr-c-s-check-loaded="14.1231.0"
         data-gr-ext-installed=""

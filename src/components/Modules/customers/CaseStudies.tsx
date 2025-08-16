@@ -1,21 +1,5 @@
+import { caseStudies } from "@/db/data";
 import Image from "next/image";
-
-interface CaseStudy {
-  title: string;
-  description: string;
-  image: string;
-  stats: string;
-}
-
-const caseStudies: CaseStudy[] = [
-  {
-    title: "Boosting Production for EcoWear",
-    description:
-      "Helped EcoWear scale production while maintaining sustainability.",
-    image: "/case-studies/ecowear.png",
-    stats: "Efficiency ↑ 30%",
-  },
-];
 
 const CaseStudies = () => {
   return (
