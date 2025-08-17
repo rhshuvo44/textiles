@@ -1,13 +1,13 @@
 "use client";
 
-import { useRef } from "react";
-import emailjs from "emailjs-com";
-import { useForm } from "react-hook-form";
-import { toast } from "react-toastify";
 import InputField from "@/components/form/InputField";
 import SelectField from "@/components/form/SelectField";
 import { fabrics, styles, yarns } from "@/db/data";
 import { QuoteFormData } from "@/types";
+import emailjs from "emailjs-com";
+import { useRef } from "react";
+import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 
 const RequestAQuote = () => {
   const {
@@ -58,7 +58,11 @@ const RequestAQuote = () => {
             error={errors.name}
             validation={{ required: "Name is required" }}
           />
-          <InputField register={register} name="company" placeholder="Company" />
+          <InputField
+            register={register}
+            name="company"
+            placeholder="Company"
+          />
           <InputField
             register={register}
             name="email"
@@ -121,15 +125,15 @@ const RequestAQuote = () => {
             error={errors.ratio}
             validation={{ required: "Ratio is required" }}
           />
-          <InputField
-            register={register}
-            name="GSM"
-            type="number"
-            placeholder="GSM"
-            error={errors.GSM}
-            validation={{ required: "GSM is required" }}
-          />
         </div>
+        <InputField
+          register={register}
+          name="GSM"
+          type="number"
+          placeholder="GSM"
+          error={errors.GSM}
+          validation={{ required: "GSM is required" }}
+        />
 
         <button
           type="submit"

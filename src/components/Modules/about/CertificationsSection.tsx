@@ -2,7 +2,7 @@
 import Modal from "@/components/modal/Modal";
 import { certifications } from "@/db/data";
 import Image, { StaticImageData } from "next/image";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 
 const CertificationsSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
