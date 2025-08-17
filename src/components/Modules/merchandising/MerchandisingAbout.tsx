@@ -50,7 +50,7 @@ const MerchandisingAbout = () => {
         ].map(({ icon, title, description }) => (
           <div
             key={title}
-            className="p-6 border rounded-2xl shadow hover:shadow-md transition"
+            className="p-6 rounded-2xl shadow hover:shadow-md transition"
             data-aos="fade-up"
             role="region"
             aria-labelledby={`${title.replace(/\s+/g, "-").toLowerCase()}-title`}

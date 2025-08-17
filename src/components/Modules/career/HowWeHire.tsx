@@ -13,7 +13,7 @@ const HowWeHire = () => {
         {howWeHire.map((step, idx) => (
           <div
             key={idx}
-            className="card bg-white shadow-md rounded-lg p-6 flex items-center justify-center"
+            className="card shadow-md rounded-lg p-6 flex items-center justify-center"
             data-aos="fade-up"
           >
             <p className="text-base">{step}</p>

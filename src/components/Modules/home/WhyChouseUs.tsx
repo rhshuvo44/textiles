@@ -28,16 +28,16 @@ const capabilities = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="bg-gray-50 px-4 sm:px-6 lg:px-20 py-12">
+    <section className=" px-4 sm:px-6 lg:px-20 py-12">
       <div className="text-center mb-12">
         <h2
-          className="text-3xl sm:text-4xl font-extrabold text-gray-800"
+          className="text-3xl sm:text-4xl font-extrabold"
           data-aos="fade-up"
         >
           Why Choose Us?
         </h2>
         <p
-          className="mt-4 text-gray-600 text-base sm:text-lg max-w-2xl mx-auto"
+          className="mt-4 text-base sm:text-lg max-w-2xl mx-auto"
           data-aos="fade-up"
           data-aos-delay="100"
         >
@@ -49,15 +49,15 @@ export default function WhyChooseUs() {
         {capabilities.map((item, index) => (
           <div
             key={index}
-            className="bg-white shadow hover:shadow-lg transition-all duration-300 rounded-2xl p-6 text-center flex flex-col items-center"
+            className=" shadow hover:shadow-lg transition-all duration-300 rounded-2xl p-6 text-center flex flex-col items-center"
             data-aos="fade-up"
             data-aos-delay={index * 100}
           >
             <div className="mb-4">{item.icon}</div>
-            <h3 className="text-lg font-semibold text-gray-800 mb-2">
+            <h3 className="text-lg font-semibold mb-2">
               {item.title}
             </h3>
-            <p className="text-sm text-gray-500">{item.description}</p>
+            <p className="text-sm">{item.description}</p>
           </div>
         ))}
       </div>

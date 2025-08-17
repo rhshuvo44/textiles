@@ -1,6 +1,6 @@
 const CTA = () => {
   return (
-    <section className="text-center py-16 px-4 bg-info text-white">
+    <section className="text-center py-16 px-4">
       <h2
         className="text-4xl sm:text-5xl font-semibold mb-4"
         data-aos="fade-up"
@@ -12,7 +12,7 @@ const CTA = () => {
       </p>
       <button
         type="button"
-        className="btn bg-white text-info hover:bg-gray-100 transition-colors duration-300"
+        className="btn btn-info text-white px-8"
         data-aos="fade-up"
       >
         Partner With Us

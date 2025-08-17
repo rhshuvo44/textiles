@@ -1,4 +1,5 @@
 "use client";
+import Modal from "@/components/modal/Modal";
 import { certifications } from "@/db/data";
 import Image, { StaticImageData } from "next/image";
 import { useCallback, useEffect, useState } from "react";
@@ -11,21 +12,6 @@ const CertificationsSection = () => {
     setCurrentImage(typeof image === "string" ? image : image.src);
     setIsModalOpen(true);
   }, []);
-
-  const handleCloseModal = useCallback(() => {
-    setIsModalOpen(false);
-    setCurrentImage(null);
-  }, []);
-
-  // Close modal on ESC key press
-  useEffect(() => {
-    if (!isModalOpen) return;
-    const handleEsc = (e: KeyboardEvent) => {
-      if (e.key === "Escape") handleCloseModal();
-    };
-    window.addEventListener("keydown", handleEsc);
-    return () => window.removeEventListener("keydown", handleEsc);
-  }, [isModalOpen, handleCloseModal]);
 
   return (
     <section className="p-5 md:p-10 bg-base-200 text-base-content">
@@ -63,37 +49,21 @@ const CertificationsSection = () => {
         ))}
       </div>
 
-      {/* Modal */}
-      {isModalOpen && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
-          onClick={handleCloseModal}
-          role="dialog"
-          aria-modal="true"
-          aria-labelledby="modal-title"
-        >
-          <div
-            className="bg-white p-4 rounded-lg relative max-w-4xl w-full mx-4"
-            onClick={(e) => e.stopPropagation()} // prevent modal close on clicking inside
-          >
+      {/* modal  */}
+      <Modal isOpen={!!isModalOpen} onClose={() => setIsModalOpen(false)}>
+        {isModalOpen && (
+          <div className="bg-base-100 border rounded-lg overflow-hidden">
             <Image
-              width={800}
-              height={500}
               src={currentImage || ""}
-              alt="Enlarged Certificate"
-              className="object-contain w-full h-[500px] rounded-lg"
+              alt={currentImage ? "Enlarged Certificate" : ""}
+              width={800}
+              height={600}
+              className="rounded-xl w-full h-[50vh] object-contain"
+              loading="lazy"
             />
-            <button
-              onClick={handleCloseModal}
-              className="absolute top-2 right-2 text-white bg-black p-2 rounded-full hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-info"
-              aria-label="Close modal"
-              type="button"
-            >
-              ×
-            </button>
           </div>
-        </div>
-      )}
+        )}
+      </Modal>
     </section>
   );
 };

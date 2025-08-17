@@ -31,13 +31,13 @@ const ProductCategory = () => {
       >
         {productGallery.map(({ title, photo }, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-base-100 shadow-md rounded-xl overflow-hidden h-72 relative group hover:-translate-y-2 transition duration-300">
+            <div className="shadow-md overflow-hidden h-72 relative group hover:shadow-xl transition-shadow duration-300">
               <Image
                 src={photo}
                 alt={title}
                 width={400}
                 height={400}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                 <h3 className="text-white text-xl font-semibold">{title}</h3>

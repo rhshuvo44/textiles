@@ -26,7 +26,7 @@ const FAQ = () => {
         {faqData.map((faq: FAQItem, index) => (
           <div
             key={index}
-            className="faq-item bg-white shadow-md rounded-lg p-6"
+            className="faq-item shadow-md rounded-lg p-6"
             data-aos="fade-up"
           >
             <div

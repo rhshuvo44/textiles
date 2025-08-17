@@ -5,7 +5,7 @@ const CaseStudies = () => {
   return (
     <>
       {caseStudies.length > 0 && (
-        <div className="bg-gray-50 md:p-10 p-5">
+        <div className=" md:p-10 p-5">
           <h2
             className="text-4xl sm:text-5xl font-semibold mb-8 text-center"
             data-aos="fade-up"
@@ -16,7 +16,7 @@ const CaseStudies = () => {
             {caseStudies.map((cs, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl shadow-lg p-6"
+                className=" rounded-xl shadow-lg p-6"
                 data-aos="fade-up"
               >
                 {/* Image wrapper with relative and fixed height */}

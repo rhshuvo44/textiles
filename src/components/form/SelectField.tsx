@@ -17,7 +17,7 @@ const SelectField = ({
   <div>
     <select
       {...register(name)}
-      className="select select-bordered w-full text-black"
+      className="select select-bordered w-full"
       defaultValue=""
     >
       <option value="" disabled>

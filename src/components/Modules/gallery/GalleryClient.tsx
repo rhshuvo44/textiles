@@ -35,7 +35,7 @@ export default function GalleryClient({
                 setSelectedSub(sub);
               }
             }}
-            className="bg-white rounded-lg shadow p-4 flex flex-col items-center cursor-pointer hover:shadow-lg transition duration-300"
+            className=" rounded-lg shadow p-4 flex flex-col items-center cursor-pointer hover:shadow-lg transition duration-300"
           >
             <Image
               src={sub.photos[0]}
@@ -52,7 +52,7 @@ export default function GalleryClient({
 
       <Modal isOpen={!!selectedSub} onClose={() => setSelectedSub(null)}>
         {selectedSub && (
-          <div className="bg-base-100 border rounded-lg overflow-hidden">
+          <div className="bg-base-100 border  rounded-lg overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Left: Images */}
               <div className="flex flex-col items-center justify-center p-4 gap-4">
@@ -101,16 +101,16 @@ export default function GalleryClient({
 
               {/* Right: Details */}
               <div className="flex flex-col justify-center p-4">
-                <h2 className="text-2xl font-bold mb-4 text-gray-800">
+                <h2 className="text-2xl font-bold mb-4">
                   {selectedSub.title}
                 </h2>
-                <p className="text-base text-gray-700">
+                <p className="text-base">
                   A detailed look at our &quot;{selectedSub.title}&quot;
                   product. It reflects both quality and comfort, ideal for
                   modern lifestyles.
                 </p>
                 {selectedSub.description && (
-                  <p className="mt-4 text-sm text-gray-600">
+                  <p className="mt-4 text-sm">
                     {selectedSub.description}
                   </p>
                 )}

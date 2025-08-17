@@ -10,55 +10,50 @@ import { MdEmail } from "react-icons/md";
 
 const OfficeContacts = () => {
   return (
-    <section className="p-5 md:p-10 bg-white">
-      <h2 className="text-4xl sm:text-5xl font-bold text-center text-gray-800 mb-10">
+    <section className="p-5 md:p-10">
+      <h2 className="text-4xl sm:text-5xl font-bold text-center mb-10">
         Office Contact
       </h2>
 
       <div className="grid lg:grid-cols-2 gap-10 items-start">
         {/* Contact Info */}
-        <div className="space-y-6">
-          <div className="flex items-start gap-4" data-aos="fade-up">
+        <div className="space-y-6" data-aos="fade-up">
+          <div className="flex items-start gap-4">
             <BiMapPin className="text-info w-6 h-6 mt-1" />
             <div>
-              <h4 className="font-semibold text-gray-700">Factory Address</h4>
-              <p className="text-gray-500">
-                13 No, New Market, Dhaka -1200, Bangladesh
-              </p>
+              <h4 className="font-semibold">Factory Address</h4>
+              <p className="">13 No, New Market, Dhaka -1200, Bangladesh</p>
             </div>
           </div>
 
-          <div className="flex items-start gap-4" data-aos="fade-up">
+          <div className="flex items-start gap-4">
             <BiPhone className="text-info w-6 h-6 mt-1" />
             <div>
-              <h4 className="font-semibold text-gray-700">Phone</h4>
-              <a href="tel:+88011111111" className="text-gray-500 block">
+              <h4 className="font-semibold ">Phone</h4>
+              <a href="tel:+88011111111" className=" block">
                 +88 0111111111
               </a>
-              <a href="tel:+88011111112" className="text-gray-500 block">
+              <a href="tel:+88011111112" className=" block">
                 +88 0111111112
               </a>
             </div>
           </div>
 
-          <div className="flex items-start gap-4" data-aos="fade-up">
+          <div className="flex items-start gap-4">
             <MdEmail className="text-info w-6 h-6 mt-1" />
             <div>
-              <h4 className="font-semibold text-gray-700">Email</h4>
-              <a
-                href="mailto:rhshuvo121@gmail.com"
-                className="text-gray-500 block"
-              >
+              <h4 className="font-semibold ">Email</h4>
+              <a href="mailto:rhshuvo121@gmail.com" className=" block">
                 rhshuvo121@gmail.com
               </a>
             </div>
           </div>
 
-          <div className="flex items-start gap-4" data-aos="fade-up">
+          <div className="flex items-start gap-4">
             <FiMessageCircle className="text-info w-6 h-6 mt-1" />
             <div>
-              <h4 className="font-semibold text-gray-700">WhatsApp</h4>
-              <p className="text-gray-500">+88 01111111111</p>
+              <h4 className="font-semibold ">WhatsApp</h4>
+              <p className="">+88 01111111111</p>
             </div>
           </div>
 

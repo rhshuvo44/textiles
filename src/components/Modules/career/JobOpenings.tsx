@@ -18,7 +18,7 @@ const JobOpenings = () => {
         {jobs.map((job, idx) => (
           <div
             key={idx}
-            className="card bg-white shadow-md rounded-lg"
+            className="card shadow-md rounded-lg"
             data-aos="fade-up"
             data-aos-delay={`${idx * 100}`}
           >
