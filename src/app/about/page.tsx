@@ -8,7 +8,7 @@ import CTA from "@/components/Modules/customers/CTA";
 import PartnerSlide from "@/components/UI/PartnerSlide";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "About - Sarkar Textiles & Apparel",
+  title: "About -Textiles & Apparel",
   description: "Ready made Garment Manufacturer (factory)",
 };
 const AboutPage = () => {

@@ -5,7 +5,7 @@ import JobOpenings from "@/components/Modules/career/JobOpenings";
 import WhyWorkWithUs from "@/components/Modules/career/WhyWorkWithUs";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Career - Sarkar Textiles & Apparel",
+  title: "Career -Textiles & Apparel",
   description: "Ready made Garment Manufacturer (factory)",
 };
 const CareerPage = () => {

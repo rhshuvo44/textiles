@@ -5,7 +5,7 @@ import IndustryPartners from "@/components/Modules/customers/IndustryPartners";
 import SectionTitle from "@/components/UI/SectionTitle";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Customer - Sarkar Textiles & Apparel",
+  title: "Customer -Textiles & Apparel",
   description: "Ready made Garment Manufacturer (factory)",
 };
 const CustomerPage = () => {

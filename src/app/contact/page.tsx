@@ -3,7 +3,7 @@ import ContactHero from "@/components/Modules/contact/ContactHero";
 import OfficeContacts from "@/components/Modules/home/OfficeContacts";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Contact - Sarkar Textiles & Apparel",
+  title: "Contact -Textiles & Apparel",
   description: "Ready made Garment Manufacturer (factory)",
 };
 const ContactPage = () => {

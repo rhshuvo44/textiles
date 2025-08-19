@@ -39,7 +39,7 @@ import type { Config } from "tailwindcss";
 import daisyui from "daisyui";
 
 const config: Config = {
-  darkMode: "class", // ক্লাস বেসড ডার্ক মোড
+  darkMode: "class",
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -78,6 +78,8 @@ const config: Config = {
           success: "#22C55E",
           warning: "#F59E0B",
           error: "#EF4444",
+          lightBg: "#F9FAFB",
+          lightText: "#1F2937",
         },
         dark: {
           primary: "#0EA5E9",
@@ -89,6 +91,8 @@ const config: Config = {
           success: "#22C55E",
           warning: "#FBBF24",
           error: "#F87171",
+          darkBg: "#111827",
+          darkText: "#F3F4F6",
         },
       },
     ],

@@ -8,7 +8,7 @@ import AOSComponent from "@/components/UI/AOSComponent";
 import PartnerSlide from "@/components/UI/PartnerSlide";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Home - Sarkar Textiles & Apparel",
+  title: "Home - Textiles & Apparel",
   description: "Ready made Garment Manufacturer (factory)",
 };
 export default function Home() {
