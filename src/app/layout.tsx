@@ -44,7 +44,7 @@ export default function RootLayout({
         data-new-gr-c-s-check-loaded="14.1231.0"
         data-gr-ext-installed=""
         cz-shortcut-listen="true"
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-base-100 text-base-content transition-colors duration-300`}
       >
         <Navbar />
         <main>

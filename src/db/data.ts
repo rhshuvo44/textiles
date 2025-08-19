@@ -1,18 +1,17 @@
 import img1 from "@/assets/image/1.jpg";
-import caseStudy from "@/assets/image/caseStudy.jpg";
 import banner from "@/assets/image/banner/banner.jpg";
 import banner1 from "@/assets/image/banner/banner1.jpg";
 import banner2 from "@/assets/image/banner/banner2.jpg";
-import besico from "@/assets/image/client/besico.jpeg";
-import conteofFlorence from "@/assets/image/client/ConteofFlorence.jpeg";
-import cove from "@/assets/image/client/Cove.jpeg";
-import design911 from "@/assets/image/client/design911.jpeg";
-import friendly from "@/assets/image/client/friendly.png";
-import haroki from "@/assets/image/client/haroki.webp";
-import idealClima from "@/assets/image/client/IdealClima.jpeg";
-import keedlee from "@/assets/image/client/Keedlee.png";
-import lidi from "@/assets/image/client/lidi.jpeg";
-import youth from "@/assets/image/client/youth.jpeg";
+import caseStudy from "@/assets/image/caseStudy.jpg";
+import client1 from "@/assets/image/client/1.jpg";
+import client2 from "@/assets/image/client/2.jpg";
+import client3 from "@/assets/image/client/3.jpg";
+import client4 from "@/assets/image/client/4.jpg";
+import client5 from "@/assets/image/client/5.jpg";
+import client6 from "@/assets/image/client/6.jpg";
+import client7 from "@/assets/image/client/7.jpg";
+import client8 from "@/assets/image/client/8.jpg";
+import client9 from "@/assets/image/client/9.jpg";
 import image from "@/assets/image/companyOverView.jpg";
 import image1 from "@/assets/image/companyOverView1.jpg";
 import image2 from "@/assets/image/companyOverView2.jpg";
@@ -307,59 +306,51 @@ export const howWeHire = [
 export const featuredCustomers: Customer[] = [
   {
     name: "Haroki",
-    logo: haroki,
+    logo: client1,
     description: "Leading fashion house",
   },
   {
     name: "Youth",
-    logo: youth,
+    logo: client2,
     description: "Global textile distributor",
   },
   {
     name: "Keedlee",
-    logo: keedlee,
+    logo: client3,
     description: "Eco-friendly apparel maker",
   },
   {
     name: "Besico",
-    logo: besico,
+    logo: client4,
     description: "Global textile distributor",
   },
   {
     name: "Friendly",
-    logo: friendly,
+    logo: client5,
     description: "Global textile distributor",
   },
   {
-    name: "Cove",
-    logo: cove,
+    name: "Youth",
+    logo: client6,
     description: "Global textile distributor",
   },
   {
-    name: "LIDL",
-    logo: lidi,
-    description: "Global textile distributor",
-  },
-  // {
-  //     name: "Top Ten",
-  //     logo: topTen,
-  //     description: "Global textile distributor",
-  // },
-  {
-    name: "Ideal Clima",
-    logo: idealClima,
-    description: "Global textile distributor",
-  },
-  {
-    name: "Design 911",
-    logo: design911,
-    description: "Global textile distributor",
-  },
-  {
-    name: "Conte of Florence",
-    logo: conteofFlorence,
+    name: "Keedlee",
+    logo: client7,
     description: "Eco-friendly apparel maker",
   },
+  {
+    name: "Besico",
+    logo: client8,
+    description: "Global textile distributor",
+  },
+  {
+    name: "Friendly",
+    logo: client9,
+    description: "Global textile distributor",
+  },
+
+
 ];
 
 

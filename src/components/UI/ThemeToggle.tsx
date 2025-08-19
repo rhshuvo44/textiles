@@ -19,7 +19,11 @@ export default function ThemeToggle() {
   };
 
   return (
-    <button onClick={toggleTheme} className="btn btn-circle hover:scale-110 transition-transform duration-200" aria-label="Toggle Theme">
+    <button
+      onClick={toggleTheme}
+      className="btn btn-circle hover:scale-110 transition-transform duration-200"
+      aria-label="Toggle Theme"
+    >
       {theme === "light" ? "🌙" : "☀️"}
     </button>
   );
