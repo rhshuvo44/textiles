@@ -82,7 +82,7 @@ const config: Config = {
           lightText: "#1F2937",
         },
         dark: {
-          primary: "#0EA5E9",
+          primary: "#00A9E9",
           secondary: "#F472B6",
           accent: "#22C55E",
           neutral: "#1F2937",

@@ -155,27 +155,6 @@ body {
 }
 
 /* ================================
-   Card Hover Interaction
-================================= */
-
-/* When hovering on .innerCard, change .innerCardBody bg color */
-.innerCard:hover .innerCardBody {
-  background-color: red;
-  transition: all 0.5s ease-in-out;
-}
-
-/* Show .bodyDis when hovering on .innerCard */
-.innerCard:hover .bodyDis {
-  display: block;
-  transition: all 0.5s ease-in-out;
-}
-
-/* Initially hide .bodyDis */
-.bodyDis {
-  display: none;
-}
-
-/* ================================
    Reset & Global Styles
 ================================= */
 

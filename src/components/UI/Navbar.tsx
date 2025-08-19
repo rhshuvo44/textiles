@@ -3,6 +3,7 @@
 import { navLinks } from "@/db/data";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Button from "./Button";
 import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
@@ -39,9 +40,13 @@ const Navbar = () => {
               <li key={link.path} className="px-1">
                 <Link
                   href={link.path}
-                  className={`${
-                    isActive(link.path) ? "active" : "text-base-content"
-                  }`}
+                  className={`
+        transition-colors duration-300 
+        font-bold
+        ${
+          isActive(link.path) ? "active text-2xl" : "text-base-content text-2xl"
+        }
+      `}
                 >
                   {link.label}
                 </Link>
@@ -73,13 +78,7 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-end gap-2">
-        <Link
-          // href="https://sta.sarkargroupofcompanies.com/"
-          href="#"
-          className="btn btn-info text-white px-8"
-        >
-          Login
-        </Link>
+        <Button href="#" text="login" variant="solid" ariaLabel="login page" />
         <ThemeToggle />
       </div>
     </div>

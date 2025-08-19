@@ -5,7 +5,7 @@ const FeaturedCustomers = () => {
   return (
     <div className="md:p-10 p-5">
       <h2
-        className="text-4xl sm:text-5xl font-semibold mb-8 text-center"
+        className="text-4xl sm:text-5xl font-semibold mb-8 text-center "
         data-aos="fade-up"
       >
         Featured Customers
@@ -14,7 +14,7 @@ const FeaturedCustomers = () => {
         {featuredCustomers.slice(0, 3).map((customer, index) => (
           <div
             key={index}
-            className="bg-gray-100 p-6 rounded-xl shadow-md text-center"
+            className=" p-6 rounded-xl shadow-2xl text-center transition-colors duration-300"
             data-aos="fade-up"
           >
             <Image
@@ -24,8 +24,8 @@ const FeaturedCustomers = () => {
               height={64}
               className="mx-auto mb-4"
             />
-            <p className="text-sm text-info">{customer.name}</p>
-            <p className="text-sm text-gray-600">{customer.description}</p>
+            <p className="text-sm text-primary">{customer.name}</p>
+            <p className="text-sm ">{customer.description}</p>
           </div>
         ))}
       </div>
