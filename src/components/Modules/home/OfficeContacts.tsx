@@ -60,34 +60,40 @@ const OfficeContacts = () => {
           <div className="flex items-start gap-4" data-aos="fade-up">
             <CgLock className="text-info w-6 h-6 mt-1" />
             <div>
-              <h4 className="font-semibold text-gray-700">Working Hours</h4>
-              <p className="text-gray-500">Sat - Thu: 8:00 AM - 7:00 PM</p>
+              <h4 className="font-semibold ">Working Hours</h4>
+              <p className="">Sat - Thu: 8:00 AM - 7:00 PM</p>
             </div>
           </div>
 
           <div className="flex items-center gap-5 pt-4">
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaFacebook className="w-6 h-6 text-gray-500 hover:text-blue-600" />
-            </a>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <BsInstagram className="w-6 h-6 text-gray-500 hover:text-pink-500" />
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <LiaLinkedin className="w-6 h-6 text-gray-500 hover:text-blue-700" />
-            </a>
-          </div>
+  <a
+    href="https://facebook.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="transition-colors duration-300 text-gray-500 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
+  >
+    <FaFacebook className="w-6 h-6" />
+  </a>
+
+  <a
+    href="https://instagram.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="transition-colors duration-300 text-gray-500 hover:text-pink-500 dark:text-gray-300 dark:hover:text-pink-400"
+  >
+    <BsInstagram className="w-6 h-6" />
+  </a>
+
+  <a
+    href="https://linkedin.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="transition-colors duration-300 text-gray-500 hover:text-blue-700 dark:text-gray-300 dark:hover:text-blue-500"
+  >
+    <LiaLinkedin className="w-6 h-6" />
+  </a>
+</div>
+
         </div>
 
         {/* Google Map */}

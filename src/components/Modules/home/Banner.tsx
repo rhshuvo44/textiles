@@ -18,11 +18,12 @@ const Banner = () => {
         dynamicBullets: true,
         clickable: true,
         renderBullet: (index, className) => {
-          return `<span class="${className}">${index + 1}</span>`;
+          return `<span class="${className} custom-pagination">${index + 1}</span>`;
         },
       }}
       speed={800}
       modules={[Pagination, Autoplay]}
+      
     >
       {homeBanner.map((banner, index) => (
         <SwiperSlide key={index}>
