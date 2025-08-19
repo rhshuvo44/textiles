@@ -8,7 +8,7 @@ const CallUs = () => {
       <div className="card lg:card-side bg-base-100 shadow-xl">
         <div className="card-body w-full md:w-1/2 md:px-20">
           <h2
-            className="text-5xl font-bold text-[#00A9E9]"
+            className="text-5xl font-bold text-primary"
             data-aos="fade-right"
           >
             Call Us or Fill the Form

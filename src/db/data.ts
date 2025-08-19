@@ -202,24 +202,48 @@ export const teamMembers: TeamMember[] = [
     role: "CEO & Founder",
     image: team1,
     bio: "Aminul brings over 15 years of expertise in knit garment production and strategic leadership.",
+    social: {
+      facebook: "https://facebook.com",
+      twitter: "https://twitter.com",
+      linkedin: "https://linkedin.com",
+      instagram: "https://instagram.com",
+    },
   },
   {
     name: "Hossain",
     role: "Head of Design",
     image: team2,
     bio: "Leading design innovation, Farzana ensures each product blends aesthetics with market trends.",
+    social: {
+      facebook: "https://facebook.com",
+      twitter: "https://twitter.com",
+      linkedin: "https://linkedin.com",
+      instagram: "https://instagram.com",
+    },
   },
   {
     name: "Shuvo",
     role: "CEO & Founder",
     image: team3,
     bio: "Aminul brings over 15 years of expertise in knit garment production and strategic leadership.",
+    social: {
+      facebook: "https://facebook.com",
+      twitter: "https://twitter.com",
+      linkedin: "https://linkedin.com",
+      instagram: "https://instagram.com",
+    },
   },
   {
     name: "Farzana",
     role: "Head of Design",
     image: team4,
     bio: "Leading design innovation, Farzana ensures each product blends aesthetics with market trends.",
+    social: {
+      facebook: "https://facebook.com",
+      twitter: "https://twitter.com",
+      linkedin: "https://linkedin.com",
+      instagram: "https://instagram.com",
+    },
   },
 ];
 

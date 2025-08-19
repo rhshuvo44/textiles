@@ -28,9 +28,10 @@ const AboutBanner = () => {
           From AI-Driven Design to Sustainable Manufacturing – We Bring Your
           Fashion Vision to Life
         </p>
+        
         <a
           href="#valuesCommitment"
-          className="btn btn-info text-white"
+          className="btn btn-info text-white p-4"
           data-aos="fade-up"
         >
           Explore Our Services

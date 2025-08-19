@@ -22,12 +22,12 @@ const Capabilities = () => {
           className="w-full lg:w-1/2 p-6 md:p-10 space-y-4"
           data-aos="fade-up"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#00A9E9]">
+          <h2 className="text-3xl sm:text-4xl font-bold text-primary">
             Our Capabilities
           </h2>
 
           <p className="leading-relaxed">
-            At <span className="font-semibold text-[#00A9E9]">Textiles</span>,
+            At <span className="font-semibold text-primary">Textiles</span>,
             we pride ourselves on our diverse and robust capabilities that
             enable us to meet the evolving needs of the textile industry.
           </p>

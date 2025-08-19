@@ -50,7 +50,7 @@ const Navbar = () => {
           </ul>
         </div>
         <Link href="/">
-          <span className="text-xl font-bold text-[#00A9E9]">Textiles</span>
+          <span className="text-xl font-bold text-primary">Textiles</span>
           {/* <Image src={logo} alt="logo" width={220} height={220} /> */}
         </Link>
       </div>

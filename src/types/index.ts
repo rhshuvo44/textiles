@@ -24,6 +24,12 @@ export type TeamMember = {
   role: string;
   image: string | StaticImageData;
   bio: string;
+  social: {
+    facebook: string;
+    twitter: string;
+    linkedin: string;
+    instagram: string;
+  };
 };
 
 export interface Testimonial {

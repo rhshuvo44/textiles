@@ -45,7 +45,7 @@ const Banner = () => {
                   </Link>
                   <Link
                     href="/contact"
-                    className="btn btn-outline text-info hover:bg-info hover:border-info duration-300"
+                    className="btn btn-outline text-white hover:bg-primary hover:border-primary hover:text-white duration-300"
                   >
                     Contact Us <FaLongArrowAltRight />
                   </Link>

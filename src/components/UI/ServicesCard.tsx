@@ -8,8 +8,8 @@ const ServicesCard = ({ service }: { service: TServices }) => {
       aria-label={service.title}
     >
       <div className="card-body">
-        <div className="my-4 text-4xl text-[#00A9E9]">{service.icon}</div>
-        <h2 className="card-title text-[#00A9E9]">{service.title}</h2>
+        <div className="my-4 text-4xl text-primary">{service.icon}</div>
+        <h2 className="card-title text-primary">{service.title}</h2>
         <p className="mt-2 text-gray-700">{service.description}</p>
       </div>
     </div>
