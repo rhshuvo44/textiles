@@ -125,12 +125,11 @@ body {
 }
 
 /* Dark mode active */
-.dark .swiper-pagination-bullet.custom-pagination.swiper-pagination-bullet-active {
+.dark
+  .swiper-pagination-bullet.custom-pagination.swiper-pagination-bullet-active {
   background-color: #ec4899; /* Secondary color */
   box-shadow: 0 0 10px #ec4899, 0 0 20px #ec4899;
 }
-
-
 
 .swiper {
   width: 100%;
@@ -237,5 +236,3 @@ body {
     transform: rotate(360deg);
   }
 }
-
-

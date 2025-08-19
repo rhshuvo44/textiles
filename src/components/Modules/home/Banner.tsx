@@ -18,12 +18,13 @@ const Banner = () => {
         dynamicBullets: true,
         clickable: true,
         renderBullet: (index, className) => {
-          return `<span class="${className} custom-pagination">${index + 1}</span>`;
+          return `<span class="${className} custom-pagination">${
+            index + 1
+          }</span>`;
         },
       }}
       speed={800}
       modules={[Pagination, Autoplay]}
-      
     >
       {homeBanner.map((banner, index) => (
         <SwiperSlide key={index}>
@@ -33,8 +34,8 @@ const Banner = () => {
               backgroundImage: `url(${banner.src.src})`,
             }}
           >
-            <div className="hero-overlay bg-opacity-60"></div>
-            <div className="hero-content px-4 sm:px-6 md:px-10 py-10 text-center text-neutral-content">
+            <div className="hero-overlay bg-black bg-opacity-50"></div>
+            <div className="hero-content px-4 sm:px-6 md:px-10 py-10 text-center text-white">
               <div className="max-w-lg mx-auto">
                 <h1 className="mb-3 text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold">
                   {banner.title}
