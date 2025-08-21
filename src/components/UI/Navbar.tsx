@@ -43,7 +43,7 @@ const Navbar = () => {
                   className={`
         transition-colors duration-300 
         font-bold
-    ${isActive(link.path) ? "text-primary" : "text-base-content"}
+        ${isActive(link.path) ? "active" : ""}
       `}
                 >
                   {link.label}
@@ -67,7 +67,7 @@ const Navbar = () => {
                 className={`
         transition-colors duration-300 
         font-bold
-    ${isActive(link.path) ? "text-primary" : "text-base-content"}
+    ${isActive(link.path) ? "active" : ""}
       `}
               >
                 {link.label}
