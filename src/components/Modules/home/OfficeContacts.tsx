@@ -1,5 +1,7 @@
 "use client";
 
+import ContactList from "@/components/UI/ContactList";
+import { socialLinks } from "@/db/data";
 import { BiMapPin, BiPhone } from "react-icons/bi";
 import { BsInstagram } from "react-icons/bs";
 import { CgLock } from "react-icons/cg";
@@ -18,80 +20,21 @@ const OfficeContacts = () => {
       <div className="grid lg:grid-cols-2 gap-10 items-start">
         {/* Contact Info */}
         <div className="space-y-6" data-aos="fade-up">
-          <div className="flex items-start gap-4">
-            <BiMapPin className="text-primary w-6 h-6 mt-1" />
-            <div>
-              <h4 className="font-semibold">Factory Address</h4>
-              <p className="">13 No, New Market, Dhaka -1200, Bangladesh</p>
-            </div>
-          </div>
-
-          <div className="flex items-start gap-4">
-            <BiPhone className="text-primary w-6 h-6 mt-1" />
-            <div>
-              <h4 className="font-semibold ">Phone</h4>
-              <a href="tel:+88011111111" className=" block">
-                +88 0111111111
-              </a>
-              <a href="tel:+88011111112" className=" block">
-                +88 0111111112
-              </a>
-            </div>
-          </div>
-
-          <div className="flex items-start gap-4">
-            <MdEmail className="text-primary w-6 h-6 mt-1" />
-            <div>
-              <h4 className="font-semibold ">Email</h4>
-              <a href="mailto:rhshuvo121@gmail.com" className=" block">
-                rhshuvo121@gmail.com
-              </a>
-            </div>
-          </div>
-
-          <div className="flex items-start gap-4">
-            <FiMessageCircle className="text-primary w-6 h-6 mt-1" />
-            <div>
-              <h4 className="font-semibold ">WhatsApp</h4>
-              <p className="">+88 01111111111</p>
-            </div>
-          </div>
-
-          <div className="flex items-start gap-4" data-aos="fade-up">
-            <CgLock className="text-primary w-6 h-6 mt-1" />
-            <div>
-              <h4 className="font-semibold ">Working Hours</h4>
-              <p className="">Sat - Thu: 8:00 AM - 7:00 PM</p>
-            </div>
-          </div>
+          <ContactList variant="withIcon" />
 
           <div className="flex items-center gap-5 pt-4">
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-colors duration-300 text-gray-500 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
-            >
-              <FaFacebook className="w-6 h-6" />
-            </a>
-
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-colors duration-300 text-gray-500 hover:text-pink-500 dark:text-gray-300 dark:hover:text-pink-400"
-            >
-              <BsInstagram className="w-6 h-6" />
-            </a>
-
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-colors duration-300 text-gray-500 hover:text-blue-700 dark:text-gray-300 dark:hover:text-blue-500"
-            >
-              <LiaLinkedin className="w-6 h-6" />
-            </a>
+            {socialLinks.map(({ href, icon: Icon, label }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                className="hover:text-primary transition-colors"
+              >
+                <Icon size={24} />
+              </a>
+            ))}
           </div>
         </div>
 

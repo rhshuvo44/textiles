@@ -20,7 +20,67 @@
 body {
   overflow-x: hidden;
 }
+/* ================================
+   Reset & Global Styles
+================================= */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================================
+   Preloader Styles
+================================= */
+
+.se-pre-con {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  /* Optional: background color */
+  /* background: #fff; */
+}
+
+.preloader-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.preloader {
+  margin: auto;
+  object-fit: contain;
+  background-size: 70px;
+  width: 100px;
+  height: 100px;
+}
+
+/* Spinning loader */
+.preloader2 {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #086ad8; /* Blue accent */
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 1s ease-in-out infinite;
+  position: relative;
+  margin: auto;
+  top: -100px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* ================================
    Menu Styles & Interaction States
 ================================= */
@@ -152,66 +212,4 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-/* ================================
-   Reset & Global Styles
-================================= */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* ================================
-   Preloader Styles
-================================= */
-
-.se-pre-con {
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  /* Optional: background color */
-  /* background: #fff; */
-}
-
-.preloader-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-}
-
-.preloader {
-  margin: auto;
-  object-fit: contain;
-  background-size: 70px;
-  width: 100px;
-  height: 100px;
-}
-
-/* Spinning loader */
-.preloader2 {
-  border: 5px solid #f3f3f3;
-  border-top: 5px solid #086ad8; /* Blue accent */
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  animation: spin 1s ease-in-out infinite;
-  position: relative;
-  margin: auto;
-  top: -100px;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }

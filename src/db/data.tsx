@@ -31,12 +31,21 @@ import department from "@/assets/image/ST&A Document/Department of textile.jpg";
 import ERC from "@/assets/image/ST&A Document/ERC.jpg";
 import Fire from "@/assets/image/ST&A Document/Fire License.jpg";
 import NCCI from "@/assets/image/ST&A Document/NCCI.jpg";
-import team1 from '@/assets/image/team/1.jpg';
-import team2 from '@/assets/image/team/2.jpg';
-import team3 from '@/assets/image/team/3.jpg';
-import team4 from '@/assets/image/team/4.jpg';
+import team1 from "@/assets/image/team/1.jpg";
+import team2 from "@/assets/image/team/2.jpg";
+import team3 from "@/assets/image/team/3.jpg";
+import team4 from "@/assets/image/team/4.jpg";
 import { CaseStudy, Certification, Customer, TeamMember } from "@/types";
-
+import { BiMapPin, BiPhone } from "react-icons/bi";
+import { CgLock } from "react-icons/cg";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaWhatsapp,
+} from "react-icons/fa";
+import { FiMessageCircle } from "react-icons/fi";
+import { MdEmail } from "react-icons/md";
 export const productGallery = [
   {
     title: "T-Shirt",
@@ -60,9 +69,7 @@ export const productGallery = [
       },
       {
         title: "Royal Roses Drop Shoulder T-shirt",
-        photo: [
-          tShartProduct03,
-        ],
+        photo: [tShartProduct03],
         description: "A stylish and comfortable t-shirt",
       },
     ],
@@ -77,7 +84,6 @@ export const productGallery = [
         description:
           "Contrast white-tipped collar and sleeve cuffs for a refined look.Minimalistic branding on the chest for subtle elegance.Classic buttoned placket for a versatile style.",
       },
-
     ],
     photo: poloProduct01,
   },
@@ -87,10 +93,7 @@ export const productGallery = [
     subCategory: [
       {
         title: "Royal Roses Tank Top Set",
-        photo: [
-          tankTopProduct03,
-          tankTopProduct04,
-        ],
+        photo: [tankTopProduct03, tankTopProduct04],
         description:
           "Stay stylish and comfortable in this sleek activewear set, perfect for workouts or casual lounging.",
       },
@@ -141,12 +144,9 @@ export const productGallery = [
         description:
           "Introducing classic Sweatshirt our loungewear game with this stylish grey sweatshirt.Crafted from a soft, breathable fabric, this ensemble offers the perfect blend of comfort and casual chic.The minimalist design makes it versatile enough for both relaxing at home or running errands around town.",
       },
-
     ],
     photo: sweatProduct01,
   },
-
-
 ];
 export const galleryImages = [image, image1, image2];
 
@@ -349,10 +349,7 @@ export const featuredCustomers: Customer[] = [
     logo: client9,
     description: "Global textile distributor",
   },
-
-
 ];
-
 
 export const certifications: Certification[] = [
   {
@@ -503,5 +500,66 @@ export const caseStudies: CaseStudy[] = [
       "Helped EcoWear scale production while maintaining sustainability.",
     image: caseStudy,
     stats: "Efficiency ↑ 30%",
+  },
+];
+
+export const socialLinks = [
+  {
+    href: "https://www.facebook.com/",
+    icon: FaFacebookF,
+    label: "Facebook",
+  },
+  {
+    href: "https://instagram.com",
+    icon: FaInstagram,
+    label: "Instagram",
+  },
+  {
+    href: "https://linkedin.com",
+    icon: FaLinkedinIn,
+    label: "LinkedIn",
+  },
+  {
+    href: "https://wa.me/8801111111111",
+    icon: FaWhatsapp,
+    label: "WhatsApp",
+  },
+];
+
+export const contactInfo = [
+  {
+    id: "address",
+    label: "Factory Address",
+    value: "13 No, New Market, Dhaka -1200, Bangladesh",
+    icon: BiMapPin,
+    type: "text",
+  },
+  {
+    id: "phone",
+    label: "Phone",
+    value: ["+88 0111111111", "+88 0111111112"],
+    icon: BiPhone,
+    type: "phone",
+  },
+  {
+    id: "email",
+    label: "Email",
+    value: "rhshuvo121@gmail.com",
+    icon: MdEmail,
+    type: "email",
+  },
+  {
+    id: "whatsapp",
+    label: "WhatsApp",
+    value: "+88 01111111111",
+    icon: FiMessageCircle,
+    type: "text",
+  },
+  {
+    id: "hours",
+    label: "Working Hours",
+    value: "Sat - Thu: 8:00 AM - 7:00 PM",
+    icon: CgLock,
+    type: "text",
   },
 ];
