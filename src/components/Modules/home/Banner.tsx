@@ -60,7 +60,7 @@ const Banner = () => {
                     href="/details"
                     text="In Details"
                     variant="solid"
-                    color="info"
+                    color="primary"
                     ariaLabel="Details page"
                     icon={FaLongArrowAltRight}
                   />

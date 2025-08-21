@@ -1,4 +1,5 @@
 "use client";
+import Button from "@/components/UI/Button";
 import { jobs } from "@/db/data";
 
 const JobOpenings = () => {
@@ -32,12 +33,12 @@ const JobOpenings = () => {
                   Deadline: <time dateTime={job.deadline}>{job.deadline}</time>
                 </p>
               </div>
-              <button
-                className="btn btn-info text-white whitespace-nowrap"
-                aria-label={`Apply for ${job.title}`}
-              >
-                Apply Now
-              </button>
+              <Button
+                href="#"
+                text="Apply Now"
+                ariaLabel={`Apply for ${job.title}`}
+                variant="solid"
+              />
             </div>
           </div>
         ))}

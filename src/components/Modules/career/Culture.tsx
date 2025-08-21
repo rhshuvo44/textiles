@@ -31,7 +31,10 @@ const Culture = () => {
               <blockquote className="italic text-sm">
                 “{person.quote}”
               </blockquote>
-              <p id={`person-name-${idx}`} className="font-semibold mt-2">
+              <p
+                id={`person-name-${idx}`}
+                className="font-semibold mt-2 text-primary"
+              >
                 — {person.name}, {person.title}
               </p>
             </div>

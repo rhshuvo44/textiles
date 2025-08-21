@@ -12,7 +12,6 @@ const CareerPage = () => {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-
       <CareerHero />
       {/* Why Work With Us */}
       <WhyWorkWithUs />

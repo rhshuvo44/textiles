@@ -1,6 +1,7 @@
 "use client";
 
 import banner from "@/assets/image/banner/investor-relations.jpg";
+import Button from "@/components/UI/Button";
 import Image from "next/image";
 
 const AboutBanner = () => {
@@ -22,20 +23,19 @@ const AboutBanner = () => {
           data-aos="fade-up"
         >
           Crafting Excellence in Knit Garments Industry Since{" "}
-          <span className="text-info">2023</span>
+          <span className="text-primary">2023</span>
         </h1>
         <p className="text-md sm:text-lg md:text-xl mb-6" data-aos="fade-up">
           From AI-Driven Design to Sustainable Manufacturing – We Bring Your
           Fashion Vision to Life
         </p>
-
-        <a
+        <Button
           href="#valuesCommitment"
-          className="btn btn-info text-white p-4"
-          data-aos="fade-up"
-        >
-          Explore Our Services
-        </a>
+          text="Explore Our Services"
+          ariaLabel="View Explore Our Services"
+          variant="solid"
+        />
+        
       </div>
     </section>
   );

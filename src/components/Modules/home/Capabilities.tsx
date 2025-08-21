@@ -1,4 +1,5 @@
 import image from "@/assets/image/Subscription_Monthly_M.jpg";
+import Button from "@/components/UI/Button";
 import Image from "next/image";
 import Link from "next/link";
 import { FaLongArrowAltRight } from "react-icons/fa";
@@ -27,9 +28,9 @@ const Capabilities = () => {
           </h2>
 
           <p className="leading-relaxed">
-            At <span className="font-semibold text-primary">Textiles</span>,
-            we pride ourselves on our diverse and robust capabilities that
-            enable us to meet the evolving needs of the textile industry.
+            At <span className="font-semibold text-primary">Textiles</span>, we
+            pride ourselves on our diverse and robust capabilities that enable
+            us to meet the evolving needs of the textile industry.
           </p>
 
           <p className="leading-relaxed">
@@ -48,11 +49,13 @@ const Capabilities = () => {
           </p>
 
           <div className="pt-4">
-            <Link href="/about" passHref>
-              <span className="btn btn-info text-white inline-flex items-center gap-2">
-                About Us <FaLongArrowAltRight />
-              </span>
-            </Link>
+            <Button
+              href="/about"
+              text="About Us"
+              ariaLabel="View About Us"
+              variant="solid"
+              icon={FaLongArrowAltRight}
+            />
           </div>
         </div>
       </div>

@@ -19,7 +19,7 @@ const OfficeContacts = () => {
         {/* Contact Info */}
         <div className="space-y-6" data-aos="fade-up">
           <div className="flex items-start gap-4">
-            <BiMapPin className="text-info w-6 h-6 mt-1" />
+            <BiMapPin className="text-primary w-6 h-6 mt-1" />
             <div>
               <h4 className="font-semibold">Factory Address</h4>
               <p className="">13 No, New Market, Dhaka -1200, Bangladesh</p>
@@ -27,7 +27,7 @@ const OfficeContacts = () => {
           </div>
 
           <div className="flex items-start gap-4">
-            <BiPhone className="text-info w-6 h-6 mt-1" />
+            <BiPhone className="text-primary w-6 h-6 mt-1" />
             <div>
               <h4 className="font-semibold ">Phone</h4>
               <a href="tel:+88011111111" className=" block">
@@ -40,7 +40,7 @@ const OfficeContacts = () => {
           </div>
 
           <div className="flex items-start gap-4">
-            <MdEmail className="text-info w-6 h-6 mt-1" />
+            <MdEmail className="text-primary w-6 h-6 mt-1" />
             <div>
               <h4 className="font-semibold ">Email</h4>
               <a href="mailto:rhshuvo121@gmail.com" className=" block">
@@ -50,7 +50,7 @@ const OfficeContacts = () => {
           </div>
 
           <div className="flex items-start gap-4">
-            <FiMessageCircle className="text-info w-6 h-6 mt-1" />
+            <FiMessageCircle className="text-primary w-6 h-6 mt-1" />
             <div>
               <h4 className="font-semibold ">WhatsApp</h4>
               <p className="">+88 01111111111</p>
@@ -58,7 +58,7 @@ const OfficeContacts = () => {
           </div>
 
           <div className="flex items-start gap-4" data-aos="fade-up">
-            <CgLock className="text-info w-6 h-6 mt-1" />
+            <CgLock className="text-primary w-6 h-6 mt-1" />
             <div>
               <h4 className="font-semibold ">Working Hours</h4>
               <p className="">Sat - Thu: 8:00 AM - 7:00 PM</p>
@@ -66,34 +66,33 @@ const OfficeContacts = () => {
           </div>
 
           <div className="flex items-center gap-5 pt-4">
-  <a
-    href="https://facebook.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="transition-colors duration-300 text-gray-500 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
-  >
-    <FaFacebook className="w-6 h-6" />
-  </a>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors duration-300 text-gray-500 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
+            >
+              <FaFacebook className="w-6 h-6" />
+            </a>
 
-  <a
-    href="https://instagram.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="transition-colors duration-300 text-gray-500 hover:text-pink-500 dark:text-gray-300 dark:hover:text-pink-400"
-  >
-    <BsInstagram className="w-6 h-6" />
-  </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors duration-300 text-gray-500 hover:text-pink-500 dark:text-gray-300 dark:hover:text-pink-400"
+            >
+              <BsInstagram className="w-6 h-6" />
+            </a>
 
-  <a
-    href="https://linkedin.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="transition-colors duration-300 text-gray-500 hover:text-blue-700 dark:text-gray-300 dark:hover:text-blue-500"
-  >
-    <LiaLinkedin className="w-6 h-6" />
-  </a>
-</div>
-
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors duration-300 text-gray-500 hover:text-blue-700 dark:text-gray-300 dark:hover:text-blue-500"
+            >
+              <LiaLinkedin className="w-6 h-6" />
+            </a>
+          </div>
         </div>
 
         {/* Google Map */}

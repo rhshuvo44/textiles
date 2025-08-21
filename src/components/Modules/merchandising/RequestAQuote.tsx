@@ -2,6 +2,7 @@
 
 import InputField from "@/components/form/InputField";
 import SelectField from "@/components/form/SelectField";
+import Button from "@/components/UI/Button";
 import { fabrics, styles, yarns } from "@/db/data";
 import { QuoteFormData } from "@/types";
 import emailjs from "emailjs-com";
@@ -135,18 +136,13 @@ const RequestAQuote = () => {
           validation={{ required: "GSM is required" }}
         />
 
-        <button
-          type="submit"
-          className="btn btn-info text-white w-full"
-          disabled={isSubmitting}
-        >
-          {isSubmitting ? "Submitting..." : "Submit"}
-        </button>
+        
+        <Button text="Submit" isSubmitting={isSubmitting} />
       </form>
 
       <a
-        href="https://wa.me/8801788577329"
-        className="fixed bottom-6 right-6 btn btn-success rounded-full shadow-lg"
+        href="https://wa.me/8801878655537"
+        className="fixed bottom-6 right-6 btn btn-primary rounded-full shadow-lg"
         target="_blank"
         rel="noopener noreferrer"
       >

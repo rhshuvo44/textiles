@@ -447,6 +447,13 @@ export const styles = [
   "Activewear (Men's)",
   "Activewear (Ladies)",
 ];
+export const subjects = [
+  "General Inquiry",
+  "Buyer Inquiry",
+  "Partnership",
+  "Support",
+  "Careers",
+];
 
 export const fabrics = [
   "Single Jersey",
