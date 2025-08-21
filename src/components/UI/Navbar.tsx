@@ -3,7 +3,7 @@
 import { navLinks } from "@/db/data";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Button from "./Button";
+import PolymorphicButton from "./PolymorphicButton";
 import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
@@ -43,9 +43,7 @@ const Navbar = () => {
                   className={`
         transition-colors duration-300 
         font-bold
-        ${
-          isActive(link.path) ? "active text-2xl" : "text-base-content text-2xl"
-        }
+    ${isActive(link.path) ? "text-primary" : "text-base-content"}
       `}
                 >
                   {link.label}
@@ -66,9 +64,11 @@ const Navbar = () => {
             <li key={link.path} className="px-1">
               <Link
                 href={link.path}
-                className={`${
-                  isActive(link.path) ? "active" : "text-base-content"
-                }`}
+                className={`
+        transition-colors duration-300 
+        font-bold
+    ${isActive(link.path) ? "text-primary" : "text-base-content"}
+      `}
               >
                 {link.label}
               </Link>
@@ -78,7 +78,13 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-end gap-2">
-        <Button href="#" text="login" variant="solid" ariaLabel="login page" />
+        <PolymorphicButton
+          href="#"
+          text="login"
+          variant="gradient"
+          color="primary"
+          ariaLabel="login page"
+        />
         <ThemeToggle />
       </div>
     </div>

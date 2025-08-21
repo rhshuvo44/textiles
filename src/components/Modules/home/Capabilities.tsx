@@ -1,7 +1,6 @@
 import image from "@/assets/image/Subscription_Monthly_M.jpg";
-import Button from "@/components/UI/Button";
+import PolymorphicButton from "@/components/UI/PolymorphicButton";
 import Image from "next/image";
-import Link from "next/link";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Capabilities = () => {
@@ -49,7 +48,7 @@ const Capabilities = () => {
           </p>
 
           <div className="pt-4">
-            <Button
+            <PolymorphicButton
               href="/about"
               text="About Us"
               ariaLabel="View About Us"

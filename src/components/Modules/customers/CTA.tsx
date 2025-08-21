@@ -1,27 +1,33 @@
+// components/CTA.tsx
 "use client";
+
+import PolymorphicButton from "@/components/UI/PolymorphicButton";
+import { FaArrowRight } from "react-icons/fa";
 
 const CTA = () => {
   return (
-    <section className="text-center py-20 px-5 bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-gray-800 dark:to-gray-900 text-white relative overflow-hidden">
-      <span className="absolute -top-16 -left-16 w-72 h-72 bg-white/10 rounded-full animate-ping dark:bg-gray-700/20"></span>
-      <span className="absolute -bottom-16 -right-16 w-72 h-72 bg-white/10 rounded-full animate-ping dark:bg-gray-700/20"></span>
+    <section className="text-center py-20 px-5 bg-base-200 text-base-content relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-50 dark:from-base-300 dark:to-base-300"></div>
+
+      <span className="absolute -top-16 -left-16 w-72 h-72 bg-base-100/10 rounded-full animate-ping"></span>
+      <span className="absolute -bottom-16 -right-16 w-72 h-72 bg-base-100/10 rounded-full animate-ping"></span>
 
       <div className="relative z-10 max-w-3xl mx-auto">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-          Want to Join Our Network?
+          Ready to Create Together?
         </h2>
-        <p className="text-lg sm:text-xl mb-8 text-white/90">
-          Let’s create something amazing together.
+        <p className="text-lg sm:text-xl mb-8 text-base-content/90">
+          Let's discuss how we can bring your textile vision to life with our
+          expertise and innovation.
         </p>
-        <button className="group relative inline-block bg-white text-blue-700 font-semibold px-10 py-4 rounded-xl shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
-          <span className="absolute inset-0 bg-white/20 rounded-xl blur opacity-0 transition-all duration-500 group-hover:opacity-100"></span>
-          <span className="relative flex items-center gap-2">
-            Partner With Us
-            <span className="inline-block transform transition-transform duration-300 group-hover:rotate-45">
-              →
-            </span>
-          </span>
-        </button>
+        <PolymorphicButton
+          text="Get Started"
+          ariaLabel="Get Started"
+          color="primary"
+          href="/contact"
+          variant="solid"
+          icon={FaArrowRight}
+        />
       </div>
     </section>
   );

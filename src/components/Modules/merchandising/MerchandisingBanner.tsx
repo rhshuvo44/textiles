@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Button from "@/components/UI/Button";
 import merchandisingBanner from "@/assets/image/banner/merchandising.jpg";
+import PolymorphicButton from "@/components/UI/PolymorphicButton";
+import Image from "next/image";
 
 const MerchandisingBanner = () => {
   return (
@@ -24,7 +24,7 @@ const MerchandisingBanner = () => {
         <p className="text-lg md:text-2xl mb-6" data-aos="fade-up">
           Expert textile merchandising tailored for your business
         </p>
-        <Button
+        <PolymorphicButton
           href="#quote"
           text="Get a Quote"
           ariaLabel="View Get a Quote"

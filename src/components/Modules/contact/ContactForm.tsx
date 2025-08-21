@@ -2,12 +2,11 @@
 
 import InputField from "@/components/form/InputField";
 import SelectField from "@/components/form/SelectField";
-import Button from "@/components/UI/Button";
+import PolymorphicButton from "@/components/UI/PolymorphicButton";
 import { subjects } from "@/db/data";
 import emailjs from "emailjs-com";
 import { useRef } from "react";
 import { useForm } from "react-hook-form";
-import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { toast } from "react-toastify";
 
 type FormData = {
@@ -115,8 +114,7 @@ export default function ContactForm() {
           error={errors.message}
           validation={{ required: "Message is required" }}
         />
-        <Button text="Send Message" isSubmitting={isSubmitting} />
-        
+        <PolymorphicButton text="Send Message" isSubmitting={isSubmitting} />
       </form>
     </div>
   );

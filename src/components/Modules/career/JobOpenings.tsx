@@ -1,5 +1,5 @@
 "use client";
-import Button from "@/components/UI/Button";
+import PolymorphicButton from "@/components/UI/PolymorphicButton";
 import { jobs } from "@/db/data";
 
 const JobOpenings = () => {
@@ -33,7 +33,7 @@ const JobOpenings = () => {
                   Deadline: <time dateTime={job.deadline}>{job.deadline}</time>
                 </p>
               </div>
-              <Button
+              <PolymorphicButton
                 href="#"
                 text="Apply Now"
                 ariaLabel={`Apply for ${job.title}`}

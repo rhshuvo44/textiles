@@ -30,10 +30,9 @@
 // };
 
 // export default CareerHero;
-import Image from "next/image";
-import Link from "next/link";
 import banner from "@/assets/image/banner/carrer.jpg";
-import Button from "@/components/UI/Button";
+import PolymorphicButton from "@/components/UI/PolymorphicButton";
+import Image from "next/image";
 
 const CareerHero = () => {
   return (
@@ -60,7 +59,7 @@ const CareerHero = () => {
         <p className="mb-6">
           Be a part of an innovative and growing textile company.
         </p>
-        <Button
+        <PolymorphicButton
           href="#job-openings"
           text="View Open Positions"
           ariaLabel="View Open Positions"

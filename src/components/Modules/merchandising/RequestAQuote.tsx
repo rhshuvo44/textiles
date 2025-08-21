@@ -2,7 +2,7 @@
 
 import InputField from "@/components/form/InputField";
 import SelectField from "@/components/form/SelectField";
-import Button from "@/components/UI/Button";
+import PolymorphicButton from "@/components/UI/PolymorphicButton";
 import { fabrics, styles, yarns } from "@/db/data";
 import { QuoteFormData } from "@/types";
 import emailjs from "emailjs-com";
@@ -136,8 +136,7 @@ const RequestAQuote = () => {
           validation={{ required: "GSM is required" }}
         />
 
-        
-        <Button text="Submit" isSubmitting={isSubmitting} />
+        <PolymorphicButton text="Submit" isSubmitting={isSubmitting} />
       </form>
 
       <a

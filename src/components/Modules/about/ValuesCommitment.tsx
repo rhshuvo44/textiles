@@ -49,7 +49,7 @@ const values = [
 
 const ValuesCommitment = () => {
   return (
-    <section
+     <section
       className="px-4 sm:px-6 lg:px-12 py-10 bg-base-100 text-base-content"
       id="valuesCommitment"
     >

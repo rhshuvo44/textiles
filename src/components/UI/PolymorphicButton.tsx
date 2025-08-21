@@ -51,7 +51,7 @@ import { IconType } from "react-icons";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 // The props for the button, making href and onClick optional
-interface ButtonProps {
+interface PolymorphicButtonProps {
   href?: string;
   onClick?: () => void;
   text: string;
@@ -62,7 +62,10 @@ interface ButtonProps {
   isSubmitting?: boolean;
 }
 
-const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonProps>(
+const PolymorphicButton = forwardRef<
+  HTMLButtonElement | HTMLAnchorElement,
+  PolymorphicButtonProps
+>(
   (
     {
       href,
@@ -143,6 +146,6 @@ const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonProps>(
   }
 );
 
-Button.displayName = "Button";
+PolymorphicButton.displayName = "PolymorphicButton";
 
-export default Button;
+export default PolymorphicButton;

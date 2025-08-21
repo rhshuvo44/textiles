@@ -1,13 +1,12 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import { FaLongArrowAltRight, FaPhone } from "react-icons/fa";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 
+import PolymorphicButton from "@/components/UI/PolymorphicButton";
 import { homeBanner } from "@/db/data";
 import { Autoplay, Pagination } from "swiper/modules";
-import Button from "@/components/UI/Button";
 
 const Banner = () => {
   return (
@@ -47,7 +46,7 @@ const Banner = () => {
                 </h1>
                 <p className="mb-5">{description}</p>
                 <div className="flex flex-row items-center justify-center gap-4 sm:flex-col sm:gap-3 md:flex-row md:gap-4">
-                  <Button
+                  <PolymorphicButton
                     href="/contact"
                     text="Contact Us"
                     variant="outline"
@@ -56,7 +55,7 @@ const Banner = () => {
                     icon={FaPhone}
                   />
 
-                  <Button
+                  <PolymorphicButton
                     href="/details"
                     text="In Details"
                     variant="solid"

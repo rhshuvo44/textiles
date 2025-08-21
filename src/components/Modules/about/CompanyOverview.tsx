@@ -5,8 +5,7 @@ import { galleryImages, milestones } from "@/db/data";
 
 const CompanyOverview = () => {
   return (
-    <section className="p-5 md:p-10 bg-base-100 text-base-content">
-      {/* ✅ Title */}
+      <section className="p-5 md:p-10 bg-base-100 text-base-content">
       <h2
         className="text-4xl sm:text-5xl font-bold text-center mb-6"
         data-aos="fade-up"
@@ -14,18 +13,16 @@ const CompanyOverview = () => {
         Who We Are
       </h2>
 
-      {/* ✅ Intro */}
       <p
         className="text-lg text-center max-w-3xl mx-auto mb-12"
         data-aos="fade-up"
       >
         We are a dedicated team of textile professionals passionate about
         crafting premium-quality knit garments. Since our founding in 2023,
-        we’ve blended innovation with tradition to deliver products that meet
+        we've blended innovation with tradition to deliver products that meet
         global standards.
       </p>
 
-      {/* ✅ Milestones */}
       <div className="grid gap-6 md:grid-cols-3 mb-12">
         {milestones.map((milestone, idx) => (
           <div
@@ -42,7 +39,6 @@ const CompanyOverview = () => {
         ))}
       </div>
 
-      {/* ✅ Image Gallery */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {galleryImages.map((src, idx) => (
           <div
@@ -53,11 +49,12 @@ const CompanyOverview = () => {
           >
             <Image
               src={src}
-              alt={`Factory photo ${idx + 1}`}
+              alt={`Textile manufacturing process step ${idx + 1}`}
               width={600}
               height={400}
               className="object-cover w-full h-64 hover:scale-105 transition-transform duration-300"
               sizes="(max-width: 768px) 100vw, 33vw"
+              loading={idx > 1 ? "lazy" : "eager"}
             />
           </div>
         ))}
