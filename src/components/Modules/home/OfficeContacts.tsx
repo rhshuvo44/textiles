@@ -2,13 +2,6 @@
 
 import ContactList from "@/components/UI/ContactList";
 import { socialLinks } from "@/db/data";
-import { BiMapPin, BiPhone } from "react-icons/bi";
-import { BsInstagram } from "react-icons/bs";
-import { CgLock } from "react-icons/cg";
-import { FaFacebook } from "react-icons/fa";
-import { FiMessageCircle } from "react-icons/fi";
-import { LiaLinkedin } from "react-icons/lia";
-import { MdEmail } from "react-icons/md";
 
 const OfficeContacts = () => {
   return (

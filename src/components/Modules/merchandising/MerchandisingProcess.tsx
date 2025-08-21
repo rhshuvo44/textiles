@@ -1,33 +1,4 @@
-import {
-  FaComments,
-  FaDraftingCompass,
-  FaIndustry,
-  FaShieldAlt,
-  FaTruck,
-} from "react-icons/fa";
-
-const steps = [
-  {
-    title: "Consultation",
-    icon: <FaComments className="text-white text-xl" />,
-  },
-  {
-    title: "Design & Sampling",
-    icon: <FaDraftingCompass className="text-white text-xl" />,
-  },
-  {
-    title: "Sourcing & Production",
-    icon: <FaIndustry className="text-white text-xl" />,
-  },
-  {
-    title: "Quality Assurance",
-    icon: <FaShieldAlt className="text-white text-xl" />,
-  },
-  {
-    title: "Delivery",
-    icon: <FaTruck className="text-white text-xl" />,
-  },
-];
+import { steps } from "@/db/data";
 
 const MerchandisingProcess = () => {
   return (

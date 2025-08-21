@@ -1,11 +1,7 @@
 "use client";
 import { faqData } from "@/db/data";
+import { FAQItem } from "@/types";
 import { useState } from "react";
-
-interface FAQItem {
-  question: string;
-  answer: string;
-}
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);

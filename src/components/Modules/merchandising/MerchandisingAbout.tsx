@@ -1,3 +1,5 @@
+import { merchandisingAbout } from "@/db/data";
+
 const MerchandisingAbout = () => {
   return (
     <section className="md:p-10 p-5 text-center">
@@ -10,50 +12,15 @@ const MerchandisingAbout = () => {
         timeliness.
       </p>
       <div className="grid md:grid-cols-3 gap-8 text-left">
-        {[
-          {
-            icon: "🧶",
-            title: "Yarn Sourcing",
-            description:
-              "We source high-quality yarn from trusted global suppliers to ensure fabric excellence from the start.",
-          },
-          {
-            icon: "🧵",
-            title: "Knitting Fabric",
-            description:
-              "Utilizing advanced knitting techniques to produce a wide range of fabric types as per design requirements.",
-          },
-          {
-            icon: "🎨",
-            title: "Product Development",
-            description:
-              "Collaborating with clients to develop innovative, trend-forward products with technical precision.",
-          },
-          {
-            icon: "💰",
-            title: "Costing & Pricing",
-            description:
-              "We offer transparent and competitive pricing strategies to meet budget goals without compromising quality.",
-          },
-          {
-            icon: "✅",
-            title: "Quality Control",
-            description:
-              "Each stage of production is closely monitored to maintain top-notch quality standards and compliance.",
-          },
-          {
-            icon: "🚚",
-            title: "On-Time Shipment",
-            description:
-              "Strict adherence to timelines with efficient logistics ensures timely deliveries, every time.",
-          },
-        ].map(({ icon, title, description }) => (
+        {merchandisingAbout.map(({ icon, title, description }) => (
           <div
             key={title}
             className="p-6 rounded-2xl shadow hover:shadow-md transition"
             data-aos="fade-up"
             role="region"
-            aria-labelledby={`${title.replace(/\s+/g, "-").toLowerCase()}-title`}
+            aria-labelledby={`${title
+              .replace(/\s+/g, "-")
+              .toLowerCase()}-title`}
           >
             <div className="text-4xl mb-4" aria-hidden="true">
               {icon}

@@ -1,13 +1,21 @@
+"use client";
+import Image from "next/image";
 import banner from "@/assets/image/banner/banner.jpg";
 
 const GalleryHero = () => {
   return (
-    <section
-      role="banner"
-      className="relative w-full h-[80vh] bg-cover bg-center"
-      style={{ backgroundImage: `url(${banner.src})` }}
-    >
-      <div className="bg-black bg-opacity-50 w-full h-full flex flex-col items-center justify-center text-white text-center px-4">
+    <section className="relative w-full h-[80vh]">
+      {/* Use the next/image component for the background */}
+      <Image
+        src={banner}
+        alt="A vibrant hero banner for the gallery page"
+        layout="fill"
+        objectFit="cover"
+        quality={100}
+        placeholder="blur"
+      />
+
+      <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white text-center px-4">
         <h1 className="text-4xl md:text-6xl font-bold mb-4" data-aos="fade-up">
           Gallery
         </h1>

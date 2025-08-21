@@ -4,20 +4,11 @@ import InputField from "@/components/form/InputField";
 import SelectField from "@/components/form/SelectField";
 import PolymorphicButton from "@/components/UI/PolymorphicButton";
 import { subjects } from "@/db/data";
+import { FormData } from "@/types";
 import emailjs from "emailjs-com";
 import { useRef } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
-
-type FormData = {
-  fullName: string;
-  email: string;
-  phone: string;
-  whatsapp?: string;
-  linkedin?: string;
-  subject: string;
-  message: string;
-};
 
 export default function ContactForm() {
   const {

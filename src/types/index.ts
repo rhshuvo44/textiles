@@ -83,3 +83,18 @@ export interface CaseStudy {
   image: string | StaticImageData;
   stats: string;
 }
+
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+export type FormData = {
+  fullName: string;
+  email: string;
+  phone: string;
+  whatsapp?: string;
+  linkedin?: string;
+  subject: string;
+  message: string;
+};

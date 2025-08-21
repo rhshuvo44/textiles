@@ -26,7 +26,7 @@ const Culture = () => {
                 src={person.image}
                 alt={`Photo of ${person.name}`}
                 className="w-full h-48 object-cover rounded-xl mb-4"
-                priority={idx < 3} // optional: prioritize first 3 images for faster load
+                priority={idx < 3}
               />
               <blockquote className="italic text-sm">
                 “{person.quote}”

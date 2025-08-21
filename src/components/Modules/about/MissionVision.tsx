@@ -1,25 +1,10 @@
 "use client";
 
-import { FaBullseye, FaEye } from "react-icons/fa";
-
-const missionVision = [
-  {
-    title: "Our Mission",
-    description:
-      "To deliver high-quality knit garments by blending craftsmanship with cutting-edge technology, while empowering our workforce and ensuring customer satisfaction at every step.",
-    icon: <FaBullseye className="text-primary text-3xl shrink-0" />,
-  },
-  {
-    title: "Our Vision",
-    description:
-      "To be a global leader in sustainable textile manufacturing — committed to eco-friendly practices, ethical production, and innovation that shapes the future of fashion.",
-    icon: <FaEye className="text-primary text-3xl shrink-0" />,
-  },
-];
+import { missionVision } from "@/db/data";
 
 const MissionVision = () => {
   return (
-     <section className="px-4 sm:px-6 lg:px-12 py-10 bg-base-200 text-base-content">
+    <section className="px-4 sm:px-6 lg:px-12 py-10 bg-base-200 text-base-content">
       <div className="max-w-7xl mx-auto">
         <h2
           className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 leading-tight"

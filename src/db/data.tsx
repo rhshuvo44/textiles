@@ -36,16 +36,33 @@ import team2 from "@/assets/image/team/2.jpg";
 import team3 from "@/assets/image/team/3.jpg";
 import team4 from "@/assets/image/team/4.jpg";
 import { CaseStudy, Certification, Customer, TeamMember } from "@/types";
-import { BiMapPin, BiPhone } from "react-icons/bi";
+import { BiGlobe, BiLeaf, BiMapPin, BiPhone } from "react-icons/bi";
 import { CgLock } from "react-icons/cg";
 import {
+  FaBalanceScale,
+  FaBullseye,
+  FaCheckCircle,
+  FaComments,
+  FaDraftingCompass,
+  FaEye,
   FaFacebookF,
+  FaFlask,
+  FaIndustry,
   FaInstagram,
+  FaLeaf,
+  FaLightbulb,
   FaLinkedinIn,
+  FaShieldAlt,
+  FaSmile,
+  FaTruck,
+  FaTruckLoading,
   FaWhatsapp,
 } from "react-icons/fa";
+import { FcFactory } from "react-icons/fc";
 import { FiMessageCircle } from "react-icons/fi";
-import { MdEmail } from "react-icons/md";
+import { GiClothes, GiCottonFlower } from "react-icons/gi";
+import { LuPackageCheck } from "react-icons/lu";
+import { MdDesignServices, MdEmail } from "react-icons/md";
 export const productGallery = [
   {
     title: "T-Shirt",
@@ -561,5 +578,165 @@ export const contactInfo = [
     value: "Sat - Thu: 8:00 AM - 7:00 PM",
     icon: CgLock,
     type: "text",
+  },
+];
+
+export const missionVision = [
+  {
+    title: "Our Mission",
+    description:
+      "To deliver high-quality knit garments by blending craftsmanship with cutting-edge technology, while empowering our workforce and ensuring customer satisfaction at every step.",
+    icon: <FaBullseye className="text-primary text-3xl shrink-0" />,
+  },
+  {
+    title: "Our Vision",
+    description:
+      "To be a global leader in sustainable textile manufacturing — committed to eco-friendly practices, ethical production, and innovation that shapes the future of fashion.",
+    icon: <FaEye className="text-primary text-3xl shrink-0" />,
+  },
+];
+
+export const values = [
+  {
+    title: "Quality Assurance",
+    icon: <FaCheckCircle className="text-primary text-3xl shrink-0" />,
+    description:
+      "Strict quality control from sourcing to delivery to ensure perfection in every stitch.",
+  },
+  {
+    title: "Sustainability & Eco-Friendly",
+    icon: <FaLeaf className="text-green-600 text-3xl shrink-0" />,
+    description:
+      "We prioritize eco-conscious materials and processes for a greener future.",
+  },
+  {
+    title: "Innovation & Customization",
+    icon: <FaLightbulb className="text-yellow-500 text-3xl shrink-0" />,
+    description:
+      "Tailored solutions and cutting-edge designs to match modern fashion needs.",
+  },
+  {
+    title: "Research & Development",
+    icon: <FaFlask className="text-indigo-500 text-3xl shrink-0" />,
+    description: "Constantly experimenting to create trendsetting garments.",
+  },
+  {
+    title: "Customer Satisfaction",
+    icon: <FaSmile className="text-rose-500 text-3xl shrink-0" />,
+    description:
+      "We listen, adapt, and serve — ensuring happy clients across the globe.",
+  },
+  {
+    title: "Ethical Manufacturing",
+    icon: <FaBalanceScale className="text-gray-600 text-3xl shrink-0" />,
+    description:
+      "Fair wages, safe work environments, and integrity in every process.",
+  },
+];
+export const services = [
+  {
+    title: "Knit Garments Manufacturer & Exporter",
+    icon: <GiClothes size={48} className="text-primary" />,
+    desc: "Premium quality knitwear tailored for global markets.",
+  },
+  {
+    title: "Custom Fashion Design & Development",
+    icon: <MdDesignServices size={48} className="text-primary" />,
+    desc: "Create unique fashion lines with our expert designers.",
+  },
+  {
+    title: "Wholesale & Export",
+    icon: <FaTruckLoading size={48} className="text-primary" />,
+    desc: "Reliable bulk supply with international shipping.",
+  },
+  {
+    title: "Yarn Wholesaler",
+    icon: <GiCottonFlower size={48} className="text-primary" />,
+    desc: "Supplying top-grade yarn for all textile needs.",
+  },
+];
+
+export const capabilities = [
+  {
+    icon: <FcFactory className="w-10 h-10" />,
+    title: "State-of-the-Art Manufacturing",
+    description:
+      "Cutting-edge machinery & processes ensuring top-tier quality.",
+  },
+  {
+    icon: <BiLeaf className="w-10 h-10 text-green-500" />,
+    title: "Eco-Friendly & Sustainable",
+    description: "Committed to ethical practices and green production.",
+  },
+  {
+    icon: <LuPackageCheck className="w-10 h-10 text-blue-500" />,
+    title: "Customization & Bulk Orders",
+    description: "Tailored solutions for brands and high-volume needs.",
+  },
+  {
+    icon: <BiGlobe className="w-10 h-10 text-indigo-500" />,
+    title: "Global Distribution",
+    description: "Efficient worldwide shipping & logistic solutions.",
+  },
+];
+export const merchandisingAbout = [
+  {
+    icon: "🧶",
+    title: "Yarn Sourcing",
+    description:
+      "We source high-quality yarn from trusted global suppliers to ensure fabric excellence from the start.",
+  },
+  {
+    icon: "🧵",
+    title: "Knitting Fabric",
+    description:
+      "Utilizing advanced knitting techniques to produce a wide range of fabric types as per design requirements.",
+  },
+  {
+    icon: "🎨",
+    title: "Product Development",
+    description:
+      "Collaborating with clients to develop innovative, trend-forward products with technical precision.",
+  },
+  {
+    icon: "💰",
+    title: "Costing & Pricing",
+    description:
+      "We offer transparent and competitive pricing strategies to meet budget goals without compromising quality.",
+  },
+  {
+    icon: "✅",
+    title: "Quality Control",
+    description:
+      "Each stage of production is closely monitored to maintain top-notch quality standards and compliance.",
+  },
+  {
+    icon: "🚚",
+    title: "On-Time Shipment",
+    description:
+      "Strict adherence to timelines with efficient logistics ensures timely deliveries, every time.",
+  },
+];
+
+export const steps = [
+  {
+    title: "Consultation",
+    icon: <FaComments className="text-white text-xl" />,
+  },
+  {
+    title: "Design & Sampling",
+    icon: <FaDraftingCompass className="text-white text-xl" />,
+  },
+  {
+    title: "Sourcing & Production",
+    icon: <FaIndustry className="text-white text-xl" />,
+  },
+  {
+    title: "Quality Assurance",
+    icon: <FaShieldAlt className="text-white text-xl" />,
+  },
+  {
+    title: "Delivery",
+    icon: <FaTruck className="text-white text-xl" />,
   },
 ];
