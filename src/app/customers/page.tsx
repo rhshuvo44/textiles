@@ -1,7 +1,6 @@
 import CaseStudies from "@/components/Modules/customers/CaseStudies";
 import CTA from "@/components/Modules/customers/CTA";
 import OurCustomers from "@/components/Modules/customers/FeaturedCustomers";
-import IndustryPartners from "@/components/Modules/customers/IndustryPartners";
 import PartnerSlide from "@/components/UI/PartnerSlide";
 import SectionTitle from "@/components/UI/SectionTitle";
 import { Metadata } from "next";
