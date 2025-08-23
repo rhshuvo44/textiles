@@ -214,7 +214,7 @@ export interface SectionTitleProps {
 
 export type CapabilityItem = {
   title: string;
-  description: string;
+  description?: string;
   icon?: ReactNode | IconType;
 };
 

@@ -1,21 +1,21 @@
 "use client";
 import PolymorphicButton from "@/components/UI/PolymorphicButton";
+import SectionHeader from "@/components/UI/SectionHeader";
 import { jobs } from "@/db/data";
+import { FaArrowRight } from "react-icons/fa";
 
 const JobOpenings = () => {
   return (
     <section
-      className="px-4 md:px-12 py-10 bg-base-100 text-base-content"
+      className="px-4 md:px-10 py-10 bg-base-100 text-base-content"
       id="job-openings"
     >
-      <h2
-        className="text-4xl sm:text-5xl font-bold text-center mb-12"
-        data-aos="fade-up"
-      >
-        Current Opportunities
-      </h2>
+      <SectionHeader
+        title="Current Job Openings"
+        subtitle="Join our team and make an impact"
+      />
 
-      <div className="grid gap-6 max-w-5xl mx-auto">
+      <div className="grid gap-6">
         {jobs.map((job, idx) => (
           <div
             key={idx}
@@ -38,6 +38,8 @@ const JobOpenings = () => {
                 text="Apply Now"
                 ariaLabel={`Apply for ${job.title}`}
                 variant="solid"
+                color="primary"
+                icon={FaArrowRight}
               />
             </div>
           </div>

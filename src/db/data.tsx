@@ -649,7 +649,7 @@ export const values: Value[] = [
   },
   {
     title: "Ethical Manufacturing",
-    icon: <FaBalanceScale className="text-gray-600 text-3xl shrink-0" />,
+    icon: <FaBalanceScale className="text-primary text-3xl shrink-0" />,
     description:
       "Fair wages, safe work environments, and integrity in every process.",
   },

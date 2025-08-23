@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 const CareerPage = () => {
   return (
-    <div className="space-y-16">
+    <div className="">
       {/* Hero Section */}
       <CareerHero />
       {/* Why Work With Us */}

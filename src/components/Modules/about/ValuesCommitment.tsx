@@ -9,7 +9,7 @@ const ValuesCommitment = () => {
       title="Our Values & Commitment"
       subtitle="Explore our core values and commitment to quality"
       capabilities={values}
-      capabilitiesClassName="lg:grid-cols-3 "
+      capabilitiesClassName="lg:grid-cols-3"
     />
   );
 };
