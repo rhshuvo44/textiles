@@ -45,7 +45,7 @@ const Banner = () => {
                   {title}
                 </h1>
                 <p className="mb-5">{description}</p>
-                <div className="flex flex-row items-center justify-center gap-4 sm:flex-col sm:gap-3 md:flex-row md:gap-4">
+                <div className="flex flex-wrap items-center justify-center gap-4 sm:flex-col sm:gap-3 md:flex-row md:gap-4">
                   <PolymorphicButton
                     href="/contact"
                     text="Contact Us"

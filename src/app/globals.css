@@ -16,6 +16,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* Prevent horizontal overflow */
 body {
   overflow-x: hidden;
