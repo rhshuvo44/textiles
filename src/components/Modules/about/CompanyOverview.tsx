@@ -2,48 +2,42 @@
 
 import Image from "next/image";
 import { galleryImages, milestones } from "@/db/data";
+import SectionHeader from "@/components/UI/SectionHeader";
 
 const CompanyOverview = () => {
   return (
-      <section className="p-5 md:p-10 bg-base-100 text-base-content">
-      <h2
-        className="text-4xl sm:text-5xl font-bold text-center mb-6"
-        data-aos="fade-up"
-      >
-        Who We Are
-      </h2>
+    <section className="p-5 md:p-10 bg-base-100 text-base-content">
+      {/* Section Title & Subtitle */}
+      <SectionHeader
+        title="Who We Are"
+        subtitle="A dedicated team crafting premium knit garments with innovation and precision since 2023"
+      />
 
-      <p
-        className="text-lg text-center max-w-3xl mx-auto mb-12"
-        data-aos="fade-up"
-      >
-        We are a dedicated team of textile professionals passionate about
-        crafting premium-quality knit garments. Since our founding in 2023,
-        we've blended innovation with tradition to deliver products that meet
-        global standards.
-      </p>
-
-      <div className="grid gap-6 md:grid-cols-3 mb-12">
+      {/* Milestones */}
+      <div className="grid gap-6 md:grid-cols-3 mb-16">
         {milestones.map((milestone, idx) => (
           <div
             key={idx}
-            className="bg-base-200 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300"
+            className="bg-base-200 p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300"
             data-aos="fade-up"
             data-aos-delay={idx * 100}
           >
-            <h4 className="text-xl font-semibold text-info mb-2">
-              {milestone.year}
+            <h4 className="text-xl font-montserrat font-semibold text-primary mb-2">
+              {milestone.title}
             </h4>
-            <p>{milestone.text}</p>
+            <p className="text-base font-rubik leading-relaxed">
+              {milestone.description}
+            </p>
           </div>
         ))}
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      {/* Gallery */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {galleryImages.map((src, idx) => (
           <div
             key={idx}
-            className="overflow-hidden rounded-xl shadow-md"
+            className="overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-shadow"
             data-aos="fade-up"
             data-aos-delay={idx * 100}
           >
@@ -52,7 +46,7 @@ const CompanyOverview = () => {
               alt={`Textile manufacturing process step ${idx + 1}`}
               width={600}
               height={400}
-              className="object-cover w-full h-64 hover:scale-105 transition-transform duration-300"
+              className="object-cover w-full h-72 hover:scale-105 transition-transform duration-500"
               sizes="(max-width: 768px) 100vw, 33vw"
               loading={idx > 1 ? "lazy" : "eager"}
             />

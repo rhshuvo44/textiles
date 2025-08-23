@@ -10,7 +10,7 @@ import SectionHeader from "./SectionHeader";
 
 const PartnerSlide = () => {
   return (
-    <section className="p-5 md:p-10 bg-base-200">
+    <section className="p-5 md:p-10 bg-base-200" id="partners">
       <div className="text-center" data-aos="fade-up">
         <SectionHeader
           title="Our Clients & Partners"

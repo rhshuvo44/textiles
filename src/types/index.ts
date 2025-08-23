@@ -130,8 +130,8 @@ export interface FAQ {
 }
 
 export interface Milestone {
-  year: string;
-  text: string;
+  title: string;
+  description: string;
 }
 
 
@@ -215,7 +215,7 @@ export interface SectionTitleProps {
 export type CapabilityItem = {
   title: string;
   description: string;
-  icon: ReactNode | IconType;
+  icon?: ReactNode | IconType;
 };
 
 export type showcaseSectionProps = {
@@ -223,9 +223,22 @@ export type showcaseSectionProps = {
   subtitle?: string;
   capabilities: CapabilityItem[];
   className?: string;
+  capabilitiesClassName?: string;
 };
 export type SectionHeaderProps = {
   title: string | undefined;
   subtitle?: string;
   className?: string;
 };
+
+export interface PolymorphicButtonProps {
+  href?: string;
+  onClick?: () => void;
+  text: string;
+  icon?: IconType;
+  variant?: "solid" | "outline" | "gradient";
+  color?: "primary" | "info";
+  ariaLabel?: string;
+  isSubmitting?: boolean;
+  className?: string; // <-- New optional className prop
+}

@@ -8,9 +8,13 @@ const ContactHero = () => {
       image={banner}
       title={<>Get in Touch with Us!</>}
       subtitle="We’re here to help. Reach out for inquiries, partnerships, or support."
-      buttonText="Get in Touch"
-      buttonHref="#contact-form"
-      buttonAriaLabel="Get in Touch"
+      buttons={[
+        {
+          text: "Get in Touch",
+          href: "#contact-form",
+          ariaLabel: "Get in Touch",
+        },
+      ]}
     />
   );
 };

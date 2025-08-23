@@ -8,14 +8,17 @@ const ShowcaseSection = ({
   subtitle,
   capabilities,
   className = "",
+  capabilitiesClassName = "",
 }: showcaseSectionProps) => {
   return (
-    <section className={`px-4 sm:px-6 lg:px-20 py-12 ${className}`}>
+    <section className={`px-4 sm:px-6 lg:px-10 py-12 ${className}`}>
       {/* Section Title */}
       <SectionHeader title={title} subtitle={subtitle} />
 
       {/* Capabilities Grid */}
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      <div
+        className={`grid gap-8 grid-cols-1 sm:grid-cols-2 ${capabilitiesClassName}`}
+      >
         {capabilities.map((item, index) => (
           <div
             key={index}

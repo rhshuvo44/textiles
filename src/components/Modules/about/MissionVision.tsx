@@ -1,18 +1,16 @@
 "use client";
 
+import SectionHeader from "@/components/UI/SectionHeader";
 import { missionVision } from "@/db/data";
 
 const MissionVision = () => {
   return (
     <section className="px-4 sm:px-6 lg:px-12 py-10 bg-base-200 text-base-content">
       <div className="max-w-7xl mx-auto">
-        <h2
-          className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 leading-tight"
-          data-aos="fade-up"
-        >
-          Our Mission & Vision
-        </h2>
-
+        <SectionHeader
+          title="Our Mission & Vision"
+          subtitle="Guiding principles that shape our journey"
+        />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">
           {missionVision.map((item, index) => (
             <div

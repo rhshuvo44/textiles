@@ -222,13 +222,17 @@ export const faqData: FAQ[] = [
 
 export const milestones: Milestone[] = [
   {
-    year: "2023",
-    text: "Founded with a vision to redefine knit garments manufacturing",
+    title: "2023",
+    description:
+      "Founded with a vision to redefine knit garments manufacturing",
   },
-  { year: "2024", text: "Expanded to global export markets across EU & Asia" },
   {
-    year: "2025",
-    text: "Launched AI-powered design and eco-friendly initiatives",
+    title: "2024",
+    description: "Expanded to global export markets across EU & Asia",
+  },
+  {
+    title: "2025",
+    description: "Launched AI-powered design and eco-friendly initiatives",
   },
 ];
 

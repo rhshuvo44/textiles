@@ -7,9 +7,13 @@ const MerchandisingBanner = () => {
       image={merchandisingBanner}
       title={<>Merchandising Solutions</>}
       subtitle="Expert textile merchandising tailored for your business"
-      buttonText="Get a Quote"
-      buttonHref="#quote"
-      buttonAriaLabel="View Get a Quote"
+      buttons={[
+        {
+          text: "Get a Quote",
+          href: "#quote",
+          ariaLabel: "View Get a Quote",
+        },
+      ]}
     />
   );
 };

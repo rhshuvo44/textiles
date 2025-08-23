@@ -1,20 +1,11 @@
+import { PolymorphicButtonProps } from "@/types";
 import Link from "next/link";
 import { forwardRef } from "react";
 import { IconType } from "react-icons";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 // The props for the button, making href and onClick optional
-interface PolymorphicButtonProps {
-  href?: string;
-  onClick?: () => void;
-  text: string;
-  icon?: IconType;
-  variant?: "solid" | "outline" | "gradient";
-  color?: "primary" | "info";
-  ariaLabel?: string;
-  isSubmitting?: boolean;
-  className?: string; // <-- New optional className prop
-}
+
 
 const PolymorphicButton = forwardRef<
   HTMLButtonElement | HTMLAnchorElement,

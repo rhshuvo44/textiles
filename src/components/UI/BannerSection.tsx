@@ -1,8 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import PolymorphicButton from "@/components/UI/PolymorphicButton";
-import { BannerSectionProps } from "@/types";
+import { BannerSectionProps, PolymorphicButtonProps } from "@/types";
+import Image from "next/image";
 
 const BannerSection = ({
   image,
@@ -11,7 +11,10 @@ const BannerSection = ({
   buttons = [], // Array of buttons [{text, href, variant, color, icon, ariaLabel}]
   overlayOpacity = 0.5,
   minHeight = "md:min-h-screen",
-}: BannerSectionProps & { buttons?: any[]; minHeight?: string }) => {
+}: BannerSectionProps & {
+  buttons?: PolymorphicButtonProps[];
+  minHeight?: string;
+}) => {
   return (
     <section
       className={`relative min-h-[70vh] ${minHeight} sm:h-[80vh] overflow-hidden flex items-center justify-center text-white`}

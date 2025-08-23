@@ -1,5 +1,6 @@
 import CaseStudies from "@/components/Modules/customers/CaseStudies";
 import CTA from "@/components/Modules/customers/CTA";
+import CustomerBanner from "@/components/Modules/customers/CustomerBanner";
 import OurCustomers from "@/components/Modules/customers/FeaturedCustomers";
 import PartnerSlide from "@/components/UI/PartnerSlide";
 import SectionTitle from "@/components/UI/SectionTitle";
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 const CustomerPage = () => {
   return (
     <>
-      <SectionTitle text="Our Customers" />
+      <CustomerBanner />
       <OurCustomers />
       <PartnerSlide />
       <CaseStudies />

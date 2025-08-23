@@ -14,9 +14,13 @@ const AboutBanner = () => {
         </>
       }
       subtitle="From AI-Driven Design to Sustainable Manufacturing – We Bring Your Fashion Vision to Life"
-      buttonText="Explore Our Values"
-      buttonHref="#valuesCommitment"
-      buttonAriaLabel="Learn about our company values and commitments"
+      buttons={[
+        {
+          text: "Explore Our Values",
+          href: "#valuesCommitment",
+          ariaLabel: "Learn about our company values and commitments",
+        },
+      ]}
     />
   );
 };
