@@ -6,15 +6,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import { featuredCustomers } from "@/db/data";
 import Image from "next/image";
+import SectionHeader from "./SectionHeader";
 
 const PartnerSlide = () => {
   return (
     <section className="p-5 md:p-10 bg-base-200">
       <div className="text-center" data-aos="fade-up">
-        <h2 className="text-4xl sm:text-5xl font-bold mb-8">
-          Our Clients & Partners
-        </h2>
-
+        <SectionHeader
+          title="Our Clients & Partners"
+          subtitle="We are proud to work with leading brands"
+        />
         <Swiper
           autoplay={{ delay: 2000, disableOnInteraction: false }}
           loop={true}

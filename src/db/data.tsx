@@ -654,22 +654,22 @@ export const services: Service[] = [
   {
     title: "Knit Garments Manufacturer & Exporter",
     icon: <GiClothes size={48} className="text-primary" />,
-    desc: "Premium quality knitwear tailored for global markets.",
+    description: "Premium quality knitwear tailored for global markets.",
   },
   {
     title: "Custom Fashion Design & Development",
     icon: <MdDesignServices size={48} className="text-primary" />,
-    desc: "Create unique fashion lines with our expert designers.",
+    description: "Create unique fashion lines with our expert designers.",
   },
   {
     title: "Wholesale & Export",
     icon: <FaTruckLoading size={48} className="text-primary" />,
-    desc: "Reliable bulk supply with international shipping.",
+    description: "Reliable bulk supply with international shipping.",
   },
   {
     title: "Yarn Wholesaler",
     icon: <GiCottonFlower size={48} className="text-primary" />,
-    desc: "Supplying top-grade yarn for all textile needs.",
+    description: "Supplying top-grade yarn for all textile needs.",
   },
 ];
 

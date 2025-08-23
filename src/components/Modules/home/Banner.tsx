@@ -32,7 +32,7 @@ const Banner = () => {
         <SwiperSlide key={index}>
           <BannerSection
             image={src}
-            title={<>{title}</>}
+            title={title}
             subtitle={description}
             buttons={[
               {

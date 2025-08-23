@@ -1,4 +1,5 @@
 "use client";
+import SectionHeader from "@/components/UI/SectionHeader";
 import { productGallery } from "@/db/data";
 import Image from "next/image";
 import "swiper/css";
@@ -8,12 +9,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const ProductCategory = () => {
   return (
     <div className="px-4 py-10 md:px-10">
-      <h2
-        className="text-3xl sm:text-4xl font-bold text-center mb-8"
-        data-aos="fade-up"
-      >
-        Product Categories
-      </h2>
+      <SectionHeader
+        title="Product Categories"
+        subtitle="Explore our wide range of products"
+      />
 
       <Swiper
         autoplay={{ delay: 2500 }}

@@ -1,14 +1,16 @@
 "use client";
 
 import ContactList from "@/components/UI/ContactList";
+import SectionHeader from "@/components/UI/SectionHeader";
 import { socialLinks } from "@/db/data";
 
 const OfficeContacts = () => {
   return (
     <section className="p-5 md:p-10">
-      <h2 className="text-4xl sm:text-5xl font-bold text-center mb-10">
-        Office Contact
-      </h2>
+      <SectionHeader
+        title="Office Contacts"
+        subtitle="Get in touch with our office"
+      />
 
       <div className="grid lg:grid-cols-2 gap-10 items-start">
         {/* Contact Info */}

@@ -8,12 +8,15 @@ const Footer = () => {
 
   return (
     <>
+      {/* Main Footer */}
       <footer className="bg-neutral text-neutral-content p-10">
         <div className="grid md:grid-cols-3 gap-8">
           {/* Quick Links */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <h3 className="font-playfair text-xl sm:text-2xl font-bold mb-4">
+              Quick Links
+            </h3>
+            <ul className="space-y-2 font-rubik">
               {navLinks?.map((link) => (
                 <li key={link.path}>
                   <Link
@@ -29,13 +32,17 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Contact</h3>
+            <h3 className="font-playfair text-xl sm:text-2xl font-bold mb-4">
+              Contact
+            </h3>
             <ContactList variant="simple" />
           </div>
 
           {/* Social Links */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Follow Us</h3>
+            <h3 className="font-playfair text-xl sm:text-2xl font-bold mb-4">
+              Follow Us
+            </h3>
             <div className="flex space-x-4 text-2xl">
               {socialLinks.map(({ href, icon: Icon, label }) => (
                 <a
@@ -44,7 +51,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-primary transition-colors hover:scale-110 duration-300"
                 >
                   <Icon size={24} />
                 </a>
@@ -55,10 +62,10 @@ const Footer = () => {
       </footer>
 
       {/* Footer Bottom */}
-      <footer className="bg-neutral text-neutral-content border-t border-slate-600 flex flex-col sm:flex-row items-center justify-center gap-2 px-6 py-4 text-center">
+      <footer className="bg-neutral text-neutral-content border-t border-slate-600 flex flex-col sm:flex-row items-center justify-center gap-2 px-6 py-4 text-center font-rubik">
         <p>
           Copyright © {year} — Designed By{" "}
-          <span className="font-semibold">Ripon</span>.
+          <span className="font-playfair font-semibold">Ripon</span>.
         </p>
       </footer>
     </>

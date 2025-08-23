@@ -18,6 +18,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar bg-base-100 fixed top-0 left-0 w-full z-50 md:px-10">
+      {/* Navbar Start */}
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -32,19 +33,17 @@ const Navbar = () => {
                 strokeLinejoin="round"
                 strokeWidth="2"
                 d="M4 6h16M4 12h16M4 18h16"
-              ></path>
+              />
             </svg>
           </div>
-          <ul className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          <ul className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-rubik">
             {navLinks.map((link) => (
               <li key={link.path} className="px-1">
                 <Link
                   href={link.path}
-                  className={`
-        transition-colors duration-300 
-        font-bold
-        ${isActive(link.path) ? "active" : ""}
-      `}
+                  className={`transition-colors duration-300 font-rubik font-semibold ${
+                    isActive(link.path) ? "text-primary" : ""
+                  }`}
                 >
                   {link.label}
                 </Link>
@@ -53,22 +52,23 @@ const Navbar = () => {
           </ul>
         </div>
         <Link href="/">
-          <span className="text-xl font-bold text-primary">Textiles</span>
+          <span className="text-2xl font-playfair font-extrabold text-primary">
+            Textiles
+          </span>
           {/* <Image src={logo} alt="logo" width={220} height={220} /> */}
         </Link>
       </div>
 
+      {/* Navbar Center */}
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 font-rubik font-semibold">
           {navLinks.map((link) => (
             <li key={link.path} className="px-1">
               <Link
                 href={link.path}
-                className={`
-        transition-colors duration-300 
-        font-bold
-    ${isActive(link.path) ? "active" : ""}
-      `}
+                className={`transition-colors duration-300 ${
+                  isActive(link.path) ? "text-primary" : ""
+                }`}
               >
                 {link.label}
               </Link>
@@ -77,6 +77,7 @@ const Navbar = () => {
         </ul>
       </div>
 
+      {/* Navbar End */}
       <div className="navbar-end gap-2">
         <PolymorphicButton
           href="#"
@@ -84,6 +85,7 @@ const Navbar = () => {
           variant="gradient"
           color="primary"
           ariaLabel="login page"
+          className="font-rubik font-semibold"
         />
         <ThemeToggle />
       </div>

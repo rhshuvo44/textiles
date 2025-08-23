@@ -179,11 +179,11 @@ export interface Value {
 export interface Service {
   title: string;
   icon: JSX.Element;
-  desc: string;
+  description: string;
 }
 
 export interface Capability {
-  icon: JSX.Element;
+  icon: ReactNode | IconType;
   title: string;
   description: string;
 }
@@ -211,3 +211,21 @@ export interface BannerSectionProps {
 export interface SectionTitleProps {
   text: string;
 }
+
+export type CapabilityItem = {
+  title: string;
+  description: string;
+  icon: ReactNode | IconType;
+};
+
+export type showcaseSectionProps = {
+  title?: string;
+  subtitle?: string;
+  capabilities: CapabilityItem[];
+  className?: string;
+};
+export type SectionHeaderProps = {
+  title: string | undefined;
+  subtitle?: string;
+  className?: string;
+};

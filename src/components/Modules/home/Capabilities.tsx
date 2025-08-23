@@ -69,7 +69,6 @@ const Capabilities = () => {
               ariaLabel="View About Us"
               variant="solid"
               icon={FaLongArrowAltRight}
-              className="transition-transform duration-500 ease-in-out hover:scale-110 hover:shadow-lg font-montserrat"
             />
           </div>
         </div>
