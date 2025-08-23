@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image";
 import { ReactNode } from "react";
-
+import { IconType } from "react-icons";
 export type TServices = {
   id: number;
   icon: React.ReactNode;
@@ -98,3 +98,113 @@ export type FormData = {
   subject: string;
   message: string;
 };
+
+
+
+export interface Banner {
+  src: string | StaticImageData;
+  title: string;
+  description: string;
+}
+
+export interface ProductSubCategory {
+  title: string;
+  photo: (string | StaticImageData)[];
+  description: string;
+}
+
+export interface Product {
+  title: string;
+  subCategory: ProductSubCategory[];
+  photo: string | StaticImageData;
+}
+
+export interface NavLink {
+  path: string;
+  label: string;
+}
+
+export interface FAQ {
+  question: string;
+  answer: string;
+}
+
+export interface Milestone {
+  year: string;
+  text: string;
+}
+
+
+export interface Culture {
+  image: string | StaticImageData;
+  quote: string;
+  name: string;
+  title: string;
+}
+
+export interface Job {
+  title: string;
+  department: string;
+  location: string;
+  deadline: string;
+}
+
+
+export interface SocialLink {
+  href: string;
+  icon: IconType;
+  label: string;
+}
+
+export interface ContactInfo {
+  id: string;
+  label: string;
+  value: string | string[];
+  icon: IconType;
+  type: "text" | "phone" | "email";
+}
+
+export interface MissionVision {
+  title: string;
+  description: string;
+  icon: JSX.Element;
+}
+
+export interface Value {
+  title: string;
+  icon: JSX.Element;
+  description: string;
+}
+
+export interface Service {
+  title: string;
+  icon: JSX.Element;
+  desc: string;
+}
+
+export interface Capability {
+  icon: JSX.Element;
+  title: string;
+  description: string;
+}
+
+export interface MerchandisingAbout {
+  icon: string; // emoji for simplicity
+  title: string;
+  description: string;
+}
+
+export interface Step {
+  title: string;
+  icon: JSX.Element;
+}
+export interface BannerSectionProps {
+  image: StaticImageData;
+  title: React.ReactNode;
+  subtitle?: string;
+  buttonText?: string;
+  buttonHref?: string;
+  buttonAriaLabel?: string;
+  overlayOpacity?: number;
+  gradientOverlay?: boolean;
+}

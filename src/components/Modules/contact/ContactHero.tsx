@@ -1,28 +1,17 @@
 "use client";
-import Image from "next/image";
 import banner from "@/assets/image/banner/contact.jpg";
+import BannerSection from "@/components/UI/BannerSection";
 
 const ContactHero = () => {
   return (
-    <section className="relative w-full h-[90vh] sm:h-[80vh] flex items-center justify-center">
-      <Image
-        src={banner}
-        alt="A professional and welcoming background banner for the contact page"
-        layout="fill"
-        objectFit="cover"
-        quality={100}
-        placeholder="blur"
-      />
-      <div className="absolute inset-0 bg-black/50 z-10" />
-      <div className="relative z-20 text-center text-white px-6">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-up">
-          Get in Touch with Us!
-        </h1>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto" data-aos="fade-up">
-          We’re here to help. Reach out for inquiries, partnerships, or support.
-        </p>
-      </div>
-    </section>
+    <BannerSection
+      image={banner}
+      title={<>Get in Touch with Us!</>}
+      subtitle="We’re here to help. Reach out for inquiries, partnerships, or support."
+      buttonText="Get in Touch"
+      buttonHref="#contact-form"
+      buttonAriaLabel="Get in Touch"
+    />
   );
 };
 

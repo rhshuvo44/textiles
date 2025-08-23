@@ -35,7 +35,27 @@ import team1 from "@/assets/image/team/1.jpg";
 import team2 from "@/assets/image/team/2.jpg";
 import team3 from "@/assets/image/team/3.jpg";
 import team4 from "@/assets/image/team/4.jpg";
-import { CaseStudy, Certification, Customer, TeamMember } from "@/types";
+import {
+  Banner,
+  Capability,
+  CaseStudy,
+  Certification,
+  ContactInfo,
+  Culture,
+  Customer,
+  FAQ,
+  Job,
+  MerchandisingAbout,
+  Milestone,
+  MissionVision,
+  NavLink,
+  Product,
+  Service,
+  SocialLink,
+  Step,
+  TeamMember,
+  Value,
+} from "@/types";
 import { BiGlobe, BiLeaf, BiMapPin, BiPhone } from "react-icons/bi";
 import { CgLock } from "react-icons/cg";
 import {
@@ -63,7 +83,7 @@ import { FiMessageCircle } from "react-icons/fi";
 import { GiClothes, GiCottonFlower } from "react-icons/gi";
 import { LuPackageCheck } from "react-icons/lu";
 import { MdDesignServices, MdEmail } from "react-icons/md";
-export const productGallery = [
+export const productGallery: Product[] = [
   {
     title: "T-Shirt",
     subCategory: [
@@ -167,7 +187,7 @@ export const productGallery = [
 ];
 export const galleryImages = [image, image1, image2];
 
-export const navLinks = [
+export const navLinks: NavLink[] = [
   { path: "/", label: "Home" },
   { path: "/about", label: "About Us" },
   { path: "/merchandising", label: "Merchandising" },
@@ -177,7 +197,7 @@ export const navLinks = [
   { path: "/contact", label: "Contact" },
 ];
 
-export const faqData = [
+export const faqData: FAQ[] = [
   {
     question: "What is merchandising in the textile industry?",
     answer:
@@ -200,7 +220,7 @@ export const faqData = [
   },
 ];
 
-export const milestones = [
+export const milestones: Milestone[] = [
   {
     year: "2023",
     text: "Founded with a vision to redefine knit garments manufacturing",
@@ -263,7 +283,7 @@ export const teamMembers: TeamMember[] = [
   },
 ];
 
-export const culture = [
+export const culture: Culture[] = [
   {
     image: img1,
     quote: "Working here has helped me grow professionally and personally.",
@@ -283,7 +303,7 @@ export const culture = [
     title: "Design Lead",
   },
 ];
-export const jobs = [
+export const jobs: Job[] = [
   {
     title: "Senior Designer",
     department: "Design Department",
@@ -387,28 +407,25 @@ export const certifications: Certification[] = [
   },
 ];
 
-export const homeBanner = [
+export const homeBanner: Banner[] = [
   {
     src: banner,
-    title: "Trusted Garment Exporters to the World",
-    description:
-      "Delivering excellence in every thread, from design to doorstep.",
+    title: "Trusted Garment Exporters Worldwide",
+    description: "Excellence in every stitch — from concept to delivery.",
   },
   {
     src: banner1,
-    title: "Global Garment Excellence Starts Here",
-    description:
-      " Supplying premium textiles and apparel to leading worldwide.",
+    title: "Global Textile & Apparel Solutions",
+    description: "Supplying premium garments and fabrics for leading brands.",
   },
   {
     src: banner2,
-    title: "Where Quality Meets Global Fashion",
-    description:
-      "Empowering brands with world-class garments and textile innovation.",
+    title: "Where Quality Meets Fashion",
+    description: "Empowering businesses with world-class textile innovation.",
   },
 ];
 
-export const styles = [
+export const styles: string[] = [
   "T-Shirt (Boys)",
   "T-Shirt (Men's)",
   "T-Shirt (Girls)",
@@ -461,7 +478,7 @@ export const styles = [
   "Activewear (Men's)",
   "Activewear (Ladies)",
 ];
-export const subjects = [
+export const subjects: string[] = [
   "General Inquiry",
   "Buyer Inquiry",
   "Partnership",
@@ -469,7 +486,7 @@ export const subjects = [
   "Careers",
 ];
 
-export const fabrics = [
+export const fabrics: string[] = [
   "Single Jersey",
   "Single jersey plain",
   "Pique",
@@ -487,7 +504,7 @@ export const fabrics = [
   "Thermal",
   "Drop Needle",
 ];
-export const yarns = [
+export const yarns: string[] = [
   "Card Sub",
   "Combed",
   "Combed Sub",
@@ -520,7 +537,7 @@ export const caseStudies: CaseStudy[] = [
   },
 ];
 
-export const socialLinks = [
+export const socialLinks: SocialLink[] = [
   {
     href: "https://www.facebook.com/",
     icon: FaFacebookF,
@@ -543,7 +560,7 @@ export const socialLinks = [
   },
 ];
 
-export const contactInfo = [
+export const contactInfo: ContactInfo[] = [
   {
     id: "address",
     label: "Factory Address",
@@ -581,7 +598,7 @@ export const contactInfo = [
   },
 ];
 
-export const missionVision = [
+export const missionVision: MissionVision[] = [
   {
     title: "Our Mission",
     description:
@@ -596,7 +613,7 @@ export const missionVision = [
   },
 ];
 
-export const values = [
+export const values: Value[] = [
   {
     title: "Quality Assurance",
     icon: <FaCheckCircle className="text-primary text-3xl shrink-0" />,
@@ -633,7 +650,7 @@ export const values = [
       "Fair wages, safe work environments, and integrity in every process.",
   },
 ];
-export const services = [
+export const services: Service[] = [
   {
     title: "Knit Garments Manufacturer & Exporter",
     icon: <GiClothes size={48} className="text-primary" />,
@@ -656,7 +673,7 @@ export const services = [
   },
 ];
 
-export const capabilities = [
+export const capabilities: Capability[] = [
   {
     icon: <FcFactory className="w-10 h-10" />,
     title: "State-of-the-Art Manufacturing",
@@ -679,7 +696,7 @@ export const capabilities = [
     description: "Efficient worldwide shipping & logistic solutions.",
   },
 ];
-export const merchandisingAbout = [
+export const merchandisingAbout: MerchandisingAbout[] = [
   {
     icon: "🧶",
     title: "Yarn Sourcing",
@@ -718,7 +735,7 @@ export const merchandisingAbout = [
   },
 ];
 
-export const steps = [
+export const steps: Step[] = [
   {
     title: "Consultation",
     icon: <FaComments className="text-white text-xl" />,

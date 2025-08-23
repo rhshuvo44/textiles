@@ -4,7 +4,7 @@ import { services } from "@/db/data";
 
 const HomeServices = () => {
   return (
-    <section className="px-4 py-10 sm:px-6 lg:px-12 xl:px-20 text-center">
+    <section className="px-4 py-10 sm:px-6 lg:px-12 xl:px-20 text-center" id="services">
       <h2
         className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-10"
         data-aos="fade-up"
