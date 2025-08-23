@@ -1,39 +1,34 @@
 "use client";
 
+import Image from "next/image";
 import PolymorphicButton from "@/components/UI/PolymorphicButton";
 import { BannerSectionProps } from "@/types";
-import Image from "next/image";
 
 const BannerSection = ({
   image,
   title,
   subtitle,
-  buttonText,
-  buttonHref,
-  buttonAriaLabel,
+  buttons = [], // Array of buttons [{text, href, variant, color, icon, ariaLabel}]
   overlayOpacity = 0.5,
-  gradientOverlay = false,
-}: BannerSectionProps) => {
+  minHeight = "md:min-h-screen",
+}: BannerSectionProps & { buttons?: any[]; minHeight?: string }) => {
   return (
-    <section className="relative w-full min-h-[60vh] md:min-h-screen sm:h-[80vh] overflow-hidden flex items-center justify-center text-white">
-      {/* Wrapper for Image and Overlay */}
+    <section
+      className={`relative min-h-[70vh] ${minHeight} sm:h-[80vh] overflow-hidden flex items-center justify-center text-white`}
+    >
+      {/* Background wrapper */}
       <div className="absolute inset-0">
-        {/* Background Image */}
         <Image
           src={image}
           alt={typeof title === "string" ? title : "Banner image"}
           fill
           priority
-          className="object-cover z-0"
+          className="object-cover hero-image"
         />
 
         {/* Overlay */}
         <div
-          className={`absolute inset-0 ${
-            gradientOverlay
-              ? "bg-gradient-to-b from-black/70 via-black/50 to-black/70"
-              : "bg-black"
-          }`}
+          className={`absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70`}
           style={{ opacity: overlayOpacity }}
         />
       </div>
@@ -42,7 +37,7 @@ const BannerSection = ({
       <div className="relative z-10 text-center px-4 max-w-3xl flex flex-col items-center justify-center">
         {/* Title */}
         <h1
-          className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg"
+          className="text-xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair font-extrabold mb-4 drop-shadow-lg animate-fadeIn"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="200"
@@ -53,7 +48,7 @@ const BannerSection = ({
         {/* Subtitle */}
         {subtitle && (
           <p
-            className="text-md sm:text-lg md:text-xl mb-6"
+            className="text-md sm:text-lg md:text-xl font-rubik mb-6"
             data-aos="fade-up"
             data-aos-duration="1200"
             data-aos-delay="400"
@@ -62,14 +57,28 @@ const BannerSection = ({
           </p>
         )}
 
-        {/* Button */}
-        {buttonText && buttonHref && (
-          <PolymorphicButton
-            href={buttonHref}
-            text={buttonText}
-            ariaLabel={buttonAriaLabel}
-            variant="solid"
-          />
+        {/* Buttons */}
+        {buttons.length > 0 && (
+          <div
+            className="flex flex-wrap items-center justify-center gap-4 sm:flex-col md:flex-row md:gap-6"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            {buttons.map((btn, idx) => (
+              <PolymorphicButton
+                key={idx}
+                href={btn.href}
+                text={btn.text}
+                icon={btn.icon}
+                variant={btn.variant}
+                color={btn.color}
+                ariaLabel={btn.ariaLabel}
+                className={`font-rubik ${btn.className || ""}`}
+                isSubmitting={btn.isSubmitting || false}
+              />
+            ))}
+          </div>
         )}
       </div>
     </section>

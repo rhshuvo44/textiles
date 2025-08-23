@@ -35,8 +35,8 @@
 // };
 
 // export default config;
-import type { Config } from "tailwindcss";
 import daisyui from "daisyui";
+import type { Config } from "tailwindcss";
 
 const config: Config = {
   darkMode: "class",
@@ -61,6 +61,11 @@ const config: Config = {
         darkBg: "#111827",
         lightText: "#1F2937",
         darkText: "#F3F4F6",
+      },
+      fontFamily: {
+        rubik: ["var(--font-rubik)", "sans-serif"], // primary
+        playfair: ["var(--font-playfair)", "serif"], // premium hero
+        montserrat: ["var(--font-montserrat)", "sans-serif"], // accent/UI
       },
     },
   },

@@ -5,10 +5,22 @@ import { Rubik } from "next/font/google";
 import { ToastContainer } from "react-toastify";
 import "./globals.css";
 
-const rubik = Rubik({
+import { Montserrat, Playfair_Display } from "next/font/google";
+
+export const rubik = Rubik({
   subsets: ["latin"],
+  weight: ["400", "500", "700"],
   variable: "--font-rubik",
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
+});
+export const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-playfair",
+});
+export const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-montserrat",
 });
 
 export const metadata: Metadata = {

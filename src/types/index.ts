@@ -199,12 +199,15 @@ export interface Step {
   icon: JSX.Element;
 }
 export interface BannerSectionProps {
-  image: StaticImageData;
+  image: StaticImageData | string;
   title: React.ReactNode;
   subtitle?: string;
   buttonText?: string;
   buttonHref?: string;
   buttonAriaLabel?: string;
   overlayOpacity?: number;
-  gradientOverlay?: boolean;
+}
+
+export interface SectionTitleProps {
+  text: string;
 }

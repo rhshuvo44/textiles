@@ -1,10 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import banner from "@/assets/image/banner/textile_main_image.jpg";
+import { SectionTitleProps } from "@/types";
 
-interface SectionTitleProps {
-  text: string;
-}
+
 
 const SectionTitle = ({ text }: SectionTitleProps) => {
   return (
