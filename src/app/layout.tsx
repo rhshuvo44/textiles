@@ -80,7 +80,7 @@ export default function RootLayout({
     ],
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+880123456789",
+      telephone: "+880 1878655537",
       contactType: "Customer Service",
       email: "info@demo.com",
       areaServed: "BD",
@@ -110,9 +110,6 @@ export default function RootLayout({
         />
       </head>
       <body
-        data-new-gr-c-s-check-loaded="14.1231.0"
-        data-gr-ext-installed=""
-        cz-shortcut-listen="true"
         className={`${rubik.variable} antialiased bg-base-100 text-base-content transition-colors duration-300`}
       >
         <Navbar />

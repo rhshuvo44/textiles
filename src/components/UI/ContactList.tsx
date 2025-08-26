@@ -20,7 +20,7 @@ const ContactList = ({ variant = "simple" }: Props) => {
                   type === "phone" ? (
                     <a
                       key={v}
-                      href={`tel:${v}`}
+                      href={`tel:${v.replace(/\s+/g, "")}`}
                       className="block hover:text-primary transition-colors"
                     >
                       {v}
