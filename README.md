@@ -163,7 +163,7 @@ Easily deploy on platforms supporting Next.js 13 App Router:
 # **Textiles - Next.js Template Documentation**
 
   * **Created:** August 04, 2024
-  * **Last Updated:** August 04, 2025
+  * **Last Updated:** August 26, 2025
   * **By:** Ripon Hossain Shuvo
   * **Support:** rhshuvo44@gmail.com
 
