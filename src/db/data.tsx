@@ -575,7 +575,7 @@ export const contactInfo: ContactInfo[] = [
   {
     id: "phone",
     label: "Phone",
-    value: ["+88 01878655537", "+88 01878655537"],
+    value: ["+880 1878655537", "+880 1878655537"],
     icon: BiPhone,
     type: "phone",
   },
@@ -589,7 +589,7 @@ export const contactInfo: ContactInfo[] = [
   {
     id: "whatsapp",
     label: "WhatsApp",
-    value: "+88 01878655537",
+    value: "+880 1878655537",
     icon: FiMessageCircle,
     type: "text",
   },

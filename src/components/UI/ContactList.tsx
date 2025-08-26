@@ -51,7 +51,11 @@ const ContactList = ({ variant = "simple" }: Props) => {
                 {Array.isArray(value) ? (
                   value.map((v) =>
                     type === "phone" ? (
-                      <a key={v} href={`tel:${v}`} className="block">
+                      <a
+                        key={v}
+                        href={`tel:${v.replace(/\s+/g, "")}`}
+                        className="block"
+                      >
                         {v}
                       </a>
                     ) : (
