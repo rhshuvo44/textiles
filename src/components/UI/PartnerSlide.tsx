@@ -47,6 +47,8 @@ const PartnerSlide = () => {
                   alt={`Partner ${index + 1}`}
                   width={150}
                   height={150}
+                  loading="lazy"
+                  decoding="async"
                   className="object-contain h-full w-full"
                 />
               </div>

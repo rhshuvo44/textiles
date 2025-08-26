@@ -28,9 +28,9 @@ const Navbar = () => {
               className="inline-block h-5 w-5 stroke-current"
             >
               <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
                 d="M4 6h16M4 12h16M4 18h16"
               ></path>
             </svg>

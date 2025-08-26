@@ -1,12 +1,11 @@
 import Footer from "@/components/UI/Footer";
 import Navbar from "@/components/UI/Navbar";
 import type { Metadata } from "next";
-import { Rubik } from "next/font/google";
+import { Rubik, Montserrat, Playfair_Display } from "next/font/google";
 import { ToastContainer } from "react-toastify";
 import "./globals.css";
 
-import { Montserrat, Playfair_Display } from "next/font/google";
-
+// Font imports with variables
 export const rubik = Rubik({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
@@ -23,6 +22,7 @@ export const montserrat = Montserrat({
   variable: "--font-montserrat",
 });
 
+// Metadata
 export const metadata: Metadata = {
   title: "Textiles & Apparel",
   description:
@@ -62,11 +62,13 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // JSON-LD structured data for SEO
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -80,7 +82,7 @@ export default function RootLayout({
     ],
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+880 1878655537",
+      telephone: "+880187865537", // No spaces
       contactType: "Customer Service",
       email: "info@demo.com",
       areaServed: "BD",
@@ -96,21 +98,20 @@ export default function RootLayout({
         <script
           dangerouslySetInnerHTML={{
             __html: `
-          (function() {
-            const theme = localStorage.getItem('theme') || 'light';
-            document.documentElement.setAttribute('data-theme', theme);
-          })();
-        `,
+              (function() {
+                const theme = localStorage.getItem('theme') || 'light';
+                document.documentElement.setAttribute('data-theme', theme);
+              })();
+            `,
           }}
         />
-        {/* JSON-LD structured data for SEO */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
       <body
-        className={`${rubik.variable} antialiased bg-base-100 text-base-content transition-colors duration-300`}
+        className={`${rubik.variable} ${montserrat.variable} ${playfair.variable} antialiased bg-base-100 text-base-content transition-colors duration-300`}
       >
         <Navbar />
         <main>
